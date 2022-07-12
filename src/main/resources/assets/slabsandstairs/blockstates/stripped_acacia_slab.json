@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "slabsandstairs:block/stripped_acacia_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/stripped_acacia"
+    },
+    "type=top": {
+      "model": "slabsandstairs:block/stripped_acacia_slab_top"
+    }
+  }
+}

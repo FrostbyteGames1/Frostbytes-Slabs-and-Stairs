@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "minecraft:crimson_hyphae"
+    }
+  ],
+  "result": {
+    "item": "slabsandstairs:crimson_hyphae_button"
+  }
+}

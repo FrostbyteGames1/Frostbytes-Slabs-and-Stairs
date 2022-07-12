@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "slabsandstairs:block/stripped_mangrove_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/stripped_mangrove"
+    },
+    "type=top": {
+      "model": "slabsandstairs:block/stripped_mangrove_slab_top"
+    }
+  }
+}

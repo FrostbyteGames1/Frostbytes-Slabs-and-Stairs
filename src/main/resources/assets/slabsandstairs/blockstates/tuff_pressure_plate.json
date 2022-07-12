@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "slabsandstairs:block/tuff_pressure_plate"
+    },
+    "powered=true": {
+      "model": "slabsandstairs:block/tuff_pressure_plate_down"
+    }
+  }
+}

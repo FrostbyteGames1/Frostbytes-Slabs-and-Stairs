@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "pressure_plates",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:dripstone"
+    }
+  },
+  "result": {
+    "item": "slabsandstairs:dripstone_pressure_plate"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingwhiteient": {
+    "item": "minecraft:white_glazed_terracotta"
+  },
+  "result": "slabsandstairs:white_glazed_terracotta_wall"
+}

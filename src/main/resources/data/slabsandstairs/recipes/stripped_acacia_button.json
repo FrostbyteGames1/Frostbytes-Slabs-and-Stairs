@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "minecraft:stripped_acacia_wood"
+    }
+  ],
+  "result": {
+    "item": "slabsandstairs:stripped_acacia_button"
+  }
+}

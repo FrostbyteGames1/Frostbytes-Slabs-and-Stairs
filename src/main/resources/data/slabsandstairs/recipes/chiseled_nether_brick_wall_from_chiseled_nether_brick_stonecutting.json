@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:chiseled_nether_bricks"
+  },
+  "result": "slabsandstairs:chiseled_nether_brick_wall"
+}

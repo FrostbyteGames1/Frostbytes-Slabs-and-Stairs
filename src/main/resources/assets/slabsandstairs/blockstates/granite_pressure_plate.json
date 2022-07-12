@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "slabsandstairs:block/granite_pressure_plate"
+    },
+    "powered=true": {
+      "model": "slabsandstairs:block/granite_pressure_plate_down"
+    }
+  }
+}

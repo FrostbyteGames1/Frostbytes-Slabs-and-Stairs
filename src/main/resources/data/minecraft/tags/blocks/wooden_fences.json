@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "slabsandstairs:oak_wood_fence",
+    "slabsandstairs:spruce_wood_fence",
+    "slabsandstairs:birch_wood_fence",
+    "slabsandstairs:jungle_wood_fence",
+    "slabsandstairs:acacia_wood_fence",
+    "slabsandstairs:dark_oak_wood_fence",
+    "slabsandstairs:mangrove_wood_fence",
+    "slabsandstairs:warped_hyphae_fence",
+    "slabsandstairs:crimson_hyphae_fence",
+    "slabsandstairs:stripped_oak_fence",
+    "slabsandstairs:stripped_spruce_fence",
+    "slabsandstairs:stripped_birch_fence",
+    "slabsandstairs:stripped_jungle_fence",
+    "slabsandstairs:stripped_acacia_fence",
+    "slabsandstairs:stripped_dark_oak_fence",
+    "slabsandstairs:stripped_mangrove_fence",
+    "slabsandstairs:stripped_warped_fence",
+    "slabsandstairs:stripped_crimson_fence",
+
+    "minecraft:nether_brick_fence",
+    "slabsandstairs:red_nether_brick_fence"
+  ]
+}

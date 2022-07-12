@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "slabsandstairs",
+  "version": "${version}",
+
+  "name": "Frostbyte's Slabs & Stairs",
+  "description": "Stairs, slabs, walls, fences, etc. for many vanilla blocks.",
+  "authors": [
+    "FrostbyteGames"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC-BY-NC",
+  "icon": "assets/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.frostbyte.slabsandstairs.SlabsAndStairs"
+    ],
+    "client": [
+      "net.frostbyte.slabsandstairs.SlabsAndStairsClient"
+    ]
+  },
+  "mixins": [
+    "slabsandstairs.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

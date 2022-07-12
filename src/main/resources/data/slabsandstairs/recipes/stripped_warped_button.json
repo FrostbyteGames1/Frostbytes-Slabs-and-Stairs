@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "minecraft:stripped_warped_stem"
+    }
+  ],
+  "result": {
+    "item": "slabsandstairs:stripped_warped_button"
+  }
+}

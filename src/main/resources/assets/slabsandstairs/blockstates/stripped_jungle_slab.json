@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "slabsandstairs:block/stripped_jungle_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/stripped_jungle"
+    },
+    "type=top": {
+      "model": "slabsandstairs:block/stripped_jungle_slab_top"
+    }
+  }
+}

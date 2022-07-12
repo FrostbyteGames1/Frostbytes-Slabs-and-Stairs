@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "slabsandstairs:copper_button",
+    "slabsandstairs:exposed_copper_button",
+    "slabsandstairs:weathered_copper_button",
+    "slabsandstairs:oxidized_copper_button",
+    "slabsandstairs:iron_button",
+
+    "slabsandstairs:copper_pressure_plate",
+    "slabsandstairs:exposed_copper_pressure_plate",
+    "slabsandstairs:weathered_copper_pressure_plate",
+    "slabsandstairs:oxidized_copper_pressure_plate"
+  ]
+}

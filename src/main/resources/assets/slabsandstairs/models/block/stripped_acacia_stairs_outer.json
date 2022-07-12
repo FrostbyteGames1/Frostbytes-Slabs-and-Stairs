@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "minecraft:block/stripped_acacia",
+    "side": "minecraft:block/stripped_acacia",
+    "top": "minecraft:block/stripped_acacia"
+  }
+}

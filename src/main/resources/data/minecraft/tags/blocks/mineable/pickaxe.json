@@ -1,0 +1,45 @@
+{
+  "replace": false,
+  "values": [
+    "slabsandstairs:copper_button",
+    "slabsandstairs:exposed_copper_button",
+    "slabsandstairs:weathered_copper_button",
+    "slabsandstairs:oxidized_copper_button",
+    "slabsandstairs:iron_button",
+    "slabsandstairs:gold_button",
+
+    "slabsandstairs:diorite_button",
+    "slabsandstairs:andesite_button",
+    "slabsandstairs:granite_button",
+    "slabsandstairs.sandstone_button",
+    "slabsandstairs.red_sandstone_button",
+    "slabsandstairs.basalt_button",
+    "slabsandstairs.blackstone_button",
+    "slabsandstairs.calcite_button",
+    "slabsandstairs.tuff_button",
+    "slabsandstairs.deepslate_button",
+    "slabsandstairs.dripstone_button",
+
+    "slabsandstairs:copper_pressure_plate",
+    "slabsandstairs:exposed_copper_pressure_plate",
+    "slabsandstairs:weathered_copper_pressure_plate",
+    "slabsandstairs:oxidized_copper_pressure_plate",
+
+    "slabsandstairs:diorite_pressure_plate",
+    "slabsandstairs:andesite_pressure_plate",
+    "slabsandstairs:granite_pressure_plate",
+    "slabsandstairs.sandstone_pressure_plate",
+    "slabsandstairs.red_sandstone_pressure_plate",
+    "slabsandstairs.basalt_pressure_plate",
+    "slabsandstairs.blackstone_pressure_plate",
+    "slabsandstairs.calcite_pressure_plate",
+    "slabsandstairs.tuff_pressure_plate",
+    "slabsandstairs.deepslate_pressure_plate",
+    "slabsandstairs.dripstone_pressure_plate",
+
+    "slabsandstairs.red_nether_brick_fence",
+
+    "slabsandstairs.nether_brick_fence_gate",
+    "slabsandstairs.red_nether_brick_fence_gate"
+  ]
+}
