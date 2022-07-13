@@ -796,7 +796,7 @@ public class ModBlocks {
             new ModSlabBlock(FabricBlockSettings.copy(IRON_BLOCK)), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block GOLD_SLAB = registerBlock("gold_slab",
-            new ModSlabBlock(FabricBlockSettings.copy(IRON_BLOCK)), ModItemGroup.SLABSANDSTAIRS);
+            new ModSlabBlock(FabricBlockSettings.copy(GOLD_BLOCK)), ModItemGroup.SLABSANDSTAIRS);
 
     // endregion
 
@@ -1111,19 +1111,19 @@ public class ModBlocks {
 
     // region STAIRS:
 
-     // region Metal
+    // region Metal
 
     public static final Block COPPER_STAIR = registerBlock("copper_stair",
-            new ModSlabBlock(FabricBlockSettings.copy(COPPER_BLOCK)), ModItemGroup.SLABSANDSTAIRS);
+            new ModStairsBlock(COPPER_BLOCK.getDefaultState(), FabricBlockSettings.copy(COPPER_BLOCK)), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block EXPOSED_COPPER_STAIR = registerBlock("exposed_copper_stair",
-            new ModSlabBlock(FabricBlockSettings.copy(EXPOSED_COPPER)), ModItemGroup.SLABSANDSTAIRS);
+            new ModStairsBlock(EXPOSED_COPPER.getDefaultState(), FabricBlockSettings.copy(EXPOSED_COPPER)), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block WEATHERED_COPPER_STAIR = registerBlock("weathered_copper_stair",
-            new ModSlabBlock(FabricBlockSettings.copy(WEATHERED_COPPER)), ModItemGroup.SLABSANDSTAIRS);
+            new ModStairsBlock(WEATHERED_COPPER.getDefaultState(), FabricBlockSettings.copy(WEATHERED_COPPER)), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block OXIDIZED_COPPER_STAIR = registerBlock("oxidized_copper_stair",
-            new ModSlabBlock(FabricBlockSettings.copy(OXIDIZED_COPPER)), ModItemGroup.SLABSANDSTAIRS);
+            new ModStairsBlock(OXIDIZED_COPPER.getDefaultState(), FabricBlockSettings.copy(OXIDIZED_COPPER)), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block IRON_STAIR = registerBlock("iron_stair",
             new ModStairsBlock(IRON_BLOCK.getDefaultState(), FabricBlockSettings.copy(IRON_BLOCK)), ModItemGroup.SLABSANDSTAIRS);
