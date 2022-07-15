@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "slabsandstairs:block/chiseled_stone_bricks_slab"
+      "model": "slabsandstairs:block/chiseled_stone_brick_slab"
     },
     "type=double": {
       "model": "minecraft:block/chiseled_stone_bricks"
     },
     "type=top": {
-      "model": "slabsandstairs:block/chiseled_stone_bricks_slab_top"
+      "model": "slabsandstairs:block/chiseled_stone_brick_slab_top"
     }
   }
 }

@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "slabsandstairs:block/cracked_deepslate_bricks_slab"
+      "model": "slabsandstairs:block/cracked_deepslate_brick_slab"
     },
     "type=double": {
       "model": "minecraft:block/cracked_deepslate_bricks"
     },
     "type=top": {
-      "model": "slabsandstairs:block/cracked_deepslate_bricks_slab_top"
+      "model": "slabsandstairs:block/cracked_deepslate_brick_slab_top"
     }
   }
 }
