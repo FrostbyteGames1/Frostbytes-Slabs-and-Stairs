@@ -13,6 +13,7 @@ import net.minecraft.network.packet.s2c.play.PlaySoundFromEntityS2CPacket;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import static com.ibm.icu.util.MeasureUnit.QUART;
 import static net.minecraft.block.Blocks.*;
 import static net.minecraft.data.family.BlockFamily.Variant.CRACKED;
 
@@ -938,11 +939,17 @@ public class ModBlocks {
     public static final Block CRACKED_NETHER_BRICK_SLAB = registerBlock("cracked_nether_brick_slab",
             new ModSlabBlock(FabricBlockSettings.copy(CRACKED_NETHER_BRICKS)), ModItemGroup.SLABSANDSTAIRS);
 
+    public static final Block CHISELED_NETHER_BRICK_SLAB = registerBlock("chiseled_nether_brick_slab",
+            new ModSlabBlock(FabricBlockSettings.copy(CHISELED_NETHER_BRICKS)), ModItemGroup.SLABSANDSTAIRS);
+
     public static final Block QUARTZ_BRICK_SLAB = registerBlock("quartz_brick_slab",
             new ModSlabBlock(FabricBlockSettings.copy(QUARTZ_BRICKS)), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block CHISELED_QUARTZ_SLAB = registerBlock("chiseled_quartz_slab",
             new ModSlabBlock(FabricBlockSettings.copy(CHISELED_QUARTZ_BLOCK)), ModItemGroup.SLABSANDSTAIRS);
+
+    public static final Block QUARTZ_PILLAR_SLAB = registerBlock("quartz_pillar_slab",
+            new ModSlabBlock(FabricBlockSettings.copy(QUARTZ_PILLAR)), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block END_STONE_SLAB = registerBlock("end_stone_slab",
             new ModSlabBlock(FabricBlockSettings.copy(END_STONE)), ModItemGroup.SLABSANDSTAIRS);
@@ -1113,328 +1120,344 @@ public class ModBlocks {
 
     // region Metal
 
-    public static final Block COPPER_STAIR = registerBlock("copper_stairs",
+    public static final Block COPPER_STAIRS = registerBlock("copper_stairs",
             new ModStairsBlock(COPPER_BLOCK.getDefaultState(), FabricBlockSettings.copy(COPPER_BLOCK)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block EXPOSED_COPPER_STAIR = registerBlock("exposed_copper_stairs",
+    public static final Block EXPOSED_COPPER_STAIRS = registerBlock("exposed_copper_stairs",
             new ModStairsBlock(EXPOSED_COPPER.getDefaultState(), FabricBlockSettings.copy(EXPOSED_COPPER)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block WEATHERED_COPPER_STAIR = registerBlock("weathered_copper_stairs",
+    public static final Block WEATHERED_COPPER_STAIRS = registerBlock("weathered_copper_stairs",
             new ModStairsBlock(WEATHERED_COPPER.getDefaultState(), FabricBlockSettings.copy(WEATHERED_COPPER)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block OXIDIZED_COPPER_STAIR = registerBlock("oxidized_copper_stairs",
+    public static final Block OXIDIZED_COPPER_STAIRS = registerBlock("oxidized_copper_stairs",
             new ModStairsBlock(OXIDIZED_COPPER.getDefaultState(), FabricBlockSettings.copy(OXIDIZED_COPPER)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block IRON_STAIR = registerBlock("iron_stairs",
+    public static final Block IRON_STAIRS = registerBlock("iron_stairs",
             new ModStairsBlock(IRON_BLOCK.getDefaultState(), FabricBlockSettings.copy(IRON_BLOCK)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block GOLD_STAIR = registerBlock("gold_stairs",
+    public static final Block GOLD_STAIRS = registerBlock("gold_stairs",
             new ModStairsBlock(GOLD_BLOCK.getDefaultState(), FabricBlockSettings.copy(IRON_BLOCK)), ModItemGroup.SLABSANDSTAIRS);
 
     // endregion
 
     // region Wood
-    public static final Block OAK_LOG_STAIR = registerBlock("oak_log_stairs",
+
+    public static final Block OAK_LOG_STAIRS = registerBlock("oak_log_stairs",
             new ModStairsBlock(OAK_PLANKS.getDefaultState(), FabricBlockSettings.copy(OAK_PLANKS)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block SPRUCE_LOG_STAIR = registerBlock("spruce_log_stairs",
+    public static final Block SPRUCE_LOG_STAIRS = registerBlock("spruce_log_stairs",
             new ModStairsBlock(SPRUCE_PLANKS.getDefaultState(), FabricBlockSettings.copy(SPRUCE_PLANKS)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block BIRCH_LOG_STAIR = registerBlock("birch_log_stairs",
+    public static final Block BIRCH_LOG_STAIRS = registerBlock("birch_log_stairs",
             new ModStairsBlock(BIRCH_PLANKS.getDefaultState(), FabricBlockSettings.copy(BIRCH_PLANKS)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block JUNGLE_LOG_STAIR = registerBlock("jungle_log_stairs",
+    public static final Block JUNGLE_LOG_STAIRS = registerBlock("jungle_log_stairs",
             new ModStairsBlock(JUNGLE_PLANKS.getDefaultState(), FabricBlockSettings.copy(JUNGLE_PLANKS)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block ACACIA_LOG_STAIR = registerBlock("acacia_log_stairs",
+    public static final Block ACACIA_LOG_STAIRS = registerBlock("acacia_log_stairs",
             new ModStairsBlock(ACACIA_PLANKS.getDefaultState(), FabricBlockSettings.copy(ACACIA_PLANKS)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block DARK_OAK_LOG_STAIR = registerBlock("dark_oak_log_stairs",
+    public static final Block DARK_OAK_LOG_STAIRS = registerBlock("dark_oak_log_stairs",
             new ModStairsBlock(DARK_OAK_PLANKS.getDefaultState(), FabricBlockSettings.copy(DARK_OAK_PLANKS)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block MANGROVE_LOG_STAIR = registerBlock("mangrove_log_stairs",
+    public static final Block MANGROVE_LOG_STAIRS = registerBlock("mangrove_log_stairs",
             new ModStairsBlock(MANGROVE_PLANKS.getDefaultState(), FabricBlockSettings.copy(MANGROVE_PLANKS)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block WARPED_STEM_STAIR = registerBlock("warped_stem_stairs",
+    public static final Block WARPED_STEM_STAIRS = registerBlock("warped_stem_stairs",
             new ModStairsBlock(WARPED_STEM.getDefaultState(), FabricBlockSettings.copy(WARPED_STEM)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CRIMSON_STEM_STAIR = registerBlock("crimson_stem_stairs",
+    public static final Block CRIMSON_STEM_STAIRS = registerBlock("crimson_stem_stairs",
             new ModStairsBlock(CRIMSON_STEM.getDefaultState(), FabricBlockSettings.copy(CRIMSON_STEM)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block OAK_WOOD_STAIR = registerBlock("oak_wood_stairs",
+    public static final Block OAK_WOOD_STAIRS = registerBlock("oak_wood_stairs",
             new ModStairsBlock(OAK_WOOD.getDefaultState(), FabricBlockSettings.copy(OAK_WOOD)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block SPRUCE_WOOD_STAIR = registerBlock("spruce_wood_stairs",
+    public static final Block SPRUCE_WOOD_STAIRS = registerBlock("spruce_wood_stairs",
             new ModStairsBlock(SPRUCE_WOOD.getDefaultState(), FabricBlockSettings.copy(SPRUCE_WOOD)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block BIRCH_WOOD_STAIR = registerBlock("birch_wood_stairs",
+    public static final Block BIRCH_WOOD_STAIRS = registerBlock("birch_wood_stairs",
             new ModStairsBlock(BIRCH_WOOD.getDefaultState(), FabricBlockSettings.copy(BIRCH_WOOD)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block JUNGLE_WOOD_STAIR = registerBlock("jungle_wood_stairs",
+    public static final Block JUNGLE_WOOD_STAIRS = registerBlock("jungle_wood_stairs",
             new ModStairsBlock(JUNGLE_WOOD.getDefaultState(), FabricBlockSettings.copy(JUNGLE_WOOD)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block ACACIA_WOOD_STAIR = registerBlock("acacia_wood_stairs",
+    public static final Block ACACIA_WOOD_STAIRS = registerBlock("acacia_wood_stairs",
             new ModStairsBlock(ACACIA_WOOD.getDefaultState(), FabricBlockSettings.copy(ACACIA_WOOD)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block DARK_OAK_WOOD_STAIR = registerBlock("dark_oak_wood_stairs",
+    public static final Block DARK_OAK_WOOD_STAIRS = registerBlock("dark_oak_wood_stairs",
             new ModStairsBlock(DARK_OAK_WOOD.getDefaultState(), FabricBlockSettings.copy(DARK_OAK_WOOD)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block MANGROVE_WOOD_STAIR = registerBlock("mangrove_wood_stairs",
+    public static final Block MANGROVE_WOOD_STAIRS = registerBlock("mangrove_wood_stairs",
             new ModStairsBlock(MANGROVE_WOOD.getDefaultState(), FabricBlockSettings.copy(MANGROVE_WOOD)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block WARPED_HYPHAE_STAIR = registerBlock("warped_hyphae_stairs",
+    public static final Block WARPED_HYPHAE_STAIRS = registerBlock("warped_hyphae_stairs",
             new ModStairsBlock(WARPED_HYPHAE.getDefaultState(), FabricBlockSettings.copy(WARPED_HYPHAE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CRIMSON_HYPHAE_STAIR = registerBlock("crimson_hyphae_stairs",
+    public static final Block CRIMSON_HYPHAE_STAIRS = registerBlock("crimson_hyphae_stairs",
             new ModStairsBlock(CRIMSON_HYPHAE.getDefaultState(), FabricBlockSettings.copy(CRIMSON_HYPHAE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block STRIPPED_OAK_STAIR = registerBlock("stripped_oak_stairs",
+    public static final Block STRIPPED_OAK_STAIRS = registerBlock("stripped_oak_stairs",
             new ModStairsBlock(STRIPPED_OAK_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_OAK_WOOD)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block STRIPPED_SPRUCE_STAIR = registerBlock("stripped_spruce_stairs",
+    public static final Block STRIPPED_SPRUCE_STAIRS = registerBlock("stripped_spruce_stairs",
             new ModStairsBlock(STRIPPED_SPRUCE_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_SPRUCE_WOOD)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block STRIPPED_BIRCH_STAIR = registerBlock("stripped_birch_stairs",
+    public static final Block STRIPPED_BIRCH_STAIRS = registerBlock("stripped_birch_stairs",
             new ModStairsBlock(STRIPPED_BIRCH_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_BIRCH_WOOD)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block STRIPPED_JUNGLE_STAIR = registerBlock("stripped_jungle_stairs",
+    public static final Block STRIPPED_JUNGLE_STAIRS = registerBlock("stripped_jungle_stairs",
             new ModStairsBlock(STRIPPED_JUNGLE_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_JUNGLE_WOOD)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block STRIPPED_ACACIA_STAIR = registerBlock("stripped_acacia_stairs",
+    public static final Block STRIPPED_ACACIA_STAIRS = registerBlock("stripped_acacia_stairs",
             new ModStairsBlock(STRIPPED_ACACIA_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_ACACIA_WOOD)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block STRIPPED_DARK_OAK_STAIR = registerBlock("stripped_dark_oak_stairs",
+    public static final Block STRIPPED_DARK_OAK_STAIRS = registerBlock("stripped_dark_oak_stairs",
             new ModStairsBlock(STRIPPED_DARK_OAK_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_DARK_OAK_WOOD)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block STRIPPED_MANGROVE_STAIR = registerBlock("stripped_mangrove_stairs",
+    public static final Block STRIPPED_MANGROVE_STAIRS = registerBlock("stripped_mangrove_stairs",
             new ModStairsBlock(MANGROVE_WOOD.getDefaultState(), FabricBlockSettings.copy(MANGROVE_WOOD)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block STRIPPED_WARPED_STAIR = registerBlock("stripped_warped_stairs",
+    public static final Block STRIPPED_WARPED_STAIRS = registerBlock("stripped_warped_stairs",
             new ModStairsBlock(STRIPPED_WARPED_HYPHAE.getDefaultState(), FabricBlockSettings.copy(STRIPPED_WARPED_HYPHAE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block STRIPPED_CRIMSON_STAIR = registerBlock("stripped_crimson_stairs",
+    public static final Block STRIPPED_CRIMSON_STAIRS = registerBlock("stripped_crimson_stairs",
             new ModStairsBlock(STRIPPED_CRIMSON_HYPHAE.getDefaultState(), FabricBlockSettings.copy(STRIPPED_CRIMSON_HYPHAE)), ModItemGroup.SLABSANDSTAIRS);
 
     // endregion
 
     // region Stone
 
-    public static final Block CHISELED_STONE_BRICK_STAIR = registerBlock("chiseled_stone_brick_stairs",
+    public static final Block CHISELED_STONE_BRICK_STAIRS = registerBlock("chiseled_stone_brick_stairs",
             new ModStairsBlock(CHISELED_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(CHISELED_STONE_BRICKS)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CRACKED_STONE_BRICK_STAIR = registerBlock("cracked_stone_brick_stairs",
+    public static final Block CRACKED_STONE_BRICK_STAIRS = registerBlock("cracked_stone_brick_stairs",
             new ModStairsBlock(CRACKED_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(CRACKED_STONE_BRICKS)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CHISELED_SANDSTONE_STAIR = registerBlock("chiseled_sandstone_stairs",
+    public static final Block SMOOTH_STONE_STAIRS = registerBlock("smooth_stone_stairs",
+            new ModStairsBlock(SMOOTH_STONE.getDefaultState(), FabricBlockSettings.copy(SMOOTH_STONE)), ModItemGroup.SLABSANDSTAIRS);
+
+    public static final Block CHISELED_SANDSTONE_STAIRS = registerBlock("chiseled_sandstone_stairs",
             new ModStairsBlock(CHISELED_SANDSTONE.getDefaultState(), FabricBlockSettings.copy(CHISELED_SANDSTONE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CHISELED_RED_SANDSTONE_STAIR = registerBlock("chiseled_red_sandstone_stairs",
+    public static final Block CUT_SANDSTONE_STAIRS = registerBlock("cut_sandstone_stairs",
+            new ModStairsBlock(CUT_SANDSTONE.getDefaultState(), FabricBlockSettings.copy(CUT_SANDSTONE)), ModItemGroup.SLABSANDSTAIRS);
+
+    public static final Block CHISELED_RED_SANDSTONE_STAIRS = registerBlock("chiseled_red_sandstone_stairs",
             new ModStairsBlock(CHISELED_RED_SANDSTONE.getDefaultState(), FabricBlockSettings.copy(CHISELED_RED_SANDSTONE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block BASALT_STAIR = registerBlock("basalt_stairs",
+    public static final Block CUT_RED_SANDSTONE_STAIRS = registerBlock("cut_red_sandstone_stairs",
+            new ModStairsBlock(CUT_RED_SANDSTONE.getDefaultState(), FabricBlockSettings.copy(CUT_RED_SANDSTONE)), ModItemGroup.SLABSANDSTAIRS);
+
+    public static final Block BASALT_STAIRS = registerBlock("basalt_stairs",
             new ModStairsBlock(BASALT.getDefaultState(), FabricBlockSettings.copy(BASALT)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block SMOOTH_BASALT_STAIR = registerBlock("smooth_basalt_stairs",
+    public static final Block SMOOTH_BASALT_STAIRS = registerBlock("smooth_basalt_stairs",
             new ModStairsBlock(SMOOTH_BASALT.getDefaultState(), FabricBlockSettings.copy(SMOOTH_BASALT)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block POLISHED_BASALT_STAIR = registerBlock("polished_basalt_stairs",
+    public static final Block POLISHED_BASALT_STAIRS = registerBlock("polished_basalt_stairs",
             new ModStairsBlock(POLISHED_BASALT.getDefaultState(), FabricBlockSettings.copy(POLISHED_BASALT)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CHISELED_POLISHED_BLACKSTONE_STAIR = registerBlock("chiseled_polished_blackstone_stairs",
+    public static final Block CHISELED_POLISHED_BLACKSTONE_STAIRS = registerBlock("chiseled_polished_blackstone_stairs",
             new ModStairsBlock(CHISELED_POLISHED_BLACKSTONE.getDefaultState(), FabricBlockSettings.copy(CHISELED_POLISHED_BLACKSTONE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CRACKED_POLISHED_BLACKSTONE_BRICK_STAIR = registerBlock("cracked_polished_blackstone_brick_stairs",
+    public static final Block CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS = registerBlock("cracked_polished_blackstone_brick_stairs",
             new ModStairsBlock(CRACKED_POLISHED_BLACKSTONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(CRACKED_POLISHED_BLACKSTONE_BRICKS)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CALCITE_STAIR = registerBlock("calcite_stairs",
+    public static final Block CALCITE_STAIRS = registerBlock("calcite_stairs",
             new ModStairsBlock(CALCITE.getDefaultState(), FabricBlockSettings.copy(CALCITE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block TUFF_STAIR = registerBlock("tuff_stairs",
+    public static final Block TUFF_STAIRS = registerBlock("tuff_stairs",
             new ModStairsBlock(TUFF.getDefaultState(), FabricBlockSettings.copy(TUFF)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block DEEPSLATE_STAIR = registerBlock("deepslate_stairs",
+    public static final Block DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
             new ModStairsBlock(DEEPSLATE.getDefaultState(), FabricBlockSettings.copy(DEEPSLATE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CHISELED_DEEPSLATE_STAIR = registerBlock("chiseled_deepslate_stairs",
+    public static final Block CHISELED_DEEPSLATE_STAIRS = registerBlock("chiseled_deepslate_stairs",
             new ModStairsBlock(CHISELED_DEEPSLATE.getDefaultState(), FabricBlockSettings.copy(CHISELED_DEEPSLATE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CRACKED_DEEPSLATE_BRICK_STAIR = registerBlock("cracked_deepslate_brick_stairs",
+    public static final Block CRACKED_DEEPSLATE_BRICK_STAIRS = registerBlock("cracked_deepslate_brick_stairs",
             new ModStairsBlock(CRACKED_DEEPSLATE_BRICKS.getDefaultState(), FabricBlockSettings.copy(CRACKED_DEEPSLATE_BRICKS)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CRACKED_DEEPSLATE_TILE_STAIR = registerBlock("cracked_deepslate_tile_stairs",
+    public static final Block CRACKED_DEEPSLATE_TILE_STAIRS = registerBlock("cracked_deepslate_tile_stairs",
             new ModStairsBlock(CRACKED_DEEPSLATE_TILES.getDefaultState(), FabricBlockSettings.copy(CRACKED_DEEPSLATE_TILES)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block DRIPSTONE_STAIR = registerBlock("dripstone_stairs",
+    public static final Block DRIPSTONE_STAIRS = registerBlock("dripstone_stairs",
             new ModStairsBlock(DRIPSTONE_BLOCK.getDefaultState(), FabricBlockSettings.copy(DRIPSTONE_BLOCK)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CRACKED_NETHER_BRICK_STAIR = registerBlock("cracked_nether_brick_stairs",
+    public static final Block CRACKED_NETHER_BRICK_STAIRS = registerBlock("cracked_nether_brick_stairs",
             new ModStairsBlock(CRACKED_NETHER_BRICKS.getDefaultState(), FabricBlockSettings.copy(CRACKED_NETHER_BRICKS)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block QUARTZ_BRICK_STAIR = registerBlock("quartz_brick_stairs",
+    public static final Block CHISELED_NETHER_BRICK_STAIRS = registerBlock("chiseled_nether_brick_stairs",
+            new ModStairsBlock(CHISELED_NETHER_BRICKS.getDefaultState(), FabricBlockSettings.copy(CHISELED_NETHER_BRICKS)), ModItemGroup.SLABSANDSTAIRS);
+
+    public static final Block QUARTZ_BRICK_STAIRS = registerBlock("quartz_brick_stairs",
             new ModStairsBlock(QUARTZ_BRICKS.getDefaultState(), FabricBlockSettings.copy(QUARTZ_BRICKS)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CHISELED_QUARTZ_STAIR = registerBlock("chiseled_quartz_stairs",
+    public static final Block CHISELED_QUARTZ_STAIRS = registerBlock("chiseled_quartz_stairs",
             new ModStairsBlock(CHISELED_QUARTZ_BLOCK.getDefaultState(), FabricBlockSettings.copy(CHISELED_QUARTZ_BLOCK)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block END_STONE_STAIR = registerBlock("end_stone_stairs",
+    public static final Block QUARTZ_PILLAR_STAIRS = registerBlock("quartz_pillar_stairs",
+            new ModStairsBlock(QUARTZ_PILLAR.getDefaultState(), FabricBlockSettings.copy(QUARTZ_PILLAR)), ModItemGroup.SLABSANDSTAIRS);
+
+    public static final Block END_STONE_STAIRS = registerBlock("end_stone_stairs",
             new ModStairsBlock(END_STONE.getDefaultState(), FabricBlockSettings.copy(END_STONE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block PURPUR_PILLAR_STAIR = registerBlock("purpur_pillar_stairs",
+    public static final Block PURPUR_PILLAR_STAIRS = registerBlock("purpur_pillar_stairs",
             new ModStairsBlock(PURPUR_PILLAR.getDefaultState(), FabricBlockSettings.copy(PURPUR_PILLAR)), ModItemGroup.SLABSANDSTAIRS);
 
     // endregion
 
     // region Concrete
 
-    public static final Block BLACK_CONCRETE_STAIR = registerBlock("black_concrete_stairs",
+    public static final Block BLACK_CONCRETE_STAIRS = registerBlock("black_concrete_stairs",
             new ModStairsBlock(BLACK_CONCRETE.getDefaultState(), FabricBlockSettings.copy(BLACK_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block BLUE_CONCRETE_STAIR = registerBlock("blue_concrete_stairs",
+    public static final Block BLUE_CONCRETE_STAIRS = registerBlock("blue_concrete_stairs",
             new ModStairsBlock(BLUE_CONCRETE.getDefaultState(), FabricBlockSettings.copy(BLUE_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block BROWN_CONCRETE_STAIR = registerBlock("brown_concrete_stairs",
+    public static final Block BROWN_CONCRETE_STAIRS = registerBlock("brown_concrete_stairs",
             new ModStairsBlock(BROWN_CONCRETE.getDefaultState(), FabricBlockSettings.copy(BROWN_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CYAN_CONCRETE_STAIR = registerBlock("cyan_concrete_stairs",
+    public static final Block CYAN_CONCRETE_STAIRS = registerBlock("cyan_concrete_stairs",
             new ModStairsBlock(CYAN_CONCRETE.getDefaultState(), FabricBlockSettings.copy(CYAN_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block GRAY_CONCRETE_STAIR = registerBlock("gray_concrete_stairs",
+    public static final Block GRAY_CONCRETE_STAIRS = registerBlock("gray_concrete_stairs",
             new ModStairsBlock(GRAY_CONCRETE.getDefaultState(), FabricBlockSettings.copy(GRAY_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block GREEN_CONCRETE_STAIR = registerBlock("green_concrete_stairs",
+    public static final Block GREEN_CONCRETE_STAIRS = registerBlock("green_concrete_stairs",
             new ModStairsBlock(GREEN_CONCRETE.getDefaultState(), FabricBlockSettings.copy(GREEN_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block LIGHT_BLUE_CONCRETE_STAIR = registerBlock("light_blue_concrete_stairs",
+    public static final Block LIGHT_BLUE_CONCRETE_STAIRS = registerBlock("light_blue_concrete_stairs",
             new ModStairsBlock(LIGHT_BLUE_CONCRETE.getDefaultState(), FabricBlockSettings.copy(LIGHT_BLUE_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block LIGHT_GRAY_CONCRETE_STAIR = registerBlock("light_gray_concrete_stairs",
+    public static final Block LIGHT_GRAY_CONCRETE_STAIRS = registerBlock("light_gray_concrete_stairs",
             new ModStairsBlock(LIGHT_GRAY_CONCRETE.getDefaultState(), FabricBlockSettings.copy(LIGHT_GRAY_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block LIME_CONCRETE_STAIR = registerBlock("lime_concrete_stairs",
+    public static final Block LIME_CONCRETE_STAIRS = registerBlock("lime_concrete_stairs",
             new ModStairsBlock(LIME_CONCRETE.getDefaultState(), FabricBlockSettings.copy(LIME_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block MAGENTA_CONCRETE_STAIR = registerBlock("magenta_concrete_stairs",
+    public static final Block MAGENTA_CONCRETE_STAIRS = registerBlock("magenta_concrete_stairs",
             new ModStairsBlock(MAGENTA_CONCRETE.getDefaultState(), FabricBlockSettings.copy(MAGENTA_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block ORANGE_CONCRETE_STAIR = registerBlock("orange_concrete_stairs",
+    public static final Block ORANGE_CONCRETE_STAIRS = registerBlock("orange_concrete_stairs",
             new ModStairsBlock(ORANGE_CONCRETE.getDefaultState(), FabricBlockSettings.copy(ORANGE_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block PINK_CONCRETE_STAIR = registerBlock("pink_concrete_stairs",
+    public static final Block PINK_CONCRETE_STAIRS = registerBlock("pink_concrete_stairs",
             new ModStairsBlock(PINK_CONCRETE.getDefaultState(), FabricBlockSettings.copy(PINK_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block PURPLE_CONCRETE_STAIR = registerBlock("purple_concrete_stairs",
+    public static final Block PURPLE_CONCRETE_STAIRS = registerBlock("purple_concrete_stairs",
             new ModStairsBlock(PURPLE_CONCRETE.getDefaultState(), FabricBlockSettings.copy(PURPLE_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block RED_CONCRETE_STAIR = registerBlock("red_concrete_stairs",
+    public static final Block RED_CONCRETE_STAIRS = registerBlock("red_concrete_stairs",
             new ModStairsBlock(RED_CONCRETE.getDefaultState(), FabricBlockSettings.copy(RED_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block WHITE_CONCRETE_STAIR = registerBlock("white_concrete_stairs",
+    public static final Block WHITE_CONCRETE_STAIRS = registerBlock("white_concrete_stairs",
             new ModStairsBlock(WHITE_CONCRETE.getDefaultState(), FabricBlockSettings.copy(WHITE_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block YELLOW_CONCRETE_STAIR = registerBlock("yellow_concrete_stairs",
+    public static final Block YELLOW_CONCRETE_STAIRS = registerBlock("yellow_concrete_stairs",
             new ModStairsBlock(YELLOW_CONCRETE.getDefaultState(), FabricBlockSettings.copy(YELLOW_CONCRETE)), ModItemGroup.SLABSANDSTAIRS);
 
     // endregion
 
     // region Terracotta
 
-    public static final Block TERRACOTTA_STAIR = registerBlock("terracotta_stairs",
+    public static final Block TERRACOTTA_STAIRS = registerBlock("terracotta_stairs",
             new ModStairsBlock(TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block BLACK_TERRACOTTA_STAIR = registerBlock("black_terracotta_stairs",
+    public static final Block BLACK_TERRACOTTA_STAIRS = registerBlock("black_terracotta_stairs",
             new ModStairsBlock(BLACK_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(BLACK_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block BLACK_GLAZED_TERRACOTTA_STAIR = registerBlock("black_glazed_terracotta_stairs",
+    public static final Block BLACK_GLAZED_TERRACOTTA_STAIRS = registerBlock("black_glazed_terracotta_stairs",
             new ModStairsBlock(BLACK_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(BLACK_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block BLUE_TERRACOTTA_STAIR = registerBlock("blue_terracotta_stairs",
+    public static final Block BLUE_TERRACOTTA_STAIRS = registerBlock("blue_terracotta_stairs",
             new ModStairsBlock(BLUE_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(BLUE_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block BLUE_GLAZED_TERRACOTTA_STAIR = registerBlock("blue_glazed_terracotta_stairs",
+    public static final Block BLUE_GLAZED_TERRACOTTA_STAIRS = registerBlock("blue_glazed_terracotta_stairs",
             new ModStairsBlock(BLUE_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(BLUE_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block BROWN_TERRACOTTA_STAIR = registerBlock("brown_terracotta_stairs",
+    public static final Block BROWN_TERRACOTTA_STAIRS = registerBlock("brown_terracotta_stairs",
             new ModStairsBlock(BROWN_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(BROWN_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block BROWN_GLAZED_TERRACOTTA_STAIR = registerBlock("brown_glazed_terracotta_stairs",
+    public static final Block BROWN_GLAZED_TERRACOTTA_STAIRS = registerBlock("brown_glazed_terracotta_stairs",
             new ModStairsBlock(BROWN_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(BROWN_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CYAN_TERRACOTTA_STAIR = registerBlock("cyan_terracotta_stairs",
+    public static final Block CYAN_TERRACOTTA_STAIRS = registerBlock("cyan_terracotta_stairs",
             new ModStairsBlock(CYAN_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(CYAN_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block CYAN_GLAZED_TERRACOTTA_STAIR = registerBlock("cyan_glazed_terracotta_stairs",
+    public static final Block CYAN_GLAZED_TERRACOTTA_STAIRS = registerBlock("cyan_glazed_terracotta_stairs",
             new ModStairsBlock(CYAN_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(CYAN_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block GRAY_TERRACOTTA_STAIR = registerBlock("gray_terracotta_stairs",
+    public static final Block GRAY_TERRACOTTA_STAIRS = registerBlock("gray_terracotta_stairs",
             new ModStairsBlock(GRAY_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(GRAY_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block GRAY_GLAZED_TERRACOTTA_STAIR = registerBlock("gray_glazed_terracotta_stairs",
+    public static final Block GRAY_GLAZED_TERRACOTTA_STAIRS = registerBlock("gray_glazed_terracotta_stairs",
             new ModStairsBlock(GRAY_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(GRAY_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block GREEN_TERRACOTTA_STAIR = registerBlock("green_terracotta_stairs",
+    public static final Block GREEN_TERRACOTTA_STAIRS = registerBlock("green_terracotta_stairs",
             new ModStairsBlock(GREEN_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(GREEN_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block GREEN_GLAZED_TERRACOTTA_STAIR = registerBlock("green_glazed_terracotta_stairs",
+    public static final Block GREEN_GLAZED_TERRACOTTA_STAIRS = registerBlock("green_glazed_terracotta_stairs",
             new ModStairsBlock(GREEN_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(GREEN_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block LIGHT_BLUE_TERRACOTTA_STAIR = registerBlock("light_blue_terracotta_stairs",
+    public static final Block LIGHT_BLUE_TERRACOTTA_STAIRS = registerBlock("light_blue_terracotta_stairs",
             new ModStairsBlock(LIGHT_BLUE_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(LIGHT_BLUE_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block LIGHT_BLUE_GLAZED_TERRACOTTA_STAIR = registerBlock("light_blue_glazed_terracotta_stairs",
+    public static final Block LIGHT_BLUE_GLAZED_TERRACOTTA_STAIRS = registerBlock("light_blue_glazed_terracotta_stairs",
             new ModStairsBlock(LIGHT_BLUE_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(LIGHT_BLUE_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block LIGHT_GRAY_TERRACOTTA_STAIR = registerBlock("light_gray_terracotta_stairs",
+    public static final Block LIGHT_GRAY_TERRACOTTA_STAIRS = registerBlock("light_gray_terracotta_stairs",
             new ModStairsBlock(LIGHT_GRAY_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(LIGHT_GRAY_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block LIGHT_GRAY_GLAZED_TERRACOTTA_STAIR = registerBlock("light_gray_glazed_terracotta_stairs",
+    public static final Block LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS = registerBlock("light_gray_glazed_terracotta_stairs",
             new ModStairsBlock(LIGHT_GRAY_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(LIGHT_GRAY_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block LIME_TERRACOTTA_STAIR = registerBlock("lime_terracotta_stairs",
+    public static final Block LIME_TERRACOTTA_STAIRS = registerBlock("lime_terracotta_stairs",
             new ModStairsBlock(LIME_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(LIME_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block LIME_GLAZED_TERRACOTTA_STAIR = registerBlock("lime_glazed_terracotta_stairs",
+    public static final Block LIME_GLAZED_TERRACOTTA_STAIRS = registerBlock("lime_glazed_terracotta_stairs",
             new ModStairsBlock(LIME_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(LIME_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block MAGENTA_TERRACOTTA_STAIR = registerBlock("magenta_terracotta_stairs",
+    public static final Block MAGENTA_TERRACOTTA_STAIRS = registerBlock("magenta_terracotta_stairs",
             new ModStairsBlock(MAGENTA_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(MAGENTA_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block MAGENTA_GLAZED_TERRACOTTA_STAIR = registerBlock("magenta_glazed_terracotta_stairs",
+    public static final Block MAGENTA_GLAZED_TERRACOTTA_STAIRS = registerBlock("magenta_glazed_terracotta_stairs",
             new ModStairsBlock(MAGENTA_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(MAGENTA_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block ORANGE_TERRACOTTA_STAIR = registerBlock("orange_terracotta_stairs",
+    public static final Block ORANGE_TERRACOTTA_STAIRS = registerBlock("orange_terracotta_stairs",
             new ModStairsBlock(ORANGE_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(ORANGE_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block ORANGE_GLAZED_TERRACOTTA_STAIR = registerBlock("orange_glazed_terracotta_stairs",
+    public static final Block ORANGE_GLAZED_TERRACOTTA_STAIRS = registerBlock("orange_glazed_terracotta_stairs",
             new ModStairsBlock(ORANGE_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(ORANGE_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block PINK_TERRACOTTA_STAIR = registerBlock("pink_terracotta_stairs",
+    public static final Block PINK_TERRACOTTA_STAIRS = registerBlock("pink_terracotta_stairs",
             new ModStairsBlock(PINK_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(PINK_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block PINK_GLAZED_TERRACOTTA_STAIR = registerBlock("pink_glazed_terracotta_stairs",
+    public static final Block PINK_GLAZED_TERRACOTTA_STAIRS = registerBlock("pink_glazed_terracotta_stairs",
             new ModStairsBlock(PINK_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(PINK_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block PURPLE_TERRACOTTA_STAIR = registerBlock("purple_terracotta_stairs",
+    public static final Block PURPLE_TERRACOTTA_STAIRS = registerBlock("purple_terracotta_stairs",
             new ModStairsBlock(PURPLE_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(PURPLE_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block PURPLE_GLAZED_TERRACOTTA_STAIR = registerBlock("purple_glazed_terracotta_stairs",
+    public static final Block PURPLE_GLAZED_TERRACOTTA_STAIRS = registerBlock("purple_glazed_terracotta_stairs",
             new ModStairsBlock(PURPLE_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(PURPLE_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block RED_TERRACOTTA_STAIR = registerBlock("red_terracotta_stairs",
+    public static final Block RED_TERRACOTTA_STAIRS = registerBlock("red_terracotta_stairs",
             new ModStairsBlock(RED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(RED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block RED_GLAZED_TERRACOTTA_STAIR = registerBlock("red_glazed_terracotta_stairs",
+    public static final Block RED_GLAZED_TERRACOTTA_STAIRS = registerBlock("red_glazed_terracotta_stairs",
             new ModStairsBlock(RED_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(RED_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block WHITE_TERRACOTTA_STAIR = registerBlock("white_terracotta_stairs",
+    public static final Block WHITE_TERRACOTTA_STAIRS = registerBlock("white_terracotta_stairs",
             new ModStairsBlock(WHITE_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(WHITE_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block WHITE_GLAZED_TERRACOTTA_STAIR = registerBlock("white_glazed_terracotta_stairs",
+    public static final Block WHITE_GLAZED_TERRACOTTA_STAIRS = registerBlock("white_glazed_terracotta_stairs",
             new ModStairsBlock(WHITE_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(WHITE_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block YELLOW_TERRACOTTA_STAIR = registerBlock("yellow_terracotta_stairs",
+    public static final Block YELLOW_TERRACOTTA_STAIRS = registerBlock("yellow_terracotta_stairs",
             new ModStairsBlock(YELLOW_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(YELLOW_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
-    public static final Block YELLOW_GLAZED_TERRACOTTA_STAIR = registerBlock("yellow_glazed_terracotta_stairs",
+    public static final Block YELLOW_GLAZED_TERRACOTTA_STAIRS = registerBlock("yellow_glazed_terracotta_stairs",
             new ModStairsBlock(YELLOW_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(YELLOW_GLAZED_TERRACOTTA)), ModItemGroup.SLABSANDSTAIRS);
 
     // endregion
