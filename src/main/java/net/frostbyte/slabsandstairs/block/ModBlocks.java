@@ -1134,7 +1134,6 @@ public class ModBlocks {
     // endregion
 
     // region Wood
-
     public static final Block OAK_LOG_STAIR = registerBlock("oak_log_stairs",
             new ModStairsBlock(OAK_PLANKS.getDefaultState(), FabricBlockSettings.copy(OAK_PLANKS)), ModItemGroup.SLABSANDSTAIRS);
 

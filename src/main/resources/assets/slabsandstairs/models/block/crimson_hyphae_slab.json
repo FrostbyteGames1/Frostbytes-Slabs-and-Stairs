@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/slab",
   "textures": {
-    "bottom": "minecraft:block/crimson_hyphae",
-    "side": "minecraft:block/crimson_hyphae",
-    "top": "minecraft:block/crimson_hyphae"
+    "bottom": "minecraft:block/crimson_stem",
+    "side": "minecraft:block/crimson_stem",
+    "top": "minecraft:block/crimson_stem"
   }
 }

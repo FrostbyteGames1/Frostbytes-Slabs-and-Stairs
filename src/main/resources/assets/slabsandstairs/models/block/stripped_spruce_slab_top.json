@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/slab_top",
   "textures": {
-    "bottom": "minecraft:block/stripped_spruce",
-    "side": "minecraft:block/stripped_spruce",
-    "top": "minecraft:block/stripped_spruce"
+    "bottom": "minecraft:block/stripped_spruce_log_top",
+    "side": "minecraft:block/stripped_spruce_log",
+    "top": "minecraft:block/stripped_spruce_log_top"
   }
 }
