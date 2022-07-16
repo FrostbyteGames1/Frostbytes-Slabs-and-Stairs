@@ -22,6 +22,6 @@ This mod adds many partial-block variants of vanilla blocks, including concrete,
 
 ## Downloads:
 
-Modrinth - https://modrinth.com/mod/frostbytes-slabs-and-stairs
+Modrinth - https://modrinth.com/mod/frostbytes-slabs-stairs
 
 Curseforge - https://www.curseforge.com/minecraft/mc-mods/frostbytes-slabs-stairs
