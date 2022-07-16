@@ -15,7 +15,7 @@ import net.minecraft.util.registry.Registry;
 
 import static com.ibm.icu.util.MeasureUnit.QUART;
 import static net.minecraft.block.Blocks.*;
-import static net.minecraft.data.family.BlockFamily.Variant.CRACKED;
+import static net.minecraft.data.family.BlockFamily.Variant.*;
 
 public class ModBlocks {
 
