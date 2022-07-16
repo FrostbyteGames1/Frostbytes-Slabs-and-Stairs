@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "slabsandstairs:oak_wood_pressure_plate",
+    "slabsandstairs:spruce_wood_pressure_plate",
+    "slabsandstairs:birch_wood_pressure_plate",
+    "slabsandstairs:jungle_wood_pressure_plate",
+    "slabsandstairs:acacia_wood_pressure_plate",
+    "slabsandstairs:dark_oak_wood_pressure_plate",
+    "slabsandstairs:mangrove_wood_pressure_plate",
+    "slabsandstairs:warped_hyphae_pressure_plate",
+    "slabsandstairs:crimson_hyphae_pressure_plate",
+    "slabsandstairs:stripped_oak_pressure_plate",
+    "slabsandstairs:stripped_spruce_pressure_plate",
+    "slabsandstairs:stripped_birch_pressure_plate",
+    "slabsandstairs:stripped_jungle_pressure_plate",
+    "slabsandstairs:stripped_acacia_pressure_plate",
+    "slabsandstairs:stripped_dark_oak_pressure_plate",
+    "slabsandstairs:stripped_mangrove_pressure_plate",
+    "slabsandstairs:stripped_warped_pressure_plate",
+    "slabsandstairs:stripped_crimson_pressure_plate"
+  ]
+}

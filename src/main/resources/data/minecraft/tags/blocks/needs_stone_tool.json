@@ -10,6 +10,18 @@
     "slabsandstairs:copper_pressure_plate",
     "slabsandstairs:exposed_copper_pressure_plate",
     "slabsandstairs:weathered_copper_pressure_plate",
-    "slabsandstairs:oxidized_copper_pressure_plate"
+    "slabsandstairs:oxidized_copper_pressure_plate",
+    
+    "slabsandstairs:copper_slab",
+    "slabsandstairs:exposed_copper_slab",
+    "slabsandstairs:weathered_copper_slab",
+    "slabsandstairs:oxidized_copper_slab",
+    "slabsandstairs:iron_slab",
+
+    "slabsandstairs:copper_stairs",
+    "slabsandstairs:exposed_copper_stairs",
+    "slabsandstairs:weathered_copper_stairs",
+    "slabsandstairs:oxidized_copper_stairs",
+    "slabsandstairs:iron_stairs"
   ]
 }

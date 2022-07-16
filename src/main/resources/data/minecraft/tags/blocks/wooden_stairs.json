@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "slabsandstairs:oak_wood_stairs",
+    "slabsandstairs:spruce_wood_stairs",
+    "slabsandstairs:birch_wood_stairs",
+    "slabsandstairs:jungle_wood_stairs",
+    "slabsandstairs:acacia_wood_stairs",
+    "slabsandstairs:dark_oak_wood_stairs",
+    "slabsandstairs:crimson_hyphae_stairs",
+    "slabsandstairs:warped_hyphae_stairs",
+    "slabsandstairs:mangrove_wood_stairs",
+    "slabsandstairs:oak_log_stairs",
+    "slabsandstairs:spruce_log_stairs",
+    "slabsandstairs:birch_log_stairs",
+    "slabsandstairs:jungle_log_stairs",
+    "slabsandstairs:acacia_log_stairs",
+    "slabsandstairs:dark_oak_log_stairs",
+    "slabsandstairs:crimson_stem_stairs",
+    "slabsandstairs:warped_stem_stairs",
+    "slabsandstairs:mangrove_log_stairs",
+    "slabsandstairs:stripped_oak_stairs",
+    "slabsandstairs:stripped_spruce_stairs",
+    "slabsandstairs:stripped_birch_stairs",
+    "slabsandstairs:stripped_jungle_stairs",
+    "slabsandstairs:stripped_acacia_stairs",
+    "slabsandstairs:stripped_dark_oak_stairs",
+    "slabsandstairs:stripped_crimson_stairs",
+    "slabsandstairs:stripped_warped_stairs",
+    "slabsandstairs:stripped_mangrove_stairs"
+  ]
+}
