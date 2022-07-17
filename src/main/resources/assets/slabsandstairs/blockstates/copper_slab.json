@@ -4,7 +4,7 @@
       "model": "slabsandstairs:block/copper_slab"
     },
     "type=double": {
-      "model": "minecraft:block/copper"
+      "model": "minecraft:block/copper_block"
     },
     "type=top": {
       "model": "slabsandstairs:block/copper_slab_top"

@@ -4,7 +4,7 @@
       "model": "slabsandstairs:block/chiseled_quartz_slab"
     },
     "type=double": {
-      "model": "minecraft:block/chiseled_quartz"
+      "model": "minecraft:block/chiseled_quartz_block"
     },
     "type=top": {
       "model": "slabsandstairs:block/chiseled_quartz_slab_top"

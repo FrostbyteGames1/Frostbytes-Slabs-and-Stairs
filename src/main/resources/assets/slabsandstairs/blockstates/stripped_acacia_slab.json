@@ -4,7 +4,7 @@
       "model": "slabsandstairs:block/stripped_acacia_slab"
     },
     "type=double": {
-      "model": "minecraft:block/stripped_acacia"
+      "model": "minecraft:block/stripped_acacia_log"
     },
     "type=top": {
       "model": "slabsandstairs:block/stripped_acacia_slab_top"

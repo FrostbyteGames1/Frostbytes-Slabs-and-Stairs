@@ -4,7 +4,7 @@
       "model": "slabsandstairs:block/stripped_mangrove_slab"
     },
     "type=double": {
-      "model": "minecraft:block/stripped_mangrove"
+      "model": "minecraft:block/stripped_mangrove_log"
     },
     "type=top": {
       "model": "slabsandstairs:block/stripped_mangrove_slab_top"

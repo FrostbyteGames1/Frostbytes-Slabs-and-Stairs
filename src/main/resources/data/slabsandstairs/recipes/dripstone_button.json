@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:dripstone"
+      "item": "minecraft:dripstone_block"
     }
   ],
   "result": {

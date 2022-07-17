@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:stripped_birch"
+      "item": "minecraft:stripped_birch_log"
     }
   },
   "pattern": [

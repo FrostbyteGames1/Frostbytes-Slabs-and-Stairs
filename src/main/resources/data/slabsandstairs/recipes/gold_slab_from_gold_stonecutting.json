@@ -4,5 +4,5 @@
   "ingredient": {
     "item": "minecraft:gold_block"
   },
-  "result": "slabsandstairs:gold_block_slab"
+  "result": "slabsandstairs:gold_slab"
 }

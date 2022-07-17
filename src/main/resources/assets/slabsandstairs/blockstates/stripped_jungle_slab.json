@@ -4,7 +4,7 @@
       "model": "slabsandstairs:block/stripped_jungle_slab"
     },
     "type=double": {
-      "model": "minecraft:block/stripped_jungle"
+      "model": "minecraft:block/stripped_jungle_log"
     },
     "type=top": {
       "model": "slabsandstairs:block/stripped_jungle_slab_top"

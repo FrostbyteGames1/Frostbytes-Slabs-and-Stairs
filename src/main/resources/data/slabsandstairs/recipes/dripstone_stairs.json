@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:dripstone"
+      "item": "minecraft:dripstone_block"
     }
   },
   "pattern": [

@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:chiseled_polished_basalt"
+      "item": "minecraft:chiseled_polished_blackstone"
     }
   },
   "pattern": [
@@ -11,6 +11,6 @@
   ],
   "result": {
     "count": 6,
-    "item": "slabsandstairs:chiseled_polished_basalt_wall"
+    "item": "slabsandstairs:chiseled_polished_blackstone_wall"
   }
 }

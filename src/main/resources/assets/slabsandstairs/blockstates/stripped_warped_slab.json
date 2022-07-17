@@ -4,7 +4,7 @@
       "model": "slabsandstairs:block/stripped_warped_slab"
     },
     "type=double": {
-      "model": "minecraft:block/stripped_warped"
+      "model": "minecraft:block/stripped_warped_stem"
     },
     "type=top": {
       "model": "slabsandstairs:block/stripped_warped_slab_top"

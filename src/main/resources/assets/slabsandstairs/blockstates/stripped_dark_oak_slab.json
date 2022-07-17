@@ -4,7 +4,7 @@
       "model": "slabsandstairs:block/stripped_dark_oak_slab"
     },
     "type=double": {
-      "model": "minecraft:block/stripped_dark_oak"
+      "model": "minecraft:block/stripped_dark_oak_log"
     },
     "type=top": {
       "model": "slabsandstairs:block/stripped_dark_oak_slab_top"

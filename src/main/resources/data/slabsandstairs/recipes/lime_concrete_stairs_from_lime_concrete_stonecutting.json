@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "item": "minecraft:lime_concrete_"
+    "item": "minecraft:lime_concrete"
   },
   "result": "slabsandstairs:lime_concrete_stairs"
 }

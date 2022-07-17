@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:nether_brick"
+      "item": "minecraft:nether_bricks"
     },
     "W": {
       "item": "minecraft:red_nether_bricks"

@@ -1,20 +1,20 @@
 {
   "replace": false,
   "values": [
-    "slabsandstairs.diorite_pressure_plate",
-    "slabsandstairs.andesite_pressure_plate",
-    "slabsandstairs.granite_pressure_plate",
-    "slabsandstairs.sandstone_pressure_plate",
-    "slabsandstairs.red_sandstone_pressure_plate",
-    "slabsandstairs.basalt_pressure_plate",
-    "slabsandstairs.blackstone_pressure_plate",
-    "slabsandstairs.calcite_pressure_plate",
-    "slabsandstairs.tuff_pressure_plate",
-    "slabsandstairs.deepslate_pressure_plate",
-    "slabsandstairs.dripstone_pressure_plate",
-    "slabsandstairs.copper_pressure_plate",
-    "slabsandstairs.exposed_copper_pressure_plate",
-    "slabsandstairs.weathered_copper_pressure_plate",
-    "slabsandstairs.oxidized_copper_pressure_plate"
+    "slabsandstairs:diorite_pressure_plate",
+    "slabsandstairs:andesite_pressure_plate",
+    "slabsandstairs:granite_pressure_plate",
+    "slabsandstairs:sandstone_pressure_plate",
+    "slabsandstairs:red_sandstone_pressure_plate",
+    "slabsandstairs:basalt_pressure_plate",
+    "slabsandstairs:blackstone_pressure_plate",
+    "slabsandstairs:calcite_pressure_plate",
+    "slabsandstairs:tuff_pressure_plate",
+    "slabsandstairs:deepslate_pressure_plate",
+    "slabsandstairs:dripstone_pressure_plate",
+    "slabsandstairs:copper_pressure_plate",
+    "slabsandstairs:exposed_copper_pressure_plate",
+    "slabsandstairs:weathered_copper_pressure_plate",
+    "slabsandstairs:oxidized_copper_pressure_plate"
   ]
 }

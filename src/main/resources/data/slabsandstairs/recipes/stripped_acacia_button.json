@@ -3,7 +3,7 @@
   "group": "wooden_button",
   "ingredients": [
     {
-      "item": "minecraft:stripped_acacia_wood"
+      "item": "minecraft:stripped_acacia_log"
     }
   ],
   "result": {

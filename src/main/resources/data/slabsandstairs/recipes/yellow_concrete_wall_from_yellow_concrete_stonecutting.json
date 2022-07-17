@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "count": 1,
-  "ingyellowient": {
+  "ingredient": {
     "item": "minecraft:yellow_concrete"
   },
   "result": "slabsandstairs:yellow_concrete_wall"

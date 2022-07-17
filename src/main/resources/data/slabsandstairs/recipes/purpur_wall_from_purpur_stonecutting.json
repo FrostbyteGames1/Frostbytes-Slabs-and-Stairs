@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "item": "minecraft:purpur"
+    "item": "minecraft:purpur_block"
   },
   "result": "slabsandstairs:purpur_wall"
 }

@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:lime_concrete_"
+      "item": "minecraft:lime_concrete"
     }
   },
   "pattern": [

@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:chiseled_quartz"
+      "item": "minecraft:chiseled_quartz_block"
     }
   },
   "pattern": [
