@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "item": "minecraft:copper"
+    "item": "minecraft:copper_block"
   },
   "result": "slabsandstairs:copper_stairs"
 }
