@@ -1,6 +1,16 @@
 {
   "replace": false,
   "values": [
+    "slabsandstairs:copper_wall",
+    "slabsandstairs:exposed_copper_wall",
+    "slabsandstairs:weathered_copper_wall",
+    "slabsandstairs:oxidized_copper_wall",
+    "slabsandstairs:cut_copper_wall",
+    "slabsandstairs:exposed_cut_copper_wall",
+    "slabsandstairs:weathered_cut_copper_wall",
+    "slabsandstairs:oxidized_cut_copper_wall",
+    "slabsandstairs:iron_wall",
+    "slabsandstairs:gold_wall",
     "slabsandstairs:polished_diorite_wall",
     "slabsandstairs:stone_wall",
     "slabsandstairs:chiseled_stone_brick_wall",

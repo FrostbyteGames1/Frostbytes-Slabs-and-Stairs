@@ -22,6 +22,16 @@
     "slabsandstairs:exposed_copper_stairs",
     "slabsandstairs:weathered_copper_stairs",
     "slabsandstairs:oxidized_copper_stairs",
-    "slabsandstairs:iron_stairs"
+    "slabsandstairs:iron_stairs",
+
+    "slabsandstairs:copper_wall",
+    "slabsandstairs:exposed_copper_wall",
+    "slabsandstairs:weathered_copper_wall",
+    "slabsandstairs:oxidized_copper_wall",
+    "slabsandstairs:cut_copper_wall",
+    "slabsandstairs:exposed_cut_copper_wall",
+    "slabsandstairs:weathered_cut_copper_wall",
+    "slabsandstairs:oxidized_cut_copper_wall",
+    "slabsandstairs:iron_wall"
   ]
 }

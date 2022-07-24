@@ -505,6 +505,40 @@ public class ModBlocks {
 
     // region WALLS:
 
+    // region Metal
+
+    public static final Block COPPER_WALL = registerBlock("copper_wall",
+            new WallBlock(FabricBlockSettings.copy(COPPER_BLOCK)), ModItemGroup.SLABSANDSTAIRS);
+
+    public static final Block EXPOSED_COPPER_WALL = registerBlock("exposed_copper_wall",
+            new WallBlock(FabricBlockSettings.copy(EXPOSED_COPPER)), ModItemGroup.SLABSANDSTAIRS);
+
+    public static final Block WEATHERED_COPPER_WALL = registerBlock("weathered_copper_wall",
+            new WallBlock(FabricBlockSettings.copy(WEATHERED_COPPER)), ModItemGroup.SLABSANDSTAIRS);
+
+    public static final Block OXIDIZED_COPPER_WALL = registerBlock("oxidized_copper_wall",
+            new WallBlock(FabricBlockSettings.copy(OXIDIZED_COPPER)), ModItemGroup.SLABSANDSTAIRS);
+
+    public static final Block CUT_COPPER_WALL = registerBlock("cut_copper_wall",
+            new WallBlock(FabricBlockSettings.copy(CUT_COPPER)), ModItemGroup.SLABSANDSTAIRS);
+
+    public static final Block EXPOSED_CUT_COPPER_WALL = registerBlock("exposed_cut_copper_wall",
+            new WallBlock(FabricBlockSettings.copy(EXPOSED_CUT_COPPER)), ModItemGroup.SLABSANDSTAIRS);
+
+    public static final Block WEATHERED_CUT_COPPER_WALL = registerBlock("weathered_cut_copper_wall",
+            new WallBlock(FabricBlockSettings.copy(WEATHERED_CUT_COPPER)), ModItemGroup.SLABSANDSTAIRS);
+
+    public static final Block OXIDIZED_CUT_COPPER_WALL = registerBlock("oxidized_cut_copper_wall",
+            new WallBlock(FabricBlockSettings.copy(OXIDIZED_CUT_COPPER)), ModItemGroup.SLABSANDSTAIRS);
+
+    public static final Block IRON_WALL = registerBlock("iron_wall",
+            new WallBlock(FabricBlockSettings.copy(IRON_BLOCK)), ModItemGroup.SLABSANDSTAIRS);
+
+    public static final Block GOLD_WALL = registerBlock("gold_wall",
+            new WallBlock(FabricBlockSettings.copy(GOLD_BLOCK)), ModItemGroup.SLABSANDSTAIRS);
+
+    // endregion
+
     // region Stone
 
     public static final Block STONE_WALL = registerBlock("stone_wall",

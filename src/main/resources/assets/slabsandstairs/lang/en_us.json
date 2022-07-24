@@ -119,7 +119,18 @@
 
   "block.slabsandstairs.nether_brick_fence_gate": "Nether Brick Fence Gate",
   "block.slabsandstairs.red_nether_brick_fence_gate": "Red Nether Brick Fence Gate",
-  
+
+  "block.slabsandstairs.copper_wall": "Copper Wall",
+  "block.slabsandstairs.exposed_copper_wall": "Exposed Copper Wall",
+  "block.slabsandstairs.weathered_copper_wall": "Weathered Copper Wall",
+  "block.slabsandstairs.oxidized_copper_wall": "Oxidized Copper Wall",
+  "block.slabsandstairs.cut_copper_wall": "Cut Copper Wall",
+  "block.slabsandstairs.exposed_cut_copper_wall": "Exposed Cut Copper Wall",
+  "block.slabsandstairs.weathered_cut_copper_wall": "Weathered Cut Copper Wall",
+  "block.slabsandstairs.oxidized_cut_copper_wall": "Oxidized Cut Copper Wall",
+  "block.slabsandstairs.iron_wall": "Iron Wall",
+  "block.slabsandstairs.gold_wall": "Gold Wall",
+
   "block.slabsandstairs.stone_wall": "Stone Wall",
   "block.slabsandstairs.chiseled_stone_brick_wall": "Chiseled Stone Brick Wall",
   "block.slabsandstairs.cracked_stone_brick_wall": "Cracked Stone Brick Wall",

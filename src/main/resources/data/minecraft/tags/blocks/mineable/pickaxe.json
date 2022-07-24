@@ -40,6 +40,17 @@
     "slabsandstairs:red_nether_brick_fence",
 
     "slabsandstairs:nether_brick_fence_gate",
-    "slabsandstairs:red_nether_brick_fence_gate"
+    "slabsandstairs:red_nether_brick_fence_gate",
+
+    "slabsandstairs:copper_wall",
+    "slabsandstairs:exposed_copper_wall",
+    "slabsandstairs:weathered_copper_wall",
+    "slabsandstairs:oxidized_copper_wall",
+    "slabsandstairs:cut_copper_wall",
+    "slabsandstairs:exposed_cut_copper_wall",
+    "slabsandstairs:weathered_cut_copper_wall",
+    "slabsandstairs:oxidized_cut_copper_wall",
+    "slabsandstairs:iron_wall",
+    "slabsandstairs:gold_wall"
   ]
 }
