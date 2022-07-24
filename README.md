@@ -4,7 +4,7 @@
 
 This mod adds many partial-block variants of vanilla blocks, including concrete, terracotta, the decorative stone types, and more. The reasoning behind which blocks received which variants was decided somewhat arbitrarily, but follows this basic form:
 
-- Walls were given to all stone-type blocks
+- Walls were given to all metal- and stone-type blocks
 - Slabs and Stairs were given to all metal-, wood-, and stone-type blocks
 - Fences and Fence Gates were given to all wood-type blocks and nether bricks
 - Buttons and Pressure Plates were given to all metal, wood- and base form stone-types (excludes, cracked, chiseled, etc.)
