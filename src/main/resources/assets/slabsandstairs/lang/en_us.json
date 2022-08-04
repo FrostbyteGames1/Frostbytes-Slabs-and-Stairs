@@ -1,7 +1,6 @@
 {
-  "item.slabsandstairs.example_item": "Example Item",
-
-  "block.slabsandstairs.example_block": "Example Block",
+  "block.slabsandstairs.sawmill": "Sawmill",
+  "container.slabsandstairs.sawmill": "Sawmill",
 
   "block.slabsandstairs.copper_button": "Copper Button",
   "block.slabsandstairs.exposed_copper_button": "Exposed Copper Button",

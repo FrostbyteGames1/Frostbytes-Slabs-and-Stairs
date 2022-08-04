@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "slabsandstairs:sawmill",
+
     "slabsandstairs:oak_wood_button",
     "slabsandstairs:spruce_wood_button",
     "slabsandstairs:birch_wood_button",

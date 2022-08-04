@@ -1,0 +1,8 @@
+{
+  "type": "slabsandstairs:sawmill",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:stripped_jungle_log"
+  },
+  "result": "slabsandstairs:stripped_jungle_stairs"
+}

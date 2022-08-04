@@ -1,0 +1,8 @@
+{
+  "type": "slabsandstairs:sawmill",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:oak_wood"
+  },
+  "result": "slabsandstairs:oak_wood_fence"
+}

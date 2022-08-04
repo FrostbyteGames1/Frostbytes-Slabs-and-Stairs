@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:exposed_copper"
+      "item": "slabsandstairs:copper_button"
     }
   ],
   "result": {

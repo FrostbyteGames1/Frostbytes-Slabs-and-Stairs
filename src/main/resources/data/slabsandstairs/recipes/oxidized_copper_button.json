@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:oxidized_copper"
+      "item": "slabsandstairs:weathered_copper_button"
     }
   ],
   "result": {

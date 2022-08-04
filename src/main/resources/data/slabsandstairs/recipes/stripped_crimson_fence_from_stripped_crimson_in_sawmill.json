@@ -1,0 +1,8 @@
+{
+  "type": "slabsandstairs:sawmill",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:stripped_crimson_stem"
+  },
+  "result": "slabsandstairs:stripped_crimson_fence"
+}

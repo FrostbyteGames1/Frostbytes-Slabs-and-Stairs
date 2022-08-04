@@ -19,6 +19,9 @@ import static net.minecraft.data.family.BlockFamily.Variant.*;
 
 public class ModBlocks {
 
+    public static final Block SAWMILL = registerBlock("sawmill",
+            new SawmillBlock(FabricBlockSettings.of(Material.WOOD).requiresTool().strength(3.5F)), ModItemGroup.SLABSANDSTAIRS);
+
     // region BUTTONS:
 
     // region Metal

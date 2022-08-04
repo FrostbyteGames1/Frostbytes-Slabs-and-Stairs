@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "slabsandstairs:block/sawmill",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "slabsandstairs:block/sawmill"
+    },
+    "facing=south": {
+      "model": "slabsandstairs:block/sawmill",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "slabsandstairs:block/sawmill",
+      "y": 270
+    }
+  }
+}

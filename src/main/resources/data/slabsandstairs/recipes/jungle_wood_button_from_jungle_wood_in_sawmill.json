@@ -1,0 +1,8 @@
+{
+  "type": "slabsandstairs:sawmill",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:jungle_wood"
+  },
+  "result": "slabsandstairs:jungle_wood_button"
+}

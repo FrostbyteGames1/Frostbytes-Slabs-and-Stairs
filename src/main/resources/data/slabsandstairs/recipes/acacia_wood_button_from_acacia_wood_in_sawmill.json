@@ -1,0 +1,8 @@
+{
+  "type": "slabsandstairs:sawmill",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:acacia_wood"
+  },
+  "result": "slabsandstairs:acacia_wood_button"
+}

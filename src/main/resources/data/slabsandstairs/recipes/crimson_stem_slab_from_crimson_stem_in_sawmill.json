@@ -1,0 +1,8 @@
+{
+  "type": "slabsandstairs:sawmill",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:crimson_stem"
+  },
+  "result": "slabsandstairs:crimson_stem_slab"
+}
