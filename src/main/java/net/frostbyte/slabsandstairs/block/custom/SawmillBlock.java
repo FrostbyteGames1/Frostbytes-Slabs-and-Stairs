@@ -1,19 +1,13 @@
 package net.frostbyte.slabsandstairs.block.custom;
 
-import net.frostbyte.slabsandstairs.block.entity.ModBlockEntities;
-import net.frostbyte.slabsandstairs.block.entity.SawmillBlockEntity;
+import net.frostbyte.slabsandstairs.screen.SawmillScreenHandler;
 import net.minecraft.block.*;
-import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityTicker;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
-import net.frostbyte.slabsandstairs.screen.SawmillScreenHandler;
-import net.minecraft.stat.Stats;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Property;
@@ -30,12 +24,12 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class SawmillBlock extends BlockWithEntity implements BlockEntityProvider {
+public class SawmillBlock extends Block {
     private static final Text TITLE = Text.translatable("container.slabsandstairs.sawmill");
     public static final DirectionProperty FACING;
     protected static final VoxelShape SHAPE;
 
-    public SawmillBlock(AbstractBlock.Settings settings) {
+    public SawmillBlock(Settings settings) {
         super(settings);
         this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(FACING, Direction.NORTH));
     }
@@ -49,7 +43,6 @@ public class SawmillBlock extends BlockWithEntity implements BlockEntityProvider
             return ActionResult.SUCCESS;
         } else {
             player.openHandledScreen(state.createScreenHandlerFactory(world, pos));
-            player.incrementStat(Stats.INTERACT_WITH_STONECUTTER);
             return ActionResult.CONSUME;
         }
     }
@@ -91,12 +84,6 @@ public class SawmillBlock extends BlockWithEntity implements BlockEntityProvider
 
     static {
         FACING = HorizontalFacingBlock.FACING;
-        SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 9.0, 16.0);
-    }
-
-    @Nullable
-    @Override
-    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new SawmillBlockEntity(pos, state);
+        SHAPE = Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 9.0D, 16.0D);
     }
 }

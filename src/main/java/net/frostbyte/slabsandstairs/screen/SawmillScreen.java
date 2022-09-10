@@ -1,7 +1,6 @@
 package net.frostbyte.slabsandstairs.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import java.util.List;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.frostbyte.slabsandstairs.recipe.SawmillRecipe;
@@ -16,8 +15,11 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 
+import java.util.List;
+
 @Environment(EnvType.CLIENT)
 public class SawmillScreen extends HandledScreen<SawmillScreenHandler> {
+
     private static final Identifier TEXTURE = new Identifier("textures/gui/container/stonecutter.png");
     private static final int SCROLLBAR_WIDTH = 12;
     private static final int SCROLLBAR_HEIGHT = 15;
@@ -123,7 +125,7 @@ public class SawmillScreen extends HandledScreen<SawmillScreenHandler> {
                 int m = l - this.scrollOffset;
                 double d = mouseX - (double)(i + m % 4 * 16);
                 double e = mouseY - (double)(j + m / 4 * 18);
-                if (d >= 0.0 && e >= 0.0 && d < 16.0 && e < 18.0 && ((SawmillScreenHandler)this.handler).onButtonClick(this.client.player, l)) {
+                if (d >= 0.0D && e >= 0.0D && d < 16.0D && e < 18.0D && ((SawmillScreenHandler)this.handler).onButtonClick(this.client.player, l)) {
                     MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_STONECUTTER_SELECT_RECIPE, 1.0F));
                     this.client.interactionManager.clickButton(((SawmillScreenHandler)this.handler).syncId, l);
                     return true;
@@ -146,7 +148,7 @@ public class SawmillScreen extends HandledScreen<SawmillScreenHandler> {
             int j = i + 54;
             this.scrollAmount = ((float)mouseY - (float)i - 7.5F) / ((float)(j - i) - 15.0F);
             this.scrollAmount = MathHelper.clamp(this.scrollAmount, 0.0F, 1.0F);
-            this.scrollOffset = (int)((double)(this.scrollAmount * (float)this.getMaxScroll()) + 0.5) * 4;
+            this.scrollOffset = (int)((double)(this.scrollAmount * (float)this.getMaxScroll()) + 0.5D) * 4;
             return true;
         } else {
             return super.mouseDragged(mouseX, mouseY, button, deltaX, deltaY);
@@ -158,7 +160,7 @@ public class SawmillScreen extends HandledScreen<SawmillScreenHandler> {
             int i = this.getMaxScroll();
             float f = (float)amount / (float)i;
             this.scrollAmount = MathHelper.clamp(this.scrollAmount - f, 0.0F, 1.0F);
-            this.scrollOffset = (int)((double)(this.scrollAmount * (float)i) + 0.5) * 4;
+            this.scrollOffset = (int)((double)(this.scrollAmount * (float)i) + 0.5D) * 4;
         }
 
         return true;

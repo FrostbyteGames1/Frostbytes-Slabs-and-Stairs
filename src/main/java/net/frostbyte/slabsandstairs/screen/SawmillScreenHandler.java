@@ -1,9 +1,6 @@
 package net.frostbyte.slabsandstairs.screen;
 
 import com.google.common.collect.Lists;
-import java.util.List;
-
-import net.frostbyte.slabsandstairs.block.ModBlocks;
 import net.frostbyte.slabsandstairs.recipe.SawmillRecipe;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -12,7 +9,6 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.recipe.RecipeType;
 import net.minecraft.screen.Property;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerContext;
@@ -22,7 +18,12 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
 
+import java.util.List;
+
+import static net.frostbyte.slabsandstairs.block.ModBlocks.SAWMILL;
+
 public class SawmillScreenHandler extends ScreenHandler {
+
     public static final int field_30842 = 0;
     public static final int field_30843 = 1;
     private static final int field_30844 = 2;
@@ -45,7 +46,7 @@ public class SawmillScreenHandler extends ScreenHandler {
         this(syncId, playerInventory, ScreenHandlerContext.EMPTY);
     }
 
-    public SawmillScreenHandler(int syncId, PlayerInventory playerInventory, final ScreenHandlerContext context) {
+    public SawmillScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
         super(ModScreenHandlers.SAWMILL_SCREEN_HANDLER, syncId);
         this.selectedRecipe = Property.create();
         this.availableRecipes = Lists.newArrayList();
@@ -55,8 +56,8 @@ public class SawmillScreenHandler extends ScreenHandler {
         this.input = new SimpleInventory(1) {
             public void markDirty() {
                 super.markDirty();
-                net.frostbyte.slabsandstairs.screen.SawmillScreenHandler.this.onContentChanged(this);
-                net.frostbyte.slabsandstairs.screen.SawmillScreenHandler.this.contentsChangedListener.run();
+                SawmillScreenHandler.this.onContentChanged(this);
+                SawmillScreenHandler.this.contentsChangedListener.run();
             }
         };
         this.output = new CraftingResultInventory();
@@ -70,17 +71,17 @@ public class SawmillScreenHandler extends ScreenHandler {
 
             public void onTakeItem(PlayerEntity player, ItemStack stack) {
                 stack.onCraft(player.world, player, stack.getCount());
-                net.frostbyte.slabsandstairs.screen.SawmillScreenHandler.this.output.unlockLastRecipe(player);
-                ItemStack itemStack = net.frostbyte.slabsandstairs.screen.SawmillScreenHandler.this.inputSlot.takeStack(1);
+                SawmillScreenHandler.this.output.unlockLastRecipe(player);
+                ItemStack itemStack = SawmillScreenHandler.this.inputSlot.takeStack(1);
                 if (!itemStack.isEmpty()) {
-                    net.frostbyte.slabsandstairs.screen.SawmillScreenHandler.this.populateResult();
+                    SawmillScreenHandler.this.populateResult();
                 }
 
                 context.run((world, pos) -> {
                     long l = world.getTime();
-                    if (net.frostbyte.slabsandstairs.screen.SawmillScreenHandler.this.lastTakeTime != l) {
+                    if (SawmillScreenHandler.this.lastTakeTime != l) {
                         world.playSound((PlayerEntity)null, pos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundCategory.BLOCKS, 1.0F, 1.0F);
-                        net.frostbyte.slabsandstairs.screen.SawmillScreenHandler.this.lastTakeTime = l;
+                        SawmillScreenHandler.this.lastTakeTime = l;
                     }
 
                 });
@@ -119,7 +120,7 @@ public class SawmillScreenHandler extends ScreenHandler {
     }
 
     public boolean canUse(PlayerEntity player) {
-        return canUse(this.context, player, ModBlocks.SAWMILL);
+        return canUse(this.context, player, SAWMILL);
     }
 
     public boolean onButtonClick(PlayerEntity player, int id) {
