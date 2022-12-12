@@ -1,6 +1,7 @@
 package net.frostbyte.slabsandstairs.screen;
 
 import com.google.common.collect.Lists;
+import net.frostbyte.slabsandstairs.block.ModBlocks;
 import net.frostbyte.slabsandstairs.recipe.SawmillRecipe;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -19,8 +20,6 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
 
 import java.util.List;
-
-import static net.frostbyte.slabsandstairs.block.ModBlocks.SAWMILL;
 
 public class SawmillScreenHandler extends ScreenHandler {
 
@@ -120,7 +119,7 @@ public class SawmillScreenHandler extends ScreenHandler {
     }
 
     public boolean canUse(PlayerEntity player) {
-        return canUse(this.context, player, SAWMILL);
+        return canUse(this.context, player, ModBlocks.SAWMILL);
     }
 
     public boolean onButtonClick(PlayerEntity player, int id) {
@@ -179,21 +178,21 @@ public class SawmillScreenHandler extends ScreenHandler {
         return slot.inventory != this.output && super.canInsertIntoSlot(stack, slot);
     }
 
-    public ItemStack transferSlot(PlayerEntity player, int index) {
+    public ItemStack quickMove(PlayerEntity player, int slot) {
         ItemStack itemStack = ItemStack.EMPTY;
-        Slot slot = (Slot)this.slots.get(index);
-        if (slot != null && slot.hasStack()) {
-            ItemStack itemStack2 = slot.getStack();
+        Slot slot2 = (Slot)this.slots.get(slot);
+        if (slot2 != null && slot2.hasStack()) {
+            ItemStack itemStack2 = slot2.getStack();
             Item item = itemStack2.getItem();
             itemStack = itemStack2.copy();
-            if (index == 1) {
+            if (slot == 1) {
                 item.onCraft(itemStack2, player.world, player);
                 if (!this.insertItem(itemStack2, 2, 38, true)) {
                     return ItemStack.EMPTY;
                 }
 
-                slot.onQuickTransfer(itemStack2, itemStack);
-            } else if (index == 0) {
+                slot2.onQuickTransfer(itemStack2, itemStack);
+            } else if (slot == 0) {
                 if (!this.insertItem(itemStack2, 2, 38, false)) {
                     return ItemStack.EMPTY;
                 }
@@ -201,24 +200,24 @@ public class SawmillScreenHandler extends ScreenHandler {
                 if (!this.insertItem(itemStack2, 0, 1, false)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (index >= 2 && index < 29) {
+            } else if (slot >= 2 && slot < 29) {
                 if (!this.insertItem(itemStack2, 29, 38, false)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (index >= 29 && index < 38 && !this.insertItem(itemStack2, 2, 29, false)) {
+            } else if (slot >= 29 && slot < 38 && !this.insertItem(itemStack2, 2, 29, false)) {
                 return ItemStack.EMPTY;
             }
 
             if (itemStack2.isEmpty()) {
-                slot.setStack(ItemStack.EMPTY);
+                slot2.setStack(ItemStack.EMPTY);
             }
 
-            slot.markDirty();
+            slot2.markDirty();
             if (itemStack2.getCount() == itemStack.getCount()) {
                 return ItemStack.EMPTY;
             }
 
-            slot.onTakeItem(player, itemStack2);
+            slot2.onTakeItem(player, itemStack2);
             this.sendContentUpdates();
         }
 

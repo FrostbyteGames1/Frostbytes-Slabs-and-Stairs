@@ -6,10 +6,13 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
-import net.minecraft.recipe.*;
+import net.minecraft.recipe.CuttingRecipe;
+import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.RecipeSerializer;
+import net.minecraft.recipe.RecipeType;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 
 public class SawmillRecipe extends CuttingRecipe {
@@ -57,7 +60,7 @@ public class SawmillRecipe extends CuttingRecipe {
 
             String string2 = JsonHelper.getString(json, "result");
             int i = JsonHelper.getInt(json, "count");
-            ItemStack itemStack = new ItemStack((ItemConvertible) Registry.ITEM.get(new Identifier(string2)), i);
+            ItemStack itemStack = new ItemStack((ItemConvertible) Registries.ITEM.get(new Identifier(string2)), i);
             return new SawmillRecipe(id, string, ingredient, itemStack);
         }
 
