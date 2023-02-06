@@ -2,7 +2,7 @@
   "type": "slabsandstairs:sawmill",
   "count": 2,
   "ingredient": {
-    "item": "minecraft:oak_log"
+    "item": "minecraft:birch_planks"
   },
-  "result": "slabsandstairs:oak_log_slab"
+  "result": "minecraft:birch_slab"
 }

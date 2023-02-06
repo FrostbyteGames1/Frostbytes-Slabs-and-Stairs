@@ -1,0 +1,8 @@
+{
+  "type": "slabsandstairs:sawmill",
+  "count": 4,
+  "ingredient": {
+    "item": "minecraft:stripped_spruce_wood"
+  },
+  "result": "minecraft:spruce_planks"
+}

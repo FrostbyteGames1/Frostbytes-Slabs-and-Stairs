@@ -1,8 +1,8 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 2,
+  "count": 4,
   "ingredient": {
     "item": "minecraft:jungle_log"
   },
-  "result": "slabsandstairs:jungle_log_slab"
+  "result": "minecraft:jungle_planks"
 }

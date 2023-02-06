@@ -1,8 +1,8 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 2,
+  "count": 4,
   "ingredient": {
     "item": "minecraft:dark_oak_log"
   },
-  "result": "slabsandstairs:dark_oak_log_slab"
+  "result": "minecraft:dark_oak_planks"
 }

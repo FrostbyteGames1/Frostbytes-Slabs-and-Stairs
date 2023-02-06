@@ -1,8 +1,8 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 2,
+  "count": 4,
   "ingredient": {
     "item": "minecraft:birch_wood"
   },
-  "result": "slabsandstairs:birch_wood_slab"
+  "result": "minecraft:birch_planks"
 }
