@@ -7,7 +7,7 @@ This mod adds many partial-block variants of vanilla blocks, including concrete,
 - Walls were given to all metal- and stone-type blocks
 - Slabs and Stairs were given to all metal-, wood-, and stone-type blocks
 - Fences and Fence Gates were given to all wood-type blocks and nether bricks
-- Buttons and Pressure Plates were given to all metal, wood- and base form stone-types (excludes, cracked, chiseled, etc.)
+- Buttons and Pressure Plates were given to all metal, wood- and base form stone-types (excludes: cracked, chiseled, etc.)
 
 To get past the recipe conflicts for the wood-type variants, use the sawmill. It functions similarly to the stonecutter, and is crafted like a stonecutter with the stone replaced with planks.
 
