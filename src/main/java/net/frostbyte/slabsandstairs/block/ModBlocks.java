@@ -27,39 +27,39 @@ public class ModBlocks {
     // region Metal
 
     public static final Block COPPER_BUTTON = registerBlock("copper_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
-                    5, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.IRON, 5, false), 
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block EXPOSED_COPPER_BUTTON = registerBlock("exposed_copper_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
-                    5, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.IRON, 5, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block WEATHERED_COPPER_BUTTON = registerBlock("weathered_copper_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
-                    5, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.IRON, 5, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block OXIDIZED_COPPER_BUTTON = registerBlock("oxidized_copper_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
-                    5, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.IRON, 5, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block IRON_BUTTON = registerBlock("iron_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
-                    5, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.IRON, 5, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block GOLD_BUTTON = registerBlock("gold_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
-                    5, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.GOLD, 5, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     // endregion
@@ -67,111 +67,111 @@ public class ModBlocks {
     // region Wood
 
     public static final Block OAK_WOOD_BUTTON = registerBlock("oak_wood_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.OAK, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block SPRUCE_WOOD_BUTTON = registerBlock("spruce_wood_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.SPRUCE, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block BIRCH_WOOD_BUTTON = registerBlock("birch_wood_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.BIRCH, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block JUNGLE_WOOD_BUTTON = registerBlock("jungle_wood_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.JUNGLE, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block ACACIA_WOOD_BUTTON = registerBlock("acacia_wood_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.ACACIA, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block DARK_OAK_WOOD_BUTTON = registerBlock("dark_oak_wood_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.DARK_OAK, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block MANGROVE_WOOD_BUTTON = registerBlock("mangrove_wood_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.MANGROVE, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block WARPED_HYPHAE_BUTTON = registerBlock("warped_hyphae_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.NETHER_WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.WARPED, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block CRIMSON_HYPHAE_BUTTON = registerBlock("crimson_hyphae_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.NETHER_WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.CRIMSON, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_OAK_WOOD_BUTTON = registerBlock("stripped_oak_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.OAK, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_SPRUCE_WOOD_BUTTON = registerBlock("stripped_spruce_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.SPRUCE, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_BIRCH_WOOD_BUTTON = registerBlock("stripped_birch_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.BIRCH, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_JUNGLE_WOOD_BUTTON = registerBlock("stripped_jungle_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.JUNGLE, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_ACACIA_WOOD_BUTTON = registerBlock("stripped_acacia_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.ACACIA, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_DARK_OAK_WOOD_BUTTON = registerBlock("stripped_dark_oak_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.DARK_OAK, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_MANGROVE_WOOD_BUTTON = registerBlock("stripped_mangrove_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.MANGROVE, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_WARPED_HYPHAE_BUTTON = registerBlock("stripped_warped_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.NETHER_WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.WARPED, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_CRIMSON_HYPHAE_BUTTON = registerBlock("stripped_crimson_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.NETHER_WOOD).strength(0.5f).requiresTool().noCollision(),
-                    15, true,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.CRIMSON, 15, true),
             ModItemGroup.SLABSANDSTAIRS);
 
     // endregion
@@ -179,69 +179,69 @@ public class ModBlocks {
     // region Stone
 
     public static final Block DIORITE_BUTTON = registerBlock("diorite_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    10, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE, 10, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block ANDESITE_BUTTON = registerBlock("andesite_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    10, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE, 10, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block GRANITE_BUTTON = registerBlock("granite_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    10, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE, 10, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block SANDSTONE_BUTTON = registerBlock("sandstone_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    10, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE, 10, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block RED_SANDSTONE_BUTTON = registerBlock("red_sandstone_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    10, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE, 10, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block BASALT_BUTTON = registerBlock("basalt_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    10, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE, 10, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block BLACKSTONE_BUTTON = registerBlock("blackstone_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    10, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE, 10, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block CALCITE_BUTTON = registerBlock("calcite_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    10, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE, 10, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block TUFF_BUTTON = registerBlock("tuff_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    10, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE, 10, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block DEEPSLATE_BUTTON = registerBlock("deepslate_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    10, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE, 10, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block DRIPSTONE_BUTTON = registerBlock("dripstone_button",
-            new ButtonBlock(FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    10, false,
-                    SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON, SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF),
+            new ButtonBlock(
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE, 10, false),
             ModItemGroup.SLABSANDSTAIRS);
 
     // endregion
@@ -253,23 +253,31 @@ public class ModBlocks {
     // region Metal
 
     public static final Block COPPER_PRESSURE_PLATE = registerBlock("copper_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.IRON),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block EXPOSED_COPPER_PRESSURE_PLATE = registerBlock("exposed_copper_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.IRON),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block WEATHERED_COPPER_PRESSURE_PLATE = registerBlock("weathered_copper_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.IRON),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block OXIDIZED_COPPER_PRESSURE_PLATE = registerBlock("oxidized_copper_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.IRON),
             ModItemGroup.SLABSANDSTAIRS);
 
     // endregion
@@ -277,93 +285,129 @@ public class ModBlocks {
     // region Wood
 
     public static final Block OAK_WOOD_PRESSURE_PLATE = registerBlock("oak_wood_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.OAK),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block SPRUCE_WOOD_PRESSURE_PLATE = registerBlock("spruce_wood_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.SPRUCE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block BIRCH_WOOD_PRESSURE_PLATE = registerBlock("birch_wood_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.BIRCH),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block JUNGLE_WOOD_PRESSURE_PLATE = registerBlock("jungle_wood_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.JUNGLE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block ACACIA_WOOD_PRESSURE_PLATE = registerBlock("acacia_wood_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.ACACIA),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block DARK_OAK_WOOD_PRESSURE_PLATE = registerBlock("dark_oak_wood_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.DARK_OAK),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block MANGROVE_WOOD_PRESSURE_PLATE = registerBlock("mangrove_wood_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.MANGROVE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block WARPED_HYPHAE_PRESSURE_PLATE = registerBlock("warped_hyphae_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.NETHER_WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.WARPED),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block CRIMSON_HYPHAE_PRESSURE_PLATE = registerBlock("crimson_hyphae_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.NETHER_WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.CRIMSON),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_OAK_PRESSURE_PLATE = registerBlock("stripped_oak_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.OAK),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_SPRUCE_PRESSURE_PLATE = registerBlock("stripped_spruce_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.SPRUCE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_BIRCH_PRESSURE_PLATE = registerBlock("stripped_birch_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.BIRCH),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_JUNGLE_PRESSURE_PLATE = registerBlock("stripped_jungle_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.JUNGLE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_ACACIA_PRESSURE_PLATE = registerBlock("stripped_acacia_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.ACACIA),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_DARK_OAK_PRESSURE_PLATE = registerBlock("stripped_dark_oak_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.DARK_OAK),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_MANGROVE_PRESSURE_PLATE = registerBlock("stripped_mangrove_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.MANGROVE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_WARPED_PRESSURE_PLATE = registerBlock("stripped_warped_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.NETHER_WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.WARPED),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_CRIMSON_PRESSURE_PLATE = registerBlock("stripped_crimson_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.NETHER_WOOD).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.CRIMSON),
             ModItemGroup.SLABSANDSTAIRS);
 
     // endregion
@@ -371,58 +415,80 @@ public class ModBlocks {
     // region Stone
 
     public static final Block DIORITE_PRESSURE_PLATE = registerBlock("diorite_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.MOBS,
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block ANDESITE_PRESSURE_PLATE = registerBlock("andesite_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.MOBS,
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block GRANITE_PRESSURE_PLATE = registerBlock("granite_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.MOBS,
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block SANDSTONE_PRESSURE_PLATE = registerBlock("sandstone_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.MOBS,
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block RED_SANDSTONE_PRESSURE_PLATE = registerBlock("red_sandstone_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.MOBS,
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block BASALT_PRESSURE_PLATE = registerBlock("basalt_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.MOBS,
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block BLACKSTONE_PRESSURE_PLATE = registerBlock("blackstone_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.MOBS,
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block CALCITE_PRESSURE_PLATE = registerBlock("calcite_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.MOBS,
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block TUFF_PRESSURE_PLATE = registerBlock("tuff_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.MOBS,
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block DEEPSLATE_PRESSURE_PLATE = registerBlock("deepslate_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.MOBS,
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE),
             ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block DRIPSTONE_PRESSURE_PLATE = registerBlock("dripstone_pressure_plate",
-            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
-                    SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF),
+            new PressurePlateBlock(
+                    PressurePlateBlock.ActivationRule.MOBS,
+                    FabricBlockSettings.of(Material.STONE).strength(0.5f).requiresTool().noCollision(),
+                    BlockSetType.STONE),
             ModItemGroup.SLABSANDSTAIRS);
 
     // endregion
@@ -522,108 +588,68 @@ public class ModBlocks {
     // region Wood
 
     public static final Block OAK_WOOD_FENCE_GATE = registerBlock("oak_wood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.OAK), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block SPRUCE_WOOD_FENCE_GATE = registerBlock("spruce_wood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.SPRUCE), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block BIRCH_WOOD_FENCE_GATE = registerBlock("birch_wood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.BIRCH), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block JUNGLE_WOOD_FENCE_GATE = registerBlock("jungle_wood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.JUNGLE), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block ACACIA_WOOD_FENCE_GATE = registerBlock("acacia_wood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.ACACIA), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block DARK_OAK_WOOD_FENCE_GATE = registerBlock("dark_oak_wood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.DARK_OAK), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block MANGROVE_WOOD_FENCE_GATE = registerBlock("mangrove_wood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.MANGROVE), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block WARPED_HYPHAE_FENCE_GATE = registerBlock("warped_hyphae_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.NETHER_WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.WARPED), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block CRIMSON_HYPHAE_FENCE_GATE = registerBlock("crimson_hyphae_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.NETHER_WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.CRIMSON), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_OAK_FENCE_GATE = registerBlock("stripped_oak_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.OAK), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_SPRUCE_FENCE_GATE = registerBlock("stripped_spruce_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.SPRUCE), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_BIRCH_FENCE_GATE = registerBlock("stripped_birch_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.BIRCH), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_JUNGLE_FENCE_GATE = registerBlock("stripped_jungle_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.JUNGLE), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_ACACIA_FENCE_GATE = registerBlock("stripped_acacia_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.ACACIA), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_DARK_OAK_FENCE_GATE = registerBlock("stripped_dark_oak_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.DARK_OAK), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_MANGROVE_FENCE_GATE = registerBlock("stripped_mangrove_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.MANGROVE), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_WARPED_FENCE_GATE = registerBlock("stripped_warped_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.NETHER_WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.WARPED), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block STRIPPED_CRIMSON_FENCE_GATE = registerBlock("stripped_crimson_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.NETHER_WOOD).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.CRIMSON), ModItemGroup.SLABSANDSTAIRS);
 
     // endregion
 
     // region Stone
 
     public static final Block NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.STONE).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.CRIMSON), ModItemGroup.SLABSANDSTAIRS);
 
     public static final Block RED_NETHER_BRICK_FENCE_GATE = registerBlock("red_nether_brick_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.STONE).strength(2.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_OPEN, SoundEvents.BLOCK_FENCE_GATE_CLOSE),
-            ModItemGroup.SLABSANDSTAIRS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f).requiresTool(), WoodType.CRIMSON), ModItemGroup.SLABSANDSTAIRS);
 
     // endregion
 

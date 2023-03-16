@@ -158,7 +158,7 @@ public class SawmillScreenHandler extends ScreenHandler {
         if (!this.availableRecipes.isEmpty() && this.isInBounds(this.selectedRecipe.get())) {
             SawmillRecipe sawmillRecipe = (SawmillRecipe)this.availableRecipes.get(this.selectedRecipe.get());
             this.output.setLastRecipe(sawmillRecipe);
-            this.outputSlot.setStack(sawmillRecipe.craft(this.input));
+            this.outputSlot.setStack(sawmillRecipe.craft(this.input,this.world.getRegistryManager()));
         } else {
             this.outputSlot.setStack(ItemStack.EMPTY);
         }
@@ -222,13 +222,5 @@ public class SawmillScreenHandler extends ScreenHandler {
         }
 
         return itemStack;
-    }
-
-    public void close(PlayerEntity player) {
-        super.close(player);
-        this.output.removeStack(1);
-        this.context.run((world, pos) -> {
-            this.dropInventory(player, this.input);
-        });
     }
 }
