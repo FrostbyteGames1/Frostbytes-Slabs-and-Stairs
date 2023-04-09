@@ -23,12 +23,6 @@ import java.util.List;
 
 public class SawmillScreenHandler extends ScreenHandler {
 
-    public static final int field_30842 = 0;
-    public static final int field_30843 = 1;
-    private static final int field_30844 = 2;
-    private static final int field_30845 = 29;
-    private static final int field_30846 = 29;
-    private static final int field_30847 = 38;
     private final ScreenHandlerContext context;
     private final Property selectedRecipe;
     private final World world;
@@ -147,7 +141,7 @@ public class SawmillScreenHandler extends ScreenHandler {
     private void updateInput(Inventory input, ItemStack stack) {
         this.availableRecipes.clear();
         this.selectedRecipe.set(-1);
-        this.outputSlot.setStack(ItemStack.EMPTY);
+        this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
         if (!stack.isEmpty()) {
             this.availableRecipes = this.world.getRecipeManager().getAllMatches(SawmillRecipe.Type.INSTANCE, input, this.world);
         }
@@ -157,10 +151,15 @@ public class SawmillScreenHandler extends ScreenHandler {
     void populateResult() {
         if (!this.availableRecipes.isEmpty() && this.isInBounds(this.selectedRecipe.get())) {
             SawmillRecipe sawmillRecipe = (SawmillRecipe)this.availableRecipes.get(this.selectedRecipe.get());
-            this.output.setLastRecipe(sawmillRecipe);
-            this.outputSlot.setStack(sawmillRecipe.craft(this.input,this.world.getRegistryManager()));
+            ItemStack itemStack = sawmillRecipe.craft(this.input, this.world.getRegistryManager());
+            if (itemStack.isItemEnabled(this.world.getEnabledFeatures())) {
+                this.output.setLastRecipe(sawmillRecipe);
+                this.outputSlot.setStackNoCallbacks(itemStack);
+            } else {
+                this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
+            }
         } else {
-            this.outputSlot.setStack(ItemStack.EMPTY);
+            this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
         }
 
         this.sendContentUpdates();
@@ -222,5 +221,13 @@ public class SawmillScreenHandler extends ScreenHandler {
         }
 
         return itemStack;
+    }
+
+    public void onClosed(PlayerEntity player) {
+        super.onClosed(player);
+        this.output.removeStack(1);
+        this.context.run((world, pos) -> {
+            this.dropInventory(player, this.input);
+        });
     }
 }
