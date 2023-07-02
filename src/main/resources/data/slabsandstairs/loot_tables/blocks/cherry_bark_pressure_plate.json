@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "slabsandstairs:cherry_wood_pressure_plate"
+        }
+      ]
+    }
+  ]
+}

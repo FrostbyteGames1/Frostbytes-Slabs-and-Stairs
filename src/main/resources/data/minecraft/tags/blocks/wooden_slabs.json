@@ -10,6 +10,8 @@
     "slabsandstairs:crimson_hyphae_slab",
     "slabsandstairs:warped_hyphae_slab",
     "slabsandstairs:mangrove_wood_slab",
+    "slabsandstairs:cherry_wood_slab",
+    "slabsandstairs:bamboo_block_slab",
     "slabsandstairs:oak_log_slab",
     "slabsandstairs:spruce_log_slab",
     "slabsandstairs:birch_log_slab",
@@ -19,6 +21,7 @@
     "slabsandstairs:crimson_stem_slab",
     "slabsandstairs:warped_stem_slab",
     "slabsandstairs:mangrove_log_slab",
+    "slabsandstairs:cherry_log_slab",
     "slabsandstairs:stripped_oak_slab",
     "slabsandstairs:stripped_spruce_slab",
     "slabsandstairs:stripped_birch_slab",
@@ -27,6 +30,7 @@
     "slabsandstairs:stripped_dark_oak_slab",
     "slabsandstairs:stripped_crimson_slab",
     "slabsandstairs:stripped_warped_slab",
-    "slabsandstairs:stripped_mangrove_slab"
+    "slabsandstairs:stripped_mangrove_slab",
+    "slabsandstairs:stripped_cherry_slab"
   ]
 }

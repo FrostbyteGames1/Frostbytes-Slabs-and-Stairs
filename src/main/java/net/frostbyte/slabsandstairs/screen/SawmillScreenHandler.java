@@ -55,7 +55,7 @@ public class SawmillScreenHandler extends ScreenHandler {
         };
         this.output = new CraftingResultInventory();
         this.context = context;
-        this.world = playerInventory.player.world;
+        this.world = playerInventory.player.getWorld();
         this.inputSlot = this.addSlot(new Slot(this.input, 0, 20, 33));
         this.outputSlot = this.addSlot(new Slot(this.output, 1, 143, 33) {
             public boolean canInsert(ItemStack stack) {
@@ -63,8 +63,8 @@ public class SawmillScreenHandler extends ScreenHandler {
             }
 
             public void onTakeItem(PlayerEntity player, ItemStack stack) {
-                stack.onCraft(player.world, player, stack.getCount());
-                SawmillScreenHandler.this.output.unlockLastRecipe(player);
+                stack.onCraft(player.getWorld(), player, stack.getCount());
+                SawmillScreenHandler.this.output.unlockLastRecipe(player, getStacks());
                 ItemStack itemStack = SawmillScreenHandler.this.inputSlot.takeStack(1);
                 if (!itemStack.isEmpty()) {
                     SawmillScreenHandler.this.populateResult();
@@ -150,7 +150,7 @@ public class SawmillScreenHandler extends ScreenHandler {
 
     void populateResult() {
         if (!this.availableRecipes.isEmpty() && this.isInBounds(this.selectedRecipe.get())) {
-            SawmillRecipe sawmillRecipe = (SawmillRecipe)this.availableRecipes.get(this.selectedRecipe.get());
+            SawmillRecipe sawmillRecipe = this.availableRecipes.get(this.selectedRecipe.get());
             ItemStack itemStack = sawmillRecipe.craft(this.input, this.world.getRegistryManager());
             if (itemStack.isItemEnabled(this.world.getEnabledFeatures())) {
                 this.output.setLastRecipe(sawmillRecipe);
@@ -185,7 +185,7 @@ public class SawmillScreenHandler extends ScreenHandler {
             Item item = itemStack2.getItem();
             itemStack = itemStack2.copy();
             if (slot == 1) {
-                item.onCraft(itemStack2, player.world, player);
+                item.onCraft(itemStack2, player.getWorld(), player);
                 if (!this.insertItem(itemStack2, 2, 38, true)) {
                     return ItemStack.EMPTY;
                 }

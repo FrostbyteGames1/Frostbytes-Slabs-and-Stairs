@@ -1,0 +1,8 @@
+{
+  "type": "slabsandstairs:sawmill",
+  "count": 4,
+  "ingredient": {
+    "item": "minecraft:bamboo_block"
+  },
+  "result": "minecraft:bamboo_planks"
+}

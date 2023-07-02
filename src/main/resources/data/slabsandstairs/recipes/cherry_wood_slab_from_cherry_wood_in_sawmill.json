@@ -1,0 +1,8 @@
+{
+  "type": "slabsandstairs:sawmill",
+  "count": 2,
+  "ingredient": {
+    "item": "minecraft:cherry_wood"
+  },
+  "result": "slabsandstairs:cherry_wood_slab"
+}

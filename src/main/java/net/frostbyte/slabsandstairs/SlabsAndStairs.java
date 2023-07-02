@@ -2,6 +2,7 @@ package net.frostbyte.slabsandstairs;
 
 import net.fabricmc.api.ModInitializer;
 import net.frostbyte.slabsandstairs.block.ModBlocks;
+import net.frostbyte.slabsandstairs.item.ModItemGroup;
 import net.frostbyte.slabsandstairs.recipe.ModRecipes;
 import net.frostbyte.slabsandstairs.screen.ModScreenHandlers;
 import org.slf4j.Logger;
@@ -15,6 +16,7 @@ public class SlabsAndStairs implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModBlocks.registerModBlocks();
+		ModItemGroup.registerModItemGroup();
 		ModScreenHandlers.registerAllScreenHandlers();
 		ModRecipes.register();
 	}

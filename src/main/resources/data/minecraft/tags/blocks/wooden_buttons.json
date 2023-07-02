@@ -8,6 +8,8 @@
     "slabsandstairs:acacia_wood_button",
     "slabsandstairs:dark_oak_wood_button",
     "slabsandstairs:mangrove_wood_button",
+    "slabsandstairs:cherry_wood_button",
+    "slabsandstairs:bamboo_block_button",
     "slabsandstairs:warped_hyphae_button",
     "slabsandstairs:crimson_hyphae_button",
     "slabsandstairs:stripped_oak_button",
@@ -17,6 +19,7 @@
     "slabsandstairs:stripped_acacia_button",
     "slabsandstairs:stripped_dark_oak_button",
     "slabsandstairs:stripped_mangrove_button",
+    "slabsandstairs:stripped_cherry_button",
     "slabsandstairs:stripped_warped_button",
     "slabsandstairs:stripped_crimson_button"
   ]

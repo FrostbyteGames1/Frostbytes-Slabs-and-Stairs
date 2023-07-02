@@ -1,0 +1,8 @@
+{
+  "type": "slabsandstairs:sawmill",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:cherry_wood"
+  },
+  "result": "slabsandstairs:cherry_wood_pressure_plate"
+}
