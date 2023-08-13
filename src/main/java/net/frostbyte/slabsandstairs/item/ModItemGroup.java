@@ -16,10 +16,15 @@ public class ModItemGroup {
                 FabricItemGroup.builder().displayName(Text.translatable("itemgroup.slabsandstairs"))
                         .icon(() -> new ItemStack(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS)).entries((displayContext, entries) -> {
                             entries.add(ModBlocks.SAWMILL);
+
                             entries.add(ModBlocks.COPPER_BUTTON);
+                            entries.add(ModBlocks.WAXED_COPPER_BUTTON);
                             entries.add(ModBlocks.EXPOSED_COPPER_BUTTON);
+                            entries.add(ModBlocks.WAXED_EXPOSED_COPPER_BUTTON);
                             entries.add(ModBlocks.WEATHERED_COPPER_BUTTON);
+                            entries.add(ModBlocks.WAXED_WEATHERED_COPPER_BUTTON);
                             entries.add(ModBlocks.OXIDIZED_COPPER_BUTTON);
+                            entries.add(ModBlocks.WAXED_OXIDIZED_COPPER_BUTTON);
                             entries.add(ModBlocks.IRON_BUTTON);
                             entries.add(ModBlocks.GOLD_BUTTON);
 
@@ -58,9 +63,13 @@ public class ModItemGroup {
                             entries.add(ModBlocks.DRIPSTONE_BUTTON);
 
                             entries.add(ModBlocks.COPPER_PRESSURE_PLATE);
+                            entries.add(ModBlocks.WAXED_COPPER_PRESSURE_PLATE);
                             entries.add(ModBlocks.EXPOSED_COPPER_PRESSURE_PLATE);
+                            entries.add(ModBlocks.WAXED_EXPOSED_COPPER_PRESSURE_PLATE);
                             entries.add(ModBlocks.WEATHERED_COPPER_PRESSURE_PLATE);
+                            entries.add(ModBlocks.WAXED_WEATHERED_COPPER_PRESSURE_PLATE);
                             entries.add(ModBlocks.OXIDIZED_COPPER_PRESSURE_PLATE);
+                            entries.add(ModBlocks.WAXED_OXIDIZED_COPPER_PRESSURE_PLATE);
 
                             entries.add(ModBlocks.OAK_WOOD_PRESSURE_PLATE);
                             entries.add(ModBlocks.SPRUCE_WOOD_PRESSURE_PLATE);
@@ -146,13 +155,21 @@ public class ModItemGroup {
                             entries.add(ModBlocks.RED_NETHER_BRICK_FENCE_GATE);
 
                             entries.add(ModBlocks.COPPER_WALL);
+                            entries.add(ModBlocks.WAXED_COPPER_WALL);
                             entries.add(ModBlocks.EXPOSED_COPPER_WALL);
+                            entries.add(ModBlocks.WAXED_EXPOSED_COPPER_WALL);
                             entries.add(ModBlocks.WEATHERED_COPPER_WALL);
+                            entries.add(ModBlocks.WAXED_WEATHERED_COPPER_WALL);
                             entries.add(ModBlocks.OXIDIZED_COPPER_WALL);
+                            entries.add(ModBlocks.WAXED_OXIDIZED_COPPER_WALL);
                             entries.add(ModBlocks.CUT_COPPER_WALL);
+                            entries.add(ModBlocks.WAXED_CUT_COPPER_WALL);
                             entries.add(ModBlocks.EXPOSED_CUT_COPPER_WALL);
+                            entries.add(ModBlocks.WAXED_EXPOSED_CUT_COPPER_WALL);
                             entries.add(ModBlocks.WEATHERED_CUT_COPPER_WALL);
+                            entries.add(ModBlocks.WAXED_WEATHERED_CUT_COPPER_WALL);
                             entries.add(ModBlocks.OXIDIZED_CUT_COPPER_WALL);
+                            entries.add(ModBlocks.WAXED_OXIDIZED_CUT_COPPER_WALL);
                             entries.add(ModBlocks.IRON_WALL);
                             entries.add(ModBlocks.GOLD_WALL);
 
@@ -245,6 +262,15 @@ public class ModItemGroup {
                             entries.add(ModBlocks.YELLOW_TERRACOTTA_WALL);
                             entries.add(ModBlocks.YELLOW_GLAZED_TERRACOTTA_WALL);
 
+                            entries.add(ModBlocks.COPPER_SLAB);
+                            entries.add(ModBlocks.WAXED_COPPER_SLAB);
+                            entries.add(ModBlocks.EXPOSED_COPPER_SLAB);
+                            entries.add(ModBlocks.WAXED_EXPOSED_COPPER_SLAB);
+                            entries.add(ModBlocks.WEATHERED_COPPER_SLAB);
+                            entries.add(ModBlocks.WAXED_WEATHERED_COPPER_SLAB);
+                            entries.add(ModBlocks.OXIDIZED_COPPER_SLAB);
+                            entries.add(ModBlocks.WAXED_OXIDIZED_COPPER_SLAB);
+
                             entries.add(ModBlocks.ACACIA_LOG_SLAB);
                             entries.add(ModBlocks.ACACIA_WOOD_SLAB);
                             entries.add(ModBlocks.BASALT_SLAB);
@@ -266,7 +292,6 @@ public class ModItemGroup {
                             entries.add(ModBlocks.CHISELED_RED_SANDSTONE_SLAB);
                             entries.add(ModBlocks.CHISELED_SANDSTONE_SLAB);
                             entries.add(ModBlocks.CHISELED_STONE_BRICK_SLAB);
-                            entries.add(ModBlocks.COPPER_SLAB);
                             entries.add(ModBlocks.CRACKED_DEEPSLATE_BRICK_SLAB);
                             entries.add(ModBlocks.CRACKED_DEEPSLATE_TILE_SLAB);
                             entries.add(ModBlocks.CRACKED_NETHER_BRICK_SLAB);
@@ -283,7 +308,6 @@ public class ModItemGroup {
                             entries.add(ModBlocks.DEEPSLATE_SLAB);
                             entries.add(ModBlocks.DRIPSTONE_SLAB);
                             entries.add(ModBlocks.END_STONE_SLAB);
-                            entries.add(ModBlocks.EXPOSED_COPPER_SLAB);
                             entries.add(ModBlocks.GOLD_SLAB);
                             entries.add(ModBlocks.GRAY_CONCRETE_SLAB);
                             entries.add(ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB);
@@ -316,7 +340,6 @@ public class ModItemGroup {
                             entries.add(ModBlocks.ORANGE_CONCRETE_SLAB);
                             entries.add(ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB);
                             entries.add(ModBlocks.ORANGE_TERRACOTTA_SLAB);
-                            entries.add(ModBlocks.OXIDIZED_COPPER_SLAB);
                             entries.add(ModBlocks.PINK_CONCRETE_SLAB);
                             entries.add(ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB);
                             entries.add(ModBlocks.PINK_TERRACOTTA_SLAB);
@@ -347,13 +370,21 @@ public class ModItemGroup {
                             entries.add(ModBlocks.TUFF_SLAB);
                             entries.add(ModBlocks.WARPED_HYPHAE_SLAB);
                             entries.add(ModBlocks.WARPED_STEM_SLAB);
-                            entries.add(ModBlocks.WEATHERED_COPPER_SLAB);
                             entries.add(ModBlocks.WHITE_CONCRETE_SLAB);
                             entries.add(ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB);
                             entries.add(ModBlocks.WHITE_TERRACOTTA_SLAB);
                             entries.add(ModBlocks.YELLOW_CONCRETE_SLAB);
                             entries.add(ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB);
                             entries.add(ModBlocks.YELLOW_TERRACOTTA_SLAB);
+
+                            entries.add(ModBlocks.COPPER_STAIRS);
+                            entries.add(ModBlocks.WAXED_COPPER_STAIRS);
+                            entries.add(ModBlocks.EXPOSED_COPPER_STAIRS);
+                            entries.add(ModBlocks.WAXED_EXPOSED_COPPER_STAIRS);
+                            entries.add(ModBlocks.WEATHERED_COPPER_STAIRS);
+                            entries.add(ModBlocks.WAXED_WEATHERED_COPPER_STAIRS);
+                            entries.add(ModBlocks.OXIDIZED_COPPER_STAIRS);
+                            entries.add(ModBlocks.WAXED_OXIDIZED_COPPER_STAIRS);
 
                             entries.add(ModBlocks.ACACIA_LOG_STAIRS);
                             entries.add(ModBlocks.ACACIA_WOOD_STAIRS);
@@ -376,7 +407,6 @@ public class ModItemGroup {
                             entries.add(ModBlocks.CHISELED_RED_SANDSTONE_STAIRS);
                             entries.add(ModBlocks.CHISELED_SANDSTONE_STAIRS);
                             entries.add(ModBlocks.CHISELED_STONE_BRICK_STAIRS);
-                            entries.add(ModBlocks.COPPER_STAIRS);
                             entries.add(ModBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS);
                             entries.add(ModBlocks.CRACKED_DEEPSLATE_TILE_STAIRS);
                             entries.add(ModBlocks.CRACKED_NETHER_BRICK_STAIRS);
@@ -396,7 +426,6 @@ public class ModItemGroup {
                             entries.add(ModBlocks.DEEPSLATE_STAIRS);
                             entries.add(ModBlocks.DRIPSTONE_STAIRS);
                             entries.add(ModBlocks.END_STONE_STAIRS);
-                            entries.add(ModBlocks.EXPOSED_COPPER_STAIRS);
                             entries.add(ModBlocks.GOLD_STAIRS);
                             entries.add(ModBlocks.GRAY_CONCRETE_STAIRS);
                             entries.add(ModBlocks.GRAY_GLAZED_TERRACOTTA_STAIRS);
@@ -429,7 +458,6 @@ public class ModItemGroup {
                             entries.add(ModBlocks.ORANGE_CONCRETE_STAIRS);
                             entries.add(ModBlocks.ORANGE_GLAZED_TERRACOTTA_STAIRS);
                             entries.add(ModBlocks.ORANGE_TERRACOTTA_STAIRS);
-                            entries.add(ModBlocks.OXIDIZED_COPPER_STAIRS);
                             entries.add(ModBlocks.PINK_CONCRETE_STAIRS);
                             entries.add(ModBlocks.PINK_GLAZED_TERRACOTTA_STAIRS);
                             entries.add(ModBlocks.PINK_TERRACOTTA_STAIRS);
@@ -460,7 +488,6 @@ public class ModItemGroup {
                             entries.add(ModBlocks.TUFF_STAIRS);
                             entries.add(ModBlocks.WARPED_HYPHAE_STAIRS);
                             entries.add(ModBlocks.WARPED_STEM_STAIRS);
-                            entries.add(ModBlocks.WEATHERED_COPPER_STAIRS);
                             entries.add(ModBlocks.WHITE_CONCRETE_STAIRS);
                             entries.add(ModBlocks.WHITE_GLAZED_TERRACOTTA_STAIRS);
                             entries.add(ModBlocks.WHITE_TERRACOTTA_STAIRS);

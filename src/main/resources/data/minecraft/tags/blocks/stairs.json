@@ -1,6 +1,15 @@
 {
   "replace": false,
   "values": [
+    "slabsandstairs:copper_stairs",
+    "slabsandstairs:waxed_copper_stairs",
+    "slabsandstairs:exposed_copper_stairs",
+    "slabsandstairs:waxed_exposed_copper_stairs",
+    "slabsandstairs:weathered_copper_stairs",
+    "slabsandstairs:waxed_weathered_copper_stairs",
+    "slabsandstairs:oxidized_copper_stairs",
+    "slabsandstairs:waxed_oxidized_copper_stairs",
+
     "slabsandstairs:chiseled_stone_brick_stairs",
     "slabsandstairs:cracked_stone_brick_stairs",
     "slabsandstairs:smooth_stone_stairs",

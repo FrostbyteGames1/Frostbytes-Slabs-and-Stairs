@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "slabsandstairs:waxed_oxidized_copper_pressure_plate"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 9,
+  "ingredient": {
+    "item": "minecraft:copper_block"
+  },
+  "result": "slabsandstairs:copper_button"
+}

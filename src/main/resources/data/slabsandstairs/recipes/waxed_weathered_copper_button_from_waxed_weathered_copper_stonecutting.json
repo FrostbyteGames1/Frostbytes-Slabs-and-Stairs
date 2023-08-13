@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 9,
+  "ingredient": {
+    "item": "minecraft:waxed_weathered_copper"
+  },
+  "result": "slabsandstairs:waxed_weathered_copper_button"
+}

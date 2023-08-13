@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "cookingtime": 200,
-  "experience": 0,
-  "ingredient": {
-    "item": "slabsandstairs:weathered_copper_button"
-  },
-  "result": "slabsandstairs:exposed_copper_button"
-}

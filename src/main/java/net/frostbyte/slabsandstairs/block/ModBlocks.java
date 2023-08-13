@@ -3,17 +3,16 @@ package net.frostbyte.slabsandstairs.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.frostbyte.slabsandstairs.SlabsAndStairs;
+import net.frostbyte.slabsandstairs.block.custom.OxidizableButtonBlock;
+import net.frostbyte.slabsandstairs.block.custom.OxidizablePressurePlateBlock;
+import net.frostbyte.slabsandstairs.block.custom.OxidizableWallBlock;
 import net.frostbyte.slabsandstairs.block.custom.SawmillBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-
-import java.util.ArrayList;
-import java.util.Collection;
 
 import static net.minecraft.block.Blocks.*;
 
@@ -27,34 +26,46 @@ public class ModBlocks {
     // region Metal
 
     public static final Block COPPER_BUTTON = registerBlock("copper_button",
+            new OxidizableButtonBlock(
+                    Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copyOf(STONE_BUTTON), 10));
+
+    public static final Block WAXED_COPPER_BUTTON = registerBlock("waxed_copper_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.IRON, 5, false));
+                    FabricBlockSettings.copyOf(STONE_BUTTON), BlockSetType.GOLD, 10, false));
 
     public static final Block EXPOSED_COPPER_BUTTON = registerBlock("exposed_copper_button",
+            new OxidizableButtonBlock(
+                    Oxidizable.OxidationLevel.EXPOSED, FabricBlockSettings.copyOf(STONE_BUTTON), 20));
+
+    public static final Block WAXED_EXPOSED_COPPER_BUTTON = registerBlock("waxed_exposed_copper_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.IRON, 5, false));
+                    FabricBlockSettings.copyOf(STONE_BUTTON), BlockSetType.GOLD, 20, false));
 
     public static final Block WEATHERED_COPPER_BUTTON = registerBlock("weathered_copper_button",
+            new OxidizableButtonBlock(
+                    Oxidizable.OxidationLevel.WEATHERED, FabricBlockSettings.copyOf(STONE_BUTTON), 30));
+
+    public static final Block WAXED_WEATHERED_COPPER_BUTTON = registerBlock("waxed_weathered_copper_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.IRON, 5, false));
+                    FabricBlockSettings.copyOf(STONE_BUTTON), BlockSetType.GOLD, 30, false));
 
     public static final Block OXIDIZED_COPPER_BUTTON = registerBlock("oxidized_copper_button",
+            new OxidizableButtonBlock(
+                    Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copyOf(STONE_BUTTON), 40));
+
+    public static final Block WAXED_OXIDIZED_COPPER_BUTTON = registerBlock("waxed_oxidized_copper_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.IRON, 5, false));
+                    FabricBlockSettings.copyOf(STONE_BUTTON), BlockSetType.GOLD, 40, false));
 
     public static final Block IRON_BUTTON = registerBlock("iron_button",
             new ButtonBlock(
                     FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.IRON, 5, false));
+                    BlockSetType.IRON, 35, false));
 
     public static final Block GOLD_BUTTON = registerBlock("gold_button",
             new ButtonBlock(
                     FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.GOLD, 5, false));
+                    BlockSetType.GOLD, 15, false));
 
     // endregion
 
@@ -233,27 +244,54 @@ public class ModBlocks {
     // region Metal
 
     public static final Block COPPER_PRESSURE_PLATE = registerBlock("copper_pressure_plate",
+            new OxidizablePressurePlateBlock(
+                    Oxidizable.OxidationLevel.UNAFFECTED,
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(OAK_PRESSURE_PLATE),
+                    BlockSetType.GOLD));
+    public static final Block WAXED_COPPER_PRESSURE_PLATE = registerBlock("waxed_copper_pressure_plate",
             new PressurePlateBlock(
                     PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(LIGHT_WEIGHTED_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.IRON));
+                    FabricBlockSettings.copyOf(LIGHT_WEIGHTED_PRESSURE_PLATE),
+                    BlockSetType.GOLD));
 
     public static final Block EXPOSED_COPPER_PRESSURE_PLATE = registerBlock("exposed_copper_pressure_plate",
+            new OxidizablePressurePlateBlock(
+                    Oxidizable.OxidationLevel.EXPOSED,
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(LIGHT_WEIGHTED_PRESSURE_PLATE),
+                    BlockSetType.GOLD));
+
+    public static final Block WAXED_EXPOSED_COPPER_PRESSURE_PLATE = registerBlock("waxed_exposed_copper_pressure_plate",
             new PressurePlateBlock(
                     PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(LIGHT_WEIGHTED_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.IRON));
+                    FabricBlockSettings.copyOf(LIGHT_WEIGHTED_PRESSURE_PLATE),
+                    BlockSetType.GOLD));
 
     public static final Block WEATHERED_COPPER_PRESSURE_PLATE = registerBlock("weathered_copper_pressure_plate",
+            new OxidizablePressurePlateBlock(
+                    Oxidizable.OxidationLevel.WEATHERED,
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(HEAVY_WEIGHTED_PRESSURE_PLATE),
+                    BlockSetType.GOLD));
+
+    public static final Block WAXED_WEATHERED_COPPER_PRESSURE_PLATE = registerBlock("waxed_weathered_copper_pressure_plate",
             new PressurePlateBlock(
                     PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(LIGHT_WEIGHTED_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.IRON));
+                    FabricBlockSettings.copyOf(HEAVY_WEIGHTED_PRESSURE_PLATE),
+                    BlockSetType.GOLD));
 
     public static final Block OXIDIZED_COPPER_PRESSURE_PLATE = registerBlock("oxidized_copper_pressure_plate",
+            new OxidizablePressurePlateBlock(
+                    Oxidizable.OxidationLevel.OXIDIZED,
+                    PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(HEAVY_WEIGHTED_PRESSURE_PLATE),
+                    BlockSetType.GOLD));
+
+    public static final Block WAXED_OXIDIZED_COPPER_PRESSURE_PLATE = registerBlock("waxed_oxidized_copper_pressure_plate",
             new PressurePlateBlock(
                     PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(HEAVY_WEIGHTED_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
+                    FabricBlockSettings.copyOf(HEAVY_WEIGHTED_PRESSURE_PLATE),
                     BlockSetType.GOLD));
 
     // endregion
@@ -624,27 +662,51 @@ public class ModBlocks {
     // region Metal
 
     public static final Block COPPER_WALL = registerBlock("copper_wall",
+            new OxidizableWallBlock(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copy(COPPER_BLOCK)));
+
+    public static final Block WAXED_COPPER_WALL = registerBlock("waxed_copper_wall",
             new WallBlock(FabricBlockSettings.copy(COPPER_BLOCK)));
 
     public static final Block EXPOSED_COPPER_WALL = registerBlock("exposed_copper_wall",
+            new OxidizableWallBlock(Oxidizable.OxidationLevel.EXPOSED, FabricBlockSettings.copy(EXPOSED_COPPER)));
+
+    public static final Block WAXED_EXPOSED_COPPER_WALL = registerBlock("waxed_exposed_copper_wall",
             new WallBlock(FabricBlockSettings.copy(EXPOSED_COPPER)));
 
     public static final Block WEATHERED_COPPER_WALL = registerBlock("weathered_copper_wall",
+            new OxidizableWallBlock(Oxidizable.OxidationLevel.WEATHERED, FabricBlockSettings.copy(WEATHERED_COPPER)));
+
+    public static final Block WAXED_WEATHERED_COPPER_WALL = registerBlock("waxed_weathered_copper_wall",
             new WallBlock(FabricBlockSettings.copy(WEATHERED_COPPER)));
 
     public static final Block OXIDIZED_COPPER_WALL = registerBlock("oxidized_copper_wall",
+            new OxidizableWallBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copy(OXIDIZED_COPPER)));
+
+    public static final Block WAXED_OXIDIZED_COPPER_WALL = registerBlock("waxed_oxidized_copper_wall",
             new WallBlock(FabricBlockSettings.copy(OXIDIZED_COPPER)));
 
     public static final Block CUT_COPPER_WALL = registerBlock("cut_copper_wall",
+            new OxidizableWallBlock(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copy(CUT_COPPER)));
+
+    public static final Block WAXED_CUT_COPPER_WALL = registerBlock("waxed_cut_copper_wall",
             new WallBlock(FabricBlockSettings.copy(CUT_COPPER)));
 
     public static final Block EXPOSED_CUT_COPPER_WALL = registerBlock("exposed_cut_copper_wall",
+            new OxidizableWallBlock(Oxidizable.OxidationLevel.EXPOSED, FabricBlockSettings.copy(EXPOSED_CUT_COPPER)));
+
+    public static final Block WAXED_EXPOSED_CUT_COPPER_WALL = registerBlock("waxed_exposed_cut_copper_wall",
             new WallBlock(FabricBlockSettings.copy(EXPOSED_CUT_COPPER)));
 
     public static final Block WEATHERED_CUT_COPPER_WALL = registerBlock("weathered_cut_copper_wall",
+            new OxidizableWallBlock(Oxidizable.OxidationLevel.WEATHERED, FabricBlockSettings.copy(WEATHERED_CUT_COPPER)));
+
+    public static final Block WAXED_WEATHERED_CUT_COPPER_WALL = registerBlock("waxed_weathered_cut_copper_wall",
             new WallBlock(FabricBlockSettings.copy(WEATHERED_CUT_COPPER)));
 
     public static final Block OXIDIZED_CUT_COPPER_WALL = registerBlock("oxidized_cut_copper_wall",
+            new OxidizableWallBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copy(OXIDIZED_CUT_COPPER)));
+
+    public static final Block WAXED_OXIDIZED_CUT_COPPER_WALL = registerBlock("waxed_oxidized_cut_copper_wall",
             new WallBlock(FabricBlockSettings.copy(OXIDIZED_CUT_COPPER)));
 
     public static final Block IRON_WALL = registerBlock("iron_wall",
@@ -932,15 +994,27 @@ public class ModBlocks {
     // region Metal
 
     public static final Block COPPER_SLAB = registerBlock("copper_slab",
+            new OxidizableSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copy(COPPER_BLOCK)));
+
+    public static final Block WAXED_COPPER_SLAB = registerBlock("waxed_copper_slab",
             new SlabBlock(FabricBlockSettings.copy(COPPER_BLOCK)));
 
     public static final Block EXPOSED_COPPER_SLAB = registerBlock("exposed_copper_slab",
+            new OxidizableSlabBlock(Oxidizable.OxidationLevel.EXPOSED, FabricBlockSettings.copy(EXPOSED_COPPER)));
+
+    public static final Block WAXED_EXPOSED_COPPER_SLAB = registerBlock("waxed_exposed_copper_slab",
             new SlabBlock(FabricBlockSettings.copy(EXPOSED_COPPER)));
 
     public static final Block WEATHERED_COPPER_SLAB = registerBlock("weathered_copper_slab",
+            new OxidizableSlabBlock(Oxidizable.OxidationLevel.WEATHERED, FabricBlockSettings.copy(WEATHERED_COPPER)));
+
+    public static final Block WAXED_WEATHERED_COPPER_SLAB = registerBlock("waxed_weathered_copper_slab",
             new SlabBlock(FabricBlockSettings.copy(WEATHERED_COPPER)));
 
     public static final Block OXIDIZED_COPPER_SLAB = registerBlock("oxidized_copper_slab",
+            new OxidizableSlabBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copy(OXIDIZED_COPPER)));
+
+    public static final Block WAXED_OXIDIZED_COPPER_SLAB = registerBlock("waxed_oxidized_copper_slab",
             new SlabBlock(FabricBlockSettings.copy(OXIDIZED_COPPER)));
 
     public static final Block IRON_SLAB = registerBlock("iron_slab",
@@ -1283,15 +1357,27 @@ public class ModBlocks {
     // region Metal
 
     public static final Block COPPER_STAIRS = registerBlock("copper_stairs",
+            new OxidizableStairsBlock(Oxidizable.OxidationLevel.UNAFFECTED, COPPER_BLOCK.getDefaultState(), FabricBlockSettings.copy(COPPER_BLOCK)));
+
+    public static final Block WAXED_COPPER_STAIRS = registerBlock("waxed_copper_stairs",
             new StairsBlock(COPPER_BLOCK.getDefaultState(), FabricBlockSettings.copy(COPPER_BLOCK)));
 
     public static final Block EXPOSED_COPPER_STAIRS = registerBlock("exposed_copper_stairs",
+            new OxidizableStairsBlock(Oxidizable.OxidationLevel.EXPOSED, EXPOSED_COPPER.getDefaultState(), FabricBlockSettings.copy(EXPOSED_COPPER)));
+
+    public static final Block WAXED_EXPOSED_COPPER_STAIRS = registerBlock("waxed_exposed_copper_stairs",
             new StairsBlock(EXPOSED_COPPER.getDefaultState(), FabricBlockSettings.copy(EXPOSED_COPPER)));
 
     public static final Block WEATHERED_COPPER_STAIRS = registerBlock("weathered_copper_stairs",
+            new OxidizableStairsBlock(Oxidizable.OxidationLevel.WEATHERED, WEATHERED_COPPER.getDefaultState(), FabricBlockSettings.copy(WEATHERED_COPPER)));
+
+    public static final Block WAXED_WEATHERED_COPPER_STAIRS = registerBlock("waxed_weathered_copper_stairs",
             new StairsBlock(WEATHERED_COPPER.getDefaultState(), FabricBlockSettings.copy(WEATHERED_COPPER)));
 
     public static final Block OXIDIZED_COPPER_STAIRS = registerBlock("oxidized_copper_stairs",
+            new OxidizableStairsBlock(Oxidizable.OxidationLevel.OXIDIZED, OXIDIZED_COPPER.getDefaultState(), FabricBlockSettings.copy(OXIDIZED_COPPER)));
+
+    public static final Block WAXED_OXIDIZED_COPPER_STAIRS = registerBlock("waxed_oxidized_copper_stairs",
             new StairsBlock(OXIDIZED_COPPER.getDefaultState(), FabricBlockSettings.copy(OXIDIZED_COPPER)));
 
     public static final Block IRON_STAIRS = registerBlock("iron_stairs",
