@@ -11,10 +11,6 @@ This mod adds many partial-block variants of vanilla blocks, including concrete,
 
 To get past the recipe conflicts for the wood-type variants, use the sawmill. It functions similarly to the stonecutter, and is crafted like a stonecutter with the stone replaced with planks.
 
-**Notes:**
-
-- While I consider this mod "complete", there are some changes I will be making in the future, such as making the copper block variants oxidize. Check this page somewhat regularly in case of such updates.
-
 **FAQs:**
 
 - *Will this be updated to 1.x.x?* - Yes! I plan on updating this mod for as long as I can. Expect to wait a few weeks after major Minecraft updates for an updated version of this mod. There may be longer pauses between minor versions depending on how busy I am.
