@@ -3,7 +3,6 @@ package net.frostbyte.slabsandstairs.recipe;
 import com.google.gson.JsonObject;
 import net.frostbyte.slabsandstairs.block.ModBlocks;
 import net.minecraft.inventory.Inventory;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.recipe.CuttingRecipe;
@@ -18,6 +17,11 @@ import net.minecraft.world.World;
 public class SawmillRecipe extends CuttingRecipe {
     public SawmillRecipe(Identifier id, String group, Ingredient input, ItemStack output) {
         super(new Type(), new Serializer(), id, group, input, output);
+    }
+
+    @Override
+    public boolean isIgnoredInRecipeBook() {
+        return true;
     }
 
     public boolean matches(Inventory inventory, World world) {
@@ -60,7 +64,7 @@ public class SawmillRecipe extends CuttingRecipe {
 
             String string2 = JsonHelper.getString(json, "result");
             int i = JsonHelper.getInt(json, "count");
-            ItemStack itemStack = new ItemStack((ItemConvertible) Registries.ITEM.get(new Identifier(string2)), i);
+            ItemStack itemStack = new ItemStack(Registries.ITEM.get(new Identifier(string2)), i);
             return new SawmillRecipe(id, string, ingredient, itemStack);
         }
 
