@@ -24,6 +24,7 @@
     "slabsandstairs:quartz_pillar_slab",
     "slabsandstairs:end_stone_slab",
     "slabsandstairs:purpur_pillar_slab",
+    "slabsandstairs:purpur_pillar_slab",
 
     "slabsandstairs:black_concrete_slab",
     "slabsandstairs:blue_concrete_slab",
@@ -312,15 +313,16 @@
     "slabsandstairs:yellow_terracotta_wall",
     "slabsandstairs:yellow_glazed_terracotta_wall",
 
-    "slabsandstairs:copper_stairs",
-    "slabsandstairs:waxed_copper_stairs",
-    "slabsandstairs:exposed_copper_stairs",
-    "slabsandstairs:waxed_exposed_copper_stairs",
-    "slabsandstairs:weathered_copper_stairs",
-    "slabsandstairs:waxed_weathered_copper_stairs",
-    "slabsandstairs:oxidized_copper_stairs",
-    "slabsandstairs:waxed_oxidized_copper_stairs",
+    "slabsandstairs:copper_slab",
+    "slabsandstairs:waxed_copper_slab",
+    "slabsandstairs:exposed_copper_slab",
+    "slabsandstairs:waxed_exposed_copper_slab",
+    "slabsandstairs:weathered_copper_slab",
+    "slabsandstairs:waxed_weathered_copper_slab",
+    "slabsandstairs:oxidized_copper_slab",
+    "slabsandstairs:waxed_oxidized_copper_slab",
     "slabsandstairs:iron_slab",
+    "slabsandstairs:gold_slab",
 
     "slabsandstairs:copper_stairs",
     "slabsandstairs:waxed_copper_stairs",
@@ -330,6 +332,7 @@
     "slabsandstairs:waxed_weathered_copper_stairs",
     "slabsandstairs:oxidized_copper_stairs",
     "slabsandstairs:waxed_oxidized_copper_stairs",
-    "slabsandstairs:iron_stairs"
+    "slabsandstairs:iron_stairs",
+    "slabsandstairs:gold_stairs"
   ]
 }

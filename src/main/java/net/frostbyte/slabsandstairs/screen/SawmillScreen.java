@@ -1,24 +1,31 @@
 package net.frostbyte.slabsandstairs.screen;
 
-import com.mojang.blaze3d.systems.RenderSystem;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.frostbyte.slabsandstairs.SlabsAndStairs;
 import net.frostbyte.slabsandstairs.recipe.SawmillRecipe;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 
 import java.util.List;
+import java.util.Objects;
 
 @Environment(EnvType.CLIENT)
 public class SawmillScreen extends HandledScreen<SawmillScreenHandler> {
-    private static final Identifier TEXTURE = new Identifier("textures/gui/container/stonecutter.png");
+    private static final Identifier SCROLLER_TEXTURE = new Identifier(SlabsAndStairs.MOD_ID, "container/sawmill/scroller");
+    private static final Identifier SCROLLER_DISABLED_TEXTURE = new Identifier(SlabsAndStairs.MOD_ID, "container/sawmill/scroller_disabled");
+    private static final Identifier RECIPE_SELECTED_TEXTURE = new Identifier(SlabsAndStairs.MOD_ID, "container/sawmill/recipe_selected");
+    private static final Identifier RECIPE_HIGHLIGHTED_TEXTURE = new Identifier(SlabsAndStairs.MOD_ID, "container/sawmill/recipe_highlighted");
+    private static final Identifier RECIPE_TEXTURE = new Identifier(SlabsAndStairs.MOD_ID, "container/sawmill/recipe");
+    private static final Identifier TEXTURE = new Identifier(SlabsAndStairs.MOD_ID, "textures/gui/container/sawmill.png");
     private float scrollAmount;
     private boolean mouseClicked;
     private int scrollOffset;
@@ -36,13 +43,12 @@ public class SawmillScreen extends HandledScreen<SawmillScreenHandler> {
     }
 
     protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {
-        this.renderBackground(context);
-        RenderSystem.setShaderTexture(0, TEXTURE);
         int i = this.x;
         int j = this.y;
         context.drawTexture(TEXTURE, i, j, 0, 0, this.backgroundWidth, this.backgroundHeight);
         int k = (int)(41.0F * this.scrollAmount);
-        context.drawTexture(TEXTURE, i + 119, j + 15 + k, 176 + (this.shouldScroll() ? 0 : 12), 0, 12, 15);
+        Identifier identifier = this.shouldScroll() ? SCROLLER_TEXTURE : SCROLLER_DISABLED_TEXTURE;
+        context.drawGuiTexture(identifier, i + 119, j + 15 + k, 12, 15);
         int l = this.x + 52;
         int m = this.y + 14;
         int n = this.scrollOffset + 12;
@@ -56,14 +62,16 @@ public class SawmillScreen extends HandledScreen<SawmillScreenHandler> {
             int i = this.x + 52;
             int j = this.y + 14;
             int k = this.scrollOffset + 12;
-            List<SawmillRecipe> list = this.handler.getAvailableRecipes();
+            List<RecipeEntry<SawmillRecipe>> list = this.handler.getAvailableRecipes();
 
             for(int l = this.scrollOffset; l < k && l < this.handler.getAvailableRecipeCount(); ++l) {
                 int m = l - this.scrollOffset;
                 int n = i + m % 4 * 16;
                 int o = j + m / 4 * 18 + 2;
                 if (x >= n && x < n + 16 && y >= o && y < o + 18) {
-                    context.drawItemTooltip(this.textRenderer, list.get(l).getOutput(this.client.world.getRegistryManager()), x, y);
+                    assert this.client != null;
+                    assert this.client.world != null;
+                    context.drawItemTooltip(this.textRenderer, ((RecipeEntry<?>)list.get(l)).value().getResult(this.client.world.getRegistryManager()), x, y);
                 }
             }
         }
@@ -76,28 +84,33 @@ public class SawmillScreen extends HandledScreen<SawmillScreenHandler> {
             int k = x + j % 4 * 16;
             int l = j / 4;
             int m = y + l * 18 + 2;
-            int n = this.backgroundHeight;
+            Identifier identifier;
             if (i == this.handler.getSelectedRecipe()) {
-                n += 18;
+                identifier = RECIPE_SELECTED_TEXTURE;
             } else if (mouseX >= k && mouseY >= m && mouseX < k + 16 && mouseY < m + 18) {
-                n += 36;
+                identifier = RECIPE_HIGHLIGHTED_TEXTURE;
+            } else {
+                identifier = RECIPE_TEXTURE;
             }
-            context.drawTexture(TEXTURE, k, m - 1, 0, n, 16, 18);
+
+            context.drawGuiTexture(identifier, k, m - 1, 16, 18);
         }
 
     }
 
     private void renderRecipeIcons(DrawContext context, int x, int y, int scrollOffset) {
-        List<SawmillRecipe> list = this.handler.getAvailableRecipes();
+        List<RecipeEntry<SawmillRecipe>> list = this.handler.getAvailableRecipes();
+
         for(int i = this.scrollOffset; i < scrollOffset && i < this.handler.getAvailableRecipeCount(); ++i) {
             int j = i - this.scrollOffset;
             int k = x + j % 4 * 16;
             int l = j / 4;
             int m = y + l * 18 + 2;
+            assert Objects.requireNonNull(this.client).world != null;
+            assert this.client.world != null;
+            context.drawItem(((RecipeEntry<?>)list.get(i)).value().getResult(this.client.world.getRegistryManager()), k, m);
         }
-        for (int i = 0; i < list.size(); i++) {
-            context.drawItem(list.get(i).getOutput(this.client.world.getRegistryManager()), x + i % 4 * 16, y + 2 + (i / 4) * 18);
-        }
+
     }
 
     public boolean mouseClicked(double mouseX, double mouseY, int button) {
@@ -111,10 +124,14 @@ public class SawmillScreen extends HandledScreen<SawmillScreenHandler> {
                 int m = l - this.scrollOffset;
                 double d = mouseX - (double)(i + m % 4 * 16);
                 double e = mouseY - (double)(j + m / 4 * 18);
-                if (d >= 0.0D && e >= 0.0D && d < 16.0D && e < 18.0D && this.handler.onButtonClick(this.client.player, l)) {
-                    MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_STONECUTTER_SELECT_RECIPE, 1.0F));
-                    this.client.interactionManager.clickButton(this.handler.syncId, l);
-                    return true;
+                if (d >= 0.0 && e >= 0.0 && d < 16.0 && e < 18.0) {
+                    assert this.client != null;
+                    if (this.handler.onButtonClick(this.client.player, l)) {
+                        MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_STONECUTTER_SELECT_RECIPE, 1.0F));
+                        assert this.client.interactionManager != null;
+                        this.client.interactionManager.clickButton(this.handler.syncId, l);
+                        return true;
+                    }
                 }
             }
 
@@ -134,19 +151,19 @@ public class SawmillScreen extends HandledScreen<SawmillScreenHandler> {
             int j = i + 54;
             this.scrollAmount = ((float)mouseY - (float)i - 7.5F) / ((float)(j - i) - 15.0F);
             this.scrollAmount = MathHelper.clamp(this.scrollAmount, 0.0F, 1.0F);
-            this.scrollOffset = (int)((double)(this.scrollAmount * (float)this.getMaxScroll()) + 0.5D) * 4;
+            this.scrollOffset = (int)((double)(this.scrollAmount * (float)this.getMaxScroll()) + 0.5) * 4;
             return true;
         } else {
             return super.mouseDragged(mouseX, mouseY, button, deltaX, deltaY);
         }
     }
 
-    public boolean mouseScrolled(double mouseX, double mouseY, double amount) {
+    public boolean mouseScrolled(double mouseX, double mouseY, double horizontalAmount, double verticalAmount) {
         if (this.shouldScroll()) {
             int i = this.getMaxScroll();
-            float f = (float)amount / (float)i;
+            float f = (float)verticalAmount / (float)i;
             this.scrollAmount = MathHelper.clamp(this.scrollAmount - f, 0.0F, 1.0F);
-            this.scrollOffset = (int)((double)(this.scrollAmount * (float)i) + 0.5D) * 4;
+            this.scrollOffset = (int)((double)(this.scrollAmount * (float)i) + 0.5) * 4;
         }
 
         return true;
@@ -161,10 +178,11 @@ public class SawmillScreen extends HandledScreen<SawmillScreenHandler> {
     }
 
     private void onInventoryChange() {
-        this.canCraft = (this.handler).canCraft();
+        this.canCraft = this.handler.canCraft();
         if (!this.canCraft) {
             this.scrollAmount = 0.0F;
             this.scrollOffset = 0;
         }
+
     }
 }

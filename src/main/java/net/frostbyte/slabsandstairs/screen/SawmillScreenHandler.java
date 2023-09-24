@@ -2,6 +2,7 @@ package net.frostbyte.slabsandstairs.screen;
 
 import com.google.common.collect.Lists;
 import net.frostbyte.slabsandstairs.block.ModBlocks;
+import net.frostbyte.slabsandstairs.recipe.ModRecipes;
 import net.frostbyte.slabsandstairs.recipe.SawmillRecipe;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -10,10 +11,8 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.screen.Property;
-import net.minecraft.screen.ScreenHandler;
-import net.minecraft.screen.ScreenHandlerContext;
-import net.minecraft.screen.ScreenHandlerType;
+import net.minecraft.recipe.RecipeEntry;
+import net.minecraft.screen.*;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -22,11 +21,10 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class SawmillScreenHandler extends ScreenHandler {
-
     private final ScreenHandlerContext context;
     private final Property selectedRecipe;
     private final World world;
-    private List<SawmillRecipe> availableRecipes;
+    private List<RecipeEntry<SawmillRecipe>> availableRecipes;
     private ItemStack inputStack;
     long lastTakeTime;
     final Slot inputSlot;
@@ -39,7 +37,7 @@ public class SawmillScreenHandler extends ScreenHandler {
         this(syncId, playerInventory, ScreenHandlerContext.EMPTY);
     }
 
-    public SawmillScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
+    public SawmillScreenHandler(int syncId, PlayerInventory playerInventory, final ScreenHandlerContext context) {
         super(ModScreenHandlers.SAWMILL_SCREEN_HANDLER, syncId);
         this.selectedRecipe = Property.create();
         this.availableRecipes = Lists.newArrayList();
@@ -64,7 +62,7 @@ public class SawmillScreenHandler extends ScreenHandler {
 
             public void onTakeItem(PlayerEntity player, ItemStack stack) {
                 stack.onCraft(player.getWorld(), player, stack.getCount());
-                SawmillScreenHandler.this.output.unlockLastRecipe(player, getStacks());
+                SawmillScreenHandler.this.output.unlockLastRecipe(player, this.getInputStacks());
                 ItemStack itemStack = SawmillScreenHandler.this.inputSlot.takeStack(1);
                 if (!itemStack.isEmpty()) {
                     SawmillScreenHandler.this.populateResult();
@@ -73,12 +71,16 @@ public class SawmillScreenHandler extends ScreenHandler {
                 context.run((world, pos) -> {
                     long l = world.getTime();
                     if (SawmillScreenHandler.this.lastTakeTime != l) {
-                        world.playSound((PlayerEntity)null, pos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                        world.playSound(null, pos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundCategory.BLOCKS, 1.0F, 1.0F);
                         SawmillScreenHandler.this.lastTakeTime = l;
                     }
 
                 });
                 super.onTakeItem(player, stack);
+            }
+
+            private List<ItemStack> getInputStacks() {
+                return List.of(SawmillScreenHandler.this.inputSlot.getStack());
             }
         });
 
@@ -100,7 +102,7 @@ public class SawmillScreenHandler extends ScreenHandler {
         return this.selectedRecipe.get();
     }
 
-    public List<SawmillRecipe> getAvailableRecipes() {
+    public List<RecipeEntry<SawmillRecipe>> getAvailableRecipes() {
         return this.availableRecipes;
     }
 
@@ -143,17 +145,17 @@ public class SawmillScreenHandler extends ScreenHandler {
         this.selectedRecipe.set(-1);
         this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
         if (!stack.isEmpty()) {
-            this.availableRecipes = this.world.getRecipeManager().getAllMatches(SawmillRecipe.Type.INSTANCE, input, this.world);
+            this.availableRecipes = this.world.getRecipeManager().getAllMatches(ModRecipes.SAWMILL_RECIPE, input, this.world);
         }
 
     }
 
     void populateResult() {
         if (!this.availableRecipes.isEmpty() && this.isInBounds(this.selectedRecipe.get())) {
-            SawmillRecipe sawmillRecipe = this.availableRecipes.get(this.selectedRecipe.get());
-            ItemStack itemStack = sawmillRecipe.craft(this.input, this.world.getRegistryManager());
+            RecipeEntry<SawmillRecipe> recipeEntry = this.availableRecipes.get(this.selectedRecipe.get());
+            ItemStack itemStack = recipeEntry.value().craft(this.input, this.world.getRegistryManager());
             if (itemStack.isItemEnabled(this.world.getEnabledFeatures())) {
-                this.output.setLastRecipe(sawmillRecipe);
+                this.output.setLastRecipe(recipeEntry);
                 this.outputSlot.setStackNoCallbacks(itemStack);
             } else {
                 this.outputSlot.setStackNoCallbacks(ItemStack.EMPTY);
@@ -179,8 +181,8 @@ public class SawmillScreenHandler extends ScreenHandler {
 
     public ItemStack quickMove(PlayerEntity player, int slot) {
         ItemStack itemStack = ItemStack.EMPTY;
-        Slot slot2 = (Slot)this.slots.get(slot);
-        if (slot2 != null && slot2.hasStack()) {
+        Slot slot2 = this.slots.get(slot);
+        if (slot2.hasStack()) {
             ItemStack itemStack2 = slot2.getStack();
             Item item = itemStack2.getItem();
             itemStack = itemStack2.copy();
@@ -195,7 +197,7 @@ public class SawmillScreenHandler extends ScreenHandler {
                 if (!this.insertItem(itemStack2, 2, 38, false)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (this.world.getRecipeManager().getFirstMatch(SawmillRecipe.Type.INSTANCE, new SimpleInventory(new ItemStack[]{itemStack2}), this.world).isPresent()) {
+            } else if (this.world.getRecipeManager().getFirstMatch(ModRecipes.SAWMILL_RECIPE, new SimpleInventory(itemStack2), this.world).isPresent()) {
                 if (!this.insertItem(itemStack2, 0, 1, false)) {
                     return ItemStack.EMPTY;
                 }
@@ -226,8 +228,6 @@ public class SawmillScreenHandler extends ScreenHandler {
     public void onClosed(PlayerEntity player) {
         super.onClosed(player);
         this.output.removeStack(1);
-        this.context.run((world, pos) -> {
-            this.dropInventory(player, this.input);
-        });
+        this.context.run((world, pos) -> this.dropInventory(player, this.input));
     }
 }
