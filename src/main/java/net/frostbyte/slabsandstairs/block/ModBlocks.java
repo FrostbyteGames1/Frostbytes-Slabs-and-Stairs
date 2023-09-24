@@ -3,10 +3,7 @@ package net.frostbyte.slabsandstairs.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.frostbyte.slabsandstairs.SlabsAndStairs;
-import net.frostbyte.slabsandstairs.block.custom.OxidizableButtonBlock;
-import net.frostbyte.slabsandstairs.block.custom.OxidizablePressurePlateBlock;
-import net.frostbyte.slabsandstairs.block.custom.OxidizableWallBlock;
-import net.frostbyte.slabsandstairs.block.custom.SawmillBlock;
+import net.frostbyte.slabsandstairs.block.custom.*;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -72,107 +69,107 @@ public class ModBlocks {
     // region Wood
 
     public static final Block OAK_WOOD_BUTTON = registerBlock("oak_wood_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(OAK_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.OAK, 15, true));
 
     public static final Block SPRUCE_WOOD_BUTTON = registerBlock("spruce_wood_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(SPRUCE_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.SPRUCE, 15, true));
 
     public static final Block BIRCH_WOOD_BUTTON = registerBlock("birch_wood_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(BIRCH_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.BIRCH, 15, true));
 
     public static final Block JUNGLE_WOOD_BUTTON = registerBlock("jungle_wood_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(JUNGLE_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.JUNGLE, 15, true));
 
     public static final Block ACACIA_WOOD_BUTTON = registerBlock("acacia_wood_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(ACACIA_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.ACACIA, 15, true));
 
     public static final Block DARK_OAK_WOOD_BUTTON = registerBlock("dark_oak_wood_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(DARK_OAK_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.DARK_OAK, 15, true));
 
     public static final Block MANGROVE_WOOD_BUTTON = registerBlock("mangrove_wood_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(MANGROVE_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.MANGROVE, 15, true));
 
     public static final Block CHERRY_WOOD_BUTTON = registerBlock("cherry_wood_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(CHERRY_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.CHERRY, 15, true));
 
     public static final Block BAMBOO_BLOCK_BUTTON = registerBlock("bamboo_block_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(BAMBOO_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.BAMBOO, 15, true));
 
     public static final Block WARPED_HYPHAE_BUTTON = registerBlock("warped_hyphae_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(WARPED_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.WARPED, 15, true));
 
     public static final Block CRIMSON_HYPHAE_BUTTON = registerBlock("crimson_hyphae_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(CRIMSON_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.CRIMSON, 15, true));
 
     public static final Block STRIPPED_OAK_BUTTON = registerBlock("stripped_oak_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(OAK_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.OAK, 15, true));
 
     public static final Block STRIPPED_SPRUCE_BUTTON = registerBlock("stripped_spruce_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(SPRUCE_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.SPRUCE, 15, true));
 
     public static final Block STRIPPED_BIRCH_BUTTON = registerBlock("stripped_birch_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(BIRCH_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.BIRCH, 15, true));
 
     public static final Block STRIPPED_JUNGLE_BUTTON = registerBlock("stripped_jungle_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(JUNGLE_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.JUNGLE, 15, true));
 
     public static final Block STRIPPED_ACACIA_BUTTON = registerBlock("stripped_acacia_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(ACACIA_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.ACACIA, 15, true));
 
     public static final Block STRIPPED_DARK_OAK_BUTTON = registerBlock("stripped_dark_oak_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(DARK_OAK_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.DARK_OAK, 15, true));
 
     public static final Block STRIPPED_MANGROVE_BUTTON = registerBlock("stripped_mangrove_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(MANGROVE_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.MANGROVE, 15, true));
 
     public static final Block STRIPPED_CHERRY_BUTTON = registerBlock("stripped_cherry_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(CHERRY_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.CHERRY, 15, true));
 
     public static final Block STRIPPED_WARPED_BUTTON = registerBlock("stripped_warped_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(WARPED_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.WARPED, 15, true));
 
     public static final Block STRIPPED_CRIMSON_BUTTON = registerBlock("stripped_crimson_button",
-            new ButtonBlock(
+            new ModButtonBlock(
                     FabricBlockSettings.copyOf(CRIMSON_BUTTON).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.CRIMSON, 15, true));
 
@@ -299,128 +296,128 @@ public class ModBlocks {
     // region Wood
 
     public static final Block OAK_WOOD_PRESSURE_PLATE = registerBlock("oak_wood_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(OAK_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.OAK));
 
     public static final Block SPRUCE_WOOD_PRESSURE_PLATE = registerBlock("spruce_wood_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(SPRUCE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.SPRUCE));
 
     public static final Block BIRCH_WOOD_PRESSURE_PLATE = registerBlock("birch_wood_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(BIRCH_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.BIRCH));
 
     public static final Block JUNGLE_WOOD_PRESSURE_PLATE = registerBlock("jungle_wood_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(JUNGLE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.JUNGLE));
 
     public static final Block ACACIA_WOOD_PRESSURE_PLATE = registerBlock("acacia_wood_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(ACACIA_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.ACACIA));
 
     public static final Block DARK_OAK_WOOD_PRESSURE_PLATE = registerBlock("dark_oak_wood_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(DARK_OAK_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.DARK_OAK));
 
     public static final Block MANGROVE_WOOD_PRESSURE_PLATE = registerBlock("mangrove_wood_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(MANGROVE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.MANGROVE));
 
     public static final Block CHERRY_WOOD_PRESSURE_PLATE = registerBlock("cherry_wood_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(CHERRY_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.CHERRY));
 
     public static final Block BAMBOO_BLOCK_PRESSURE_PLATE = registerBlock("bamboo_block_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(BAMBOO_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.BAMBOO));
 
     public static final Block WARPED_HYPHAE_PRESSURE_PLATE = registerBlock("warped_hyphae_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(WARPED_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.WARPED));
 
     public static final Block CRIMSON_HYPHAE_PRESSURE_PLATE = registerBlock("crimson_hyphae_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(CRIMSON_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.CRIMSON));
 
     public static final Block STRIPPED_OAK_PRESSURE_PLATE = registerBlock("stripped_oak_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(OAK_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.OAK));
 
     public static final Block STRIPPED_SPRUCE_PRESSURE_PLATE = registerBlock("stripped_spruce_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(SPRUCE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.SPRUCE));
 
     public static final Block STRIPPED_BIRCH_PRESSURE_PLATE = registerBlock("stripped_birch_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(BIRCH_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.BIRCH));
 
     public static final Block STRIPPED_JUNGLE_PRESSURE_PLATE = registerBlock("stripped_jungle_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(JUNGLE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.JUNGLE));
 
     public static final Block STRIPPED_ACACIA_PRESSURE_PLATE = registerBlock("stripped_acacia_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(ACACIA_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.ACACIA));
 
     public static final Block STRIPPED_DARK_OAK_PRESSURE_PLATE = registerBlock("stripped_dark_oak_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(DARK_OAK_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.DARK_OAK));
 
     public static final Block STRIPPED_MANGROVE_PRESSURE_PLATE = registerBlock("stripped_mangrove_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(MANGROVE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.MANGROVE));
 
     public static final Block STRIPPED_CHERRY_PRESSURE_PLATE = registerBlock("stripped_cherry_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(CHERRY_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.CHERRY));
 
     public static final Block STRIPPED_WARPED_PRESSURE_PLATE = registerBlock("stripped_warped_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(WARPED_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.WARPED));
 
     public static final Block STRIPPED_CRIMSON_PRESSURE_PLATE = registerBlock("stripped_crimson_pressure_plate",
-            new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
+            new ModPressurePlateBlock(
+                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(CRIMSON_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
                     BlockSetType.CRIMSON));
 
@@ -503,67 +500,67 @@ public class ModBlocks {
     // region Wood
 
     public static final Block OAK_WOOD_FENCE = registerBlock("oak_wood_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(OAK_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(OAK_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block SPRUCE_WOOD_FENCE = registerBlock("spruce_wood_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(SPRUCE_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(SPRUCE_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block BIRCH_WOOD_FENCE = registerBlock("birch_wood_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(BIRCH_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(BIRCH_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block JUNGLE_WOOD_FENCE = registerBlock("jungle_wood_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(JUNGLE_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(JUNGLE_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block ACACIA_WOOD_FENCE = registerBlock("acacia_wood_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(ACACIA_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(ACACIA_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block DARK_OAK_WOOD_FENCE = registerBlock("dark_oak_wood_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(DARK_OAK_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(DARK_OAK_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block MANGROVE_WOOD_FENCE = registerBlock("mangrove_wood_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(MANGROVE_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(MANGROVE_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block CHERRY_WOOD_FENCE = registerBlock("cherry_wood_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(CHERRY_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(CHERRY_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block BAMBOO_BLOCK_FENCE = registerBlock("bamboo_block_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(BAMBOO_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(BAMBOO_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block WARPED_HYPHAE_FENCE = registerBlock("warped_hyphae_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(WARPED_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(WARPED_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block CRIMSON_HYPHAE_FENCE = registerBlock("crimson_hyphae_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(CRIMSON_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(CRIMSON_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block STRIPPED_OAK_FENCE = registerBlock("stripped_oak_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(OAK_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(OAK_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block STRIPPED_SPRUCE_FENCE = registerBlock("stripped_spruce_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(SPRUCE_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(SPRUCE_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block STRIPPED_BIRCH_FENCE = registerBlock("stripped_birch_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(BIRCH_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(BIRCH_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block STRIPPED_JUNGLE_FENCE = registerBlock("stripped_jungle_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(JUNGLE_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(JUNGLE_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block STRIPPED_ACACIA_FENCE = registerBlock("stripped_acacia_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(ACACIA_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(ACACIA_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block STRIPPED_DARK_OAK_FENCE = registerBlock("stripped_dark_oak_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(DARK_OAK_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(DARK_OAK_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block STRIPPED_MANGROVE_FENCE = registerBlock("stripped_mangrove_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(MANGROVE_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(MANGROVE_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block STRIPPED_CHERRY_FENCE = registerBlock("stripped_cherry_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(CHERRY_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(CHERRY_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block STRIPPED_WARPED_FENCE = registerBlock("stripped_warped_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(WARPED_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(WARPED_FENCE).strength(2.0f).requiresTool()));
 
     public static final Block STRIPPED_CRIMSON_FENCE = registerBlock("stripped_crimson_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(CRIMSON_FENCE).strength(2.0f).requiresTool()));
+            new ModFenceBlock(FabricBlockSettings.copyOf(CRIMSON_FENCE).strength(2.0f).requiresTool()));
 
     // endregion
 
@@ -581,67 +578,67 @@ public class ModBlocks {
     // region Wood
 
     public static final Block OAK_WOOD_FENCE_GATE = registerBlock("oak_wood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(OAK_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.OAK));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(OAK_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.OAK));
 
     public static final Block SPRUCE_WOOD_FENCE_GATE = registerBlock("spruce_wood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(SPRUCE_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.SPRUCE));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(SPRUCE_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.SPRUCE));
 
     public static final Block BIRCH_WOOD_FENCE_GATE = registerBlock("birch_wood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(BIRCH_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.BIRCH));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(BIRCH_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.BIRCH));
 
     public static final Block JUNGLE_WOOD_FENCE_GATE = registerBlock("jungle_wood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(JUNGLE_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.JUNGLE));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(JUNGLE_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.JUNGLE));
 
     public static final Block ACACIA_WOOD_FENCE_GATE = registerBlock("acacia_wood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(ACACIA_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.ACACIA));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(ACACIA_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.ACACIA));
 
     public static final Block DARK_OAK_WOOD_FENCE_GATE = registerBlock("dark_oak_wood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(DARK_OAK_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.DARK_OAK));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(DARK_OAK_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.DARK_OAK));
 
     public static final Block MANGROVE_WOOD_FENCE_GATE = registerBlock("mangrove_wood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(MANGROVE_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.MANGROVE));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(MANGROVE_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.MANGROVE));
 
     public static final Block CHERRY_WOOD_FENCE_GATE = registerBlock("cherry_wood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(CHERRY_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.CHERRY));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(CHERRY_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.CHERRY));
 
     public static final Block BAMBOO_BLOCK_FENCE_GATE = registerBlock("bamboo_block_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(BAMBOO_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.BAMBOO));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(BAMBOO_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.BAMBOO));
 
     public static final Block WARPED_HYPHAE_FENCE_GATE = registerBlock("warped_hyphae_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(WARPED_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.WARPED));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(WARPED_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.WARPED));
 
     public static final Block CRIMSON_HYPHAE_FENCE_GATE = registerBlock("crimson_hyphae_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(CRIMSON_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.CRIMSON));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(CRIMSON_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.CRIMSON));
 
     public static final Block STRIPPED_OAK_FENCE_GATE = registerBlock("stripped_oak_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(OAK_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.OAK));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(OAK_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.OAK));
 
     public static final Block STRIPPED_SPRUCE_FENCE_GATE = registerBlock("stripped_spruce_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(SPRUCE_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.SPRUCE));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(SPRUCE_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.SPRUCE));
 
     public static final Block STRIPPED_BIRCH_FENCE_GATE = registerBlock("stripped_birch_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(BIRCH_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.BIRCH));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(BIRCH_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.BIRCH));
 
     public static final Block STRIPPED_JUNGLE_FENCE_GATE = registerBlock("stripped_jungle_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(JUNGLE_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.JUNGLE));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(JUNGLE_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.JUNGLE));
 
     public static final Block STRIPPED_ACACIA_FENCE_GATE = registerBlock("stripped_acacia_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(ACACIA_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.ACACIA));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(ACACIA_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.ACACIA));
 
     public static final Block STRIPPED_DARK_OAK_FENCE_GATE = registerBlock("stripped_dark_oak_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(DARK_OAK_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.DARK_OAK));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(DARK_OAK_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.DARK_OAK));
 
     public static final Block STRIPPED_MANGROVE_FENCE_GATE = registerBlock("stripped_mangrove_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(MANGROVE_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.MANGROVE));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(MANGROVE_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.MANGROVE));
 
     public static final Block STRIPPED_CHERRY_FENCE_GATE = registerBlock("stripped_cherry_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(CHERRY_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.CHERRY));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(CHERRY_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.CHERRY));
 
     public static final Block STRIPPED_WARPED_FENCE_GATE = registerBlock("stripped_warped_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(WARPED_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.WARPED));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(WARPED_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.WARPED));
 
     public static final Block STRIPPED_CRIMSON_FENCE_GATE = registerBlock("stripped_crimson_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(CRIMSON_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.CRIMSON));
+            new ModFenceGateBlock(FabricBlockSettings.copyOf(CRIMSON_FENCE_GATE).strength(2.0f).requiresTool(), WoodType.CRIMSON));
 
     // endregion
 
@@ -1028,97 +1025,97 @@ public class ModBlocks {
     // region Wood
 
     public static final Block OAK_LOG_SLAB = registerBlock("oak_log_slab",
-            new SlabBlock(FabricBlockSettings.copy(OAK_PLANKS)));
+            new ModSlabBlock(FabricBlockSettings.copy(OAK_PLANKS)));
 
     public static final Block SPRUCE_LOG_SLAB = registerBlock("spruce_log_slab",
-            new SlabBlock(FabricBlockSettings.copy(SPRUCE_PLANKS)));
+            new ModSlabBlock(FabricBlockSettings.copy(SPRUCE_PLANKS)));
 
     public static final Block BIRCH_LOG_SLAB = registerBlock("birch_log_slab",
-            new SlabBlock(FabricBlockSettings.copy(BIRCH_PLANKS)));
+            new ModSlabBlock(FabricBlockSettings.copy(BIRCH_PLANKS)));
 
     public static final Block JUNGLE_LOG_SLAB = registerBlock("jungle_log_slab",
-            new SlabBlock(FabricBlockSettings.copy(JUNGLE_PLANKS)));
+            new ModSlabBlock(FabricBlockSettings.copy(JUNGLE_PLANKS)));
 
     public static final Block ACACIA_LOG_SLAB = registerBlock("acacia_log_slab",
-            new SlabBlock(FabricBlockSettings.copy(ACACIA_PLANKS)));
+            new ModSlabBlock(FabricBlockSettings.copy(ACACIA_PLANKS)));
 
     public static final Block DARK_OAK_LOG_SLAB = registerBlock("dark_oak_log_slab",
-            new SlabBlock(FabricBlockSettings.copy(DARK_OAK_PLANKS)));
+            new ModSlabBlock(FabricBlockSettings.copy(DARK_OAK_PLANKS)));
 
     public static final Block MANGROVE_LOG_SLAB = registerBlock("mangrove_log_slab",
-            new SlabBlock(FabricBlockSettings.copy(MANGROVE_PLANKS)));
+            new ModSlabBlock(FabricBlockSettings.copy(MANGROVE_PLANKS)));
 
     public static final Block CHERRY_LOG_SLAB = registerBlock("cherry_log_slab",
-            new SlabBlock(FabricBlockSettings.copy(CHERRY_PLANKS)));
+            new ModSlabBlock(FabricBlockSettings.copy(CHERRY_PLANKS)));
 
     public static final Block WARPED_STEM_SLAB = registerBlock("warped_stem_slab",
-            new SlabBlock(FabricBlockSettings.copy(WARPED_STEM)));
+            new ModSlabBlock(FabricBlockSettings.copy(WARPED_STEM)));
 
     public static final Block CRIMSON_STEM_SLAB = registerBlock("crimson_stem_slab",
-            new SlabBlock(FabricBlockSettings.copy(CRIMSON_STEM)));
+            new ModSlabBlock(FabricBlockSettings.copy(CRIMSON_STEM)));
 
     public static final Block OAK_WOOD_SLAB = registerBlock("oak_wood_slab",
-            new SlabBlock(FabricBlockSettings.copy(OAK_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(OAK_WOOD)));
 
     public static final Block SPRUCE_WOOD_SLAB = registerBlock("spruce_wood_slab",
-            new SlabBlock(FabricBlockSettings.copy(SPRUCE_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(SPRUCE_WOOD)));
 
     public static final Block BIRCH_WOOD_SLAB = registerBlock("birch_wood_slab",
-            new SlabBlock(FabricBlockSettings.copy(BIRCH_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(BIRCH_WOOD)));
 
     public static final Block JUNGLE_WOOD_SLAB = registerBlock("jungle_wood_slab",
-            new SlabBlock(FabricBlockSettings.copy(JUNGLE_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(JUNGLE_WOOD)));
 
     public static final Block ACACIA_WOOD_SLAB = registerBlock("acacia_wood_slab",
-            new SlabBlock(FabricBlockSettings.copy(ACACIA_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(ACACIA_WOOD)));
 
     public static final Block DARK_OAK_WOOD_SLAB = registerBlock("dark_oak_wood_slab",
-            new SlabBlock(FabricBlockSettings.copy(DARK_OAK_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(DARK_OAK_WOOD)));
 
     public static final Block MANGROVE_WOOD_SLAB = registerBlock("mangrove_wood_slab",
-            new SlabBlock(FabricBlockSettings.copy(MANGROVE_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(MANGROVE_WOOD)));
 
     public static final Block CHERRY_WOOD_SLAB = registerBlock("cherry_wood_slab",
-            new SlabBlock(FabricBlockSettings.copy(CHERRY_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(CHERRY_WOOD)));
 
     public static final Block BAMBOO_BLOCK_SLAB = registerBlock("bamboo_block_slab",
-            new SlabBlock(FabricBlockSettings.copy(BAMBOO_PLANKS)));
+            new ModSlabBlock(FabricBlockSettings.copy(BAMBOO_PLANKS)));
 
     public static final Block WARPED_HYPHAE_SLAB = registerBlock("warped_hyphae_slab",
-            new SlabBlock(FabricBlockSettings.copy(WARPED_STEM)));
+            new ModSlabBlock(FabricBlockSettings.copy(WARPED_STEM)));
 
     public static final Block CRIMSON_HYPHAE_SLAB = registerBlock("crimson_hyphae_slab",
-            new SlabBlock(FabricBlockSettings.copy(CRIMSON_STEM)));
+            new ModSlabBlock(FabricBlockSettings.copy(CRIMSON_STEM)));
 
     public static final Block STRIPPED_OAK_SLAB = registerBlock("stripped_oak_slab",
-            new SlabBlock(FabricBlockSettings.copy(STRIPPED_OAK_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(STRIPPED_OAK_WOOD)));
 
     public static final Block STRIPPED_SPRUCE_SLAB = registerBlock("stripped_spruce_slab",
-            new SlabBlock(FabricBlockSettings.copy(STRIPPED_SPRUCE_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(STRIPPED_SPRUCE_WOOD)));
 
     public static final Block STRIPPED_BIRCH_SLAB = registerBlock("stripped_birch_slab",
-            new SlabBlock(FabricBlockSettings.copy(STRIPPED_BIRCH_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(STRIPPED_BIRCH_WOOD)));
 
     public static final Block STRIPPED_JUNGLE_SLAB = registerBlock("stripped_jungle_slab",
-            new SlabBlock(FabricBlockSettings.copy(STRIPPED_JUNGLE_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(STRIPPED_JUNGLE_WOOD)));
 
     public static final Block STRIPPED_ACACIA_SLAB = registerBlock("stripped_acacia_slab",
-            new SlabBlock(FabricBlockSettings.copy(STRIPPED_ACACIA_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(STRIPPED_ACACIA_WOOD)));
 
     public static final Block STRIPPED_DARK_OAK_SLAB = registerBlock("stripped_dark_oak_slab",
-            new SlabBlock(FabricBlockSettings.copy(STRIPPED_DARK_OAK_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(STRIPPED_DARK_OAK_WOOD)));
 
     public static final Block STRIPPED_MANGROVE_SLAB = registerBlock("stripped_mangrove_slab",
-            new SlabBlock(FabricBlockSettings.copy(MANGROVE_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(MANGROVE_WOOD)));
 
     public static final Block STRIPPED_CHERRY_SLAB = registerBlock("stripped_cherry_slab",
-            new SlabBlock(FabricBlockSettings.copy(CHERRY_WOOD)));
+            new ModSlabBlock(FabricBlockSettings.copy(CHERRY_WOOD)));
 
     public static final Block STRIPPED_WARPED_SLAB = registerBlock("stripped_warped_slab",
-            new SlabBlock(FabricBlockSettings.copy(STRIPPED_WARPED_HYPHAE)));
+            new ModSlabBlock(FabricBlockSettings.copy(STRIPPED_WARPED_HYPHAE)));
 
     public static final Block STRIPPED_CRIMSON_SLAB = registerBlock("stripped_crimson_slab",
-            new SlabBlock(FabricBlockSettings.copy(STRIPPED_CRIMSON_HYPHAE)));
+            new ModSlabBlock(FabricBlockSettings.copy(STRIPPED_CRIMSON_HYPHAE)));
 
     // endregion
 
@@ -1391,97 +1388,97 @@ public class ModBlocks {
     // region Wood
 
     public static final Block OAK_LOG_STAIRS = registerBlock("oak_log_stairs",
-            new StairsBlock(OAK_PLANKS.getDefaultState(), FabricBlockSettings.copy(OAK_PLANKS)));
+            new ModStairsBlock(OAK_PLANKS.getDefaultState(), FabricBlockSettings.copy(OAK_PLANKS)));
 
     public static final Block SPRUCE_LOG_STAIRS = registerBlock("spruce_log_stairs",
-            new StairsBlock(SPRUCE_PLANKS.getDefaultState(), FabricBlockSettings.copy(SPRUCE_PLANKS)));
+            new ModStairsBlock(SPRUCE_PLANKS.getDefaultState(), FabricBlockSettings.copy(SPRUCE_PLANKS)));
 
     public static final Block BIRCH_LOG_STAIRS = registerBlock("birch_log_stairs",
-            new StairsBlock(BIRCH_PLANKS.getDefaultState(), FabricBlockSettings.copy(BIRCH_PLANKS)));
+            new ModStairsBlock(BIRCH_PLANKS.getDefaultState(), FabricBlockSettings.copy(BIRCH_PLANKS)));
 
     public static final Block JUNGLE_LOG_STAIRS = registerBlock("jungle_log_stairs",
-            new StairsBlock(JUNGLE_PLANKS.getDefaultState(), FabricBlockSettings.copy(JUNGLE_PLANKS)));
+            new ModStairsBlock(JUNGLE_PLANKS.getDefaultState(), FabricBlockSettings.copy(JUNGLE_PLANKS)));
 
     public static final Block ACACIA_LOG_STAIRS = registerBlock("acacia_log_stairs",
-            new StairsBlock(ACACIA_PLANKS.getDefaultState(), FabricBlockSettings.copy(ACACIA_PLANKS)));
+            new ModStairsBlock(ACACIA_PLANKS.getDefaultState(), FabricBlockSettings.copy(ACACIA_PLANKS)));
 
     public static final Block DARK_OAK_LOG_STAIRS = registerBlock("dark_oak_log_stairs",
-            new StairsBlock(DARK_OAK_PLANKS.getDefaultState(), FabricBlockSettings.copy(DARK_OAK_PLANKS)));
+            new ModStairsBlock(DARK_OAK_PLANKS.getDefaultState(), FabricBlockSettings.copy(DARK_OAK_PLANKS)));
 
     public static final Block MANGROVE_LOG_STAIRS = registerBlock("mangrove_log_stairs",
-            new StairsBlock(MANGROVE_PLANKS.getDefaultState(), FabricBlockSettings.copy(MANGROVE_PLANKS)));
+            new ModStairsBlock(MANGROVE_PLANKS.getDefaultState(), FabricBlockSettings.copy(MANGROVE_PLANKS)));
 
     public static final Block CHERRY_LOG_STAIRS = registerBlock("cherry_log_stairs",
-            new StairsBlock(CHERRY_PLANKS.getDefaultState(), FabricBlockSettings.copy(CHERRY_PLANKS)));
+            new ModStairsBlock(CHERRY_PLANKS.getDefaultState(), FabricBlockSettings.copy(CHERRY_PLANKS)));
 
     public static final Block WARPED_STEM_STAIRS = registerBlock("warped_stem_stairs",
-            new StairsBlock(WARPED_STEM.getDefaultState(), FabricBlockSettings.copy(WARPED_STEM)));
+            new ModStairsBlock(WARPED_STEM.getDefaultState(), FabricBlockSettings.copy(WARPED_STEM)));
 
     public static final Block CRIMSON_STEM_STAIRS = registerBlock("crimson_stem_stairs",
-            new StairsBlock(CRIMSON_STEM.getDefaultState(), FabricBlockSettings.copy(CRIMSON_STEM)));
+            new ModStairsBlock(CRIMSON_STEM.getDefaultState(), FabricBlockSettings.copy(CRIMSON_STEM)));
 
     public static final Block OAK_WOOD_STAIRS = registerBlock("oak_wood_stairs",
-            new StairsBlock(OAK_WOOD.getDefaultState(), FabricBlockSettings.copy(OAK_WOOD)));
+            new ModStairsBlock(OAK_WOOD.getDefaultState(), FabricBlockSettings.copy(OAK_WOOD)));
 
     public static final Block SPRUCE_WOOD_STAIRS = registerBlock("spruce_wood_stairs",
-            new StairsBlock(SPRUCE_WOOD.getDefaultState(), FabricBlockSettings.copy(SPRUCE_WOOD)));
+            new ModStairsBlock(SPRUCE_WOOD.getDefaultState(), FabricBlockSettings.copy(SPRUCE_WOOD)));
 
     public static final Block BIRCH_WOOD_STAIRS = registerBlock("birch_wood_stairs",
-            new StairsBlock(BIRCH_WOOD.getDefaultState(), FabricBlockSettings.copy(BIRCH_WOOD)));
+            new ModStairsBlock(BIRCH_WOOD.getDefaultState(), FabricBlockSettings.copy(BIRCH_WOOD)));
 
     public static final Block JUNGLE_WOOD_STAIRS = registerBlock("jungle_wood_stairs",
-            new StairsBlock(JUNGLE_WOOD.getDefaultState(), FabricBlockSettings.copy(JUNGLE_WOOD)));
+            new ModStairsBlock(JUNGLE_WOOD.getDefaultState(), FabricBlockSettings.copy(JUNGLE_WOOD)));
 
     public static final Block ACACIA_WOOD_STAIRS = registerBlock("acacia_wood_stairs",
-            new StairsBlock(ACACIA_WOOD.getDefaultState(), FabricBlockSettings.copy(ACACIA_WOOD)));
+            new ModStairsBlock(ACACIA_WOOD.getDefaultState(), FabricBlockSettings.copy(ACACIA_WOOD)));
 
     public static final Block DARK_OAK_WOOD_STAIRS = registerBlock("dark_oak_wood_stairs",
-            new StairsBlock(DARK_OAK_WOOD.getDefaultState(), FabricBlockSettings.copy(DARK_OAK_WOOD)));
+            new ModStairsBlock(DARK_OAK_WOOD.getDefaultState(), FabricBlockSettings.copy(DARK_OAK_WOOD)));
 
     public static final Block MANGROVE_WOOD_STAIRS = registerBlock("mangrove_wood_stairs",
-            new StairsBlock(MANGROVE_WOOD.getDefaultState(), FabricBlockSettings.copy(MANGROVE_WOOD)));
+            new ModStairsBlock(MANGROVE_WOOD.getDefaultState(), FabricBlockSettings.copy(MANGROVE_WOOD)));
 
     public static final Block CHERRY_WOOD_STAIRS = registerBlock("cherry_wood_stairs",
-            new StairsBlock(CHERRY_WOOD.getDefaultState(), FabricBlockSettings.copy(CHERRY_WOOD)));
+            new ModStairsBlock(CHERRY_WOOD.getDefaultState(), FabricBlockSettings.copy(CHERRY_WOOD)));
 
     public static final Block BAMBOO_BLOCK_STAIRS = registerBlock("bamboo_block_stairs",
-            new StairsBlock(BAMBOO_PLANKS.getDefaultState(), FabricBlockSettings.copy(BAMBOO_PLANKS)));
+            new ModStairsBlock(BAMBOO_PLANKS.getDefaultState(), FabricBlockSettings.copy(BAMBOO_PLANKS)));
 
     public static final Block WARPED_HYPHAE_STAIRS = registerBlock("warped_hyphae_stairs",
-            new StairsBlock(WARPED_HYPHAE.getDefaultState(), FabricBlockSettings.copy(WARPED_HYPHAE)));
+            new ModStairsBlock(WARPED_HYPHAE.getDefaultState(), FabricBlockSettings.copy(WARPED_HYPHAE)));
 
     public static final Block CRIMSON_HYPHAE_STAIRS = registerBlock("crimson_hyphae_stairs",
-            new StairsBlock(CRIMSON_HYPHAE.getDefaultState(), FabricBlockSettings.copy(CRIMSON_HYPHAE)));
+            new ModStairsBlock(CRIMSON_HYPHAE.getDefaultState(), FabricBlockSettings.copy(CRIMSON_HYPHAE)));
 
     public static final Block STRIPPED_OAK_STAIRS = registerBlock("stripped_oak_stairs",
-            new StairsBlock(STRIPPED_OAK_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_OAK_WOOD)));
+            new ModStairsBlock(STRIPPED_OAK_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_OAK_WOOD)));
 
     public static final Block STRIPPED_SPRUCE_STAIRS = registerBlock("stripped_spruce_stairs",
-            new StairsBlock(STRIPPED_SPRUCE_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_SPRUCE_WOOD)));
+            new ModStairsBlock(STRIPPED_SPRUCE_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_SPRUCE_WOOD)));
 
     public static final Block STRIPPED_BIRCH_STAIRS = registerBlock("stripped_birch_stairs",
-            new StairsBlock(STRIPPED_BIRCH_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_BIRCH_WOOD)));
+            new ModStairsBlock(STRIPPED_BIRCH_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_BIRCH_WOOD)));
 
     public static final Block STRIPPED_JUNGLE_STAIRS = registerBlock("stripped_jungle_stairs",
-            new StairsBlock(STRIPPED_JUNGLE_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_JUNGLE_WOOD)));
+            new ModStairsBlock(STRIPPED_JUNGLE_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_JUNGLE_WOOD)));
 
     public static final Block STRIPPED_ACACIA_STAIRS = registerBlock("stripped_acacia_stairs",
-            new StairsBlock(STRIPPED_ACACIA_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_ACACIA_WOOD)));
+            new ModStairsBlock(STRIPPED_ACACIA_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_ACACIA_WOOD)));
 
     public static final Block STRIPPED_DARK_OAK_STAIRS = registerBlock("stripped_dark_oak_stairs",
-            new StairsBlock(STRIPPED_DARK_OAK_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_DARK_OAK_WOOD)));
+            new ModStairsBlock(STRIPPED_DARK_OAK_WOOD.getDefaultState(), FabricBlockSettings.copy(STRIPPED_DARK_OAK_WOOD)));
 
     public static final Block STRIPPED_MANGROVE_STAIRS = registerBlock("stripped_mangrove_stairs",
-            new StairsBlock(MANGROVE_WOOD.getDefaultState(), FabricBlockSettings.copy(MANGROVE_WOOD)));
+            new ModStairsBlock(MANGROVE_WOOD.getDefaultState(), FabricBlockSettings.copy(MANGROVE_WOOD)));
 
     public static final Block STRIPPED_CHERRY_STAIRS = registerBlock("stripped_cherry_stairs",
-            new StairsBlock(CHERRY_WOOD.getDefaultState(), FabricBlockSettings.copy(CHERRY_WOOD)));
+            new ModStairsBlock(CHERRY_WOOD.getDefaultState(), FabricBlockSettings.copy(CHERRY_WOOD)));
 
     public static final Block STRIPPED_WARPED_STAIRS = registerBlock("stripped_warped_stairs",
-            new StairsBlock(STRIPPED_WARPED_HYPHAE.getDefaultState(), FabricBlockSettings.copy(STRIPPED_WARPED_HYPHAE)));
+            new ModStairsBlock(STRIPPED_WARPED_HYPHAE.getDefaultState(), FabricBlockSettings.copy(STRIPPED_WARPED_HYPHAE)));
 
     public static final Block STRIPPED_CRIMSON_STAIRS = registerBlock("stripped_crimson_stairs",
-            new StairsBlock(STRIPPED_CRIMSON_HYPHAE.getDefaultState(), FabricBlockSettings.copy(STRIPPED_CRIMSON_HYPHAE)));
+            new ModStairsBlock(STRIPPED_CRIMSON_HYPHAE.getDefaultState(), FabricBlockSettings.copy(STRIPPED_CRIMSON_HYPHAE)));
 
     // endregion
 
