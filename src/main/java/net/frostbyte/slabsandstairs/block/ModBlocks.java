@@ -28,7 +28,10 @@ public class ModBlocks {
 
     public static final Block WAXED_COPPER_BUTTON = registerBlock("waxed_copper_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON), BlockSetType.GOLD, 10, false));
+                    BlockSetType.GOLD,
+                    10,
+                    FabricBlockSettings.copyOf(STONE_BUTTON)
+            ));
 
     public static final Block EXPOSED_COPPER_BUTTON = registerBlock("exposed_copper_button",
             new OxidizableButtonBlock(
@@ -36,7 +39,10 @@ public class ModBlocks {
 
     public static final Block WAXED_EXPOSED_COPPER_BUTTON = registerBlock("waxed_exposed_copper_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON), BlockSetType.GOLD, 20, false));
+                    BlockSetType.GOLD,
+                    20,
+                    FabricBlockSettings.copyOf(STONE_BUTTON)
+            ));
 
     public static final Block WEATHERED_COPPER_BUTTON = registerBlock("weathered_copper_button",
             new OxidizableButtonBlock(
@@ -44,7 +50,10 @@ public class ModBlocks {
 
     public static final Block WAXED_WEATHERED_COPPER_BUTTON = registerBlock("waxed_weathered_copper_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON), BlockSetType.GOLD, 30, false));
+                    BlockSetType.GOLD,
+                    30,
+                    FabricBlockSettings.copyOf(STONE_BUTTON)
+            ));
 
     public static final Block OXIDIZED_COPPER_BUTTON = registerBlock("oxidized_copper_button",
             new OxidizableButtonBlock(
@@ -52,17 +61,24 @@ public class ModBlocks {
 
     public static final Block WAXED_OXIDIZED_COPPER_BUTTON = registerBlock("waxed_oxidized_copper_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON), BlockSetType.GOLD, 40, false));
+                    BlockSetType.GOLD,
+                    40,
+                    FabricBlockSettings.copyOf(STONE_BUTTON)
+            ));
 
     public static final Block IRON_BUTTON = registerBlock("iron_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.IRON, 35, false));
+                    BlockSetType.GOLD,
+                    35,
+                    FabricBlockSettings.copyOf(STONE_BUTTON)
+            ));
 
     public static final Block GOLD_BUTTON = registerBlock("gold_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.GOLD, 15, false));
+                    BlockSetType.GOLD,
+                    15,
+                    FabricBlockSettings.copyOf(STONE_BUTTON)
+            ));
 
     // endregion
 
@@ -71,107 +87,107 @@ public class ModBlocks {
     public static final Block OAK_WOOD_BUTTON = registerBlock("oak_wood_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(OAK_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.OAK, 15, true));
+                    BlockSetType.OAK, 15));
 
     public static final Block SPRUCE_WOOD_BUTTON = registerBlock("spruce_wood_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(SPRUCE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.SPRUCE, 15, true));
+                    BlockSetType.SPRUCE, 15));
 
     public static final Block BIRCH_WOOD_BUTTON = registerBlock("birch_wood_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(BIRCH_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.BIRCH, 15, true));
+                    BlockSetType.BIRCH, 15));
 
     public static final Block JUNGLE_WOOD_BUTTON = registerBlock("jungle_wood_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(JUNGLE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.JUNGLE, 15, true));
+                    BlockSetType.JUNGLE, 15));
 
     public static final Block ACACIA_WOOD_BUTTON = registerBlock("acacia_wood_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(ACACIA_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.ACACIA, 15, true));
+                    BlockSetType.ACACIA, 15));
 
     public static final Block DARK_OAK_WOOD_BUTTON = registerBlock("dark_oak_wood_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(DARK_OAK_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.DARK_OAK, 15, true));
+                    BlockSetType.DARK_OAK, 15));
 
     public static final Block MANGROVE_WOOD_BUTTON = registerBlock("mangrove_wood_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(MANGROVE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.MANGROVE, 15, true));
+                    BlockSetType.MANGROVE, 15));
 
     public static final Block CHERRY_WOOD_BUTTON = registerBlock("cherry_wood_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(CHERRY_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.CHERRY, 15, true));
+                    BlockSetType.CHERRY, 15));
 
     public static final Block BAMBOO_BLOCK_BUTTON = registerBlock("bamboo_block_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(BAMBOO_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.BAMBOO, 15, true));
+                    BlockSetType.BAMBOO, 15));
 
     public static final Block WARPED_HYPHAE_BUTTON = registerBlock("warped_hyphae_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(WARPED_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.WARPED, 15, true));
+                    BlockSetType.WARPED, 15));
 
     public static final Block CRIMSON_HYPHAE_BUTTON = registerBlock("crimson_hyphae_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(CRIMSON_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.CRIMSON, 15, true));
+                    BlockSetType.CRIMSON, 15));
 
     public static final Block STRIPPED_OAK_BUTTON = registerBlock("stripped_oak_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(OAK_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.OAK, 15, true));
+                    BlockSetType.OAK, 15));
 
     public static final Block STRIPPED_SPRUCE_BUTTON = registerBlock("stripped_spruce_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(SPRUCE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.SPRUCE, 15, true));
+                    BlockSetType.SPRUCE, 15));
 
     public static final Block STRIPPED_BIRCH_BUTTON = registerBlock("stripped_birch_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(BIRCH_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.BIRCH, 15, true));
+                    BlockSetType.BIRCH, 15));
 
     public static final Block STRIPPED_JUNGLE_BUTTON = registerBlock("stripped_jungle_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(JUNGLE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.JUNGLE, 15, true));
+                    BlockSetType.JUNGLE, 15));
 
     public static final Block STRIPPED_ACACIA_BUTTON = registerBlock("stripped_acacia_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(ACACIA_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.ACACIA, 15, true));
+                    BlockSetType.ACACIA, 15));
 
     public static final Block STRIPPED_DARK_OAK_BUTTON = registerBlock("stripped_dark_oak_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(DARK_OAK_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.DARK_OAK, 15, true));
+                    BlockSetType.DARK_OAK, 15));
 
     public static final Block STRIPPED_MANGROVE_BUTTON = registerBlock("stripped_mangrove_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(MANGROVE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.MANGROVE, 15, true));
+                    BlockSetType.MANGROVE, 15));
 
     public static final Block STRIPPED_CHERRY_BUTTON = registerBlock("stripped_cherry_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(CHERRY_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.CHERRY, 15, true));
+                    BlockSetType.CHERRY, 15));
 
     public static final Block STRIPPED_WARPED_BUTTON = registerBlock("stripped_warped_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(WARPED_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.WARPED, 15, true));
+                    BlockSetType.WARPED, 15));
 
     public static final Block STRIPPED_CRIMSON_BUTTON = registerBlock("stripped_crimson_button",
             new ModButtonBlock(
                     FabricBlockSettings.copyOf(CRIMSON_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.CRIMSON, 15, true));
+                    BlockSetType.CRIMSON, 15));
 
     // endregion
 
@@ -179,58 +195,80 @@ public class ModBlocks {
 
     public static final Block DIORITE_BUTTON = registerBlock("diorite_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE, 10, false));
+                    BlockSetType.STONE,
+                    10,
+                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block ANDESITE_BUTTON = registerBlock("andesite_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE, 10, false));
+                    BlockSetType.STONE,
+                    10,
+                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block GRANITE_BUTTON = registerBlock("granite_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE, 10, false));
+                    BlockSetType.STONE,
+                    10,
+                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block SANDSTONE_BUTTON = registerBlock("sandstone_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE, 10, false));
+                    BlockSetType.STONE,
+                    10,
+                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block RED_SANDSTONE_BUTTON = registerBlock("red_sandstone_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE, 10, false));
+                    BlockSetType.STONE,
+                    10,
+                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block BASALT_BUTTON = registerBlock("basalt_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE, 10, false));
+                    BlockSetType.STONE,
+                    10,
+                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block BLACKSTONE_BUTTON = registerBlock("blackstone_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE, 10, false));
+                    BlockSetType.POLISHED_BLACKSTONE,
+                    10,
+                    FabricBlockSettings.copyOf(POLISHED_BLACKSTONE_BUTTON).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block CALCITE_BUTTON = registerBlock("calcite_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE, 10, false));
+                    BlockSetType.STONE,
+                    10,
+                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block TUFF_BUTTON = registerBlock("tuff_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE, 10, false));
+                    BlockSetType.STONE,
+                    10,
+                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block DEEPSLATE_BUTTON = registerBlock("deepslate_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE, 10, false));
+                    BlockSetType.STONE,
+                    10,
+                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block DRIPSTONE_BUTTON = registerBlock("dripstone_button",
             new ButtonBlock(
-                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE, 10, false));
+                    BlockSetType.STONE,
+                    10,
+                    FabricBlockSettings.copyOf(STONE_BUTTON).strength(0.5f).requiresTool().noCollision()
+            ));
 
     // endregion
 
@@ -243,53 +281,53 @@ public class ModBlocks {
     public static final Block COPPER_PRESSURE_PLATE = registerBlock("copper_pressure_plate",
             new OxidizablePressurePlateBlock(
                     Oxidizable.OxidationLevel.UNAFFECTED,
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(OAK_PRESSURE_PLATE),
-                    BlockSetType.GOLD));
+                    BlockSetType.GOLD,
+                    FabricBlockSettings.copyOf(OAK_PRESSURE_PLATE)
+            ));
     public static final Block WAXED_COPPER_PRESSURE_PLATE = registerBlock("waxed_copper_pressure_plate",
             new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(LIGHT_WEIGHTED_PRESSURE_PLATE),
-                    BlockSetType.GOLD));
+                    BlockSetType.GOLD,
+                    FabricBlockSettings.copyOf(LIGHT_WEIGHTED_PRESSURE_PLATE)
+            ));
 
     public static final Block EXPOSED_COPPER_PRESSURE_PLATE = registerBlock("exposed_copper_pressure_plate",
             new OxidizablePressurePlateBlock(
                     Oxidizable.OxidationLevel.EXPOSED,
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(LIGHT_WEIGHTED_PRESSURE_PLATE),
-                    BlockSetType.GOLD));
+                    BlockSetType.GOLD,
+                    FabricBlockSettings.copyOf(LIGHT_WEIGHTED_PRESSURE_PLATE)
+            ));
 
     public static final Block WAXED_EXPOSED_COPPER_PRESSURE_PLATE = registerBlock("waxed_exposed_copper_pressure_plate",
             new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(LIGHT_WEIGHTED_PRESSURE_PLATE),
-                    BlockSetType.GOLD));
+                    BlockSetType.GOLD,
+                    FabricBlockSettings.copyOf(LIGHT_WEIGHTED_PRESSURE_PLATE)
+            ));
 
     public static final Block WEATHERED_COPPER_PRESSURE_PLATE = registerBlock("weathered_copper_pressure_plate",
             new OxidizablePressurePlateBlock(
                     Oxidizable.OxidationLevel.WEATHERED,
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(HEAVY_WEIGHTED_PRESSURE_PLATE),
-                    BlockSetType.GOLD));
+                    BlockSetType.GOLD,
+                    FabricBlockSettings.copyOf(HEAVY_WEIGHTED_PRESSURE_PLATE)
+            ));
 
     public static final Block WAXED_WEATHERED_COPPER_PRESSURE_PLATE = registerBlock("waxed_weathered_copper_pressure_plate",
             new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(HEAVY_WEIGHTED_PRESSURE_PLATE),
-                    BlockSetType.GOLD));
+                    BlockSetType.GOLD,
+                    FabricBlockSettings.copyOf(HEAVY_WEIGHTED_PRESSURE_PLATE)
+            ));
 
     public static final Block OXIDIZED_COPPER_PRESSURE_PLATE = registerBlock("oxidized_copper_pressure_plate",
             new OxidizablePressurePlateBlock(
                     Oxidizable.OxidationLevel.OXIDIZED,
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(HEAVY_WEIGHTED_PRESSURE_PLATE),
-                    BlockSetType.GOLD));
+                    BlockSetType.GOLD,
+                    FabricBlockSettings.copyOf(HEAVY_WEIGHTED_PRESSURE_PLATE)
+            ));
 
     public static final Block WAXED_OXIDIZED_COPPER_PRESSURE_PLATE = registerBlock("waxed_oxidized_copper_pressure_plate",
             new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(HEAVY_WEIGHTED_PRESSURE_PLATE),
-                    BlockSetType.GOLD));
+                    BlockSetType.GOLD,
+                    FabricBlockSettings.copyOf(HEAVY_WEIGHTED_PRESSURE_PLATE)
+            ));
 
     // endregion
 
@@ -297,129 +335,129 @@ public class ModBlocks {
 
     public static final Block OAK_WOOD_PRESSURE_PLATE = registerBlock("oak_wood_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(OAK_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.OAK));
+                    BlockSetType.OAK,
+                    FabricBlockSettings.copyOf(OAK_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block SPRUCE_WOOD_PRESSURE_PLATE = registerBlock("spruce_wood_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(SPRUCE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.SPRUCE));
+                    BlockSetType.SPRUCE,
+                    FabricBlockSettings.copyOf(SPRUCE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block BIRCH_WOOD_PRESSURE_PLATE = registerBlock("birch_wood_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(BIRCH_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.BIRCH));
+                    BlockSetType.BIRCH,
+                    FabricBlockSettings.copyOf(BIRCH_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block JUNGLE_WOOD_PRESSURE_PLATE = registerBlock("jungle_wood_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(JUNGLE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.JUNGLE));
+                    BlockSetType.JUNGLE,
+                    FabricBlockSettings.copyOf(JUNGLE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block ACACIA_WOOD_PRESSURE_PLATE = registerBlock("acacia_wood_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(ACACIA_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.ACACIA));
+                    BlockSetType.ACACIA,
+                    FabricBlockSettings.copyOf(ACACIA_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block DARK_OAK_WOOD_PRESSURE_PLATE = registerBlock("dark_oak_wood_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(DARK_OAK_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.DARK_OAK));
+                    BlockSetType.DARK_OAK,
+                    FabricBlockSettings.copyOf(DARK_OAK_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block MANGROVE_WOOD_PRESSURE_PLATE = registerBlock("mangrove_wood_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(MANGROVE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.MANGROVE));
+                    BlockSetType.MANGROVE,
+                    FabricBlockSettings.copyOf(MANGROVE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block CHERRY_WOOD_PRESSURE_PLATE = registerBlock("cherry_wood_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(CHERRY_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.CHERRY));
+                    BlockSetType.CHERRY,
+                    FabricBlockSettings.copyOf(CHERRY_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block BAMBOO_BLOCK_PRESSURE_PLATE = registerBlock("bamboo_block_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(BAMBOO_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.BAMBOO));
+                    BlockSetType.BAMBOO,
+                    FabricBlockSettings.copyOf(BAMBOO_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block WARPED_HYPHAE_PRESSURE_PLATE = registerBlock("warped_hyphae_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(WARPED_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.WARPED));
+                    BlockSetType.WARPED,
+                    FabricBlockSettings.copyOf(WARPED_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block CRIMSON_HYPHAE_PRESSURE_PLATE = registerBlock("crimson_hyphae_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(CRIMSON_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.CRIMSON));
+                    BlockSetType.CRIMSON,
+                    FabricBlockSettings.copyOf(CRIMSON_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block STRIPPED_OAK_PRESSURE_PLATE = registerBlock("stripped_oak_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(OAK_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.OAK));
+                    BlockSetType.OAK,
+                    FabricBlockSettings.copyOf(OAK_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block STRIPPED_SPRUCE_PRESSURE_PLATE = registerBlock("stripped_spruce_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(SPRUCE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.SPRUCE));
+                    BlockSetType.SPRUCE,
+                    FabricBlockSettings.copyOf(SPRUCE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block STRIPPED_BIRCH_PRESSURE_PLATE = registerBlock("stripped_birch_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(BIRCH_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.BIRCH));
+                    BlockSetType.BIRCH,
+                    FabricBlockSettings.copyOf(BIRCH_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block STRIPPED_JUNGLE_PRESSURE_PLATE = registerBlock("stripped_jungle_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(JUNGLE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.JUNGLE));
+                    BlockSetType.JUNGLE,
+                    FabricBlockSettings.copyOf(JUNGLE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block STRIPPED_ACACIA_PRESSURE_PLATE = registerBlock("stripped_acacia_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(ACACIA_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.ACACIA));
+                    BlockSetType.ACACIA,
+                    FabricBlockSettings.copyOf(ACACIA_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block STRIPPED_DARK_OAK_PRESSURE_PLATE = registerBlock("stripped_dark_oak_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(DARK_OAK_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.DARK_OAK));
+                    BlockSetType.DARK_OAK,
+                    FabricBlockSettings.copyOf(DARK_OAK_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block STRIPPED_MANGROVE_PRESSURE_PLATE = registerBlock("stripped_mangrove_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(MANGROVE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.MANGROVE));
+                    BlockSetType.MANGROVE,
+                    FabricBlockSettings.copyOf(MANGROVE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block STRIPPED_CHERRY_PRESSURE_PLATE = registerBlock("stripped_cherry_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(CHERRY_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.CHERRY));
+                    BlockSetType.CHERRY,
+                    FabricBlockSettings.copyOf(CHERRY_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block STRIPPED_WARPED_PRESSURE_PLATE = registerBlock("stripped_warped_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(WARPED_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.WARPED));
+                    BlockSetType.WARPED,
+                    FabricBlockSettings.copyOf(WARPED_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block STRIPPED_CRIMSON_PRESSURE_PLATE = registerBlock("stripped_crimson_pressure_plate",
             new ModPressurePlateBlock(
-                    ModPressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(CRIMSON_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.CRIMSON));
+                    BlockSetType.CRIMSON,
+                    FabricBlockSettings.copyOf(CRIMSON_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     // endregion
 
@@ -427,69 +465,69 @@ public class ModBlocks {
 
     public static final Block DIORITE_PRESSURE_PLATE = registerBlock("diorite_pressure_plate",
             new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.MOBS,
-                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE));
+                    BlockSetType.STONE,
+                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block ANDESITE_PRESSURE_PLATE = registerBlock("andesite_pressure_plate",
             new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.MOBS,
-                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE));
+                    BlockSetType.STONE,
+                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block GRANITE_PRESSURE_PLATE = registerBlock("granite_pressure_plate",
             new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.MOBS,
-                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE));
+                    BlockSetType.STONE,
+                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block SANDSTONE_PRESSURE_PLATE = registerBlock("sandstone_pressure_plate",
             new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.MOBS,
-                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE));
+                    BlockSetType.STONE,
+                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block RED_SANDSTONE_PRESSURE_PLATE = registerBlock("red_sandstone_pressure_plate",
             new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.MOBS,
-                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE));
+                    BlockSetType.STONE,
+                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block BASALT_PRESSURE_PLATE = registerBlock("basalt_pressure_plate",
             new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.MOBS,
-                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE));
+                    BlockSetType.STONE,
+                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block BLACKSTONE_PRESSURE_PLATE = registerBlock("blackstone_pressure_plate",
             new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.MOBS,
-                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE));
+                    BlockSetType.POLISHED_BLACKSTONE,
+                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block CALCITE_PRESSURE_PLATE = registerBlock("calcite_pressure_plate",
             new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.MOBS,
-                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE));
+                    BlockSetType.STONE,
+                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block TUFF_PRESSURE_PLATE = registerBlock("tuff_pressure_plate",
             new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.MOBS,
-                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE));
+                    BlockSetType.STONE,
+                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block DEEPSLATE_PRESSURE_PLATE = registerBlock("deepslate_pressure_plate",
             new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.MOBS,
-                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE));
+                    BlockSetType.STONE,
+                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     public static final Block DRIPSTONE_PRESSURE_PLATE = registerBlock("dripstone_pressure_plate",
             new PressurePlateBlock(
-                    PressurePlateBlock.ActivationRule.MOBS,
-                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision(),
-                    BlockSetType.STONE));
+                    BlockSetType.STONE,
+                    FabricBlockSettings.copyOf(STONE_PRESSURE_PLATE).strength(0.5f).requiresTool().noCollision()
+            ));
 
     // endregion
 
@@ -645,10 +683,10 @@ public class ModBlocks {
     // region Stone
 
     public static final Block NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(NETHER_BRICKS).strength(2.0f).requiresTool(), WoodType.CRIMSON));
+            new FenceGateBlock(WoodType.CRIMSON, FabricBlockSettings.copyOf(NETHER_BRICKS).strength(2.0f).requiresTool()));
 
     public static final Block RED_NETHER_BRICK_FENCE_GATE = registerBlock("red_nether_brick_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(RED_NETHER_BRICKS).strength(2.0f).requiresTool(), WoodType.CRIMSON));
+            new FenceGateBlock(WoodType.CRIMSON, FabricBlockSettings.copyOf(RED_NETHER_BRICKS).strength(2.0f).requiresTool()));
 
     // endregion
 

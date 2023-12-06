@@ -9,7 +9,7 @@ public class OxidizableButtonBlock extends ButtonBlock implements Oxidizable {
     private final OxidationLevel oxidationLevel;
 
     public OxidizableButtonBlock(Oxidizable.OxidationLevel oxidationLevel, AbstractBlock.Settings settings, Integer pressTicks) {
-        super(settings, BlockSetType.GOLD, pressTicks, false);
+        super(BlockSetType.GOLD, pressTicks, settings);
         this.oxidationLevel = oxidationLevel;
     }
 

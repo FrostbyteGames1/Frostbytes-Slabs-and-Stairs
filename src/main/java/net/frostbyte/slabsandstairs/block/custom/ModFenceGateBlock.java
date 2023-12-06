@@ -20,7 +20,7 @@ import java.util.Map;
 public class ModFenceGateBlock extends FenceGateBlock {
     private static final Map<Block, Block> STRIPPED_BLOCKS = new HashMap<>();
     public ModFenceGateBlock(Settings settings, WoodType type) {
-        super(settings, type);
+        super(type, settings);
         STRIPPED_BLOCKS.put(ModBlocks.ACACIA_WOOD_FENCE_GATE, ModBlocks.STRIPPED_ACACIA_FENCE_GATE);
         STRIPPED_BLOCKS.put(ModBlocks.BIRCH_WOOD_FENCE_GATE, ModBlocks.STRIPPED_BIRCH_FENCE_GATE);
         STRIPPED_BLOCKS.put(ModBlocks.CRIMSON_HYPHAE_FENCE_GATE, ModBlocks.STRIPPED_CRIMSON_FENCE_GATE);

@@ -19,8 +19,8 @@ import java.util.Map;
 
 public class ModPressurePlateBlock extends PressurePlateBlock {
     private static final Map<Block, Block> STRIPPED_BLOCKS = new HashMap<>();
-    public ModPressurePlateBlock(ActivationRule type, Settings settings, BlockSetType blockSetType) {
-        super(type, settings, blockSetType);
+    public ModPressurePlateBlock(BlockSetType type, Settings settings) {
+        super(type, settings);
         STRIPPED_BLOCKS.put(ModBlocks.ACACIA_WOOD_PRESSURE_PLATE, ModBlocks.STRIPPED_ACACIA_PRESSURE_PLATE);
         STRIPPED_BLOCKS.put(ModBlocks.BIRCH_WOOD_PRESSURE_PLATE, ModBlocks.STRIPPED_BIRCH_PRESSURE_PLATE);
         STRIPPED_BLOCKS.put(ModBlocks.CRIMSON_HYPHAE_PRESSURE_PLATE, ModBlocks.STRIPPED_CRIMSON_PRESSURE_PLATE);

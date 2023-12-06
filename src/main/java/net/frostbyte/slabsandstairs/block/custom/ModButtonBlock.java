@@ -1,7 +1,10 @@
 package net.frostbyte.slabsandstairs.block.custom;
 
 import net.frostbyte.slabsandstairs.block.ModBlocks;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockSetType;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.ButtonBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.AxeItem;
 import net.minecraft.util.ActionResult;
@@ -18,8 +21,8 @@ public class ModButtonBlock extends ButtonBlock {
 
     private static final Map<Block, Block> STRIPPED_BLOCKS = new HashMap<>();
 
-    public ModButtonBlock(Settings settings, BlockSetType blockSetType, int pressTicks, boolean wooden) {
-        super(settings, blockSetType, pressTicks, wooden);
+    public ModButtonBlock(Settings settings, BlockSetType blockSetType, int pressTicks) {
+        super(blockSetType, pressTicks, settings);
         STRIPPED_BLOCKS.put(ModBlocks.ACACIA_WOOD_BUTTON, ModBlocks.STRIPPED_ACACIA_BUTTON);
         STRIPPED_BLOCKS.put(ModBlocks.BIRCH_WOOD_BUTTON, ModBlocks.STRIPPED_BIRCH_BUTTON);
         STRIPPED_BLOCKS.put(ModBlocks.CRIMSON_HYPHAE_BUTTON, ModBlocks.STRIPPED_CRIMSON_BUTTON);
