@@ -1,8 +1,10 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:stripped_cherry_log"
   },
-  "result": "slabsandstairs:stripped_cherry_fence_gate"
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:stripped_cherry_fence_gate"
+  }
 }

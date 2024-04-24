@@ -1,8 +1,10 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:mangrove_log"
   },
-  "result": "slabsandstairs:mangrove_log_stairs"
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:mangrove_log_stairs"
+  }
 }

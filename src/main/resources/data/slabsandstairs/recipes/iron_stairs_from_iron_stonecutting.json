@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:iron_block"
   },
-  "result": "slabsandstairs:iron_stairs"
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:iron_stairs"
+  }
 }

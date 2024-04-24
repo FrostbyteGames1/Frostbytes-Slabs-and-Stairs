@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:light_blue_concrete"
   },
-  "result": "slabsandstairs:light_blue_concrete_wall"
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:light_blue_concrete_wall"
+  }
 }

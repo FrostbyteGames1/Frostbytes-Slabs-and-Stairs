@@ -1,8 +1,10 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:crimson_planks"
   },
-  "result": "minecraft:crimson_stairs"
+  "result": {
+    "count": 1,
+    "id": "minecraft:crimson_stairs"
+  }
 }

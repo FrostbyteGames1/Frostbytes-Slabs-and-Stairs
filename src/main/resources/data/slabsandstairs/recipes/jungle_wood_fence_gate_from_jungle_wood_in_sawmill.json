@@ -1,8 +1,10 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:jungle_wood"
   },
-  "result": "slabsandstairs:jungle_wood_fence_gate"
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:jungle_wood_fence_gate"
+  }
 }

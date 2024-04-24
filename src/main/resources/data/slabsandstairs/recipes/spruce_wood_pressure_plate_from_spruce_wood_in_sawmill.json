@@ -1,8 +1,10 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:spruce_wood"
   },
-  "result": "slabsandstairs:spruce_wood_pressure_plate"
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:spruce_wood_pressure_plate"
+  }
 }

@@ -1,8 +1,10 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:spruce_log"
   },
-  "result": "slabsandstairs:spruce_log_stairs"
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:spruce_log_stairs"
+  }
 }

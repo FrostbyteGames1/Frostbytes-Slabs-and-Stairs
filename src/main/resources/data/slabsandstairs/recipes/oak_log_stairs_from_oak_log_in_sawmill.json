@@ -1,8 +1,10 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:oak_log"
   },
-  "result": "slabsandstairs:oak_log_stairs"
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:oak_log_stairs"
+  }
 }

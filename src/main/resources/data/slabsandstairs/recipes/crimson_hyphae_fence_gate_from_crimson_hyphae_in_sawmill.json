@@ -1,8 +1,10 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:crimson_hyphae"
   },
-  "result": "slabsandstairs:crimson_hyphae_fence_gate"
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:crimson_hyphae_fence_gate"
+  }
 }

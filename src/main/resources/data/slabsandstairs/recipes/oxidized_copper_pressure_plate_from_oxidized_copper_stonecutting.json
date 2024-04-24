@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 3,
   "ingredient": {
     "item": "minecraft:oxidized_copper"
   },
-  "result": "slabsandstairs:oxidized_copper_pressure_plate"
+  "result": {
+    "count": 3,
+    "id": "slabsandstairs:oxidized_copper_pressure_plate"
+  }
 }

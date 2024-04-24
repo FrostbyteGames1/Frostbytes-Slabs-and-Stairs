@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 2,
   "ingredient": {
     "item": "minecraft:gold_block"
   },
-  "result": "slabsandstairs:gold_slab"
+  "result": {
+    "count": 2,
+    "id": "slabsandstairs:gold_slab"
+  }
 }

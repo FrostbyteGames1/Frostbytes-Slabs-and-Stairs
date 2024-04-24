@@ -1,8 +1,10 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:dark_oak_wood"
   },
-  "result": "slabsandstairs:dark_oak_wood_pressure_plate"
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:dark_oak_wood_pressure_plate"
+  }
 }

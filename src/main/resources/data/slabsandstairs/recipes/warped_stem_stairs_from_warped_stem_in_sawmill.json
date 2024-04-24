@@ -1,8 +1,10 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:warped_stem"
   },
-  "result": "slabsandstairs:warped_stem_stairs"
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:warped_stem_stairs"
+  }
 }

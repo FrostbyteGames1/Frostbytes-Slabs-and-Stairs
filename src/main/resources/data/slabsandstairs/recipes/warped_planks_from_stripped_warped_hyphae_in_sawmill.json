@@ -1,8 +1,10 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 4,
   "ingredient": {
     "item": "minecraft:stripped_warped_hyphae"
   },
-  "result": "minecraft:warped_planks"
+  "result": {
+    "count": 4,
+    "id": "minecraft:warped_planks"
+  }
 }

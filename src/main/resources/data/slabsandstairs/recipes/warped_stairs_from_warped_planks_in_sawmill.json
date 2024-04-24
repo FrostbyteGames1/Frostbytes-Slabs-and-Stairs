@@ -1,8 +1,10 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:warped_planks"
   },
-  "result": "minecraft:warped_stairs"
+  "result": {
+    "count": 1,
+    "id": "minecraft:warped_stairs"
+  }
 }

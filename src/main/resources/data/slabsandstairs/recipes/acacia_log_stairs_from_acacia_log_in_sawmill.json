@@ -1,8 +1,10 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:acacia_log"
   },
-  "result": "slabsandstairs:acacia_log_stairs"
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:acacia_log_stairs"
+  }
 }

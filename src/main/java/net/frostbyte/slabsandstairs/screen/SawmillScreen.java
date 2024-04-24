@@ -16,7 +16,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 
 import java.util.List;
-import java.util.Objects;
 
 @Environment(EnvType.CLIENT)
 public class SawmillScreen extends HandledScreen<SawmillScreenHandler> {
@@ -69,8 +68,6 @@ public class SawmillScreen extends HandledScreen<SawmillScreenHandler> {
                 int n = i + m % 4 * 16;
                 int o = j + m / 4 * 18 + 2;
                 if (x >= n && x < n + 16 && y >= o && y < o + 18) {
-                    assert this.client != null;
-                    assert this.client.world != null;
                     context.drawItemTooltip(this.textRenderer, ((RecipeEntry<?>)list.get(l)).value().getResult(this.client.world.getRegistryManager()), x, y);
                 }
             }
@@ -106,8 +103,6 @@ public class SawmillScreen extends HandledScreen<SawmillScreenHandler> {
             int k = x + j % 4 * 16;
             int l = j / 4;
             int m = y + l * 18 + 2;
-            assert Objects.requireNonNull(this.client).world != null;
-            assert this.client.world != null;
             context.drawItem(((RecipeEntry<?>)list.get(i)).value().getResult(this.client.world.getRegistryManager()), k, m);
         }
 
@@ -124,14 +119,10 @@ public class SawmillScreen extends HandledScreen<SawmillScreenHandler> {
                 int m = l - this.scrollOffset;
                 double d = mouseX - (double)(i + m % 4 * 16);
                 double e = mouseY - (double)(j + m / 4 * 18);
-                if (d >= 0.0 && e >= 0.0 && d < 16.0 && e < 18.0) {
-                    assert this.client != null;
-                    if (this.handler.onButtonClick(this.client.player, l)) {
-                        MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_STONECUTTER_SELECT_RECIPE, 1.0F));
-                        assert this.client.interactionManager != null;
-                        this.client.interactionManager.clickButton(this.handler.syncId, l);
-                        return true;
-                    }
+                if (d >= 0.0 && e >= 0.0 && d < 16.0 && e < 18.0 && this.handler.onButtonClick(this.client.player, l)) {
+                    MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_STONECUTTER_SELECT_RECIPE, 1.0F));
+                    this.client.interactionManager.clickButton(this.handler.syncId, l);
+                    return true;
                 }
             }
 

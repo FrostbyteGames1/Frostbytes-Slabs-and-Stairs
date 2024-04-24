@@ -1,8 +1,10 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:stripped_dark_oak_log"
   },
-  "result": "slabsandstairs:stripped_dark_oak_fence"
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:stripped_dark_oak_fence"
+  }
 }

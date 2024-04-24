@@ -1,7 +1,6 @@
 package net.frostbyte.slabsandstairs.screen;
 
 import com.google.common.collect.Lists;
-import net.frostbyte.slabsandstairs.block.ModBlocks;
 import net.frostbyte.slabsandstairs.recipe.ModRecipes;
 import net.frostbyte.slabsandstairs.recipe.SawmillRecipe;
 import net.minecraft.entity.player.PlayerEntity;
@@ -22,6 +21,8 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
 
 import java.util.List;
+
+import static net.frostbyte.slabsandstairs.block.ModBlocks.SAWMILL;
 
 public class SawmillScreenHandler extends ScreenHandler {
     private final ScreenHandlerContext context;
@@ -118,7 +119,7 @@ public class SawmillScreenHandler extends ScreenHandler {
     }
 
     public boolean canUse(PlayerEntity player) {
-        return canUse(this.context, player, ModBlocks.SAWMILL);
+        return canUse(this.context, player, SAWMILL);
     }
 
     public boolean onButtonClick(PlayerEntity player, int id) {
@@ -156,7 +157,7 @@ public class SawmillScreenHandler extends ScreenHandler {
     void populateResult() {
         if (!this.availableRecipes.isEmpty() && this.isInBounds(this.selectedRecipe.get())) {
             RecipeEntry<SawmillRecipe> recipeEntry = this.availableRecipes.get(this.selectedRecipe.get());
-            ItemStack itemStack = recipeEntry.value().craft(this.input, this.world.getRegistryManager());
+            ItemStack itemStack = (recipeEntry.value()).craft(this.input, this.world.getRegistryManager());
             if (itemStack.isItemEnabled(this.world.getEnabledFeatures())) {
                 this.output.setLastRecipe(recipeEntry);
                 this.outputSlot.setStackNoCallbacks(itemStack);
@@ -190,7 +191,7 @@ public class SawmillScreenHandler extends ScreenHandler {
             Item item = itemStack2.getItem();
             itemStack = itemStack2.copy();
             if (slot == 1) {
-                item.onCraft(itemStack2, player.getWorld());
+                item.onCraftByPlayer(itemStack2, player.getWorld(), player);
                 if (!this.insertItem(itemStack2, 2, 38, true)) {
                     return ItemStack.EMPTY;
                 }
@@ -200,7 +201,7 @@ public class SawmillScreenHandler extends ScreenHandler {
                 if (!this.insertItem(itemStack2, 2, 38, false)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (this.world.getRecipeManager().getFirstMatch(ModRecipes.SAWMILL_RECIPE, new SimpleInventory(itemStack2), this.world).isPresent()) {
+            } else if (this.world.getRecipeManager().getFirstMatch(ModRecipes.SAWMILL_RECIPE, new SimpleInventory(new ItemStack[]{itemStack2}), this.world).isPresent()) {
                 if (!this.insertItem(itemStack2, 0, 1, false)) {
                     return ItemStack.EMPTY;
                 }
@@ -231,6 +232,8 @@ public class SawmillScreenHandler extends ScreenHandler {
     public void onClosed(PlayerEntity player) {
         super.onClosed(player);
         this.output.removeStack(1);
-        this.context.run((world, pos) -> this.dropInventory(player, this.input));
+        this.context.run((world, pos) -> {
+            this.dropInventory(player, this.input);
+        });
     }
 }

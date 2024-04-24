@@ -1,8 +1,10 @@
 {
   "type": "slabsandstairs:sawmill",
-  "count": 2,
   "ingredient": {
     "item": "minecraft:mangrove_wood"
   },
-  "result": "slabsandstairs:mangrove_wood_slab"
+  "result": {
+    "count": 2,
+    "id": "slabsandstairs:mangrove_wood_slab"
+  }
 }
