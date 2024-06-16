@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "slabsandstairs:weathered_chiseled_copper_wall"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "result": {
+    "id": "slabsandstairs:waxed_weathered_chiseled_copper_wall"
+  }
+}

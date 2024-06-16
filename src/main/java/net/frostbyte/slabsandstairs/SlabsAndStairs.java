@@ -1,11 +1,11 @@
 package net.frostbyte.slabsandstairs;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.frostbyte.slabsandstairs.block.ModBlocks;
+import net.frostbyte.slabsandstairs.datafixer.ModDataFixer;
 import net.frostbyte.slabsandstairs.item.ModItemGroup;
-import net.frostbyte.slabsandstairs.recipe.ModRecipes;
-import net.frostbyte.slabsandstairs.screen.ModScreenHandlers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,8 +18,8 @@ public class SlabsAndStairs implements ModInitializer {
 	public void onInitialize() {
 		ModBlocks.registerModBlocks();
 		ModItemGroup.registerModItemGroup();
-		ModScreenHandlers.registerAllScreenHandlers();
-		ModRecipes.register();
+
+		ServerTickEvents.START_SERVER_TICK.register(new ModDataFixer());
 
 		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.COPPER_BUTTON, ModBlocks.WAXED_COPPER_BUTTON);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.COPPER_BUTTON, ModBlocks.EXPOSED_COPPER_BUTTON);
@@ -51,6 +51,13 @@ public class SlabsAndStairs implements ModInitializer {
 		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.WEATHERED_CUT_COPPER_WALL, ModBlocks.WAXED_WEATHERED_CUT_COPPER_WALL);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.WEATHERED_CUT_COPPER_WALL, ModBlocks.OXIDIZED_CUT_COPPER_WALL);
 		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.OXIDIZED_CUT_COPPER_WALL, ModBlocks.WAXED_OXIDIZED_CUT_COPPER_WALL);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.CHISELED_COPPER_WALL, ModBlocks.WAXED_CHISELED_COPPER_WALL);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.CHISELED_COPPER_WALL, ModBlocks.EXPOSED_CHISELED_COPPER_WALL);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.EXPOSED_CHISELED_COPPER_WALL, ModBlocks.WAXED_EXPOSED_CHISELED_COPPER_WALL);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.EXPOSED_CHISELED_COPPER_WALL, ModBlocks.WEATHERED_CHISELED_COPPER_WALL);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.WEATHERED_CHISELED_COPPER_WALL, ModBlocks.WAXED_WEATHERED_CHISELED_COPPER_WALL);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.WEATHERED_CHISELED_COPPER_WALL, ModBlocks.OXIDIZED_CHISELED_COPPER_WALL);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.OXIDIZED_CHISELED_COPPER_WALL, ModBlocks.WAXED_OXIDIZED_CHISELED_COPPER_WALL);
 
 		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.COPPER_SLAB, ModBlocks.WAXED_COPPER_SLAB);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.COPPER_SLAB, ModBlocks.EXPOSED_COPPER_SLAB);
@@ -59,6 +66,13 @@ public class SlabsAndStairs implements ModInitializer {
 		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.WEATHERED_COPPER_SLAB, ModBlocks.WAXED_WEATHERED_COPPER_SLAB);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.WEATHERED_COPPER_SLAB, ModBlocks.OXIDIZED_COPPER_SLAB);
 		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.OXIDIZED_COPPER_SLAB, ModBlocks.WAXED_OXIDIZED_COPPER_SLAB);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.CHISELED_COPPER_SLAB, ModBlocks.WAXED_CHISELED_COPPER_SLAB);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.CHISELED_COPPER_SLAB, ModBlocks.EXPOSED_CHISELED_COPPER_SLAB);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.EXPOSED_CHISELED_COPPER_SLAB, ModBlocks.WAXED_EXPOSED_CHISELED_COPPER_SLAB);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.EXPOSED_CHISELED_COPPER_SLAB, ModBlocks.WEATHERED_CHISELED_COPPER_SLAB);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.WEATHERED_CHISELED_COPPER_SLAB, ModBlocks.WAXED_WEATHERED_CHISELED_COPPER_SLAB);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.WEATHERED_CHISELED_COPPER_SLAB, ModBlocks.OXIDIZED_CHISELED_COPPER_SLAB);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.OXIDIZED_CHISELED_COPPER_SLAB, ModBlocks.WAXED_OXIDIZED_CHISELED_COPPER_SLAB);
 
 		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.COPPER_STAIRS, ModBlocks.WAXED_COPPER_STAIRS);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.COPPER_STAIRS, ModBlocks.EXPOSED_COPPER_STAIRS);
@@ -67,6 +81,13 @@ public class SlabsAndStairs implements ModInitializer {
 		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.WEATHERED_COPPER_STAIRS, ModBlocks.WAXED_WEATHERED_COPPER_STAIRS);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.WEATHERED_COPPER_STAIRS, ModBlocks.OXIDIZED_COPPER_STAIRS);
 		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.OXIDIZED_COPPER_STAIRS, ModBlocks.WAXED_OXIDIZED_COPPER_STAIRS);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.CHISELED_COPPER_STAIRS, ModBlocks.WAXED_CHISELED_COPPER_STAIRS);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.CHISELED_COPPER_STAIRS, ModBlocks.EXPOSED_CHISELED_COPPER_STAIRS);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.EXPOSED_CHISELED_COPPER_STAIRS, ModBlocks.WAXED_EXPOSED_CHISELED_COPPER_STAIRS);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.EXPOSED_CHISELED_COPPER_STAIRS, ModBlocks.WEATHERED_CHISELED_COPPER_STAIRS);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.WEATHERED_CHISELED_COPPER_STAIRS, ModBlocks.WAXED_WEATHERED_CHISELED_COPPER_STAIRS);
+		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.WEATHERED_CHISELED_COPPER_STAIRS, ModBlocks.OXIDIZED_CHISELED_COPPER_STAIRS);
+		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.OXIDIZED_CHISELED_COPPER_STAIRS, ModBlocks.WAXED_OXIDIZED_CHISELED_COPPER_STAIRS);
 	}
 
 }

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:stripped_mangrove_log"
+  },
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:stripped_mangrove_fence_gate"
+  }
+}

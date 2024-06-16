@@ -9,6 +9,7 @@ import net.minecraft.util.math.random.Random;
 
 public class OxidizableWallBlock extends WallBlock implements Oxidizable {
     private final OxidationLevel oxidationLevel;
+
     public OxidizableWallBlock(OxidationLevel oxidationLevel, Settings settings) {
         super(settings);
         this.oxidationLevel = oxidationLevel;

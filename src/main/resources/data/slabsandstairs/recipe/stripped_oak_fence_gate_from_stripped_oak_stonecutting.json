@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:stripped_oak_log"
+  },
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:stripped_oak_fence_gate"
+  }
+}

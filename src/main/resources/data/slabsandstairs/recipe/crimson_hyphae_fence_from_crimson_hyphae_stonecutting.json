@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:crimson_hyphae"
+  },
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:crimson_hyphae_fence"
+  }
+}

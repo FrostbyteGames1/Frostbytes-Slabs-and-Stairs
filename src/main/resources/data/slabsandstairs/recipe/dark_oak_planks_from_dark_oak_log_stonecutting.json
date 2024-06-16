@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:dark_oak_log"
+  },
+  "result": {
+    "count": 4,
+    "id": "minecraft:dark_oak_planks"
+  }
+}

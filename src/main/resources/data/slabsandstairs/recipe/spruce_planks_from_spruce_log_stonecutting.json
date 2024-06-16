@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:spruce_log"
+  },
+  "result": {
+    "count": 4,
+    "id": "minecraft:spruce_planks"
+  }
+}

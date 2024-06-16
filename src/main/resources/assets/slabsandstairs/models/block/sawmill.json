@@ -1,10 +1,10 @@
 {   "parent": "block/block",
   "textures": {
-    "particle": "slabsandstairs:block/sawmill_bottom",
-    "bottom": "slabsandstairs:block/sawmill_bottom",
-    "top": "slabsandstairs:block/sawmill_top",
-    "side": "slabsandstairs:block/sawmill_side",
-    "saw": "slabsandstairs:block/sawmill_saw"
+    "particle": "block/stonecutter_bottom",
+    "bottom": "block/stonecutter_bottom",
+    "top": "block/stonecutter_top",
+    "side": "block/stonecutter_side",
+    "saw": "block/stonecutter_saw"
   },
   "elements": [
     {   "from": [ 0, 0, 0 ],

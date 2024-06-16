@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:oak_wood"
+  },
+  "result": {
+    "count": 1,
+    "id": "slabsandstairs:oak_wood_pressure_plate"
+  }
+}
