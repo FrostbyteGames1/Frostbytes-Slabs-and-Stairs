@@ -26,3 +26,5 @@ To get past possible recipe conflicts, some wood based recipes are only possible
 Modrinth - https://modrinth.com/mod/frostbytes-slabs-stairs
 
 Curseforge - https://www.curseforge.com/minecraft/mc-mods/frostbytes-slabs-stairs
+
+[![BisectHosting](https://www.bisecthosting.com/partners/custom-banners/92987bf2-5957-4acb-8dd9-0fadd0fdd7e4.webp)](https://www.bisecthosting.com/frostbyte)
