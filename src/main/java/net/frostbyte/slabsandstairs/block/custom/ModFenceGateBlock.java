@@ -31,6 +31,7 @@ public class ModFenceGateBlock extends FenceGateBlock {
         STRIPPED_BLOCKS.put(ModBlocks.OAK_WOOD_FENCE_GATE, ModBlocks.STRIPPED_OAK_FENCE_GATE);
         STRIPPED_BLOCKS.put(ModBlocks.SPRUCE_WOOD_FENCE_GATE, ModBlocks.STRIPPED_SPRUCE_FENCE_GATE);
         STRIPPED_BLOCKS.put(ModBlocks.WARPED_HYPHAE_FENCE_GATE, ModBlocks.STRIPPED_WARPED_FENCE_GATE);
+        //STRIPPED_BLOCKS.put(ModBlocks.PALE_OAK_WOOD_FENCE_GATE, ModBlocks.STRIPPED_PALE_OAK_FENCE_GATE);
     }
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
@@ -44,7 +45,16 @@ public class ModFenceGateBlock extends FenceGateBlock {
                 } else {
                     player.getOffHandStack().damage(1, player, EquipmentSlot.OFFHAND);
                 }
-                return ActionResult.success(world.isClient);
+                return ActionResult.SUCCESS;
+            } else if (state.isOf(ModBlocks.PALE_OAK_WOOD_FENCE_GATE)) {
+                world.setBlockState(pos, ModBlocks.STRIPPED_PALE_OAK_FENCE_GATE.getStateWithProperties(state));
+                world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(player, this.getStateWithProperties(state)));
+                if (player.getMainHandStack().getItem() instanceof AxeItem) {
+                    player.getMainHandStack().damage(1, player, EquipmentSlot.MAINHAND);
+                } else {
+                    player.getOffHandStack().damage(1, player, EquipmentSlot.OFFHAND);
+                }
+                return ActionResult.SUCCESS;
             }
         }
         return super.onUse(state, world, pos, player, hit);

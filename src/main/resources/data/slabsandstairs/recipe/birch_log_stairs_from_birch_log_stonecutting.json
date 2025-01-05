@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:birch_log"
-  },
-  "result": {
-    "count": 1,
-    "id": "slabsandstairs:birch_log_stairs"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:birch_log",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:birch_log_stairs"
+    }
 }

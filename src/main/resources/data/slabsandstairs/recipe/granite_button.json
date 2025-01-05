@@ -1,11 +1,9 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:granite"
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:granite"
+    ],
+    "result": {
+        "id": "slabsandstairs:granite_button"
     }
-  ],
-  "result": {
-    "id": "slabsandstairs:granite_button"
-  }
 }

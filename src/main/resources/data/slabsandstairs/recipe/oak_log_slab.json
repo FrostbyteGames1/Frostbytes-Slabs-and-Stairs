@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:oak_log"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:oak_log"
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:oak_log_slab"
     }
-  },
-  "pattern": [
-    "###"
-  ],
-  "result": {
-    "count": 6,
-    "id": "slabsandstairs:oak_log_slab"
-  }
 }

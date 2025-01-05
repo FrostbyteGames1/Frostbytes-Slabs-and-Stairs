@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_pressure_plate",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": "minecraft:pale_oak_wood"
+    },
+    "result": {
+        "id": "slabsandstairs:pale_oak_wood_pressure_plate"
+    }
+}

@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:basalt"
-  },
-  "result": {
-    "count": 2,
-    "id": "slabsandstairs:basalt_slab"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:basalt",
+    "result": {
+        "count": 2,
+        "id": "slabsandstairs:basalt_slab"
+    }
 }

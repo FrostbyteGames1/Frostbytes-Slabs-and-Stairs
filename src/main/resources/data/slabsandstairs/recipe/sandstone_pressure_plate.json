@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "pressure_plates",
-  "pattern": [
-    "##"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:sandstone"
+    "type": "minecraft:crafting_shaped",
+    "group": "pressure_plates",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": "minecraft:sandstone"
+    },
+    "result": {
+        "id": "slabsandstairs:sandstone_pressure_plate"
     }
-  },
-  "result": {
-    "id": "slabsandstairs:sandstone_pressure_plate"
-  }
 }

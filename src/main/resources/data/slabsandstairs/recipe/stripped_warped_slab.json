@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:stripped_warped_stem"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:stripped_warped_stem"
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:stripped_warped_slab"
     }
-  },
-  "pattern": [
-    "###"
-  ],
-  "result": {
-    "count": 6,
-    "id": "slabsandstairs:stripped_warped_slab"
-  }
 }

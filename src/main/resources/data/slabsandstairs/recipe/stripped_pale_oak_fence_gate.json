@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_fence_gate",
+    "key": {
+        "#": "minecraft:stick",
+        "W": "minecraft:stripped_pale_oak_log"
+    },
+    "pattern": [
+        "#W#",
+        "#W#"
+    ],
+    "result": {
+        "id": "slabsandstairs:stripped_pale_oak_fence_gate"
+    }
+}

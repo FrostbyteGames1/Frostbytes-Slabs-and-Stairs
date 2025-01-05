@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:warped_hyphae"
-  },
-  "result": {
-    "count": 2,
-    "id": "slabsandstairs:warped_hyphae_slab"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:warped_hyphae",
+    "result": {
+        "count": 2,
+        "id": "slabsandstairs:warped_hyphae_slab"
+    }
 }

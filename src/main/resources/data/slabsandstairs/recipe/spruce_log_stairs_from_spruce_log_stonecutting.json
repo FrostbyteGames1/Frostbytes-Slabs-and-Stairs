@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:spruce_log"
-  },
-  "result": {
-    "count": 1,
-    "id": "slabsandstairs:spruce_log_stairs"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:spruce_log",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:spruce_log_stairs"
+    }
 }

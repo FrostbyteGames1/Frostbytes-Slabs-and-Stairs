@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "wooden_pressure_plate",
-  "pattern": [
-    "##"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:stripped_acacia_log"
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_pressure_plate",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": "minecraft:stripped_acacia_log"
+    },
+    "result": {
+        "id": "slabsandstairs:stripped_acacia_pressure_plate"
     }
-  },
-  "result": {
-    "id": "slabsandstairs:stripped_acacia_pressure_plate"
-  }
 }

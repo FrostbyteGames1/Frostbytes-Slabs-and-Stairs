@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:pale_oak_log"
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:pale_oak_log_slab"
+    }
+}

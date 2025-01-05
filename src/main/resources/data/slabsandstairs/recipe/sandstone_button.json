@@ -1,11 +1,9 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:sandstone"
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:sandstone"
+    ],
+    "result": {
+        "id": "slabsandstairs:sandstone_button"
     }
-  ],
-  "result": {
-    "id": "slabsandstairs:sandstone_button"
-  }
 }

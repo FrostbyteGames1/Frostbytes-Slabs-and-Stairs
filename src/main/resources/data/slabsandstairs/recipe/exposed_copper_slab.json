@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:exposed_copper"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:exposed_copper"
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:exposed_copper_slab"
     }
-  },
-  "pattern": [
-    "###"
-  ],
-  "result": {
-    "count": 6,
-    "id": "slabsandstairs:exposed_copper_slab"
-  }
 }

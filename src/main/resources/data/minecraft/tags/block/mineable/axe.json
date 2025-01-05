@@ -1,6 +1,7 @@
 {
   "replace": false,
-  "values": ["slabsandstairs:oak_wood_slab",
+  "values": [
+    "slabsandstairs:oak_wood_slab",
     "slabsandstairs:spruce_wood_slab",
     "slabsandstairs:birch_wood_slab",
     "slabsandstairs:jungle_wood_slab",
@@ -11,6 +12,7 @@
     "slabsandstairs:mangrove_wood_slab",
     "slabsandstairs:cherry_wood_slab",
     "slabsandstairs:bamboo_block_slab",
+    "slabsandstairs:pale_oak_wood_slab",
     "slabsandstairs:oak_log_slab",
     "slabsandstairs:spruce_log_slab",
     "slabsandstairs:birch_log_slab",
@@ -21,6 +23,7 @@
     "slabsandstairs:warped_stem_slab",
     "slabsandstairs:mangrove_log_slab",
     "slabsandstairs:cherry_log_slab",
+    "slabsandstairs:pale_oak_log_slab",
     "slabsandstairs:stripped_oak_slab",
     "slabsandstairs:stripped_spruce_slab",
     "slabsandstairs:stripped_birch_slab",
@@ -31,6 +34,7 @@
     "slabsandstairs:stripped_warped_slab",
     "slabsandstairs:stripped_mangrove_slab",
     "slabsandstairs:stripped_cherry_slab",
+    "slabsandstairs:stripped_pale_oak_slab",
 
     "slabsandstairs:oak_wood_button",
     "slabsandstairs:spruce_wood_button",
@@ -43,6 +47,7 @@
     "slabsandstairs:bamboo_block_button",
     "slabsandstairs:warped_hyphae_button",
     "slabsandstairs:crimson_hyphae_button",
+    "slabsandstairs:pale_oak_wood_button",
     "slabsandstairs:stripped_oak_button",
     "slabsandstairs:stripped_spruce_button",
     "slabsandstairs:stripped_birch_button",
@@ -53,6 +58,7 @@
     "slabsandstairs:stripped_cherry_button",
     "slabsandstairs:stripped_warped_button",
     "slabsandstairs:stripped_crimson_button",
+    "slabsandstairs:stripped_pale_oak_button",
 
     "slabsandstairs:oak_wood_pressure_plate",
     "slabsandstairs:spruce_wood_pressure_plate",
@@ -65,6 +71,7 @@
     "slabsandstairs:bamboo_block_pressure_plate",
     "slabsandstairs:warped_hyphae_pressure_plate",
     "slabsandstairs:crimson_hyphae_pressure_plate",
+    "slabsandstairs:pale_oak_wood_pressure_plate",
     "slabsandstairs:stripped_oak_pressure_plate",
     "slabsandstairs:stripped_spruce_pressure_plate",
     "slabsandstairs:stripped_birch_pressure_plate",
@@ -75,6 +82,7 @@
     "slabsandstairs:stripped_cherry_pressure_plate",
     "slabsandstairs:stripped_warped_pressure_plate",
     "slabsandstairs:stripped_crimson_pressure_plate",
+    "slabsandstairs:stripped_pale_oak_pressure_plate",
 
     "slabsandstairs:oak_wood_fence",
     "slabsandstairs:spruce_wood_fence",
@@ -87,6 +95,7 @@
     "slabsandstairs:bamboo_block_fence",
     "slabsandstairs:warped_hyphae_fence",
     "slabsandstairs:crimson_hyphae_fence",
+    "slabsandstairs:pale_oak_wood_fence",
     "slabsandstairs:stripped_oak_fence",
     "slabsandstairs:stripped_spruce_fence",
     "slabsandstairs:stripped_birch_fence",
@@ -97,6 +106,7 @@
     "slabsandstairs:stripped_cherry_fence",
     "slabsandstairs:stripped_warped_fence",
     "slabsandstairs:stripped_crimson_fence",
+    "slabsandstairs:stripped_pale_oak_fence",
 
     "slabsandstairs:oak_wood_fence_gate",
     "slabsandstairs:spruce_wood_fence_gate",
@@ -109,6 +119,7 @@
     "slabsandstairs:bamboo_block_fence_gate",
     "slabsandstairs:warped_hyphae_fence_gate",
     "slabsandstairs:crimson_hyphae_fence_gate",
+    "slabsandstairs:pale_oak_wood_fence_gate",
     "slabsandstairs:stripped_oak_fence_gate",
     "slabsandstairs:stripped_spruce_fence_gate",
     "slabsandstairs:stripped_birch_fence_gate",
@@ -119,6 +130,7 @@
     "slabsandstairs:stripped_cherry_fence_gate",
     "slabsandstairs:stripped_warped_fence_gate",
     "slabsandstairs:stripped_crimson_fence_gate",
+    "slabsandstairs:stripped_pale_oak_fence_gate",
 
     "slabsandstairs:oak_wood_stairs",
     "slabsandstairs:spruce_wood_stairs",
@@ -131,6 +143,7 @@
     "slabsandstairs:mangrove_wood_stairs",
     "slabsandstairs:cherry_wood_stairs",
     "slabsandstairs:bamboo_block_stairs",
+    "slabsandstairs:pale_oak_wood_stairs",
     "slabsandstairs:oak_log_stairs",
     "slabsandstairs:spruce_log_stairs",
     "slabsandstairs:birch_log_stairs",
@@ -141,6 +154,7 @@
     "slabsandstairs:warped_stem_stairs",
     "slabsandstairs:mangrove_log_stairs",
     "slabsandstairs:cherry_log_stairs",
+    "slabsandstairs:pale_oak_log_stairs",
     "slabsandstairs:stripped_oak_stairs",
     "slabsandstairs:stripped_spruce_stairs",
     "slabsandstairs:stripped_birch_stairs",
@@ -150,6 +164,7 @@
     "slabsandstairs:stripped_crimson_stairs",
     "slabsandstairs:stripped_warped_stairs",
     "slabsandstairs:stripped_mangrove_stairs",
-    "slabsandstairs:stripped_cherry_stairs"
+    "slabsandstairs:stripped_cherry_stairs",
+    "slabsandstairs:stripped_pale_oak_stairs"
   ]
 }

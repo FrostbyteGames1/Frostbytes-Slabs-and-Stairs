@@ -1,16 +1,14 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:purpur_pillar"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:purpur_pillar"
+    },
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:purpur_pillar_wall"
     }
-  },
-  "pattern": [
-    "###",
-    "###"
-  ],
-  "result": {
-    "count": 6,
-    "id": "slabsandstairs:purpur_pillar_wall"
-  }
 }

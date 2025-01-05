@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:quartz_bricks"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:quartz_bricks"
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:quartz_brick_slab"
     }
-  },
-  "pattern": [
-    "###"
-  ],
-  "result": {
-    "count": 6,
-    "id": "slabsandstairs:quartz_brick_slab"
-  }
 }

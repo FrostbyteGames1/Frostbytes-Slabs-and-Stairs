@@ -38,6 +38,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.BAMBOO_BLOCK_BUTTON);
                 entries.add(ModBlocks.WARPED_HYPHAE_BUTTON);
                 entries.add(ModBlocks.CRIMSON_HYPHAE_BUTTON);
+                entries.add(ModBlocks.PALE_OAK_WOOD_BUTTON);
                 entries.add(ModBlocks.STRIPPED_OAK_BUTTON);
                 entries.add(ModBlocks.STRIPPED_SPRUCE_BUTTON);
                 entries.add(ModBlocks.STRIPPED_BIRCH_BUTTON);
@@ -48,6 +49,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.STRIPPED_CHERRY_BUTTON);
                 entries.add(ModBlocks.STRIPPED_WARPED_BUTTON);
                 entries.add(ModBlocks.STRIPPED_CRIMSON_BUTTON);
+                entries.add(ModBlocks.STRIPPED_PALE_OAK_BUTTON);
 
                 entries.add(ModBlocks.DIORITE_BUTTON);
                 entries.add(ModBlocks.ANDESITE_BUTTON);
@@ -81,6 +83,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.BAMBOO_BLOCK_PRESSURE_PLATE);
                 entries.add(ModBlocks.WARPED_HYPHAE_PRESSURE_PLATE);
                 entries.add(ModBlocks.CRIMSON_HYPHAE_PRESSURE_PLATE);
+                entries.add(ModBlocks.PALE_OAK_WOOD_PRESSURE_PLATE);
                 entries.add(ModBlocks.STRIPPED_OAK_PRESSURE_PLATE);
                 entries.add(ModBlocks.STRIPPED_SPRUCE_PRESSURE_PLATE);
                 entries.add(ModBlocks.STRIPPED_BIRCH_PRESSURE_PLATE);
@@ -91,6 +94,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.STRIPPED_CHERRY_PRESSURE_PLATE);
                 entries.add(ModBlocks.STRIPPED_WARPED_PRESSURE_PLATE);
                 entries.add(ModBlocks.STRIPPED_CRIMSON_PRESSURE_PLATE);
+                entries.add(ModBlocks.STRIPPED_PALE_OAK_PRESSURE_PLATE);
 
                 entries.add(ModBlocks.DIORITE_PRESSURE_PLATE);
                 entries.add(ModBlocks.ANDESITE_PRESSURE_PLATE);
@@ -115,6 +119,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.BAMBOO_BLOCK_FENCE);
                 entries.add(ModBlocks.WARPED_HYPHAE_FENCE);
                 entries.add(ModBlocks.CRIMSON_HYPHAE_FENCE);
+                entries.add(ModBlocks.PALE_OAK_WOOD_FENCE);
                 entries.add(ModBlocks.STRIPPED_OAK_FENCE);
                 entries.add(ModBlocks.STRIPPED_SPRUCE_FENCE);
                 entries.add(ModBlocks.STRIPPED_BIRCH_FENCE);
@@ -125,6 +130,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.STRIPPED_CHERRY_FENCE);
                 entries.add(ModBlocks.STRIPPED_WARPED_FENCE);
                 entries.add(ModBlocks.STRIPPED_CRIMSON_FENCE);
+                entries.add(ModBlocks.STRIPPED_PALE_OAK_FENCE);
 
                 entries.add(ModBlocks.RED_NETHER_BRICK_FENCE);
 
@@ -139,6 +145,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.BAMBOO_BLOCK_FENCE_GATE);
                 entries.add(ModBlocks.WARPED_HYPHAE_FENCE_GATE);
                 entries.add(ModBlocks.CRIMSON_HYPHAE_FENCE_GATE);
+                entries.add(ModBlocks.PALE_OAK_WOOD_FENCE_GATE);
                 entries.add(ModBlocks.STRIPPED_OAK_FENCE_GATE);
                 entries.add(ModBlocks.STRIPPED_SPRUCE_FENCE_GATE);
                 entries.add(ModBlocks.STRIPPED_BIRCH_FENCE_GATE);
@@ -149,6 +156,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.STRIPPED_CHERRY_FENCE_GATE);
                 entries.add(ModBlocks.STRIPPED_WARPED_FENCE_GATE);
                 entries.add(ModBlocks.STRIPPED_CRIMSON_FENCE_GATE);
+                entries.add(ModBlocks.STRIPPED_PALE_OAK_FENCE_GATE);
 
                 entries.add(ModBlocks.NETHER_BRICK_FENCE_GATE);
                 entries.add(ModBlocks.RED_NETHER_BRICK_FENCE_GATE);
@@ -355,6 +363,8 @@ public class ModItemGroup {
                 entries.add(ModBlocks.BAMBOO_BLOCK_SLAB);
                 entries.add(ModBlocks.OAK_LOG_SLAB);
                 entries.add(ModBlocks.OAK_WOOD_SLAB);
+                entries.add(ModBlocks.PALE_OAK_LOG_SLAB);
+                entries.add(ModBlocks.PALE_OAK_WOOD_SLAB);
                 entries.add(ModBlocks.ORANGE_CONCRETE_SLAB);
                 entries.add(ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB);
                 entries.add(ModBlocks.ORANGE_TERRACOTTA_SLAB);
@@ -382,6 +392,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.STRIPPED_MANGROVE_SLAB);
                 entries.add(ModBlocks.STRIPPED_CHERRY_SLAB);
                 entries.add(ModBlocks.STRIPPED_OAK_SLAB);
+                entries.add(ModBlocks.STRIPPED_PALE_OAK_SLAB);
                 entries.add(ModBlocks.STRIPPED_SPRUCE_SLAB);
                 entries.add(ModBlocks.STRIPPED_WARPED_SLAB);
                 entries.add(ModBlocks.TERRACOTTA_SLAB);
@@ -482,6 +493,8 @@ public class ModItemGroup {
                 entries.add(ModBlocks.BAMBOO_BLOCK_STAIRS);
                 entries.add(ModBlocks.OAK_LOG_STAIRS);
                 entries.add(ModBlocks.OAK_WOOD_STAIRS);
+                entries.add(ModBlocks.PALE_OAK_LOG_STAIRS);
+                entries.add(ModBlocks.PALE_OAK_WOOD_STAIRS);
                 entries.add(ModBlocks.ORANGE_CONCRETE_STAIRS);
                 entries.add(ModBlocks.ORANGE_GLAZED_TERRACOTTA_STAIRS);
                 entries.add(ModBlocks.ORANGE_TERRACOTTA_STAIRS);
@@ -509,6 +522,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.STRIPPED_MANGROVE_STAIRS);
                 entries.add(ModBlocks.STRIPPED_CHERRY_STAIRS);
                 entries.add(ModBlocks.STRIPPED_OAK_STAIRS);
+                entries.add(ModBlocks.STRIPPED_PALE_OAK_STAIRS);
                 entries.add(ModBlocks.STRIPPED_SPRUCE_STAIRS);
                 entries.add(ModBlocks.STRIPPED_WARPED_STAIRS);
                 entries.add(ModBlocks.TERRACOTTA_STAIRS);

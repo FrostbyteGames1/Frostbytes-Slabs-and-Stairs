@@ -1,11 +1,9 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:calcite"
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:calcite"
+    ],
+    "result": {
+        "id": "slabsandstairs:calcite_button"
     }
-  ],
-  "result": {
-    "id": "slabsandstairs:calcite_button"
-  }
 }

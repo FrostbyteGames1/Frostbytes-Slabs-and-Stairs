@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "wooden_pressure_plate",
-  "pattern": [
-    "##"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:stripped_warped_stem"
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_pressure_plate",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": "minecraft:stripped_warped_stem"
+    },
+    "result": {
+        "id": "slabsandstairs:stripped_warped_pressure_plate"
     }
-  },
-  "result": {
-    "id": "slabsandstairs:stripped_warped_pressure_plate"
-  }
 }

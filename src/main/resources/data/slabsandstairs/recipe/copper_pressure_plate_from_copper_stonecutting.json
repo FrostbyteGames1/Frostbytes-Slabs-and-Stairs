@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:copper_block"
-  },
-  "result": {
-    "count": 3,
-    "id": "slabsandstairs:copper_pressure_plate"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:copper_block",
+    "result": {
+        "count": 3,
+        "id": "slabsandstairs:copper_pressure_plate"
+    }
 }

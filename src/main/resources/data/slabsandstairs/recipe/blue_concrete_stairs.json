@@ -1,17 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:blue_concrete"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:blue_concrete"
+    },
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "result": {
+        "count": 4,
+        "id": "slabsandstairs:blue_concrete_stairs"
     }
-  },
-  "pattern": [
-    "#  ",
-    "## ",
-    "###"
-  ],
-  "result": {
-    "count": 4,
-    "id": "slabsandstairs:blue_concrete_stairs"
-  }
 }

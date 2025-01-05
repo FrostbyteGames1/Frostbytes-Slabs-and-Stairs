@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:orange_terracotta"
-  },
-  "result": {
-    "count": 2,
-    "id": "slabsandstairs:orange_terracotta_slab"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:orange_terracotta",
+    "result": {
+        "count": 2,
+        "id": "slabsandstairs:orange_terracotta_slab"
+    }
 }

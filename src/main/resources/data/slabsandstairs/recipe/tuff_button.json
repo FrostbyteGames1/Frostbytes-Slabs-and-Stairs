@@ -1,11 +1,9 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:tuff"
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:tuff"
+    ],
+    "result": {
+        "id": "slabsandstairs:tuff_button"
     }
-  ],
-  "result": {
-    "id": "slabsandstairs:tuff_button"
-  }
 }

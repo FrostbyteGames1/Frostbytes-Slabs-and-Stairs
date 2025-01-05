@@ -1,17 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:gray_glazed_terracotta"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:gray_glazed_terracotta"
+    },
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "result": {
+        "count": 4,
+        "id": "slabsandstairs:gray_glazed_terracotta_stairs"
     }
-  },
-  "pattern": [
-    "#  ",
-    "## ",
-    "###"
-  ],
-  "result": {
-    "count": 4,
-    "id": "slabsandstairs:gray_glazed_terracotta_stairs"
-  }
 }

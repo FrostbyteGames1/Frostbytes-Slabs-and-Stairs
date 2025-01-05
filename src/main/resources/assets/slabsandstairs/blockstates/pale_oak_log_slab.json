@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "slabsandstairs:block/pale_oak_log_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/pale_oak_log"
+    },
+    "type=top": {
+      "model": "slabsandstairs:block/pale_oak_log_slab_top"
+    }
+  }
+}

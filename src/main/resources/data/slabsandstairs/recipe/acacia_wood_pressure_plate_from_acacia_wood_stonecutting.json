@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:acacia_wood"
-  },
-  "result": {
-    "count": 1,
-    "id": "slabsandstairs:acacia_wood_pressure_plate"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:acacia_wood",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:acacia_wood_pressure_plate"
+    }
 }

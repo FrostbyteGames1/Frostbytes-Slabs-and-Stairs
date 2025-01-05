@@ -1,16 +1,14 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:cracked_deepslate_tiles"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:cracked_deepslate_tiles"
+    },
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:cracked_deepslate_tile_wall"
     }
-  },
-  "pattern": [
-    "###",
-    "###"
-  ],
-  "result": {
-    "count": 6,
-    "id": "slabsandstairs:cracked_deepslate_tile_wall"
-  }
 }

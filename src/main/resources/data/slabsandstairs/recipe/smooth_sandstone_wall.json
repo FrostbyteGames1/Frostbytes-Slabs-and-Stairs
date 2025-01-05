@@ -1,16 +1,14 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:smooth_sandstone"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:smooth_sandstone"
+    },
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:smooth_sandstone_wall"
     }
-  },
-  "pattern": [
-    "###",
-    "###"
-  ],
-  "result": {
-    "count": 6,
-    "id": "slabsandstairs:smooth_sandstone_wall"
-  }
 }

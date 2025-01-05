@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:purple_concrete"
-  },
-  "result": {
-    "count": 1,
-    "id": "slabsandstairs:purple_concrete_wall"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:purple_concrete",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:purple_concrete_wall"
+    }
 }

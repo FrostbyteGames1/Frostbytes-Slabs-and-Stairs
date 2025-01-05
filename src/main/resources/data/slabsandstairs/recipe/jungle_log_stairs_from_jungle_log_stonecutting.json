@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:jungle_log"
-  },
-  "result": {
-    "count": 1,
-    "id": "slabsandstairs:jungle_log_stairs"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:jungle_log",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:jungle_log_stairs"
+    }
 }

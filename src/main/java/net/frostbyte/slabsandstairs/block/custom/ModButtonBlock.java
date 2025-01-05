@@ -33,6 +33,7 @@ public class ModButtonBlock extends ButtonBlock {
         STRIPPED_BLOCKS.put(ModBlocks.OAK_WOOD_BUTTON, ModBlocks.STRIPPED_OAK_BUTTON);
         STRIPPED_BLOCKS.put(ModBlocks.SPRUCE_WOOD_BUTTON, ModBlocks.STRIPPED_SPRUCE_BUTTON);
         STRIPPED_BLOCKS.put(ModBlocks.WARPED_HYPHAE_BUTTON, ModBlocks.STRIPPED_WARPED_BUTTON);
+        //STRIPPED_BLOCKS.put(ModBlocks.PALE_OAK_WOOD_BUTTON, ModBlocks.STRIPPED_PALE_OAK_BUTTON);
     }
 
     @Override
@@ -47,7 +48,16 @@ public class ModButtonBlock extends ButtonBlock {
                 } else {
                     player.getOffHandStack().damage(1, player, EquipmentSlot.OFFHAND);
                 }
-                return ActionResult.success(world.isClient);
+                return ActionResult.SUCCESS;
+            } else if (state.isOf(ModBlocks.PALE_OAK_WOOD_BUTTON)) {
+                world.setBlockState(pos, ModBlocks.STRIPPED_PALE_OAK_BUTTON.getStateWithProperties(state));
+                world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(player, this.getStateWithProperties(state)));
+                if (player.getMainHandStack().getItem() instanceof AxeItem) {
+                    player.getMainHandStack().damage(1, player, EquipmentSlot.MAINHAND);
+                } else {
+                    player.getOffHandStack().damage(1, player, EquipmentSlot.OFFHAND);
+                }
+                return ActionResult.SUCCESS;
             }
         }
         return super.onUse(state, world, pos, player, hit);

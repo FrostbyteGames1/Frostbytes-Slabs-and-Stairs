@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:blue_concrete"
-  },
-  "result": {
-    "count": 1,
-    "id": "slabsandstairs:blue_concrete_stairs"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:blue_concrete",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:blue_concrete_stairs"
+    }
 }

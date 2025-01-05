@@ -1,17 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:smooth_basalt"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:smooth_basalt"
+    },
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "result": {
+        "count": 4,
+        "id": "slabsandstairs:smooth_basalt_stairs"
     }
-  },
-  "pattern": [
-    "#  ",
-    "## ",
-    "###"
-  ],
-  "result": {
-    "count": 4,
-    "id": "slabsandstairs:smooth_basalt_stairs"
-  }
 }

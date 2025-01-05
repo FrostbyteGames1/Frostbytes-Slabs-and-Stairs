@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:weathered_chiseled_copper"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:weathered_chiseled_copper"
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:weathered_chiseled_copper_slab"
     }
-  },
-  "pattern": [
-    "###"
-  ],
-  "result": {
-    "count": 6,
-    "id": "slabsandstairs:weathered_chiseled_copper_slab"
-  }
 }

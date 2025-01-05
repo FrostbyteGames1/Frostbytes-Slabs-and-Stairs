@@ -1,10 +1,8 @@
 package net.frostbyte.slabsandstairs;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.frostbyte.slabsandstairs.block.ModBlocks;
-import net.frostbyte.slabsandstairs.datafixer.ModDataFixer;
 import net.frostbyte.slabsandstairs.item.ModItemGroup;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,8 +16,6 @@ public class SlabsAndStairs implements ModInitializer {
 	public void onInitialize() {
 		ModBlocks.registerModBlocks();
 		ModItemGroup.registerModItemGroup();
-
-		ServerTickEvents.START_SERVER_TICK.register(new ModDataFixer());
 
 		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.COPPER_BUTTON, ModBlocks.WAXED_COPPER_BUTTON);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.COPPER_BUTTON, ModBlocks.EXPOSED_COPPER_BUTTON);

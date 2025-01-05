@@ -1,11 +1,9 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:diorite"
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:diorite"
+    ],
+    "result": {
+        "id": "slabsandstairs:diorite_button"
     }
-  ],
-  "result": {
-    "id": "slabsandstairs:diorite_button"
-  }
 }

@@ -1,17 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:chiseled_polished_blackstone"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:chiseled_polished_blackstone"
+    },
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "result": {
+        "count": 4,
+        "id": "slabsandstairs:chiseled_polished_blackstone_stairs"
     }
-  },
-  "pattern": [
-    "#  ",
-    "## ",
-    "###"
-  ],
-  "result": {
-    "count": 4,
-    "id": "slabsandstairs:chiseled_polished_blackstone_stairs"
-  }
 }

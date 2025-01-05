@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "pressure_plates",
-  "pattern": [
-    "##"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:basalt"
+    "type": "minecraft:crafting_shaped",
+    "group": "pressure_plates",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": "minecraft:basalt"
+    },
+    "result": {
+        "id": "slabsandstairs:basalt_pressure_plate"
     }
-  },
-  "result": {
-    "id": "slabsandstairs:basalt_pressure_plate"
-  }
 }

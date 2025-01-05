@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:smooth_sandstone"
-  },
-  "result": {
-    "count": 1,
-    "id": "slabsandstairs:smooth_sandstone_wall"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:smooth_sandstone",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:smooth_sandstone_wall"
+    }
 }

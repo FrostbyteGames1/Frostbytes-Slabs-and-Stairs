@@ -1,14 +1,10 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "slabsandstairs:copper_wall"
-    },
-    {
-      "item": "minecraft:honeycomb"
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:copper_wall",
+        "minecraft:honeycomb"
+    ],
+    "result": {
+        "id": "slabsandstairs:waxed_copper_wall"
     }
-  ],
-  "result": {
-    "id": "slabsandstairs:waxed_copper_wall"
-  }
 }

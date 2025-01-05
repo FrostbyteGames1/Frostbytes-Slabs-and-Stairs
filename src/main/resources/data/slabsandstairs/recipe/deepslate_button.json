@@ -1,11 +1,9 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:deepslate"
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:deepslate"
+    ],
+    "result": {
+        "id": "slabsandstairs:deepslate_button"
     }
-  ],
-  "result": {
-    "id": "slabsandstairs:deepslate_button"
-  }
 }

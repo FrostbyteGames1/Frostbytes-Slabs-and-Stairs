@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "wooden_pressure_plate",
-  "pattern": [
-    "##"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:acacia_wood"
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_pressure_plate",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": "minecraft:acacia_wood"
+    },
+    "result": {
+        "id": "slabsandstairs:acacia_wood_pressure_plate"
     }
-  },
-  "result": {
-    "id": "slabsandstairs:acacia_wood_pressure_plate"
-  }
 }

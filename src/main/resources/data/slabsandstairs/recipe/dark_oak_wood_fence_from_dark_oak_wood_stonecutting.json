@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:dark_oak_wood"
-  },
-  "result": {
-    "count": 1,
-    "id": "slabsandstairs:dark_oak_wood_fence"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:dark_oak_wood",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:dark_oak_wood_fence"
+    }
 }

@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:mangrove_wood"
-  },
-  "result": {
-    "count": 1,
-    "id": "slabsandstairs:mangrove_wood_pressure_plate"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:mangrove_wood",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:mangrove_wood_pressure_plate"
+    }
 }

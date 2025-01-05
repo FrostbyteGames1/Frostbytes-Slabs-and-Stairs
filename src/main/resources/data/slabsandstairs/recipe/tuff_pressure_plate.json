@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "pressure_plates",
-  "pattern": [
-    "##"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:tuff"
+    "type": "minecraft:crafting_shaped",
+    "group": "pressure_plates",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": "minecraft:tuff"
+    },
+    "result": {
+        "id": "slabsandstairs:tuff_pressure_plate"
     }
-  },
-  "result": {
-    "id": "slabsandstairs:tuff_pressure_plate"
-  }
 }

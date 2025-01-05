@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:oxidized_copper"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:oxidized_copper"
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:oxidized_copper_slab"
     }
-  },
-  "pattern": [
-    "###"
-  ],
-  "result": {
-    "count": 6,
-    "id": "slabsandstairs:oxidized_copper_slab"
-  }
 }

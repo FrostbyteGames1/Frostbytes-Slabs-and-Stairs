@@ -1,19 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "wooden_fence_gate",
-  "key": {
-    "#": {
-      "item": "minecraft:stick"
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_fence_gate",
+    "key": {
+        "#": "minecraft:stick",
+        "W": "minecraft:warped_hyphae"
     },
-    "W": {
-      "item": "minecraft:warped_hyphae"
+    "pattern": [
+        "#W#",
+        "#W#"
+    ],
+    "result": {
+        "id": "slabsandstairs:warped_hyphae_fence_gate"
     }
-  },
-  "pattern": [
-    "#W#",
-    "#W#"
-  ],
-  "result": {
-    "id": "slabsandstairs:warped_hyphae_fence_gate"
-  }
 }

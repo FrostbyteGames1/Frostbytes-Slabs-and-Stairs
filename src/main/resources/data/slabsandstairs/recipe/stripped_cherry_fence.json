@@ -1,20 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "wooden_fence",
-  "key": {
-    "#": {
-      "item": "minecraft:stick"
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_fence",
+    "key": {
+        "#": "minecraft:stick",
+        "W": "minecraft:stripped_cherry_log"
     },
-    "W": {
-      "item": "minecraft:stripped_cherry_log"
+    "pattern": [
+        "W#W",
+        "W#W"
+    ],
+    "result": {
+        "count": 3,
+        "id": "slabsandstairs:stripped_cherry_fence"
     }
-  },
-  "pattern": [
-    "W#W",
-    "W#W"
-  ],
-  "result": {
-    "count": 3,
-    "id": "slabsandstairs:stripped_cherry_fence"
-  }
 }

@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:stripped_crimson_stem"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:stripped_crimson_stem"
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:stripped_crimson_slab"
     }
-  },
-  "pattern": [
-    "###"
-  ],
-  "result": {
-    "count": 6,
-    "id": "slabsandstairs:stripped_crimson_slab"
-  }
 }

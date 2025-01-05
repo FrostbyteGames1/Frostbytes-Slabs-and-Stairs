@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:prismarine_bricks"
-  },
-  "result": {
-    "count": 1,
-    "id": "slabsandstairs:prismarine_brick_wall"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:prismarine_bricks",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:prismarine_brick_wall"
+    }
 }

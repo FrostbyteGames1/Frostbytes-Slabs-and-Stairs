@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "wooden_pressure_plate",
-  "pattern": [
-    "##"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:spruce_wood"
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_pressure_plate",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": "minecraft:spruce_wood"
+    },
+    "result": {
+        "id": "slabsandstairs:spruce_wood_pressure_plate"
     }
-  },
-  "result": {
-    "id": "slabsandstairs:spruce_wood_pressure_plate"
-  }
 }

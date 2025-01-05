@@ -1,17 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:waxed_weathered_copper"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:waxed_weathered_copper"
+    },
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "result": {
+        "count": 4,
+        "id": "slabsandstairs:waxed_weathered_copper_stairs"
     }
-  },
-  "pattern": [
-    "#  ",
-    "## ",
-    "###"
-  ],
-  "result": {
-    "count": 4,
-    "id": "slabsandstairs:waxed_weathered_copper_stairs"
-  }
 }

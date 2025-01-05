@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:cracked_stone_bricks"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:cracked_stone_bricks"
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:cracked_stone_brick_slab"
     }
-  },
-  "pattern": [
-    "###"
-  ],
-  "result": {
-    "count": 6,
-    "id": "slabsandstairs:cracked_stone_brick_slab"
-  }
 }

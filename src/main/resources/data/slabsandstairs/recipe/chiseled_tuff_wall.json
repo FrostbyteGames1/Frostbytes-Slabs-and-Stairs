@@ -1,16 +1,14 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:chiseled_tuff"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:chiseled_tuff"
+    },
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:chiseled_tuff_wall"
     }
-  },
-  "pattern": [
-    "###",
-    "###"
-  ],
-  "result": {
-    "count": 6,
-    "id": "slabsandstairs:chiseled_tuff_wall"
-  }
 }

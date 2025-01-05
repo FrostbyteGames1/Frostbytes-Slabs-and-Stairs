@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:dark_oak_wood"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:dark_oak_wood"
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:dark_oak_wood_slab"
     }
-  },
-  "pattern": [
-    "###"
-  ],
-  "result": {
-    "count": 6,
-    "id": "slabsandstairs:dark_oak_wood_slab"
-  }
 }

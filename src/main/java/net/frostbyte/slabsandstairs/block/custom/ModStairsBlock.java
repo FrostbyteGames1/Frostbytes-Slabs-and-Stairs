@@ -42,6 +42,8 @@ public class ModStairsBlock extends StairsBlock {
         STRIPPED_BLOCKS.put(ModBlocks.SPRUCE_WOOD_STAIRS, ModBlocks.STRIPPED_SPRUCE_STAIRS);
         STRIPPED_BLOCKS.put(ModBlocks.WARPED_STEM_STAIRS, ModBlocks.STRIPPED_WARPED_STAIRS);
         STRIPPED_BLOCKS.put(ModBlocks.WARPED_HYPHAE_STAIRS, ModBlocks.STRIPPED_WARPED_STAIRS);
+        //STRIPPED_BLOCKS.put(ModBlocks.PALE_OAK_LOG_STAIRS, ModBlocks.STRIPPED_PALE_OAK_STAIRS);
+        //STRIPPED_BLOCKS.put(ModBlocks.PALE_OAK_WOOD_STAIRS, ModBlocks.STRIPPED_PALE_OAK_STAIRS);
     }
 
     @Override
@@ -56,7 +58,16 @@ public class ModStairsBlock extends StairsBlock {
                 } else {
                     player.getOffHandStack().damage(1, player, EquipmentSlot.OFFHAND);
                 }
-                return ActionResult.success(world.isClient);
+                return ActionResult.SUCCESS;
+            } else if (state.isOf(ModBlocks.PALE_OAK_LOG_STAIRS) || state.isOf(ModBlocks.PALE_OAK_WOOD_STAIRS)) {
+                world.setBlockState(pos, ModBlocks.STRIPPED_PALE_OAK_STAIRS.getStateWithProperties(state));
+                world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(player, this.getStateWithProperties(state)));
+                if (player.getMainHandStack().getItem() instanceof AxeItem) {
+                    player.getMainHandStack().damage(1, player, EquipmentSlot.MAINHAND);
+                } else {
+                    player.getOffHandStack().damage(1, player, EquipmentSlot.OFFHAND);
+                }
+                return ActionResult.SUCCESS;
             }
         }
         return super.onUse(state, world, pos, player, hit);

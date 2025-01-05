@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:cherry_wood"
-  },
-  "result": {
-    "count": 1,
-    "id": "slabsandstairs:cherry_wood_pressure_plate"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:cherry_wood",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:cherry_wood_pressure_plate"
+    }
 }

@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "pressure_plates",
-  "pattern": [
-    "##"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:andesite"
+    "type": "minecraft:crafting_shaped",
+    "group": "pressure_plates",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": "minecraft:andesite"
+    },
+    "result": {
+        "id": "slabsandstairs:andesite_pressure_plate"
     }
-  },
-  "result": {
-    "id": "slabsandstairs:andesite_pressure_plate"
-  }
 }

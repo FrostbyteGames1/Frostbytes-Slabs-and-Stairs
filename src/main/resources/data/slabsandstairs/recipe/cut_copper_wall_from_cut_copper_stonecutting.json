@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:cut_copper"
-  },
-  "result": {
-    "count": 1,
-    "id": "slabsandstairs:cut_copper_wall"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:cut_copper",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:cut_copper_wall"
+    }
 }

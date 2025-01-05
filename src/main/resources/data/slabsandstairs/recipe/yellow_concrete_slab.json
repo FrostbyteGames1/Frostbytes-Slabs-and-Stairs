@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:yellow_concrete"
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:yellow_concrete"
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:yellow_concrete_slab"
     }
-  },
-  "pattern": [
-    "###"
-  ],
-  "result": {
-    "count": 6,
-    "id": "slabsandstairs:yellow_concrete_slab"
-  }
 }

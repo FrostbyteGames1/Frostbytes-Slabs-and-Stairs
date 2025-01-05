@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "pressure_plates",
-  "pattern": [
-    "##"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:exposed_copper"
+    "type": "minecraft:crafting_shaped",
+    "group": "pressure_plates",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": "minecraft:exposed_copper"
+    },
+    "result": {
+        "id": "slabsandstairs:exposed_copper_pressure_plate"
     }
-  },
-  "result": {
-    "id": "slabsandstairs:exposed_copper_pressure_plate"
-  }
 }

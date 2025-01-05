@@ -1,19 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "wooden_fence_gate",
-  "key": {
-    "#": {
-      "item": "minecraft:stick"
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_fence_gate",
+    "key": {
+        "#": "minecraft:stick",
+        "W": "minecraft:jungle_wood"
     },
-    "W": {
-      "item": "minecraft:jungle_wood"
+    "pattern": [
+        "#W#",
+        "#W#"
+    ],
+    "result": {
+        "id": "slabsandstairs:jungle_wood_fence_gate"
     }
-  },
-  "pattern": [
-    "#W#",
-    "#W#"
-  ],
-  "result": {
-    "id": "slabsandstairs:jungle_wood_fence_gate"
-  }
 }

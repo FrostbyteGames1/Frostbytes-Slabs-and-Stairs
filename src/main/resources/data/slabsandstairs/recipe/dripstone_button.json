@@ -1,11 +1,9 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:dripstone_block"
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:dripstone_block"
+    ],
+    "result": {
+        "id": "slabsandstairs:dripstone_button"
     }
-  ],
-  "result": {
-    "id": "slabsandstairs:dripstone_button"
-  }
 }

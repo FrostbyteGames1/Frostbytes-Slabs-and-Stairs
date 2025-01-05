@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "wooden_pressure_plate",
-  "pattern": [
-    "##"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:warped_hyphae"
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_pressure_plate",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": "minecraft:warped_hyphae"
+    },
+    "result": {
+        "id": "slabsandstairs:warped_hyphae_pressure_plate"
     }
-  },
-  "result": {
-    "id": "slabsandstairs:warped_hyphae_pressure_plate"
-  }
 }

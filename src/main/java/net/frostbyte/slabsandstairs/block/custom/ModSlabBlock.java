@@ -32,6 +32,7 @@ public class ModSlabBlock extends SlabBlock {
         STRIPPED_BLOCKS.put(ModBlocks.OAK_WOOD_SLAB, ModBlocks.STRIPPED_OAK_SLAB);
         STRIPPED_BLOCKS.put(ModBlocks.SPRUCE_WOOD_SLAB, ModBlocks.STRIPPED_SPRUCE_SLAB);
         STRIPPED_BLOCKS.put(ModBlocks.WARPED_HYPHAE_SLAB, ModBlocks.STRIPPED_WARPED_SLAB);
+        //STRIPPED_BLOCKS.put(ModBlocks.PALE_OAK_WOOD_SLAB, ModBlocks.STRIPPED_PALE_OAK_SLAB);
         STRIPPED_BLOCKS.put(ModBlocks.ACACIA_LOG_SLAB, ModBlocks.STRIPPED_ACACIA_SLAB);
         STRIPPED_BLOCKS.put(ModBlocks.BIRCH_LOG_SLAB, ModBlocks.STRIPPED_BIRCH_SLAB);
         STRIPPED_BLOCKS.put(ModBlocks.CRIMSON_STEM_SLAB, ModBlocks.STRIPPED_CRIMSON_SLAB);
@@ -42,6 +43,7 @@ public class ModSlabBlock extends SlabBlock {
         STRIPPED_BLOCKS.put(ModBlocks.OAK_LOG_SLAB, ModBlocks.STRIPPED_OAK_SLAB);
         STRIPPED_BLOCKS.put(ModBlocks.SPRUCE_LOG_SLAB, ModBlocks.STRIPPED_SPRUCE_SLAB);
         STRIPPED_BLOCKS.put(ModBlocks.WARPED_STEM_SLAB, ModBlocks.STRIPPED_WARPED_SLAB);
+        //STRIPPED_BLOCKS.put(ModBlocks.PALE_OAK_LOG_SLAB, ModBlocks.STRIPPED_PALE_OAK_SLAB);
     }
 
     @Override
@@ -56,7 +58,16 @@ public class ModSlabBlock extends SlabBlock {
                 } else {
                     player.getOffHandStack().damage(1, player, EquipmentSlot.OFFHAND);
                 }
-                return ActionResult.success(world.isClient);
+                return ActionResult.SUCCESS;
+            } else if (state.isOf(ModBlocks.PALE_OAK_WOOD_SLAB) || state.isOf(ModBlocks.PALE_OAK_LOG_SLAB)) {
+                world.setBlockState(pos, ModBlocks.STRIPPED_PALE_OAK_SLAB.getStateWithProperties(state));
+                world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(player, this.getStateWithProperties(state)));
+                if (player.getMainHandStack().getItem() instanceof AxeItem) {
+                    player.getMainHandStack().damage(1, player, EquipmentSlot.MAINHAND);
+                } else {
+                    player.getOffHandStack().damage(1, player, EquipmentSlot.OFFHAND);
+                }
+                return ActionResult.SUCCESS;
             }
         }
         return super.onUse(state, world, pos, player, hit);

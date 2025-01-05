@@ -1,15 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "pressure_plates",
-  "pattern": [
-    "##"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:calcite"
+    "type": "minecraft:crafting_shaped",
+    "group": "pressure_plates",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": "minecraft:calcite"
+    },
+    "result": {
+        "id": "slabsandstairs:calcite_pressure_plate"
     }
-  },
-  "result": {
-    "id": "slabsandstairs:calcite_pressure_plate"
-  }
 }

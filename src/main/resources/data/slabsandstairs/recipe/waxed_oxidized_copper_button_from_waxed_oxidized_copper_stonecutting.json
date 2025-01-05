@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:waxed_oxidized_copper"
-  },
-  "result": {
-    "count": 9,
-    "id": "slabsandstairs:waxed_oxidized_copper_button"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:waxed_oxidized_copper",
+    "result": {
+        "count": 9,
+        "id": "slabsandstairs:waxed_oxidized_copper_button"
+    }
 }

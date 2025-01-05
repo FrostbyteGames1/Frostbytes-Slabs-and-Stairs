@@ -1,0 +1,6 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "slabsandstairs:block/dripstone_wall_inventory"
+    }
+}

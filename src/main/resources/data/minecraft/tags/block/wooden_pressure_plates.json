@@ -12,6 +12,7 @@
     "slabsandstairs:bamboo_block_pressure_plate",
     "slabsandstairs:warped_hyphae_pressure_plate",
     "slabsandstairs:crimson_hyphae_pressure_plate",
+    "slabsandstairs:pale_oak_wood_pressure_plate",
     "slabsandstairs:stripped_oak_pressure_plate",
     "slabsandstairs:stripped_spruce_pressure_plate",
     "slabsandstairs:stripped_birch_pressure_plate",
@@ -21,6 +22,7 @@
     "slabsandstairs:stripped_mangrove_pressure_plate",
     "slabsandstairs:stripped_cherry_pressure_plate",
     "slabsandstairs:stripped_warped_pressure_plate",
-    "slabsandstairs:stripped_crimson_pressure_plate"
+    "slabsandstairs:stripped_crimson_pressure_plate",
+    "slabsandstairs:stripped_pale_oak_pressure_plate"
   ]
 }

@@ -1,11 +1,9 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:basalt"
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:basalt"
+    ],
+    "result": {
+        "id": "slabsandstairs:basalt_button"
     }
-  ],
-  "result": {
-    "id": "slabsandstairs:basalt_button"
-  }
 }

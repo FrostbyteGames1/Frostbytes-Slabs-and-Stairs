@@ -1,10 +1,8 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:chiseled_stone_bricks"
-  },
-  "result": {
-    "count": 1,
-    "id": "slabsandstairs:chiseled_stone_brick_wall"
-  }
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:chiseled_stone_bricks",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:chiseled_stone_brick_wall"
+    }
 }

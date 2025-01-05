@@ -1,11 +1,9 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:iron_nugget"
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:iron_nugget"
+    ],
+    "result": {
+        "id": "slabsandstairs:iron_button"
     }
-  ],
-  "result": {
-    "id": "slabsandstairs:iron_button"
-  }
 }
