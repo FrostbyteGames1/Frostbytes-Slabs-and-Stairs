@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:gravel_layer",
+        "slabsandstairs:gravel_layer",
+        "slabsandstairs:gravel_layer",
+        "slabsandstairs:gravel_layer",
+        "slabsandstairs:gravel_layer",
+        "slabsandstairs:gravel_layer",
+        "slabsandstairs:gravel_layer",
+        "slabsandstairs:gravel_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:gravel"
+    }
+}

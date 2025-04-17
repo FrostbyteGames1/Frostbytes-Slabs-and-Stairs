@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:blue_concrete_powder"
+    ],
+    "result": {
+        "count": 8,
+        "id": "slabsandstairs:blue_concrete_powder_layer"
+    }
+}

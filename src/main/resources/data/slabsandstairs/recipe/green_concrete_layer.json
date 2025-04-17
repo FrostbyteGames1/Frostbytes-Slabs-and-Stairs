@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:green_concrete"
+    ],
+    "result": {
+        "count": 8,
+        "id": "slabsandstairs:green_concrete_layer"
+    }
+}

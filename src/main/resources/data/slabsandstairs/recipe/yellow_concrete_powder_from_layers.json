@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:yellow_concrete_powder_layer",
+        "slabsandstairs:yellow_concrete_powder_layer",
+        "slabsandstairs:yellow_concrete_powder_layer",
+        "slabsandstairs:yellow_concrete_powder_layer",
+        "slabsandstairs:yellow_concrete_powder_layer",
+        "slabsandstairs:yellow_concrete_powder_layer",
+        "slabsandstairs:yellow_concrete_powder_layer",
+        "slabsandstairs:yellow_concrete_powder_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:yellow_concrete_powder"
+    }
+}

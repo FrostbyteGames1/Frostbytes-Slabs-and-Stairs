@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:sand_layer",
+        "slabsandstairs:sand_layer",
+        "slabsandstairs:sand_layer",
+        "slabsandstairs:sand_layer",
+        "slabsandstairs:sand_layer",
+        "slabsandstairs:sand_layer",
+        "slabsandstairs:sand_layer",
+        "slabsandstairs:sand_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:sand"
+    }
+}

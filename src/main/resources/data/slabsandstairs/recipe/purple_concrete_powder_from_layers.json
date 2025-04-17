@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:purple_concrete_powder_layer",
+        "slabsandstairs:purple_concrete_powder_layer",
+        "slabsandstairs:purple_concrete_powder_layer",
+        "slabsandstairs:purple_concrete_powder_layer",
+        "slabsandstairs:purple_concrete_powder_layer",
+        "slabsandstairs:purple_concrete_powder_layer",
+        "slabsandstairs:purple_concrete_powder_layer",
+        "slabsandstairs:purple_concrete_powder_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:purple_concrete_powder"
+    }
+}

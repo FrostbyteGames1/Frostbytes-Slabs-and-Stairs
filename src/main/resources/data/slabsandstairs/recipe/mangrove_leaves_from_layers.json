@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:mangrove_leaf_layer",
+        "slabsandstairs:mangrove_leaf_layer",
+        "slabsandstairs:mangrove_leaf_layer",
+        "slabsandstairs:mangrove_leaf_layer",
+        "slabsandstairs:mangrove_leaf_layer",
+        "slabsandstairs:mangrove_leaf_layer",
+        "slabsandstairs:mangrove_leaf_layer",
+        "slabsandstairs:mangrove_leaf_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:mangrove_leaves"
+    }
+}

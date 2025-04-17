@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:green_concrete_powder_layer",
+        "slabsandstairs:green_concrete_powder_layer",
+        "slabsandstairs:green_concrete_powder_layer",
+        "slabsandstairs:green_concrete_powder_layer",
+        "slabsandstairs:green_concrete_powder_layer",
+        "slabsandstairs:green_concrete_powder_layer",
+        "slabsandstairs:green_concrete_powder_layer",
+        "slabsandstairs:green_concrete_powder_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:green_concrete_powder"
+    }
+}

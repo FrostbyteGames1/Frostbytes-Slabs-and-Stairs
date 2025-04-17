@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:jungle_leaf_layer",
+        "slabsandstairs:jungle_leaf_layer",
+        "slabsandstairs:jungle_leaf_layer",
+        "slabsandstairs:jungle_leaf_layer",
+        "slabsandstairs:jungle_leaf_layer",
+        "slabsandstairs:jungle_leaf_layer",
+        "slabsandstairs:jungle_leaf_layer",
+        "slabsandstairs:jungle_leaf_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:jungle_leaves"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:red_concrete_powder_layer",
+        "slabsandstairs:red_concrete_powder_layer",
+        "slabsandstairs:red_concrete_powder_layer",
+        "slabsandstairs:red_concrete_powder_layer",
+        "slabsandstairs:red_concrete_powder_layer",
+        "slabsandstairs:red_concrete_powder_layer",
+        "slabsandstairs:red_concrete_powder_layer",
+        "slabsandstairs:red_concrete_powder_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:red_concrete_powder"
+    }
+}

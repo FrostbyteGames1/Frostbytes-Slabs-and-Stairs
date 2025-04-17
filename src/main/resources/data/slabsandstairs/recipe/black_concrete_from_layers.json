@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:black_concrete_layer",
+        "slabsandstairs:black_concrete_layer",
+        "slabsandstairs:black_concrete_layer",
+        "slabsandstairs:black_concrete_layer",
+        "slabsandstairs:black_concrete_layer",
+        "slabsandstairs:black_concrete_layer",
+        "slabsandstairs:black_concrete_layer",
+        "slabsandstairs:black_concrete_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:black_concrete"
+    }
+}

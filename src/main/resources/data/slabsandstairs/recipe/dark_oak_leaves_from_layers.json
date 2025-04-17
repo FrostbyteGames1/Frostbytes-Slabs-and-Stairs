@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:dark_oak_leaf_layer",
+        "slabsandstairs:dark_oak_leaf_layer",
+        "slabsandstairs:dark_oak_leaf_layer",
+        "slabsandstairs:dark_oak_leaf_layer",
+        "slabsandstairs:dark_oak_leaf_layer",
+        "slabsandstairs:dark_oak_leaf_layer",
+        "slabsandstairs:dark_oak_leaf_layer",
+        "slabsandstairs:dark_oak_leaf_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:dark_oak_leaves"
+    }
+}

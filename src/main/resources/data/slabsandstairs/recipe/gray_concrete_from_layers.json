@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:gray_concrete_layer",
+        "slabsandstairs:gray_concrete_layer",
+        "slabsandstairs:gray_concrete_layer",
+        "slabsandstairs:gray_concrete_layer",
+        "slabsandstairs:gray_concrete_layer",
+        "slabsandstairs:gray_concrete_layer",
+        "slabsandstairs:gray_concrete_layer",
+        "slabsandstairs:gray_concrete_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:gray_concrete"
+    }
+}

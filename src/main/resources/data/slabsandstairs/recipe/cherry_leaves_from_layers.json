@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:cherry_leaf_layer",
+        "slabsandstairs:cherry_leaf_layer",
+        "slabsandstairs:cherry_leaf_layer",
+        "slabsandstairs:cherry_leaf_layer",
+        "slabsandstairs:cherry_leaf_layer",
+        "slabsandstairs:cherry_leaf_layer",
+        "slabsandstairs:cherry_leaf_layer",
+        "slabsandstairs:cherry_leaf_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:cherry_leaves"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:pale_oak_leaf_layer",
+        "slabsandstairs:pale_oak_leaf_layer",
+        "slabsandstairs:pale_oak_leaf_layer",
+        "slabsandstairs:pale_oak_leaf_layer",
+        "slabsandstairs:pale_oak_leaf_layer",
+        "slabsandstairs:pale_oak_leaf_layer",
+        "slabsandstairs:pale_oak_leaf_layer",
+        "slabsandstairs:pale_oak_leaf_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:pale_oak_leaves"
+    }
+}

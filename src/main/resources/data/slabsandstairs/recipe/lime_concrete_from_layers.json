@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:lime_concrete_layer",
+        "slabsandstairs:lime_concrete_layer",
+        "slabsandstairs:lime_concrete_layer",
+        "slabsandstairs:lime_concrete_layer",
+        "slabsandstairs:lime_concrete_layer",
+        "slabsandstairs:lime_concrete_layer",
+        "slabsandstairs:lime_concrete_layer",
+        "slabsandstairs:lime_concrete_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:lime_concrete"
+    }
+}

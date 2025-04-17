@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:azalea_leaf_layer",
+        "slabsandstairs:azalea_leaf_layer",
+        "slabsandstairs:azalea_leaf_layer",
+        "slabsandstairs:azalea_leaf_layer",
+        "slabsandstairs:azalea_leaf_layer",
+        "slabsandstairs:azalea_leaf_layer",
+        "slabsandstairs:azalea_leaf_layer",
+        "slabsandstairs:azalea_leaf_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:azalea_leaves"
+    }
+}

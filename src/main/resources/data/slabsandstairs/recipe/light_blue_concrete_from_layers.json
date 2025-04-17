@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:light_blue_concrete_layer",
+        "slabsandstairs:light_blue_concrete_layer",
+        "slabsandstairs:light_blue_concrete_layer",
+        "slabsandstairs:light_blue_concrete_layer",
+        "slabsandstairs:light_blue_concrete_layer",
+        "slabsandstairs:light_blue_concrete_layer",
+        "slabsandstairs:light_blue_concrete_layer",
+        "slabsandstairs:light_blue_concrete_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:light_blue_concrete"
+    }
+}

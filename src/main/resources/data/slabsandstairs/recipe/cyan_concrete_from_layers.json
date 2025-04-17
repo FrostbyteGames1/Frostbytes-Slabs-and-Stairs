@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:cyan_concrete_layer",
+        "slabsandstairs:cyan_concrete_layer",
+        "slabsandstairs:cyan_concrete_layer",
+        "slabsandstairs:cyan_concrete_layer",
+        "slabsandstairs:cyan_concrete_layer",
+        "slabsandstairs:cyan_concrete_layer",
+        "slabsandstairs:cyan_concrete_layer",
+        "slabsandstairs:cyan_concrete_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:cyan_concrete"
+    }
+}

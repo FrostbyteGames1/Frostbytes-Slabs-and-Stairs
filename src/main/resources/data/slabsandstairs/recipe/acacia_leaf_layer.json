@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:acacia_leaves"
+    ],
+    "result": {
+        "count": 8,
+        "id": "slabsandstairs:acacia_leaf_layer"
+    }
+}

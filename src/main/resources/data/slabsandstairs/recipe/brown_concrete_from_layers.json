@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:brown_concrete_layer",
+        "slabsandstairs:brown_concrete_layer",
+        "slabsandstairs:brown_concrete_layer",
+        "slabsandstairs:brown_concrete_layer",
+        "slabsandstairs:brown_concrete_layer",
+        "slabsandstairs:brown_concrete_layer",
+        "slabsandstairs:brown_concrete_layer",
+        "slabsandstairs:brown_concrete_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:brown_concrete"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:pink_concrete_layer",
+        "slabsandstairs:pink_concrete_layer",
+        "slabsandstairs:pink_concrete_layer",
+        "slabsandstairs:pink_concrete_layer",
+        "slabsandstairs:pink_concrete_layer",
+        "slabsandstairs:pink_concrete_layer",
+        "slabsandstairs:pink_concrete_layer",
+        "slabsandstairs:pink_concrete_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:pink_concrete"
+    }
+}
