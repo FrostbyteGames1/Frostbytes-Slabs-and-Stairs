@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "slabsandstairs:block/spruce_leaf_layer_height2",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -10380959
+      }
+    ]
+  }
+}

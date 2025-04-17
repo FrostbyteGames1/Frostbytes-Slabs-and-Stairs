@@ -1,6 +1,24 @@
 {
   "replace": false,
   "values": [
+    "slabsandstairs:sand_layer",
+    "slabsandstairs:gravel_layer",
 
+    "slabsandstairs:black_concrete_powder_layer",
+    "slabsandstairs:blue_concrete_powder_layer",
+    "slabsandstairs:brown_concrete_powder_layer",
+    "slabsandstairs:cyan_concrete_powder_layer",
+    "slabsandstairs:gray_concrete_powder_layer",
+    "slabsandstairs:green_concrete_powder_layer",
+    "slabsandstairs:light_blue_concrete_powder_layer",
+    "slabsandstairs:light_gray_concrete_powder_layer",
+    "slabsandstairs:lime_concrete_powder_layer",
+    "slabsandstairs:magenta_concrete_powder_layer",
+    "slabsandstairs:orange_concrete_powder_layer",
+    "slabsandstairs:pink_concrete_powder_layer",
+    "slabsandstairs:purple_concrete_powder_layer",
+    "slabsandstairs:red_concrete_powder_layer",
+    "slabsandstairs:white_concrete_powder_layer",
+    "slabsandstairs:yellow_concrete_powder_layer"
   ]
 }

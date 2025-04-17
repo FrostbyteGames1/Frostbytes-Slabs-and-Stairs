@@ -33,7 +33,7 @@ public class ModButtonBlock extends ButtonBlock {
         STRIPPED_BLOCKS.put(ModBlocks.OAK_WOOD_BUTTON, ModBlocks.STRIPPED_OAK_BUTTON);
         STRIPPED_BLOCKS.put(ModBlocks.SPRUCE_WOOD_BUTTON, ModBlocks.STRIPPED_SPRUCE_BUTTON);
         STRIPPED_BLOCKS.put(ModBlocks.WARPED_HYPHAE_BUTTON, ModBlocks.STRIPPED_WARPED_BUTTON);
-        //STRIPPED_BLOCKS.put(ModBlocks.PALE_OAK_WOOD_BUTTON, ModBlocks.STRIPPED_PALE_OAK_BUTTON);
+        STRIPPED_BLOCKS.put(ModBlocks.PALE_OAK_WOOD_BUTTON, ModBlocks.STRIPPED_PALE_OAK_BUTTON);
     }
 
     @Override

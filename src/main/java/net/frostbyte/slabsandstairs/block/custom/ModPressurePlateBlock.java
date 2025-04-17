@@ -31,7 +31,7 @@ public class ModPressurePlateBlock extends PressurePlateBlock {
         STRIPPED_BLOCKS.put(ModBlocks.OAK_WOOD_PRESSURE_PLATE, ModBlocks.STRIPPED_OAK_PRESSURE_PLATE);
         STRIPPED_BLOCKS.put(ModBlocks.SPRUCE_WOOD_PRESSURE_PLATE, ModBlocks.STRIPPED_SPRUCE_PRESSURE_PLATE);
         STRIPPED_BLOCKS.put(ModBlocks.WARPED_HYPHAE_PRESSURE_PLATE, ModBlocks.STRIPPED_WARPED_PRESSURE_PLATE);
-        //STRIPPED_BLOCKS.put(ModBlocks.PALE_OAK_WOOD_PRESSURE_PLATE, ModBlocks.STRIPPED_PALE_OAK_PRESSURE_PLATE);
+        STRIPPED_BLOCKS.put(ModBlocks.PALE_OAK_WOOD_PRESSURE_PLATE, ModBlocks.STRIPPED_PALE_OAK_PRESSURE_PLATE);
     }
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {

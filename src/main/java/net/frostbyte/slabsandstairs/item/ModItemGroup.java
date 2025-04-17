@@ -108,6 +108,55 @@ public class ModItemGroup {
                 entries.add(ModBlocks.DEEPSLATE_PRESSURE_PLATE);
                 entries.add(ModBlocks.DRIPSTONE_PRESSURE_PLATE);
 
+                entries.add(ModBlocks.OAK_LEAF_LAYER);
+                entries.add(ModBlocks.SPRUCE_LEAF_LAYER);
+                entries.add(ModBlocks.BIRCH_LEAF_LAYER);
+                entries.add(ModBlocks.JUNGLE_LEAF_LAYER);
+                entries.add(ModBlocks.ACACIA_LEAF_LAYER);
+                entries.add(ModBlocks.DARK_OAK_LEAF_LAYER);
+                entries.add(ModBlocks.MANGROVE_LEAF_LAYER);
+                entries.add(ModBlocks.CHERRY_LEAF_LAYER);
+                entries.add(ModBlocks.PALE_OAK_LEAF_LAYER);
+                entries.add(ModBlocks.AZALEA_LEAF_LAYER);
+                entries.add(ModBlocks.FLOWERING_AZALEA_LEAF_LAYER);
+
+                entries.add(ModBlocks.SAND_LAYER);
+                entries.add(ModBlocks.GRAVEL_LAYER);
+
+                entries.add(ModBlocks.BLACK_CONCRETE_POWDER_LAYER);
+                entries.add(ModBlocks.BLUE_CONCRETE_POWDER_LAYER);
+                entries.add(ModBlocks.BROWN_CONCRETE_POWDER_LAYER);
+                entries.add(ModBlocks.CYAN_CONCRETE_POWDER_LAYER);
+                entries.add(ModBlocks.GRAY_CONCRETE_POWDER_LAYER);
+                entries.add(ModBlocks.GREEN_CONCRETE_POWDER_LAYER);
+                entries.add(ModBlocks.LIGHT_BLUE_CONCRETE_POWDER_LAYER);
+                entries.add(ModBlocks.LIGHT_GRAY_CONCRETE_POWDER_LAYER);
+                entries.add(ModBlocks.LIME_CONCRETE_POWDER_LAYER);
+                entries.add(ModBlocks.MAGENTA_CONCRETE_POWDER_LAYER);
+                entries.add(ModBlocks.ORANGE_CONCRETE_POWDER_LAYER);
+                entries.add(ModBlocks.PINK_CONCRETE_POWDER_LAYER);
+                entries.add(ModBlocks.PURPLE_CONCRETE_POWDER_LAYER);
+                entries.add(ModBlocks.RED_CONCRETE_POWDER_LAYER);
+                entries.add(ModBlocks.WHITE_CONCRETE_POWDER_LAYER);
+                entries.add(ModBlocks.YELLOW_CONCRETE_POWDER_LAYER);
+
+                entries.add(ModBlocks.BLACK_CONCRETE_LAYER);
+                entries.add(ModBlocks.BLUE_CONCRETE_LAYER);
+                entries.add(ModBlocks.BROWN_CONCRETE_LAYER);
+                entries.add(ModBlocks.CYAN_CONCRETE_LAYER);
+                entries.add(ModBlocks.GRAY_CONCRETE_LAYER);
+                entries.add(ModBlocks.GREEN_CONCRETE_LAYER);
+                entries.add(ModBlocks.LIGHT_BLUE_CONCRETE_LAYER);
+                entries.add(ModBlocks.LIGHT_GRAY_CONCRETE_LAYER);
+                entries.add(ModBlocks.LIME_CONCRETE_LAYER);
+                entries.add(ModBlocks.MAGENTA_CONCRETE_LAYER);
+                entries.add(ModBlocks.ORANGE_CONCRETE_LAYER);
+                entries.add(ModBlocks.PINK_CONCRETE_LAYER);
+                entries.add(ModBlocks.PURPLE_CONCRETE_LAYER);
+                entries.add(ModBlocks.RED_CONCRETE_LAYER);
+                entries.add(ModBlocks.WHITE_CONCRETE_LAYER);
+                entries.add(ModBlocks.YELLOW_CONCRETE_LAYER);
+
                 entries.add(ModBlocks.OAK_WOOD_FENCE);
                 entries.add(ModBlocks.SPRUCE_WOOD_FENCE);
                 entries.add(ModBlocks.BIRCH_WOOD_FENCE);

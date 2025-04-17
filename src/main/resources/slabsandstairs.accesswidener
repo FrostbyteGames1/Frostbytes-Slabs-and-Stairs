@@ -1,2 +1,4 @@
 accessWidener v2 named
 
+accessible method net/minecraft/block/ConcretePowderBlock shouldHarden (Lnet/minecraft/world/BlockView;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;)Z
+accessible method net/minecraft/block/ConcretePowderBlock hardensOnAnySide (Lnet/minecraft/world/BlockView;Lnet/minecraft/util/math/BlockPos;)Z

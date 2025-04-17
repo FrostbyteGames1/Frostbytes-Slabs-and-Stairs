@@ -1,4 +1,4 @@
-package net.frostbyte.slabsandstairs.block.custom;
+package net.frostbyte.slabsandstairs.block.custom.oxidizable;
 
 import net.minecraft.block.*;
 import net.minecraft.server.world.ServerWorld;

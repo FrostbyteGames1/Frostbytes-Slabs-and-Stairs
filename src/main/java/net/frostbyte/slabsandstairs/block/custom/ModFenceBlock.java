@@ -31,7 +31,7 @@ public class ModFenceBlock extends FenceBlock {
         STRIPPED_BLOCKS.put(ModBlocks.OAK_WOOD_FENCE, ModBlocks.STRIPPED_OAK_FENCE);
         STRIPPED_BLOCKS.put(ModBlocks.SPRUCE_WOOD_FENCE, ModBlocks.STRIPPED_SPRUCE_FENCE);
         STRIPPED_BLOCKS.put(ModBlocks.WARPED_HYPHAE_FENCE, ModBlocks.STRIPPED_WARPED_FENCE);
-        //STRIPPED_BLOCKS.put(ModBlocks.PALE_OAK_WOOD_FENCE, ModBlocks.STRIPPED_PALE_OAK_FENCE);
+        STRIPPED_BLOCKS.put(ModBlocks.PALE_OAK_WOOD_FENCE, ModBlocks.STRIPPED_PALE_OAK_FENCE);
     }
 
     @Override

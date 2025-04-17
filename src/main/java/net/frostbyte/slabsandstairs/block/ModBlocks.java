@@ -2,6 +2,12 @@ package net.frostbyte.slabsandstairs.block;
 
 import net.frostbyte.slabsandstairs.SlabsAndStairs;
 import net.frostbyte.slabsandstairs.block.custom.*;
+import net.frostbyte.slabsandstairs.block.custom.layer.FallingLayerBlock;
+import net.frostbyte.slabsandstairs.block.custom.layer.LeafLayerBlock;
+import net.frostbyte.slabsandstairs.block.custom.layer.ModLayerBlock;
+import net.frostbyte.slabsandstairs.block.custom.oxidizable.OxidizableButtonBlock;
+import net.frostbyte.slabsandstairs.block.custom.oxidizable.OxidizablePressurePlateBlock;
+import net.frostbyte.slabsandstairs.block.custom.oxidizable.OxidizableWallBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -9,11 +15,340 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.util.ColorCode;
 import net.minecraft.util.Identifier;
 
 import static net.minecraft.block.Blocks.*;
 
 public class ModBlocks {
+
+    // region LAYERS:
+
+    // region Leaves
+    public static final Block OAK_LEAF_LAYER = register("oak_leaf_layer",
+        new LeafLayerBlock(
+            0.01F,
+            OAK_LEAVES,
+            OAK_LEAVES.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "oak_leaf_layer")))
+        ));
+
+    public static final Block SPRUCE_LEAF_LAYER = register("spruce_leaf_layer",
+        new LeafLayerBlock(
+            0,
+            SPRUCE_LEAVES,
+            SPRUCE_LEAVES.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "spruce_leaf_layer")))
+        ));
+
+    public static final Block BIRCH_LEAF_LAYER = register("birch_leaf_layer",
+        new LeafLayerBlock(
+            0.01F,
+            BIRCH_LEAVES,
+            BIRCH_LEAVES.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "birch_leaf_layer")))
+        ));
+
+    public static final Block JUNGLE_LEAF_LAYER = register("jungle_leaf_layer",
+        new LeafLayerBlock(
+            0.01F,
+            JUNGLE_LEAVES,
+            JUNGLE_LEAVES.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "jungle_leaf_layer")))
+        ));
+
+    public static final Block ACACIA_LEAF_LAYER = register("acacia_leaf_layer",
+        new LeafLayerBlock(
+            0.01F,
+            ACACIA_LEAVES,
+            ACACIA_LEAVES.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "acacia_leaf_layer")))
+        ));
+
+    public static final Block DARK_OAK_LEAF_LAYER = register("dark_oak_leaf_layer",
+        new LeafLayerBlock(
+            0.01F,
+            DARK_OAK_LEAVES,
+            DARK_OAK_LEAVES.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "dark_oak_leaf_layer")))
+        ));
+
+    public static final Block MANGROVE_LEAF_LAYER = register("mangrove_leaf_layer",
+        new LeafLayerBlock(
+            0.01F,
+            MANGROVE_LEAVES,
+            MANGROVE_LEAVES.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "mangrove_leaf_layer")))
+        ));
+
+    public static final Block CHERRY_LEAF_LAYER = register("cherry_leaf_layer",
+        new LeafLayerBlock(
+            0.01F,
+            CHERRY_LEAVES,
+            CHERRY_LEAVES.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "cherry_leaf_layer")))
+        ));
+
+    public static final Block PALE_OAK_LEAF_LAYER = register("pale_oak_leaf_layer",
+        new LeafLayerBlock(
+            0.01F,
+            PALE_OAK_LEAVES,
+            PALE_OAK_LEAVES.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "pale_oak_leaf_layer")))
+        ));
+
+    public static final Block AZALEA_LEAF_LAYER = register("azalea_leaf_layer",
+        new LeafLayerBlock(
+            0.01F,
+            AZALEA_LEAVES,
+            AZALEA_LEAVES.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "azalea_leaf_layer")))
+        ));
+
+    public static final Block FLOWERING_AZALEA_LEAF_LAYER = register("flowering_azalea_leaf_layer",
+        new LeafLayerBlock(
+            0.01F,
+            FLOWERING_AZALEA_LEAVES,
+            FLOWERING_AZALEA_LEAVES.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "flowering_azalea_leaf_layer")))
+        ));
+
+    // endregion
+
+    // region Concrete
+
+    public static final Block BLACK_CONCRETE_LAYER = register("black_concrete_layer",
+        new ModLayerBlock(
+            BLACK_CONCRETE,
+            BLACK_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "black_concrete_layer")))
+        ));
+
+    public static final Block BLUE_CONCRETE_LAYER = register("blue_concrete_layer",
+        new ModLayerBlock(
+            BLUE_CONCRETE,
+            BLUE_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "blue_concrete_layer")))
+        ));
+
+    public static final Block BROWN_CONCRETE_LAYER = register("brown_concrete_layer",
+        new ModLayerBlock(
+            BROWN_CONCRETE,
+            BROWN_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "brown_concrete_layer")))
+        ));
+
+    public static final Block CYAN_CONCRETE_LAYER = register("cyan_concrete_layer",
+        new ModLayerBlock(
+            CYAN_CONCRETE,
+            CYAN_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "cyan_concrete_layer")))
+        ));
+
+    public static final Block GRAY_CONCRETE_LAYER = register("gray_concrete_layer",
+        new ModLayerBlock(
+            GRAY_CONCRETE,
+            GRAY_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "gray_concrete_layer")))
+        ));
+
+    public static final Block GREEN_CONCRETE_LAYER = register("green_concrete_layer",
+        new ModLayerBlock(
+            GREEN_CONCRETE,
+            GREEN_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "green_concrete_layer")))
+        ));
+
+    public static final Block LIGHT_BLUE_CONCRETE_LAYER = register("light_blue_concrete_layer",
+        new ModLayerBlock(
+            LIGHT_BLUE_CONCRETE,
+            LIGHT_BLUE_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "light_blue_concrete_layer")))
+        ));
+
+    public static final Block LIGHT_GRAY_CONCRETE_LAYER = register("light_gray_concrete_layer",
+        new ModLayerBlock(
+            LIGHT_GRAY_CONCRETE,
+            LIGHT_GRAY_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "light_gray_concrete_layer")))
+        ));
+
+    public static final Block LIME_CONCRETE_LAYER = register("lime_concrete_layer",
+        new ModLayerBlock(
+            LIME_CONCRETE,
+            LIME_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "lime_concrete_layer")))
+        ));
+
+    public static final Block MAGENTA_CONCRETE_LAYER = register("magenta_concrete_layer",
+        new ModLayerBlock(
+            MAGENTA_CONCRETE,
+            MAGENTA_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "magenta_concrete_layer")))
+        ));
+
+    public static final Block ORANGE_CONCRETE_LAYER = register("orange_concrete_layer",
+        new ModLayerBlock(
+            ORANGE_CONCRETE,
+            ORANGE_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "orange_concrete_layer")))
+        ));
+
+    public static final Block PINK_CONCRETE_LAYER = register("pink_concrete_layer",
+        new ModLayerBlock(
+            PINK_CONCRETE,
+            PINK_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "pink_concrete_layer")))
+        ));
+
+    public static final Block PURPLE_CONCRETE_LAYER = register("purple_concrete_layer",
+        new ModLayerBlock(
+            PURPLE_CONCRETE,
+            PURPLE_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "purple_concrete_layer")))
+        ));
+
+    public static final Block RED_CONCRETE_LAYER = register("red_concrete_layer",
+        new ModLayerBlock(
+            RED_CONCRETE,
+            RED_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "red_concrete_layer")))
+        ));
+
+    public static final Block WHITE_CONCRETE_LAYER = register("white_concrete_layer",
+        new ModLayerBlock(
+            WHITE_CONCRETE,
+            WHITE_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "white_concrete_layer")))
+        ));
+
+    public static final Block YELLOW_CONCRETE_LAYER = register("yellow_concrete_layer",
+        new ModLayerBlock(
+            YELLOW_CONCRETE,
+            YELLOW_CONCRETE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "yellow_concrete_layer")))
+        ));
+
+    // endregion
+
+    // region Sand, Gravel, & Concrete Powder
+
+    public static final Block SAND_LAYER = register("sand_layer",
+        new FallingLayerBlock(
+            new ColorCode(14406560),
+            SAND,
+            SAND.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "sand_layer")))
+        ));
+
+    public static final Block GRAVEL_LAYER = register("gravel_layer",
+        new FallingLayerBlock(
+            new ColorCode(-8356741),
+            GRAVEL,
+            GRAVEL.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "gravel_layer")))
+        ));
+
+    public static final Block BLACK_CONCRETE_POWDER_LAYER = register("black_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(BLACK_CONCRETE_POWDER.getDefaultMapColor().color),
+            BLACK_CONCRETE_POWDER,
+            BLACK_CONCRETE_LAYER,
+            BLACK_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "black_concrete_powder_layer")))
+        ));
+
+    public static final Block BLUE_CONCRETE_POWDER_LAYER = register("blue_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(BLUE_CONCRETE_POWDER.getDefaultMapColor().color),
+            BLUE_CONCRETE_POWDER,
+            BLUE_CONCRETE_LAYER,
+            BLUE_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "blue_concrete_powder_layer")))
+        ));
+
+    public static final Block BROWN_CONCRETE_POWDER_LAYER = register("brown_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(BROWN_CONCRETE_POWDER.getDefaultMapColor().color),
+            BROWN_CONCRETE_POWDER,
+            BROWN_CONCRETE_LAYER,
+            BROWN_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "brown_concrete_powder_layer")))
+        ));
+
+    public static final Block CYAN_CONCRETE_POWDER_LAYER = register("cyan_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(CYAN_CONCRETE_POWDER.getDefaultMapColor().color),
+            CYAN_CONCRETE_POWDER,
+            CYAN_CONCRETE_LAYER,
+            CYAN_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "cyan_concrete_powder_layer")))
+        ));
+
+    public static final Block GRAY_CONCRETE_POWDER_LAYER = register("gray_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(GRAY_CONCRETE_POWDER.getDefaultMapColor().color),
+            GRAY_CONCRETE_POWDER,
+            GRAY_CONCRETE_LAYER,
+            GRAY_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "gray_concrete_powder_layer")))
+        ));
+
+    public static final Block GREEN_CONCRETE_POWDER_LAYER = register("green_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(GREEN_CONCRETE_POWDER.getDefaultMapColor().color),
+            GREEN_CONCRETE_POWDER,
+            GREEN_CONCRETE_LAYER,
+            GREEN_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "green_concrete_powder_layer")))
+        ));
+
+    public static final Block LIGHT_BLUE_CONCRETE_POWDER_LAYER = register("light_blue_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(LIGHT_BLUE_CONCRETE_POWDER.getDefaultMapColor().color),
+            LIGHT_BLUE_CONCRETE_POWDER,
+            LIGHT_BLUE_CONCRETE_LAYER,
+            LIGHT_BLUE_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "light_blue_concrete_powder_layer")))
+        ));
+
+    public static final Block LIGHT_GRAY_CONCRETE_POWDER_LAYER = register("light_gray_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(LIGHT_GRAY_CONCRETE_POWDER.getDefaultMapColor().color),
+            LIGHT_GRAY_CONCRETE_POWDER,
+            LIGHT_GRAY_CONCRETE_LAYER,
+            LIGHT_GRAY_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "light_gray_concrete_powder_layer")))
+        ));
+
+    public static final Block LIME_CONCRETE_POWDER_LAYER = register("lime_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(LIME_CONCRETE_POWDER.getDefaultMapColor().color),
+            LIME_CONCRETE_POWDER,
+            LIME_CONCRETE_LAYER,
+            LIME_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "lime_concrete_powder_layer")))
+        ));
+
+    public static final Block MAGENTA_CONCRETE_POWDER_LAYER = register("magenta_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(MAGENTA_CONCRETE_POWDER.getDefaultMapColor().color),
+            MAGENTA_CONCRETE_POWDER,
+            MAGENTA_CONCRETE_LAYER,
+            MAGENTA_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "magenta_concrete_powder_layer")))
+        ));
+
+    public static final Block ORANGE_CONCRETE_POWDER_LAYER = register("orange_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(ORANGE_CONCRETE_POWDER.getDefaultMapColor().color),
+            ORANGE_CONCRETE_POWDER,
+            ORANGE_CONCRETE_LAYER,
+            ORANGE_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "orange_concrete_powder_layer")))
+        ));
+
+    public static final Block PINK_CONCRETE_POWDER_LAYER = register("pink_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(PINK_CONCRETE_POWDER.getDefaultMapColor().color),
+            PINK_CONCRETE_POWDER,
+            PINK_CONCRETE_LAYER,
+            PINK_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "pink_concrete_powder_layer")))
+        ));
+
+    public static final Block PURPLE_CONCRETE_POWDER_LAYER = register("purple_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(PURPLE_CONCRETE_POWDER.getDefaultMapColor().color),
+            PURPLE_CONCRETE_POWDER,
+            PURPLE_CONCRETE_LAYER,
+            PURPLE_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "purple_concrete_powder_layer")))
+        ));
+
+    public static final Block RED_CONCRETE_POWDER_LAYER = register("red_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(RED_CONCRETE_POWDER.getDefaultMapColor().color),
+            RED_CONCRETE_POWDER,
+            RED_CONCRETE_LAYER,
+            RED_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "red_concrete_powder_layer")))
+        ));
+
+    public static final Block WHITE_CONCRETE_POWDER_LAYER = register("white_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(WHITE_CONCRETE_POWDER.getDefaultMapColor().color),
+            WHITE_CONCRETE_POWDER,
+            WHITE_CONCRETE_LAYER,
+            WHITE_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "white_concrete_powder_layer")))
+        ));
+
+    public static final Block YELLOW_CONCRETE_POWDER_LAYER = register("yellow_concrete_powder_layer",
+        new FallingLayerBlock(
+            new ColorCode(YELLOW_CONCRETE_POWDER.getDefaultMapColor().color),
+            YELLOW_CONCRETE_POWDER,
+            YELLOW_CONCRETE_LAYER,
+            YELLOW_CONCRETE_POWDER.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "yellow_concrete_powder_layer")))
+        ));
+
+    // endregion
 
     // region BUTTONS:
 

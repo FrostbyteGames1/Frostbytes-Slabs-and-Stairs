@@ -31,7 +31,7 @@ public class ModFenceGateBlock extends FenceGateBlock {
         STRIPPED_BLOCKS.put(ModBlocks.OAK_WOOD_FENCE_GATE, ModBlocks.STRIPPED_OAK_FENCE_GATE);
         STRIPPED_BLOCKS.put(ModBlocks.SPRUCE_WOOD_FENCE_GATE, ModBlocks.STRIPPED_SPRUCE_FENCE_GATE);
         STRIPPED_BLOCKS.put(ModBlocks.WARPED_HYPHAE_FENCE_GATE, ModBlocks.STRIPPED_WARPED_FENCE_GATE);
-        //STRIPPED_BLOCKS.put(ModBlocks.PALE_OAK_WOOD_FENCE_GATE, ModBlocks.STRIPPED_PALE_OAK_FENCE_GATE);
+        STRIPPED_BLOCKS.put(ModBlocks.PALE_OAK_WOOD_FENCE_GATE, ModBlocks.STRIPPED_PALE_OAK_FENCE_GATE);
     }
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {

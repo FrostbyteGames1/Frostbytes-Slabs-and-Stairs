@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:birch_leaves"
+    ],
+    "result": {
+        "count": 8,
+        "id": "slabsandstairs:birch_leaf_layer"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:spruce_leaf_layer",
+        "slabsandstairs:spruce_leaf_layer",
+        "slabsandstairs:spruce_leaf_layer",
+        "slabsandstairs:spruce_leaf_layer",
+        "slabsandstairs:spruce_leaf_layer",
+        "slabsandstairs:spruce_leaf_layer",
+        "slabsandstairs:spruce_leaf_layer",
+        "slabsandstairs:spruce_leaf_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:spruce_leaves"
+    }
+}
