@@ -12,6 +12,7 @@ This mod adds many partial-block variants of vanilla blocks, including concrete,
 - Slabs and Stairs were given to all metal-, wood-, and stone-type blocks
 - Fences and Fence Gates were given to all wood-type blocks and nether bricks
 - Buttons and Pressure Plates were given to all metal, wood- and base form stone-types (excludes: cracked, chiseled, polished, etc.)
+- Layers (work similarly to snow layers) were given to leaves, sand, gravel, concrete powder, and concrete blocks.
 
 To get past possible recipe conflicts, some wood based recipes are only possible via the stonecutter.
 
