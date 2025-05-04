@@ -58,6 +58,7 @@
   "item.slabsandstairs.waxed_oxidized_copper_button": "Waxed Oxidized Copper Button",
   "item.slabsandstairs.iron_button": "Iron Button",
   "item.slabsandstairs.gold_button": "Gold Button",
+  "item.slabsandstairs.netherite_button": "Netherite Button",
 
   "item.slabsandstairs.oak_wood_button": "Oak Wood Button",
   "item.slabsandstairs.spruce_wood_button": "Spruce Wood Button",
@@ -103,6 +104,7 @@
   "item.slabsandstairs.waxed_weathered_copper_pressure_plate": "Waxed Weathered Copper Pressure Plate",
   "item.slabsandstairs.oxidized_copper_pressure_plate": "Oxidized Copper Pressure Plate",
   "item.slabsandstairs.waxed_oxidized_copper_pressure_plate": "Waxed Oxidized Copper Pressure Plate",
+  "item.slabsandstairs.netherite_pressure_plate": "Netherite Pressure Plate",
 
   "item.slabsandstairs.oak_wood_pressure_plate": "Oak Wood Pressure Plate",
   "item.slabsandstairs.spruce_wood_pressure_plate": "Spruce Wood Pressure Plate",
@@ -219,6 +221,7 @@
   "item.slabsandstairs.waxed_oxidized_chiseled_copper_wall": "Waxed Oxidized Chiseled Copper Wall",
   "item.slabsandstairs.iron_wall": "Iron Wall",
   "item.slabsandstairs.gold_wall": "Gold Wall",
+  "item.slabsandstairs.netherite_wall": "Netherite Wall",
 
   "item.slabsandstairs.stone_wall": "Stone Wall",
   "item.slabsandstairs.chiseled_stone_brick_wall": "Chiseled Stone Brick Wall",
@@ -358,6 +361,7 @@
   "item.slabsandstairs.exposed_chiseled_copper_slab": "Exposed Chiseled Copper Slab",
   "item.slabsandstairs.waxed_exposed_chiseled_copper_slab": "Waxed Exposed Chiseled Copper Slab",
   "item.slabsandstairs.gold_slab": "Gold Slab",
+  "item.slabsandstairs.netherite_slab": "Netherite Slab",
   "item.slabsandstairs.gray_concrete_slab": "Gray Concrete Slab",
   "item.slabsandstairs.gray_glazed_terracotta_slab": "Gray Glazed Terracotta Slab",
   "item.slabsandstairs.gray_terracotta_slab": "Gray Terracotta Slab",
@@ -487,6 +491,7 @@
   "item.slabsandstairs.exposed_chiseled_copper_stairs": "Exposed Chiseled Copper Stairs",
   "item.slabsandstairs.waxed_exposed_chiseled_copper_stairs": "Waxed Exposed Chiseled Copper Stairs",
   "item.slabsandstairs.gold_stairs": "Gold Stairs",
+  "item.slabsandstairs.netherite_stairs": "Netherite Stairs",
   "item.slabsandstairs.gray_concrete_stairs": "Gray Concrete Stairs",
   "item.slabsandstairs.gray_glazed_terracotta_stairs": "Gray Glazed Terracotta Stairs",
   "item.slabsandstairs.gray_terracotta_stairs": "Gray Terracotta Stairs",

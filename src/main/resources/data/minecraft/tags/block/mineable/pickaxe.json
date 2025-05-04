@@ -184,6 +184,7 @@
     "slabsandstairs:waxed_oxidized_copper_button",
     "slabsandstairs:iron_button",
     "slabsandstairs:gold_button",
+    "slabsandstairs:netherite_button",
 
     "slabsandstairs:diorite_button",
     "slabsandstairs:andesite_button",
@@ -205,6 +206,7 @@
     "slabsandstairs:waxed_weathered_copper_pressure_plate",
     "slabsandstairs:oxidized_copper_pressure_plate",
     "slabsandstairs:waxed_oxidized_copper_pressure_plate",
+    "slabsandstairs:netherite_pressure_plate",
 
     "slabsandstairs:diorite_pressure_plate",
     "slabsandstairs:andesite_pressure_plate",
@@ -250,6 +252,7 @@
 
     "slabsandstairs:iron_wall",
     "slabsandstairs:gold_wall",
+    "slabsandstairs:netherite_wall",
     "slabsandstairs:polished_diorite_wall",
     "slabsandstairs:stone_wall",
     "slabsandstairs:chiseled_stone_brick_wall",
@@ -359,6 +362,7 @@
     "slabsandstairs:waxed_oxidized_chiseled_copper_slab",
     "slabsandstairs:iron_slab",
     "slabsandstairs:gold_slab",
+    "slabsandstairs:netherite_slab",
 
     "slabsandstairs:copper_stairs",
     "slabsandstairs:waxed_copper_stairs",
@@ -377,6 +381,7 @@
     "slabsandstairs:oxidized_chiseled_copper_stairs",
     "slabsandstairs:waxed_oxidized_chiseled_copper_stairs",
     "slabsandstairs:iron_stairs",
-    "slabsandstairs:gold_stairs"
+    "slabsandstairs:gold_stairs",
+    "slabsandstairs:netherite_stairs"
   ]
 }

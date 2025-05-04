@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "slabsandstairs:iron_stairs",
+    "slabsandstairs:gold_stairs",
+    "slabsandstairs:netherite_stairs",
     "slabsandstairs:copper_stairs",
     "slabsandstairs:waxed_copper_stairs",
     "slabsandstairs:exposed_copper_stairs",

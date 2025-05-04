@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "pressure_plates",
+    "pattern": [
+        "##"
+    ],
+    "key": {
+        "#": "minecraft:netherite_ingot"
+    },
+    "result": {
+        "id": "slabsandstairs:netherite_pressure_plate"
+    }
+}

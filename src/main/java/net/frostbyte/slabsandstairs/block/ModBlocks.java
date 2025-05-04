@@ -412,6 +412,13 @@ public class ModBlocks {
             STONE_BUTTON.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "gold_button")))
         ));
 
+    public static final Block NETHERITE_BUTTON = register("netherite_button",
+        new ButtonBlock(
+            BlockSetType.GOLD,
+            15,
+            NETHERITE_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "netherite_button")))
+        ));
+
     // endregion
 
     // region Wood
@@ -671,6 +678,12 @@ public class ModBlocks {
             BlockSetType.GOLD,
             HEAVY_WEIGHTED_PRESSURE_PLATE.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "waxed_oxidized_copper_pressure_plate"))))
         );
+
+    public static final Block NETHERITE_PRESSURE_PLATE = register("netherite_pressure_plate",
+        new PressurePlateBlock(
+            BlockSetType.GOLD,
+            NETHERITE_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "netherite_pressure_plate"))))
+    );
 
     // endregion
 
@@ -1134,6 +1147,9 @@ public class ModBlocks {
     public static final Block GOLD_WALL = register("gold_wall",
         new WallBlock(GOLD_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "gold_wall")))));
 
+    public static final Block NETHERITE_WALL = register("netherite_wall",
+        new WallBlock(NETHERITE_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "netherite_wall")))));
+
     // endregion
 
     // region Stone
@@ -1468,6 +1484,9 @@ public class ModBlocks {
 
     public static final Block GOLD_SLAB = register("gold_slab",
         new SlabBlock(GOLD_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "gold_block")))));
+
+    public static final Block NETHERITE_SLAB = register("netherite_slab",
+        new SlabBlock(NETHERITE_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "netherite_block")))));
 
     // endregion
 
@@ -1866,7 +1885,10 @@ public class ModBlocks {
         new StairsBlock(IRON_BLOCK.getDefaultState(), IRON_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "iron_stairs")))));
 
     public static final Block GOLD_STAIRS = register("gold_stairs",
-        new StairsBlock(GOLD_BLOCK.getDefaultState(), IRON_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "gold_stairs")))));
+        new StairsBlock(GOLD_BLOCK.getDefaultState(), GOLD_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "gold_stairs")))));
+
+    public static final Block NETHERITE_STAIRS = register("netherite_stairs",
+        new StairsBlock(NETHERITE_BLOCK.getDefaultState(), NETHERITE_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "netherite_stairs")))));
 
     // endregion
 

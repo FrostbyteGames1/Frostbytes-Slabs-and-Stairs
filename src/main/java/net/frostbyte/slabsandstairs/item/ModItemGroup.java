@@ -26,6 +26,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.WAXED_OXIDIZED_COPPER_BUTTON);
                 entries.add(ModBlocks.IRON_BUTTON);
                 entries.add(ModBlocks.GOLD_BUTTON);
+                entries.add(ModBlocks.NETHERITE_BUTTON);
 
                 entries.add(ModBlocks.OAK_WOOD_BUTTON);
                 entries.add(ModBlocks.SPRUCE_WOOD_BUTTON);
@@ -71,6 +72,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.WAXED_WEATHERED_COPPER_PRESSURE_PLATE);
                 entries.add(ModBlocks.OXIDIZED_COPPER_PRESSURE_PLATE);
                 entries.add(ModBlocks.WAXED_OXIDIZED_COPPER_PRESSURE_PLATE);
+                entries.add(ModBlocks.NETHERITE_PRESSURE_PLATE);
 
                 entries.add(ModBlocks.OAK_WOOD_PRESSURE_PLATE);
                 entries.add(ModBlocks.SPRUCE_WOOD_PRESSURE_PLATE);
@@ -236,6 +238,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.WAXED_OXIDIZED_CHISELED_COPPER_WALL);
                 entries.add(ModBlocks.IRON_WALL);
                 entries.add(ModBlocks.GOLD_WALL);
+                entries.add(ModBlocks.NETHERITE_WALL);
 
                 entries.add(ModBlocks.STONE_WALL);
                 entries.add(ModBlocks.CHISELED_STONE_BRICK_WALL);
@@ -384,6 +387,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.DRIPSTONE_SLAB);
                 entries.add(ModBlocks.END_STONE_SLAB);
                 entries.add(ModBlocks.GOLD_SLAB);
+                entries.add(ModBlocks.NETHERITE_SLAB);
                 entries.add(ModBlocks.GRAY_CONCRETE_SLAB);
                 entries.add(ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB);
                 entries.add(ModBlocks.GRAY_TERRACOTTA_SLAB);
@@ -514,6 +518,7 @@ public class ModItemGroup {
                 entries.add(ModBlocks.DRIPSTONE_STAIRS);
                 entries.add(ModBlocks.END_STONE_STAIRS);
                 entries.add(ModBlocks.GOLD_STAIRS);
+                entries.add(ModBlocks.NETHERITE_STAIRS);
                 entries.add(ModBlocks.GRAY_CONCRETE_STAIRS);
                 entries.add(ModBlocks.GRAY_GLAZED_TERRACOTTA_STAIRS);
                 entries.add(ModBlocks.GRAY_TERRACOTTA_STAIRS);

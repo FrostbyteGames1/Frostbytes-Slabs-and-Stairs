@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-
+    "slabsandstairs:netherite_button",
+    "slabsandstairs:netherite_pressure_plate",
+    "slabsandstairs:netherite_wall",
+    "slabsandstairs:netherite_slab",
+    "slabsandstairs:netherite_stairs"
   ]
 }

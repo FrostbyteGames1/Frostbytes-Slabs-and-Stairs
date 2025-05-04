@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:netherite_scrap"
+    ],
+    "result": {
+        "id": "slabsandstairs:netherite_button"
+    }
+}
