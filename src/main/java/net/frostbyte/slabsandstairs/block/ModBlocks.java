@@ -15,6 +15,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.ColorCode;
 import net.minecraft.util.Identifier;
 
@@ -416,7 +417,7 @@ public class ModBlocks {
         new ButtonBlock(
             BlockSetType.GOLD,
             15,
-            NETHERITE_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "netherite_button")))
+            NETHERITE_BLOCK.getSettings().sounds(BlockSoundGroup.NETHERITE).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "netherite_button")))
         ));
 
     // endregion
@@ -682,7 +683,7 @@ public class ModBlocks {
     public static final Block NETHERITE_PRESSURE_PLATE = register("netherite_pressure_plate",
         new PressurePlateBlock(
             BlockSetType.GOLD,
-            NETHERITE_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "netherite_pressure_plate"))))
+            NETHERITE_BLOCK.getSettings().sounds(BlockSoundGroup.NETHERITE).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "netherite_pressure_plate"))))
     );
 
     // endregion
@@ -1148,7 +1149,7 @@ public class ModBlocks {
         new WallBlock(GOLD_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "gold_wall")))));
 
     public static final Block NETHERITE_WALL = register("netherite_wall",
-        new WallBlock(NETHERITE_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "netherite_wall")))));
+        new WallBlock(NETHERITE_BLOCK.getSettings().sounds(BlockSoundGroup.NETHERITE).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "netherite_wall")))));
 
     // endregion
 
@@ -1486,7 +1487,7 @@ public class ModBlocks {
         new SlabBlock(GOLD_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "gold_block")))));
 
     public static final Block NETHERITE_SLAB = register("netherite_slab",
-        new SlabBlock(NETHERITE_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "netherite_block")))));
+        new SlabBlock(NETHERITE_BLOCK.getSettings().sounds(BlockSoundGroup.NETHERITE).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "netherite_block")))));
 
     // endregion
 
@@ -1888,7 +1889,7 @@ public class ModBlocks {
         new StairsBlock(GOLD_BLOCK.getDefaultState(), GOLD_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "gold_stairs")))));
 
     public static final Block NETHERITE_STAIRS = register("netherite_stairs",
-        new StairsBlock(NETHERITE_BLOCK.getDefaultState(), NETHERITE_BLOCK.getSettings().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "netherite_stairs")))));
+        new StairsBlock(NETHERITE_BLOCK.getDefaultState(), NETHERITE_BLOCK.getSettings().sounds(BlockSoundGroup.NETHERITE).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "netherite_stairs")))));
 
     // endregion
 
