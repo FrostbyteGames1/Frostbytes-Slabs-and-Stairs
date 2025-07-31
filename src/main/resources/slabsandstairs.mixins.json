@@ -4,6 +4,8 @@
   "package": "net.frostbyte.slabsandstairs.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "AxeItemMixin",
+    "StrippableBockRegistryMixin"
   ],
   "client": [
   ],

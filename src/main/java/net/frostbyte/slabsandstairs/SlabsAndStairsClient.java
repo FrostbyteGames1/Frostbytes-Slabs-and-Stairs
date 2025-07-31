@@ -10,6 +10,10 @@ import net.minecraft.client.render.BlockRenderLayer;
 public class SlabsAndStairsClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        BlockRenderLayerMap.putBlock(ModBlocks.ICE_WALL, BlockRenderLayer.TRANSLUCENT);
+        BlockRenderLayerMap.putBlock(ModBlocks.ICE_SLAB, BlockRenderLayer.TRANSLUCENT);
+        BlockRenderLayerMap.putBlock(ModBlocks.ICE_STAIRS, BlockRenderLayer.TRANSLUCENT);
+
         BlockRenderLayerMap.putBlock(ModBlocks.OAK_LEAF_LAYER, BlockRenderLayer.CUTOUT);
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : -12012264, ModBlocks.OAK_LEAF_LAYER);
 

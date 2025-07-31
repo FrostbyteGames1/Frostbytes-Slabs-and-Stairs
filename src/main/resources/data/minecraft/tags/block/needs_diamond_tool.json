@@ -5,6 +5,13 @@
     "slabsandstairs:netherite_pressure_plate",
     "slabsandstairs:netherite_wall",
     "slabsandstairs:netherite_slab",
-    "slabsandstairs:netherite_stairs"
+    "slabsandstairs:netherite_stairs",
+
+    "slabsandstairs:obsidian_slab",
+    "slabsandstairs:crying_obsidian_slab",
+    "slabsandstairs:obsidian_stairs",
+    "slabsandstairs:crying_obsidian_stairs",
+    "slabsandstairs:obsidian_wall",
+    "slabsandstairs:crying_obsidian_wall"
   ]
 }

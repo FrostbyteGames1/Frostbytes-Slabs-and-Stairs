@@ -2,6 +2,7 @@ package net.frostbyte.slabsandstairs;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.frostbyte.slabsandstairs.block.ModBlocks;
 import net.frostbyte.slabsandstairs.item.ModItemGroup;
 import org.slf4j.Logger;
@@ -16,6 +17,119 @@ public class SlabsAndStairs implements ModInitializer {
 	public void onInitialize() {
 		ModBlocks.registerModBlocks();
 		ModItemGroup.registerModItemGroup();
+		
+		// region Strippable Blocks
+
+		StrippableBlockRegistry.register(ModBlocks.ACACIA_WOOD_BUTTON, ModBlocks.STRIPPED_ACACIA_BUTTON);
+		StrippableBlockRegistry.register(ModBlocks.BIRCH_WOOD_BUTTON, ModBlocks.STRIPPED_BIRCH_BUTTON);
+		StrippableBlockRegistry.register(ModBlocks.CRIMSON_HYPHAE_BUTTON, ModBlocks.STRIPPED_CRIMSON_BUTTON);
+		StrippableBlockRegistry.register(ModBlocks.CHERRY_WOOD_BUTTON, ModBlocks.STRIPPED_CHERRY_BUTTON);
+		StrippableBlockRegistry.register(ModBlocks.DARK_OAK_WOOD_BUTTON, ModBlocks.STRIPPED_DARK_OAK_BUTTON);
+		StrippableBlockRegistry.register(ModBlocks.JUNGLE_WOOD_BUTTON, ModBlocks.STRIPPED_JUNGLE_BUTTON);
+		StrippableBlockRegistry.register(ModBlocks.MANGROVE_WOOD_BUTTON, ModBlocks.STRIPPED_MANGROVE_BUTTON);
+		StrippableBlockRegistry.register(ModBlocks.OAK_WOOD_BUTTON, ModBlocks.STRIPPED_OAK_BUTTON);
+		StrippableBlockRegistry.register(ModBlocks.SPRUCE_WOOD_BUTTON, ModBlocks.STRIPPED_SPRUCE_BUTTON);
+		StrippableBlockRegistry.register(ModBlocks.WARPED_HYPHAE_BUTTON, ModBlocks.STRIPPED_WARPED_BUTTON);
+		StrippableBlockRegistry.register(ModBlocks.PALE_OAK_WOOD_BUTTON, ModBlocks.STRIPPED_PALE_OAK_BUTTON);
+
+		StrippableBlockRegistry.register(ModBlocks.ACACIA_WOOD_FENCE, ModBlocks.STRIPPED_ACACIA_FENCE);
+		StrippableBlockRegistry.register(ModBlocks.BIRCH_WOOD_FENCE, ModBlocks.STRIPPED_BIRCH_FENCE);
+		StrippableBlockRegistry.register(ModBlocks.CRIMSON_HYPHAE_FENCE, ModBlocks.STRIPPED_CRIMSON_FENCE);
+		StrippableBlockRegistry.register(ModBlocks.CHERRY_WOOD_FENCE, ModBlocks.STRIPPED_CHERRY_FENCE);
+		StrippableBlockRegistry.register(ModBlocks.DARK_OAK_WOOD_FENCE, ModBlocks.STRIPPED_DARK_OAK_FENCE);
+		StrippableBlockRegistry.register(ModBlocks.JUNGLE_WOOD_FENCE, ModBlocks.STRIPPED_JUNGLE_FENCE);
+		StrippableBlockRegistry.register(ModBlocks.MANGROVE_WOOD_FENCE, ModBlocks.STRIPPED_MANGROVE_FENCE);
+		StrippableBlockRegistry.register(ModBlocks.OAK_WOOD_FENCE, ModBlocks.STRIPPED_OAK_FENCE);
+		StrippableBlockRegistry.register(ModBlocks.SPRUCE_WOOD_FENCE, ModBlocks.STRIPPED_SPRUCE_FENCE);
+		StrippableBlockRegistry.register(ModBlocks.WARPED_HYPHAE_FENCE, ModBlocks.STRIPPED_WARPED_FENCE);
+		StrippableBlockRegistry.register(ModBlocks.PALE_OAK_WOOD_FENCE, ModBlocks.STRIPPED_PALE_OAK_FENCE);
+
+		StrippableBlockRegistry.register(ModBlocks.ACACIA_WOOD_FENCE_GATE, ModBlocks.STRIPPED_ACACIA_FENCE_GATE);
+		StrippableBlockRegistry.register(ModBlocks.BIRCH_WOOD_FENCE_GATE, ModBlocks.STRIPPED_BIRCH_FENCE_GATE);
+		StrippableBlockRegistry.register(ModBlocks.CRIMSON_HYPHAE_FENCE_GATE, ModBlocks.STRIPPED_CRIMSON_FENCE_GATE);
+		StrippableBlockRegistry.register(ModBlocks.CHERRY_WOOD_FENCE_GATE, ModBlocks.STRIPPED_CHERRY_FENCE_GATE);
+		StrippableBlockRegistry.register(ModBlocks.DARK_OAK_WOOD_FENCE_GATE, ModBlocks.STRIPPED_DARK_OAK_FENCE_GATE);
+		StrippableBlockRegistry.register(ModBlocks.JUNGLE_WOOD_FENCE_GATE, ModBlocks.STRIPPED_JUNGLE_FENCE_GATE);
+		StrippableBlockRegistry.register(ModBlocks.MANGROVE_WOOD_FENCE_GATE, ModBlocks.STRIPPED_MANGROVE_FENCE_GATE);
+		StrippableBlockRegistry.register(ModBlocks.OAK_WOOD_FENCE_GATE, ModBlocks.STRIPPED_OAK_FENCE_GATE);
+		StrippableBlockRegistry.register(ModBlocks.SPRUCE_WOOD_FENCE_GATE, ModBlocks.STRIPPED_SPRUCE_FENCE_GATE);
+		StrippableBlockRegistry.register(ModBlocks.WARPED_HYPHAE_FENCE_GATE, ModBlocks.STRIPPED_WARPED_FENCE_GATE);
+		StrippableBlockRegistry.register(ModBlocks.PALE_OAK_WOOD_FENCE_GATE, ModBlocks.STRIPPED_PALE_OAK_FENCE_GATE);
+
+		StrippableBlockRegistry.register(ModBlocks.ACACIA_WOOD_PRESSURE_PLATE, ModBlocks.STRIPPED_ACACIA_PRESSURE_PLATE);
+		StrippableBlockRegistry.register(ModBlocks.BIRCH_WOOD_PRESSURE_PLATE, ModBlocks.STRIPPED_BIRCH_PRESSURE_PLATE);
+		StrippableBlockRegistry.register(ModBlocks.CRIMSON_HYPHAE_PRESSURE_PLATE, ModBlocks.STRIPPED_CRIMSON_PRESSURE_PLATE);
+		StrippableBlockRegistry.register(ModBlocks.CHERRY_WOOD_PRESSURE_PLATE, ModBlocks.STRIPPED_CHERRY_PRESSURE_PLATE);
+		StrippableBlockRegistry.register(ModBlocks.DARK_OAK_WOOD_PRESSURE_PLATE, ModBlocks.STRIPPED_DARK_OAK_PRESSURE_PLATE);
+		StrippableBlockRegistry.register(ModBlocks.JUNGLE_WOOD_PRESSURE_PLATE, ModBlocks.STRIPPED_JUNGLE_PRESSURE_PLATE);
+		StrippableBlockRegistry.register(ModBlocks.MANGROVE_WOOD_PRESSURE_PLATE, ModBlocks.STRIPPED_MANGROVE_PRESSURE_PLATE);
+		StrippableBlockRegistry.register(ModBlocks.OAK_WOOD_PRESSURE_PLATE, ModBlocks.STRIPPED_OAK_PRESSURE_PLATE);
+		StrippableBlockRegistry.register(ModBlocks.SPRUCE_WOOD_PRESSURE_PLATE, ModBlocks.STRIPPED_SPRUCE_PRESSURE_PLATE);
+		StrippableBlockRegistry.register(ModBlocks.WARPED_HYPHAE_PRESSURE_PLATE, ModBlocks.STRIPPED_WARPED_PRESSURE_PLATE);
+		StrippableBlockRegistry.register(ModBlocks.PALE_OAK_WOOD_PRESSURE_PLATE, ModBlocks.STRIPPED_PALE_OAK_PRESSURE_PLATE);
+
+		StrippableBlockRegistry.register(ModBlocks.ACACIA_WOOD_SLAB, ModBlocks.STRIPPED_ACACIA_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.BIRCH_WOOD_SLAB, ModBlocks.STRIPPED_BIRCH_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.CRIMSON_HYPHAE_SLAB, ModBlocks.STRIPPED_CRIMSON_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.CHERRY_WOOD_SLAB, ModBlocks.STRIPPED_CHERRY_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.DARK_OAK_WOOD_SLAB, ModBlocks.STRIPPED_DARK_OAK_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.JUNGLE_WOOD_SLAB, ModBlocks.STRIPPED_JUNGLE_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.MANGROVE_WOOD_SLAB, ModBlocks.STRIPPED_MANGROVE_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.OAK_WOOD_SLAB, ModBlocks.STRIPPED_OAK_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.SPRUCE_WOOD_SLAB, ModBlocks.STRIPPED_SPRUCE_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.WARPED_HYPHAE_SLAB, ModBlocks.STRIPPED_WARPED_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.PALE_OAK_WOOD_SLAB, ModBlocks.STRIPPED_PALE_OAK_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.ACACIA_LOG_SLAB, ModBlocks.STRIPPED_ACACIA_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.BIRCH_LOG_SLAB, ModBlocks.STRIPPED_BIRCH_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.CRIMSON_STEM_SLAB, ModBlocks.STRIPPED_CRIMSON_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.CHERRY_LOG_SLAB, ModBlocks.STRIPPED_CHERRY_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.DARK_OAK_LOG_SLAB, ModBlocks.STRIPPED_DARK_OAK_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.JUNGLE_LOG_SLAB, ModBlocks.STRIPPED_JUNGLE_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.MANGROVE_LOG_SLAB, ModBlocks.STRIPPED_MANGROVE_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.OAK_LOG_SLAB, ModBlocks.STRIPPED_OAK_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.SPRUCE_LOG_SLAB, ModBlocks.STRIPPED_SPRUCE_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.WARPED_STEM_SLAB, ModBlocks.STRIPPED_WARPED_SLAB);
+		StrippableBlockRegistry.register(ModBlocks.PALE_OAK_LOG_SLAB, ModBlocks.STRIPPED_PALE_OAK_SLAB);
+
+		StrippableBlockRegistry.register(ModBlocks.ACACIA_LOG_STAIRS, ModBlocks.STRIPPED_ACACIA_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.ACACIA_WOOD_STAIRS, ModBlocks.STRIPPED_ACACIA_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.BIRCH_LOG_STAIRS, ModBlocks.STRIPPED_BIRCH_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.BIRCH_WOOD_STAIRS, ModBlocks.STRIPPED_BIRCH_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.CRIMSON_STEM_STAIRS, ModBlocks.STRIPPED_CRIMSON_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.CRIMSON_HYPHAE_STAIRS, ModBlocks.STRIPPED_CRIMSON_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.CHERRY_LOG_STAIRS, ModBlocks.STRIPPED_CHERRY_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.CHERRY_WOOD_STAIRS, ModBlocks.STRIPPED_CHERRY_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.DARK_OAK_LOG_STAIRS, ModBlocks.STRIPPED_DARK_OAK_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.DARK_OAK_WOOD_STAIRS, ModBlocks.STRIPPED_DARK_OAK_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.JUNGLE_WOOD_STAIRS, ModBlocks.STRIPPED_JUNGLE_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.JUNGLE_LOG_STAIRS, ModBlocks.STRIPPED_JUNGLE_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.MANGROVE_LOG_STAIRS, ModBlocks.STRIPPED_MANGROVE_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.MANGROVE_WOOD_STAIRS, ModBlocks.STRIPPED_MANGROVE_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.OAK_LOG_STAIRS, ModBlocks.STRIPPED_OAK_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.OAK_WOOD_STAIRS, ModBlocks.STRIPPED_OAK_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.SPRUCE_LOG_STAIRS, ModBlocks.STRIPPED_SPRUCE_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.SPRUCE_WOOD_STAIRS, ModBlocks.STRIPPED_SPRUCE_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.WARPED_STEM_STAIRS, ModBlocks.STRIPPED_WARPED_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.WARPED_HYPHAE_STAIRS, ModBlocks.STRIPPED_WARPED_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.PALE_OAK_LOG_STAIRS, ModBlocks.STRIPPED_PALE_OAK_STAIRS);
+		StrippableBlockRegistry.register(ModBlocks.PALE_OAK_WOOD_STAIRS, ModBlocks.STRIPPED_PALE_OAK_STAIRS);
+
+		StrippableBlockRegistry.register(ModBlocks.OAK_WOOD_WALL, ModBlocks.STRIPPED_OAK_WALL);
+		StrippableBlockRegistry.register(ModBlocks.SPRUCE_WOOD_WALL, ModBlocks.STRIPPED_SPRUCE_WALL);
+		StrippableBlockRegistry.register(ModBlocks.BIRCH_WOOD_WALL, ModBlocks.STRIPPED_BIRCH_WALL);
+		StrippableBlockRegistry.register(ModBlocks.JUNGLE_WOOD_WALL, ModBlocks.STRIPPED_JUNGLE_WALL);
+		StrippableBlockRegistry.register(ModBlocks.ACACIA_WOOD_WALL, ModBlocks.STRIPPED_ACACIA_WALL);
+		StrippableBlockRegistry.register(ModBlocks.DARK_OAK_WOOD_WALL, ModBlocks.STRIPPED_DARK_OAK_WALL);
+		StrippableBlockRegistry.register(ModBlocks.MANGROVE_WOOD_WALL, ModBlocks.STRIPPED_MANGROVE_WALL);
+		StrippableBlockRegistry.register(ModBlocks.CHERRY_WOOD_WALL, ModBlocks.STRIPPED_CHERRY_WALL);
+		StrippableBlockRegistry.register(ModBlocks.BAMBOO_BLOCK_WALL, ModBlocks.STRIPPED_BAMBOO_WALL);
+		StrippableBlockRegistry.register(ModBlocks.WARPED_HYPHAE_WALL, ModBlocks.STRIPPED_WARPED_WALL);
+		StrippableBlockRegistry.register(ModBlocks.CRIMSON_HYPHAE_WALL, ModBlocks.STRIPPED_CRIMSON_WALL);
+		StrippableBlockRegistry.register(ModBlocks.PALE_OAK_WOOD_WALL, ModBlocks.STRIPPED_PALE_OAK_WALL);
+		
+		// endregion
+		
+		// region Oxidizable Blocks
 
 		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.COPPER_BUTTON, ModBlocks.WAXED_COPPER_BUTTON);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.COPPER_BUTTON, ModBlocks.EXPOSED_COPPER_BUTTON);
@@ -84,6 +198,8 @@ public class SlabsAndStairs implements ModInitializer {
 		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.WEATHERED_CHISELED_COPPER_STAIRS, ModBlocks.WAXED_WEATHERED_CHISELED_COPPER_STAIRS);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.WEATHERED_CHISELED_COPPER_STAIRS, ModBlocks.OXIDIZED_CHISELED_COPPER_STAIRS);
 		OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.OXIDIZED_CHISELED_COPPER_STAIRS, ModBlocks.WAXED_OXIDIZED_CHISELED_COPPER_STAIRS);
+		
+		// endregion
 	}
 
 }
