@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": "minecraft:birch_log"
+    },
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "id": "slabsandstairs:birch_wood_wall"
+    }
+}

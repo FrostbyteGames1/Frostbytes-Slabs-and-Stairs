@@ -20,7 +20,7 @@ public class ModItemGroup {
         FabricItemGroup.builder().displayName(Text.translatable("itemgroup.slabsandstairs"))
             .icon(() -> new ItemStack(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS)).entries((displayContext, entries) -> {
                 for (Field field : ModBlocks.class.getDeclaredFields()) {
-                    if (Modifier.isPublic(field.getModifiers()) && Modifier.isStatic(field.getModifiers()) && Modifier.isFinal(field.getModifiers()) && field.getType() == Block.class) {
+                    if (Modifier.isPublic(field.getModifiers()) && Modifier.isStatic(field.getModifiers()) && Modifier.isFinal(field.getModifiers()) && field.getType() == Block.class && !field.getName().equalsIgnoreCase("MIXED_SLAB_BLOCK")) {
                         try {
                             entries.add((Block) field.get(null));
                         } catch (IllegalAccessException e) {
