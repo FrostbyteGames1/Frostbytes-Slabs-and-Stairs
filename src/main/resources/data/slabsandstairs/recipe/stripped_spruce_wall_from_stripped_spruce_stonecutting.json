@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:stripped_spruce_log",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:stripped_spruce_wall"
+    }
+}

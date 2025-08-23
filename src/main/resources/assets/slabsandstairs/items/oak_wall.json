@@ -1,0 +1,6 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "slabsandstairs:block/oak_wall_inventory"
+    }
+}

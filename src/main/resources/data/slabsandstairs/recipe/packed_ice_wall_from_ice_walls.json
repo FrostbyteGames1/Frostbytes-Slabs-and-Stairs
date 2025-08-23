@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:ice_wall",
+        "slabsandstairs:ice_wall",
+        "slabsandstairs:ice_wall",
+        "slabsandstairs:ice_wall",
+        "slabsandstairs:ice_wall",
+        "slabsandstairs:ice_wall",
+        "slabsandstairs:ice_wall",
+        "slabsandstairs:ice_wall",
+        "slabsandstairs:ice_wall"
+    ],
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:packed_ice_wall"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:blue_ice",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:blue_ice_stairs"
+    }
+}

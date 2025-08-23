@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:packed_ice_slab"
+    ],
+    "result": {
+        "count": 9,
+        "id": "slabsandstairs:ice_slab"
+    }
+}

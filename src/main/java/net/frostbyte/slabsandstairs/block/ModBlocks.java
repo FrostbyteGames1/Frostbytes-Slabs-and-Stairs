@@ -4097,12 +4097,13 @@ public class ModBlocks {
 
     public static Block register(String name, Block block) {
         Identifier id = Identifier.of(SlabsAndStairs.MOD_ID, name);
-        BlockItem blockItem = new BlockItem(block, new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, id)
-        )
-    );
+        BlockItem blockItem = new BlockItem(block, new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, id)));
         Registry.register(Registries.ITEM, id, blockItem);
         return Registry.register(Registries.BLOCK, id, block);
+    }
+
+    public static Block registerWithoutItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, name), block);
     }
 
     public static void registerModBlocks() {
