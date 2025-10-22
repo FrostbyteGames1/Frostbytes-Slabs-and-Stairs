@@ -1493,217 +1493,217 @@ public class ModBlocks {
 
     // region Wood
 
-    public static Block OAK_WALL = register("oak_wall",
+    public static final Block OAK_WALL = register("oak_wall",
         new WallBlock(OAK_PLANKS.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "oak_wall")))
         )
     );
 
-    public static Block SPRUCE_WALL = register("spruce_wall",
+    public static final Block SPRUCE_WALL = register("spruce_wall",
         new WallBlock(SPRUCE_PLANKS.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "spruce_wall")))
         )
     );
 
-    public static Block BIRCH_WALL = register("birch_wall",
+    public static final Block BIRCH_WALL = register("birch_wall",
         new WallBlock(BIRCH_PLANKS.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "birch_wall")))
         )
     );
 
-    public static Block JUNGLE_WALL = register("jungle_wall",
+    public static final Block JUNGLE_WALL = register("jungle_wall",
         new WallBlock(JUNGLE_PLANKS.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "jungle_wall")))
         )
     );
 
-    public static Block ACACIA_WALL = register("acacia_wall",
+    public static final Block ACACIA_WALL = register("acacia_wall",
         new WallBlock(ACACIA_PLANKS.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "acacia_wall")))
         )
     );
 
-    public static Block DARK_OAK_WALL = register("dark_oak_wall",
+    public static final Block DARK_OAK_WALL = register("dark_oak_wall",
         new WallBlock(DARK_OAK_PLANKS.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "dark_oak_wall")))
         )
     );
 
-    public static Block MANGROVE_WALL = register("mangrove_wall",
+    public static final Block MANGROVE_WALL = register("mangrove_wall",
         new WallBlock(MANGROVE_PLANKS.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "mangrove_wall")))
         )
     );
 
-    public static Block CHERRY_WALL = register("cherry_wall",
+    public static final Block CHERRY_WALL = register("cherry_wall",
         new WallBlock(CHERRY_PLANKS.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "cherry_wall")))
         )
     );
 
-    public static Block BAMBOO_WALL = register("bamboo_wall",
+    public static final Block BAMBOO_WALL = register("bamboo_wall",
         new WallBlock(BAMBOO_PLANKS.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "bamboo_wall")))
         )
     );
 
-    public static Block WARPED_WALL = register("warped_wall",
+    public static final Block WARPED_WALL = register("warped_wall",
         new WallBlock(WARPED_PLANKS.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "warped_wall")))
         )
     );
 
-    public static Block CRIMSON_WALL = register("crimson_wall",
+    public static final Block CRIMSON_WALL = register("crimson_wall",
         new WallBlock(CRIMSON_PLANKS.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "crimson_wall")))
         )
     );
 
-    public static Block PALE_OAK_WALL = register("pale_oak_wall",
+    public static final Block PALE_OAK_WALL = register("pale_oak_wall",
         new WallBlock(PALE_OAK_PLANKS.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "pale_oak_wall")))
         )
     );
 
-    public static Block OAK_WOOD_WALL = register("oak_wood_wall",
+    public static final Block OAK_WOOD_WALL = register("oak_wood_wall",
         new WallBlock(OAK_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "oak_wood_wall")))
         )
     );
 
-    public static Block SPRUCE_WOOD_WALL = register("spruce_wood_wall",
+    public static final Block SPRUCE_WOOD_WALL = register("spruce_wood_wall",
         new WallBlock(SPRUCE_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "spruce_wood_wall")))
         )
     );
 
-    public static Block BIRCH_WOOD_WALL = register("birch_wood_wall",
+    public static final Block BIRCH_WOOD_WALL = register("birch_wood_wall",
         new WallBlock(BIRCH_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "birch_wood_wall")))
         )
     );
 
-    public static Block JUNGLE_WOOD_WALL = register("jungle_wood_wall",
+    public static final Block JUNGLE_WOOD_WALL = register("jungle_wood_wall",
         new WallBlock(JUNGLE_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "jungle_wood_wall")))
         )
     );
 
-    public static Block ACACIA_WOOD_WALL = register("acacia_wood_wall",
+    public static final Block ACACIA_WOOD_WALL = register("acacia_wood_wall",
         new WallBlock(ACACIA_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "acacia_wood_wall")))
         )
     );
 
-    public static Block DARK_OAK_WOOD_WALL = register("dark_oak_wood_wall",
+    public static final Block DARK_OAK_WOOD_WALL = register("dark_oak_wood_wall",
         new WallBlock(DARK_OAK_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "dark_oak_wood_wall")))
         )
     );
 
-    public static Block MANGROVE_WOOD_WALL = register("mangrove_wood_wall",
+    public static final Block MANGROVE_WOOD_WALL = register("mangrove_wood_wall",
         new WallBlock(MANGROVE_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "mangrove_wood_wall")))
         )
     );
 
-    public static Block CHERRY_WOOD_WALL = register("cherry_wood_wall",
+    public static final Block CHERRY_WOOD_WALL = register("cherry_wood_wall",
         new WallBlock(CHERRY_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "cherry_wood_wall")))
         )
     );
 
-    public static Block BAMBOO_BLOCK_WALL = register("bamboo_block_wall",
+    public static final Block BAMBOO_BLOCK_WALL = register("bamboo_block_wall",
         new WallBlock(BAMBOO_PLANKS.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "bamboo_block_wall")))
         )
     );
 
-    public static Block WARPED_HYPHAE_WALL = register("warped_hyphae_wall",
+    public static final Block WARPED_HYPHAE_WALL = register("warped_hyphae_wall",
         new WallBlock(WARPED_HYPHAE.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "warped_hyphae_wall")))
         )
     );
 
-    public static Block CRIMSON_HYPHAE_WALL = register("crimson_hyphae_wall",
+    public static final Block CRIMSON_HYPHAE_WALL = register("crimson_hyphae_wall",
         new WallBlock(CRIMSON_HYPHAE.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "crimson_hyphae_wall")))
         )
     );
 
-    public static Block PALE_OAK_WOOD_WALL = register("pale_oak_wood_wall",
+    public static final Block PALE_OAK_WOOD_WALL = register("pale_oak_wood_wall",
         new WallBlock(PALE_OAK_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "pale_oak_wood_wall")))
         )
     );
 
-    public static Block STRIPPED_OAK_WALL = register("stripped_oak_wall",
+    public static final Block STRIPPED_OAK_WALL = register("stripped_oak_wall",
         new WallBlock(STRIPPED_OAK_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "stripped_oak_wall")))
         )
     );
 
-    public static Block STRIPPED_SPRUCE_WALL = register("stripped_spruce_wall",
+    public static final Block STRIPPED_SPRUCE_WALL = register("stripped_spruce_wall",
         new WallBlock(STRIPPED_SPRUCE_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "stripped_spruce_wall")))
         )
     );
 
-    public static Block STRIPPED_BIRCH_WALL = register("stripped_birch_wall",
+    public static final Block STRIPPED_BIRCH_WALL = register("stripped_birch_wall",
         new WallBlock(STRIPPED_BIRCH_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "stripped_birch_wall")))
         )
     );
 
-    public static Block STRIPPED_JUNGLE_WALL = register("stripped_jungle_wall",
+    public static final Block STRIPPED_JUNGLE_WALL = register("stripped_jungle_wall",
         new WallBlock(STRIPPED_JUNGLE_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "stripped_jungle_wall")))
         )
     );
 
-    public static Block STRIPPED_ACACIA_WALL = register("stripped_acacia_wall",
+    public static final Block STRIPPED_ACACIA_WALL = register("stripped_acacia_wall",
         new WallBlock(STRIPPED_ACACIA_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "stripped_acacia_wall")))
         )
     );
 
-    public static Block STRIPPED_DARK_OAK_WALL = register("stripped_dark_oak_wall",
+    public static final Block STRIPPED_DARK_OAK_WALL = register("stripped_dark_oak_wall",
         new WallBlock(STRIPPED_DARK_OAK_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "stripped_dark_oak_wall")))
         )
     );
 
-    public static Block STRIPPED_MANGROVE_WALL = register("stripped_mangrove_wall",
+    public static final Block STRIPPED_MANGROVE_WALL = register("stripped_mangrove_wall",
         new WallBlock(MANGROVE_PLANKS.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "stripped_mangrove_wall")))
         )
     );
 
-    public static Block STRIPPED_CHERRY_WALL = register("stripped_cherry_wall",
+    public static final Block STRIPPED_CHERRY_WALL = register("stripped_cherry_wall",
         new WallBlock(STRIPPED_CHERRY_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "stripped_cherry_wall")))
         )
     );
 
-    public static Block STRIPPED_BAMBOO_WALL = register("stripped_bamboo_wall",
+    public static final Block STRIPPED_BAMBOO_WALL = register("stripped_bamboo_wall",
         new WallBlock(BAMBOO_PLANKS.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "stripped_bamboo_wall")))
         )
     );
 
-    public static Block STRIPPED_WARPED_WALL = register("stripped_warped_wall",
+    public static final Block STRIPPED_WARPED_WALL = register("stripped_warped_wall",
         new WallBlock(STRIPPED_WARPED_HYPHAE.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "stripped_warped_wall")))
         )
     );
 
-    public static Block STRIPPED_CRIMSON_WALL = register("stripped_crimson_wall",
+    public static final Block STRIPPED_CRIMSON_WALL = register("stripped_crimson_wall",
         new WallBlock(STRIPPED_CRIMSON_HYPHAE.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "stripped_crimson_wall")))
         )
     );
 
-    public static Block STRIPPED_PALE_OAK_WALL = register("stripped_pale_oak_wall",
+    public static final Block STRIPPED_PALE_OAK_WALL = register("stripped_pale_oak_wall",
         new WallBlock(STRIPPED_PALE_OAK_WOOD.getSettings()
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "stripped_pale_oak_wall")))
         )
