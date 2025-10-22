@@ -1,13 +1,9 @@
 package net.frostbyte.slabsandstairs.block.custom.layer;
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Waterloggable;
+import net.minecraft.block.*;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.particle.EntityEffectParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.particle.ParticleUtil;
 import net.minecraft.state.StateManager;
@@ -32,8 +28,9 @@ public class LeafLayerBlock extends ModLayerBlock implements Waterloggable {
     }
 
     protected void spawnLeafParticle(World world, BlockPos pos, Random random) {
-        EntityEffectParticleEffect entityEffectParticleEffect = EntityEffectParticleEffect.create(ParticleTypes.TINTED_LEAVES, world.getBlockColor(pos));
-        ParticleUtil.spawnParticle(world, pos, random, entityEffectParticleEffect);
+        if (baseBlock instanceof LeavesBlock leavesBlock) {
+            leavesBlock.spawnLeafParticle(world, pos, random);
+        }
     }
 
     protected int getOpacity(BlockState state) {

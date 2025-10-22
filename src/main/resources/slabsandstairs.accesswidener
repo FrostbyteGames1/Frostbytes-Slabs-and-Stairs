@@ -2,3 +2,5 @@ accessWidener v2 named
 
 accessible method net/minecraft/block/ConcretePowderBlock shouldHarden (Lnet/minecraft/world/BlockView;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;)Z
 accessible method net/minecraft/block/ConcretePowderBlock hardensOnAnySide (Lnet/minecraft/world/BlockView;Lnet/minecraft/util/math/BlockPos;)Z
+
+accessible method net/minecraft/block/LeavesBlock spawnLeafParticle (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/random/Random;)V
