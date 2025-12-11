@@ -2453,97 +2453,97 @@ public class ModBlocks {
 
     public static final Block COPPER_SLAB = register("copper_slab",
         new OxidizableSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, COPPER_BLOCK.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "copper_block")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "copper_slab")))
         )
     );
 
     public static final Block WAXED_COPPER_SLAB = register("waxed_copper_slab",
         new SlabBlock(COPPER_BLOCK.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "copper_block")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "waxed_copper_slab")))
         )
     );
 
     public static final Block EXPOSED_COPPER_SLAB = register("exposed_copper_slab",
         new OxidizableSlabBlock(Oxidizable.OxidationLevel.EXPOSED, EXPOSED_COPPER.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "exposed_copper")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "exposed_copper_slab")))
         )
     );
 
     public static final Block WAXED_EXPOSED_COPPER_SLAB = register("waxed_exposed_copper_slab",
         new SlabBlock(EXPOSED_COPPER.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "exposed_copper")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "waxed_exposed_copper_slab")))
         )
     );
 
     public static final Block WEATHERED_COPPER_SLAB = register("weathered_copper_slab",
         new OxidizableSlabBlock(Oxidizable.OxidationLevel.WEATHERED, WEATHERED_COPPER.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "weathered_copper")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "weathered_copper_slab")))
         )
     );
 
     public static final Block WAXED_WEATHERED_COPPER_SLAB = register("waxed_weathered_copper_slab",
         new SlabBlock(WEATHERED_COPPER.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "weathered_copper")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "waxed_weathered_copper_slab")))
         )
     );
 
     public static final Block OXIDIZED_COPPER_SLAB = register("oxidized_copper_slab",
         new OxidizableSlabBlock(Oxidizable.OxidationLevel.OXIDIZED, OXIDIZED_COPPER.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "oxidized_copper")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "oxidized_copper_slab")))
         )
     );
 
     public static final Block WAXED_OXIDIZED_COPPER_SLAB = register("waxed_oxidized_copper_slab",
         new SlabBlock(OXIDIZED_COPPER.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "oxidized_copper")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "waxed_oxidized_copper_slab")))
         )
     );
 
     public static final Block CHISELED_COPPER_SLAB = register("chiseled_copper_slab",
         new OxidizableSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, COPPER_BLOCK.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "chiseled_copper")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "chiseled_copper_slab")))
         )
     );
 
     public static final Block WAXED_CHISELED_COPPER_SLAB = register("waxed_chiseled_copper_slab",
         new SlabBlock(COPPER_BLOCK.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "chiseled_copper")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "waxed_chiseled_copper_slab")))
         )
     );
 
     public static final Block EXPOSED_CHISELED_COPPER_SLAB = register("exposed_chiseled_copper_slab",
         new OxidizableSlabBlock(Oxidizable.OxidationLevel.EXPOSED, EXPOSED_COPPER.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "exposed_chiseled_copper")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "exposed_chiseled_copper_slab")))
         )
     );
 
     public static final Block WAXED_EXPOSED_CHISELED_COPPER_SLAB = register("waxed_exposed_chiseled_copper_slab",
         new SlabBlock(EXPOSED_COPPER.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "exposed_chiseled_copper")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "waxed_exposed_chiseled_copper_slab")))
         )
     );
 
     public static final Block WEATHERED_CHISELED_COPPER_SLAB = register("weathered_chiseled_copper_slab",
         new OxidizableSlabBlock(Oxidizable.OxidationLevel.WEATHERED, WEATHERED_COPPER.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "weathered_chiseled_copper")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "weathered_chiseled_copper_slab")))
         )
     );
 
     public static final Block WAXED_WEATHERED_CHISELED_COPPER_SLAB = register("waxed_weathered_chiseled_copper_slab",
         new SlabBlock(WEATHERED_COPPER.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "weathered_chiseled_copper")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "waxed_weathered_chiseled_copper_slab")))
         )
     );
 
     public static final Block OXIDIZED_CHISELED_COPPER_SLAB = register("oxidized_chiseled_copper_slab",
         new OxidizableSlabBlock(Oxidizable.OxidationLevel.OXIDIZED, OXIDIZED_COPPER.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "oxidized_chiseled_copper")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "oxidized_chiseled_copper_slab")))
         )
     );
 
     public static final Block WAXED_OXIDIZED_CHISELED_COPPER_SLAB = register("waxed_oxidized_chiseled_copper_slab",
         new SlabBlock(OXIDIZED_COPPER.getSettings()
-            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "oxidized_chiseled_copper")))
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SlabsAndStairs.MOD_ID, "waxed_oxidized_chiseled_copper_slab")))
         )
     );
 
