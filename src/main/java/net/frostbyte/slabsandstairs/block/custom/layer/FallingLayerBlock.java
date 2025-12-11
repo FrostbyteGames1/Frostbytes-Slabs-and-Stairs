@@ -16,9 +16,9 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
-import net.minecraft.world.GameRules;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
+import net.minecraft.world.rule.GameRules;
 import net.minecraft.world.tick.ScheduledTickView;
 import org.jetbrains.annotations.Nullable;
 
@@ -128,7 +128,7 @@ public class FallingLayerBlock extends ModLayerBlock implements Falling {
             }
         } else if (world.getBlockState(pos).canReplace(new AutomaticItemPlacementContext(world, pos, Direction.DOWN, ItemStack.EMPTY, Direction.UP)) && !FallingBlock.canFallThrough(world.getBlockState(pos.down()))) {
             world.setBlockState(pos, fallingBlockEntity.getBlockState());
-        } else if (world.getServer() != null && world.getServer().getGameRules().getBoolean(GameRules.DO_ENTITY_DROPS)) {
+        } else if (world.getServer() != null && world.getServer().getSaveProperties().getGameRules().getValue(GameRules.ENTITY_DROPS)) {
             dropStack(world, pos, new ItemStack(fallingBlockEntity.getBlockState().getBlock(), fallingBlockEntity.getBlockState().get(Properties.LAYERS)));
         }
     }
