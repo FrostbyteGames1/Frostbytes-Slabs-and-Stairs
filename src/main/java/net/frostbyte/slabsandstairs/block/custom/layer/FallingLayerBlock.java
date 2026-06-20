@@ -1,88 +1,92 @@
 package net.frostbyte.slabsandstairs.block.custom.layer;
 
-import net.minecraft.block.*;
-import net.minecraft.entity.FallingBlockEntity;
-import net.minecraft.item.AutomaticItemPlacementContext;
-import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.particle.BlockStateParticleEffect;
-import net.minecraft.particle.ParticleTypes;
-import net.minecraft.particle.ParticleUtil;
-import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.state.property.Properties;
-import net.minecraft.util.ColorCode;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.random.Random;
-import net.minecraft.world.BlockView;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldView;
-import net.minecraft.world.rule.GameRules;
-import net.minecraft.world.tick.ScheduledTickView;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.core.particles.BlockParticleOption;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.util.ColorRGBA;
+import net.minecraft.util.ParticleUtils;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.entity.item.FallingBlockEntity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.context.DirectionalPlaceContext;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.ScheduledTickAccess;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.ConcretePowderBlock;
+import net.minecraft.world.level.block.Fallable;
+import net.minecraft.world.level.block.FallingBlock;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.gamerules.GameRules;
 import org.jetbrains.annotations.Nullable;
 
-import static net.minecraft.block.ConcretePowderBlock.shouldHarden;
+import static net.minecraft.world.level.block.ConcretePowderBlock.shouldSolidify;
 
-public class FallingLayerBlock extends ModLayerBlock implements Falling {
+public class FallingLayerBlock extends ModLayerBlock implements Fallable {
 
-    protected static ColorCode color;
+    protected static ColorRGBA color;
     protected final Block hardenedBlock;
 
-    public FallingLayerBlock(ColorCode color, Block baseBlock, Settings settings) {
+    public FallingLayerBlock(ColorRGBA color, Block baseBlock, Properties settings) {
         this(color, baseBlock, null, settings);
     }
 
-    public FallingLayerBlock(ColorCode color, Block baseBlock, @Nullable Block hardenedBlock, Settings settings) {
+    public FallingLayerBlock(ColorRGBA color, Block baseBlock, @Nullable Block hardenedBlock, Properties settings) {
         super(baseBlock, settings);
         FallingLayerBlock.color = color;
         this.hardenedBlock = hardenedBlock;
     }
 
-    protected void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
-        world.scheduleBlockTick(pos, this, this.getFallDelay());
+    protected void onPlace(BlockState state, Level world, BlockPos pos, BlockState oldState, boolean notify) {
+        world.scheduleTick(pos, this, this.getFallDelay());
     }
 
     @SuppressWarnings("DataFlowIssue")
     @Nullable
-    public BlockState getPlacementState(ItemPlacementContext ctx) {
-        BlockState placementState = super.getPlacementState(ctx);
+    public BlockState getStateForPlacement(BlockPlaceContext ctx) {
+        BlockState placementState = super.getStateForPlacement(ctx);
         if (placementState.getBlock() instanceof FallingLayerBlock fallingLayerBlock && fallingLayerBlock.getHardenedBlock() != null) {
-            BlockView blockView = ctx.getWorld();
-            BlockPos blockPos = ctx.getBlockPos();
+            BlockGetter blockView = ctx.getLevel();
+            BlockPos blockPos = ctx.getClickedPos();
             BlockState blockState = blockView.getBlockState(blockPos);
-            if (shouldHarden(blockView, blockPos, blockState)) {
-                if (this.getHardenedBlock().getDefaultState().contains(Properties.LAYERS)) {
-                    return this.getHardenedBlock().getDefaultState().with(Properties.LAYERS, placementState.get(Properties.LAYERS));
+            if (shouldSolidify(blockView, blockPos, blockState)) {
+                if (this.getHardenedBlock().defaultBlockState().hasProperty(BlockStateProperties.LAYERS)) {
+                    return this.getHardenedBlock().defaultBlockState().setValue(BlockStateProperties.LAYERS, placementState.getValue(BlockStateProperties.LAYERS));
                 }
-                return this.getHardenedBlock().getDefaultState();
+                return this.getHardenedBlock().defaultBlockState();
             }
         }
         return placementState;
     }
 
-    protected BlockState getStateForNeighborUpdate(BlockState state, WorldView world, ScheduledTickView tickView, BlockPos pos, Direction direction, BlockPos neighborPos, BlockState neighborState, Random random) {
-        tickView.scheduleBlockTick(pos, this, this.getFallDelay());
-        BlockState blockState = super.getStateForNeighborUpdate(state, world, tickView, pos, direction, neighborPos, neighborState, random);
-        if (blockState.getBlock() instanceof FallingLayerBlock fallingLayerBlock && fallingLayerBlock.getHardenedBlock() != null && ConcretePowderBlock.hardensOnAnySide(world, pos)) {
-            if (this.getHardenedBlock().getDefaultState().contains(Properties.LAYERS)) {
-                return this.getHardenedBlock().getDefaultState().with(Properties.LAYERS, blockState.get(Properties.LAYERS));
+    protected BlockState updateShape(BlockState state, LevelReader world, ScheduledTickAccess tickView, BlockPos pos, Direction direction, BlockPos neighborPos, BlockState neighborState, RandomSource random) {
+        tickView.scheduleTick(pos, this, this.getFallDelay());
+        BlockState blockState = super.updateShape(state, world, tickView, pos, direction, neighborPos, neighborState, random);
+        if (blockState.getBlock() instanceof FallingLayerBlock fallingLayerBlock && fallingLayerBlock.getHardenedBlock() != null && ConcretePowderBlock.touchesLiquid(world, pos)) {
+            if (this.getHardenedBlock().defaultBlockState().hasProperty(BlockStateProperties.LAYERS)) {
+                return this.getHardenedBlock().defaultBlockState().setValue(BlockStateProperties.LAYERS, blockState.getValue(BlockStateProperties.LAYERS));
             }
-            return this.getHardenedBlock().getDefaultState();
+            return this.getHardenedBlock().defaultBlockState();
         }
         return blockState;
     }
 
-    protected void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        if (canFallThrough(world.getBlockState(pos.down())) && pos.getY() >= world.getBottomY()) {
-            FallingBlockEntity fallingBlockEntity = FallingBlockEntity.spawnFromBlock(world, pos, state);
+    protected void tick(BlockState state, ServerLevel world, BlockPos pos, RandomSource random) {
+        if (canFallThrough(world.getBlockState(pos.below())) && pos.getY() >= world.getMinY()) {
+            FallingBlockEntity fallingBlockEntity = FallingBlockEntity.fall(world, pos, state);
             this.configureFallingBlockEntity(fallingBlockEntity);
         }
     }
 
     protected void configureFallingBlockEntity(FallingBlockEntity entity) {
         entity.dropItem = false;
-        entity.setDestroyedOnLanding();
+        entity.disableDrop();
     }
 
     protected int getFallDelay() {
@@ -91,45 +95,45 @@ public class FallingLayerBlock extends ModLayerBlock implements Falling {
 
     @SuppressWarnings("deprecation")
     public static boolean canFallThrough(BlockState state) {
-        return state.isAir() || state.isIn(BlockTags.FIRE) || state.isLiquid() || state.isReplaceable();
+        return state.isAir() || state.is(BlockTags.FIRE) || state.liquid() || state.canBeReplaced();
     }
 
-    public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
+    public void animateTick(BlockState state, Level world, BlockPos pos, RandomSource random) {
         if (random.nextInt(16) == 0) {
-            BlockPos blockPos = pos.down();
+            BlockPos blockPos = pos.below();
             if (canFallThrough(world.getBlockState(blockPos))) {
-                ParticleUtil.spawnParticle(world, pos, random, new BlockStateParticleEffect(ParticleTypes.FALLING_DUST, state));
+                ParticleUtils.spawnParticleBelow(world, pos, random, new BlockParticleOption(ParticleTypes.FALLING_DUST, state));
             }
         }
     }
 
-    public void onLanding(World world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
-        if (this.getHardenedBlock() != null && shouldHarden(world, pos, currentStateInPos)) {
-            if (this.getHardenedBlock().getDefaultState().contains(Properties.LAYERS)) {
-                world.setBlockState(pos, this.getHardenedBlock().getDefaultState().with(Properties.LAYERS, fallingBlockState.get(Properties.LAYERS)), 3);
+    public void onLand(Level world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
+        if (this.getHardenedBlock() != null && shouldSolidify(world, pos, currentStateInPos)) {
+            if (this.getHardenedBlock().defaultBlockState().hasProperty(BlockStateProperties.LAYERS)) {
+                world.setBlock(pos, this.getHardenedBlock().defaultBlockState().setValue(BlockStateProperties.LAYERS, fallingBlockState.getValue(BlockStateProperties.LAYERS)), 3);
             } else {
-                world.setBlockState(pos, this.getHardenedBlock().getDefaultState(), 3);
+                world.setBlock(pos, this.getHardenedBlock().defaultBlockState(), 3);
             }
         }
     }
 
     @Override
-    public void onDestroyedOnLanding(World world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
+    public void onBrokenAfterFall(Level world, BlockPos pos, FallingBlockEntity fallingBlockEntity) {
         if (world.getBlockState(pos).getBlock() == fallingBlockEntity.getBlockState().getBlock()) {
-            int groundLayers = world.getBlockState(pos).get(Properties.LAYERS);
-            int fallingLayers = fallingBlockEntity.getBlockState().get(Properties.LAYERS);
+            int groundLayers = world.getBlockState(pos).getValue(BlockStateProperties.LAYERS);
+            int fallingLayers = fallingBlockEntity.getBlockState().getValue(BlockStateProperties.LAYERS);
             if (groundLayers + fallingLayers < MAX_LAYERS) {
-                world.setBlockState(pos, fallingBlockEntity.getBlockState().with(Properties.LAYERS, groundLayers + fallingLayers));
+                world.setBlockAndUpdate(pos, fallingBlockEntity.getBlockState().setValue(BlockStateProperties.LAYERS, groundLayers + fallingLayers));
             } else if (groundLayers + fallingLayers == MAX_LAYERS) {
-                world.setBlockState(pos, this.getBaseBlock().getDefaultState());
+                world.setBlockAndUpdate(pos, this.getBaseBlock().defaultBlockState());
             } else if (groundLayers + fallingLayers > MAX_LAYERS) {
-                world.setBlockState(pos, this.getBaseBlock().getDefaultState());
-                world.setBlockState(pos.up(), fallingBlockEntity.getBlockState().getBlock().getDefaultState().with(Properties.LAYERS, groundLayers + fallingLayers - MAX_LAYERS));
+                world.setBlockAndUpdate(pos, this.getBaseBlock().defaultBlockState());
+                world.setBlockAndUpdate(pos.above(), fallingBlockEntity.getBlockState().getBlock().defaultBlockState().setValue(BlockStateProperties.LAYERS, groundLayers + fallingLayers - MAX_LAYERS));
             }
-        } else if (world.getBlockState(pos).canReplace(new AutomaticItemPlacementContext(world, pos, Direction.DOWN, ItemStack.EMPTY, Direction.UP)) && !FallingBlock.canFallThrough(world.getBlockState(pos.down()))) {
-            world.setBlockState(pos, fallingBlockEntity.getBlockState());
-        } else if (world.getServer() != null && world.getServer().getSaveProperties().getGameRules().getValue(GameRules.ENTITY_DROPS)) {
-            dropStack(world, pos, new ItemStack(fallingBlockEntity.getBlockState().getBlock(), fallingBlockEntity.getBlockState().get(Properties.LAYERS)));
+        } else if (world.getBlockState(pos).canBeReplaced(new DirectionalPlaceContext(world, pos, Direction.DOWN, ItemStack.EMPTY, Direction.UP)) && !FallingBlock.isFree(world.getBlockState(pos.below()))) {
+            world.setBlockAndUpdate(pos, fallingBlockEntity.getBlockState());
+        } else if (world.getServer() != null && world.getServer().getGameRules().get(GameRules.ENTITY_DROPS)) {
+            popResource(world, pos, new ItemStack(fallingBlockEntity.getBlockState().getBlock(), fallingBlockEntity.getBlockState().getValue(BlockStateProperties.LAYERS)));
         }
     }
 
@@ -138,7 +142,7 @@ public class FallingLayerBlock extends ModLayerBlock implements Falling {
     }
 
     @SuppressWarnings("unused")
-    public int getColor(BlockState state, BlockView world, BlockPos pos) {
+    public int getColor(BlockState state, BlockGetter world, BlockPos pos) {
         return color.rgba();
     }
 

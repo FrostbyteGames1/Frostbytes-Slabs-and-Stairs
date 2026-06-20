@@ -1,27 +1,31 @@
 package net.frostbyte.slabsandstairs.block.custom.oxidizable;
 
-import net.minecraft.block.*;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.random.Random;
+import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.level.block.PressurePlateBlock;
+import net.minecraft.world.level.block.WeatheringCopper;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 
-public class OxidizablePressurePlateBlock extends PressurePlateBlock implements Oxidizable {
-    private final OxidationLevel oxidationLevel;
+public class OxidizablePressurePlateBlock extends PressurePlateBlock implements WeatheringCopper {
+    private final WeatherState oxidationLevel;
 
-    public OxidizablePressurePlateBlock(Oxidizable.OxidationLevel oxidationLevel, BlockSetType type, AbstractBlock.Settings settings) {
+    public OxidizablePressurePlateBlock(WeatheringCopper.WeatherState oxidationLevel, BlockSetType type, BlockBehaviour.Properties settings) {
         super(type, settings);
         this.oxidationLevel = oxidationLevel;
     }
 
-    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        this.tickDegradation(state, world, pos, random);
+    public void randomTick(BlockState state, ServerLevel world, BlockPos pos, RandomSource random) {
+        this.changeOverTime(state, world, pos, random);
     }
 
-    public boolean hasRandomTicks(BlockState state) {
-        return Oxidizable.getIncreasedOxidationBlock(state.getBlock()).isPresent();
+    public boolean isRandomlyTicking(BlockState state) {
+        return WeatheringCopper.getNext(state.getBlock()).isPresent();
     }
 
-    public Oxidizable.OxidationLevel getDegradationLevel() {
+    public WeatheringCopper.WeatherState getAge() {
         return this.oxidationLevel;
     }
 }
