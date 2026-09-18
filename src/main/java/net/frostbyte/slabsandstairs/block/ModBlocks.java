@@ -102,97 +102,97 @@ public class ModBlocks {
     // region Concrete
 
     public static final Block BLACK_CONCRETE_LAYER = register("black_concrete_layer",
-            new ModLayerBlock(BLACK_CONCRETE, BLACK_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.black(), CONCRETE.black().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "black_concrete_layer")))
             )
     );
 
     public static final Block BLUE_CONCRETE_LAYER = register("blue_concrete_layer",
-            new ModLayerBlock(BLUE_CONCRETE, BLUE_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.blue(), CONCRETE.blue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "blue_concrete_layer")))
             )
     );
 
     public static final Block BROWN_CONCRETE_LAYER = register("brown_concrete_layer",
-            new ModLayerBlock(BROWN_CONCRETE, BROWN_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.brown(), CONCRETE.brown().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "brown_concrete_layer")))
             )
     );
 
     public static final Block CYAN_CONCRETE_LAYER = register("cyan_concrete_layer",
-            new ModLayerBlock(CYAN_CONCRETE, CYAN_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.cyan(), CONCRETE.cyan().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cyan_concrete_layer")))
             )
     );
 
     public static final Block GRAY_CONCRETE_LAYER = register("gray_concrete_layer",
-            new ModLayerBlock(GRAY_CONCRETE, GRAY_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.gray(), CONCRETE.gray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "gray_concrete_layer")))
             )
     );
 
     public static final Block GREEN_CONCRETE_LAYER = register("green_concrete_layer",
-            new ModLayerBlock(GREEN_CONCRETE, GREEN_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.green(), CONCRETE.green().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "green_concrete_layer")))
             )
     );
 
     public static final Block LIGHT_BLUE_CONCRETE_LAYER = register("light_blue_concrete_layer",
-            new ModLayerBlock(LIGHT_BLUE_CONCRETE, LIGHT_BLUE_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.lightBlue(), CONCRETE.lightBlue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_blue_concrete_layer")))
             )
     );
 
     public static final Block LIGHT_GRAY_CONCRETE_LAYER = register("light_gray_concrete_layer",
-            new ModLayerBlock(LIGHT_GRAY_CONCRETE, LIGHT_GRAY_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.lightGray(), CONCRETE.lightGray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_gray_concrete_layer")))
             )
     );
 
     public static final Block LIME_CONCRETE_LAYER = register("lime_concrete_layer",
-            new ModLayerBlock(LIME_CONCRETE, LIME_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.lime(), CONCRETE.lime().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "lime_concrete_layer")))
             )
     );
 
     public static final Block MAGENTA_CONCRETE_LAYER = register("magenta_concrete_layer",
-            new ModLayerBlock(MAGENTA_CONCRETE, MAGENTA_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.magenta(), CONCRETE.magenta().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "magenta_concrete_layer")))
             )
     );
 
     public static final Block ORANGE_CONCRETE_LAYER = register("orange_concrete_layer",
-            new ModLayerBlock(ORANGE_CONCRETE, ORANGE_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.orange(), CONCRETE.orange().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "orange_concrete_layer")))
             )
     );
 
     public static final Block PINK_CONCRETE_LAYER = register("pink_concrete_layer",
-            new ModLayerBlock(PINK_CONCRETE, PINK_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.pink(), CONCRETE.pink().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pink_concrete_layer")))
             )
     );
 
     public static final Block PURPLE_CONCRETE_LAYER = register("purple_concrete_layer",
-            new ModLayerBlock(PURPLE_CONCRETE, PURPLE_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.purple(), CONCRETE.purple().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "purple_concrete_layer")))
             )
     );
 
     public static final Block RED_CONCRETE_LAYER = register("red_concrete_layer",
-            new ModLayerBlock(RED_CONCRETE, RED_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.red(), CONCRETE.red().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "red_concrete_layer")))
             )
     );
 
     public static final Block WHITE_CONCRETE_LAYER = register("white_concrete_layer",
-            new ModLayerBlock(WHITE_CONCRETE, WHITE_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.white(), CONCRETE.white().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "white_concrete_layer")))
             )
     );
 
     public static final Block YELLOW_CONCRETE_LAYER = register("yellow_concrete_layer",
-            new ModLayerBlock(YELLOW_CONCRETE, YELLOW_CONCRETE.properties()
+            new ModLayerBlock(CONCRETE.yellow(), CONCRETE.yellow().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "yellow_concrete_layer")))
             )
     );
@@ -214,97 +214,97 @@ public class ModBlocks {
     );
 
     public static final Block BLACK_CONCRETE_POWDER_LAYER = register("black_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(BLACK_CONCRETE_POWDER.defaultMapColor().col), BLACK_CONCRETE_POWDER, BLACK_CONCRETE_LAYER, BLACK_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.black().defaultMapColor().col), CONCRETE_POWDER.black(), BLACK_CONCRETE_LAYER, CONCRETE_POWDER.black().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "black_concrete_powder_layer")))
             )
     );
 
     public static final Block BLUE_CONCRETE_POWDER_LAYER = register("blue_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(BLUE_CONCRETE_POWDER.defaultMapColor().col), BLUE_CONCRETE_POWDER, BLUE_CONCRETE_LAYER, BLUE_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.blue().defaultMapColor().col), CONCRETE_POWDER.blue(), BLUE_CONCRETE_LAYER, CONCRETE_POWDER.blue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "blue_concrete_powder_layer")))
             )
     );
 
     public static final Block BROWN_CONCRETE_POWDER_LAYER = register("brown_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(BROWN_CONCRETE_POWDER.defaultMapColor().col), BROWN_CONCRETE_POWDER, BROWN_CONCRETE_LAYER, BROWN_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.brown().defaultMapColor().col), CONCRETE_POWDER.brown(), BROWN_CONCRETE_LAYER, CONCRETE_POWDER.brown().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "brown_concrete_powder_layer")))
             )
     );
 
     public static final Block CYAN_CONCRETE_POWDER_LAYER = register("cyan_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(CYAN_CONCRETE_POWDER.defaultMapColor().col), CYAN_CONCRETE_POWDER, CYAN_CONCRETE_LAYER, CYAN_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.cyan().defaultMapColor().col), CONCRETE_POWDER.cyan(), CYAN_CONCRETE_LAYER, CONCRETE_POWDER.cyan().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cyan_concrete_powder_layer")))
             )
     );
 
     public static final Block GRAY_CONCRETE_POWDER_LAYER = register("gray_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(GRAY_CONCRETE_POWDER.defaultMapColor().col), GRAY_CONCRETE_POWDER, GRAY_CONCRETE_LAYER, GRAY_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.gray().defaultMapColor().col), CONCRETE_POWDER.gray(), GRAY_CONCRETE_LAYER, CONCRETE_POWDER.gray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "gray_concrete_powder_layer")))
             )
     );
 
     public static final Block GREEN_CONCRETE_POWDER_LAYER = register("green_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(GREEN_CONCRETE_POWDER.defaultMapColor().col), GREEN_CONCRETE_POWDER, GREEN_CONCRETE_LAYER, GREEN_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.green().defaultMapColor().col), CONCRETE_POWDER.green(), GREEN_CONCRETE_LAYER, CONCRETE_POWDER.green().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "green_concrete_powder_layer")))
             )
     );
 
     public static final Block LIGHT_BLUE_CONCRETE_POWDER_LAYER = register("light_blue_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(LIGHT_BLUE_CONCRETE_POWDER.defaultMapColor().col), LIGHT_BLUE_CONCRETE_POWDER, LIGHT_BLUE_CONCRETE_LAYER, LIGHT_BLUE_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.lightBlue().defaultMapColor().col), CONCRETE_POWDER.lightBlue(), LIGHT_BLUE_CONCRETE_LAYER, CONCRETE_POWDER.lightBlue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_blue_concrete_powder_layer")))
             )
     );
 
     public static final Block LIGHT_GRAY_CONCRETE_POWDER_LAYER = register("light_gray_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(LIGHT_GRAY_CONCRETE_POWDER.defaultMapColor().col), LIGHT_GRAY_CONCRETE_POWDER, LIGHT_GRAY_CONCRETE_LAYER, LIGHT_GRAY_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.lightGray().defaultMapColor().col), CONCRETE_POWDER.lightGray(), LIGHT_GRAY_CONCRETE_LAYER, CONCRETE_POWDER.lightGray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_gray_concrete_powder_layer")))
             )
     );
 
     public static final Block LIME_CONCRETE_POWDER_LAYER = register("lime_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(LIME_CONCRETE_POWDER.defaultMapColor().col), LIME_CONCRETE_POWDER, LIME_CONCRETE_LAYER, LIME_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.lime().defaultMapColor().col), CONCRETE_POWDER.lime(), LIME_CONCRETE_LAYER, CONCRETE_POWDER.lime().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "lime_concrete_powder_layer")))
             )
     );
 
     public static final Block MAGENTA_CONCRETE_POWDER_LAYER = register("magenta_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(MAGENTA_CONCRETE_POWDER.defaultMapColor().col), MAGENTA_CONCRETE_POWDER, MAGENTA_CONCRETE_LAYER, MAGENTA_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.magenta().defaultMapColor().col), CONCRETE_POWDER.magenta(), MAGENTA_CONCRETE_LAYER, CONCRETE_POWDER.magenta().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "magenta_concrete_powder_layer")))
             )
     );
 
     public static final Block ORANGE_CONCRETE_POWDER_LAYER = register("orange_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(ORANGE_CONCRETE_POWDER.defaultMapColor().col), ORANGE_CONCRETE_POWDER, ORANGE_CONCRETE_LAYER, ORANGE_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.orange().defaultMapColor().col), CONCRETE_POWDER.orange(), ORANGE_CONCRETE_LAYER, CONCRETE_POWDER.orange().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "orange_concrete_powder_layer")))
             )
     );
 
     public static final Block PINK_CONCRETE_POWDER_LAYER = register("pink_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(PINK_CONCRETE_POWDER.defaultMapColor().col), PINK_CONCRETE_POWDER, PINK_CONCRETE_LAYER, PINK_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.pink().defaultMapColor().col), CONCRETE_POWDER.pink(), PINK_CONCRETE_LAYER, CONCRETE_POWDER.pink().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pink_concrete_powder_layer")))
             )
     );
 
     public static final Block PURPLE_CONCRETE_POWDER_LAYER = register("purple_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(PURPLE_CONCRETE_POWDER.defaultMapColor().col), PURPLE_CONCRETE_POWDER, PURPLE_CONCRETE_LAYER, PURPLE_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.purple().defaultMapColor().col), CONCRETE_POWDER.purple(), PURPLE_CONCRETE_LAYER, CONCRETE_POWDER.purple().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "purple_concrete_powder_layer")))
             )
     );
 
     public static final Block RED_CONCRETE_POWDER_LAYER = register("red_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(RED_CONCRETE_POWDER.defaultMapColor().col), RED_CONCRETE_POWDER, RED_CONCRETE_LAYER, RED_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.red().defaultMapColor().col), CONCRETE_POWDER.red(), RED_CONCRETE_LAYER, CONCRETE_POWDER.red().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "red_concrete_powder_layer")))
             )
     );
 
     public static final Block WHITE_CONCRETE_POWDER_LAYER = register("white_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(WHITE_CONCRETE_POWDER.defaultMapColor().col), WHITE_CONCRETE_POWDER, WHITE_CONCRETE_LAYER, WHITE_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.white().defaultMapColor().col), CONCRETE_POWDER.white(), WHITE_CONCRETE_LAYER, CONCRETE_POWDER.white().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "white_concrete_powder_layer")))
             )
     );
 
     public static final Block YELLOW_CONCRETE_POWDER_LAYER = register("yellow_concrete_powder_layer",
-            new FallingLayerBlock(new ColorRGBA(YELLOW_CONCRETE_POWDER.defaultMapColor().col), YELLOW_CONCRETE_POWDER, YELLOW_CONCRETE_LAYER, YELLOW_CONCRETE_POWDER.properties()
+            new FallingLayerBlock(new ColorRGBA(CONCRETE_POWDER.yellow().defaultMapColor().col), CONCRETE_POWDER.yellow(), YELLOW_CONCRETE_LAYER, CONCRETE_POWDER.yellow().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "yellow_concrete_powder_layer")))
             )
     );
@@ -1737,145 +1737,145 @@ public class ModBlocks {
     // region Metal
 
     public static final Block COPPER_WALL = register("copper_wall",
-            new OxidizableWallBlock(WeatheringCopper.WeatherState.UNAFFECTED, COPPER_BLOCK.properties()
+            new OxidizableWallBlock(WeatheringCopper.WeatherState.UNAFFECTED, COPPER_BLOCK.weathering().unaffected().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "copper_wall")))
             )
     );
 
     public static final Block WAXED_COPPER_WALL = register("waxed_copper_wall",
-            new WallBlock(COPPER_BLOCK.properties()
+            new WallBlock(COPPER_BLOCK.waxed().unaffected().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_copper_wall")))
             )
     );
 
     public static final Block EXPOSED_COPPER_WALL = register("exposed_copper_wall",
-            new OxidizableWallBlock(WeatheringCopper.WeatherState.EXPOSED, EXPOSED_COPPER.properties()
+            new OxidizableWallBlock(WeatheringCopper.WeatherState.EXPOSED, COPPER_BLOCK.weathering().exposed().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "exposed_copper_wall")))
             )
     );
 
     public static final Block WAXED_EXPOSED_COPPER_WALL = register("waxed_exposed_copper_wall",
-            new WallBlock(EXPOSED_COPPER.properties()
+            new WallBlock(COPPER_BLOCK.waxed().exposed().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_exposed_copper_wall")))
             )
     );
 
     public static final Block WEATHERED_COPPER_WALL = register("weathered_copper_wall",
-            new OxidizableWallBlock(WeatheringCopper.WeatherState.WEATHERED, WEATHERED_COPPER.properties()
+            new OxidizableWallBlock(WeatheringCopper.WeatherState.WEATHERED, COPPER_BLOCK.weathering().weathered().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "weathered_copper_wall")))
             )
     );
 
     public static final Block WAXED_WEATHERED_COPPER_WALL = register("waxed_weathered_copper_wall",
-            new WallBlock(WEATHERED_COPPER.properties()
+            new WallBlock(COPPER_BLOCK.waxed().weathered().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_weathered_copper_wall")))
             )
     );
 
     public static final Block OXIDIZED_COPPER_WALL = register("oxidized_copper_wall",
-            new OxidizableWallBlock(WeatheringCopper.WeatherState.OXIDIZED, OXIDIZED_COPPER.properties()
+            new OxidizableWallBlock(WeatheringCopper.WeatherState.OXIDIZED, COPPER_BLOCK.weathering().oxidized().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "oxidized_copper_wall")))
             )
     );
 
     public static final Block WAXED_OXIDIZED_COPPER_WALL = register("waxed_oxidized_copper_wall",
-            new WallBlock(OXIDIZED_COPPER.properties()
+            new WallBlock(COPPER_BLOCK.waxed().oxidized().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_oxidized_copper_wall")))
             )
     );
 
     public static final Block CUT_COPPER_WALL = register("cut_copper_wall",
-            new OxidizableWallBlock(WeatheringCopper.WeatherState.UNAFFECTED, CUT_COPPER.properties()
+            new OxidizableWallBlock(WeatheringCopper.WeatherState.UNAFFECTED, COPPER_BLOCK.weathering().unaffected().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cut_copper_wall")))
             )
     );
 
     public static final Block WAXED_CUT_COPPER_WALL = register("waxed_cut_copper_wall",
-            new WallBlock(CUT_COPPER.properties()
+            new WallBlock(COPPER_BLOCK.waxed().unaffected().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_cut_copper_wall")))
             )
     );
 
     public static final Block EXPOSED_CUT_COPPER_WALL = register("exposed_cut_copper_wall",
-            new OxidizableWallBlock(WeatheringCopper.WeatherState.EXPOSED, EXPOSED_CUT_COPPER.properties()
+            new OxidizableWallBlock(WeatheringCopper.WeatherState.EXPOSED, COPPER_BLOCK.weathering().exposed().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "exposed_cut_copper_wall")))
             )
     );
 
     public static final Block WAXED_EXPOSED_CUT_COPPER_WALL = register("waxed_exposed_cut_copper_wall",
-            new WallBlock(EXPOSED_CUT_COPPER.properties()
+            new WallBlock(COPPER_BLOCK.waxed().exposed().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_exposed_cut_copper_wall")))
             )
     );
 
     public static final Block WEATHERED_CUT_COPPER_WALL = register("weathered_cut_copper_wall",
-            new OxidizableWallBlock(WeatheringCopper.WeatherState.WEATHERED, WEATHERED_CUT_COPPER.properties()
+            new OxidizableWallBlock(WeatheringCopper.WeatherState.WEATHERED, COPPER_BLOCK.weathering().weathered().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "weathered_cut_copper_wall")))
             )
     );
 
     public static final Block WAXED_WEATHERED_CUT_COPPER_WALL = register("waxed_weathered_cut_copper_wall",
-            new WallBlock(WEATHERED_CUT_COPPER.properties()
+            new WallBlock(COPPER_BLOCK.waxed().weathered().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_weathered_cut_copper_wall")))
             )
     );
 
     public static final Block OXIDIZED_CUT_COPPER_WALL = register("oxidized_cut_copper_wall",
-            new OxidizableWallBlock(WeatheringCopper.WeatherState.OXIDIZED, OXIDIZED_CUT_COPPER.properties()
+            new OxidizableWallBlock(WeatheringCopper.WeatherState.OXIDIZED, COPPER_BLOCK.weathering().oxidized().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "oxidized_cut_copper_wall")))
             )
     );
 
     public static final Block WAXED_OXIDIZED_CUT_COPPER_WALL = register("waxed_oxidized_cut_copper_wall",
-            new WallBlock(OXIDIZED_CUT_COPPER.properties()
+            new WallBlock(COPPER_BLOCK.waxed().oxidized().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_oxidized_cut_copper_wall")))
             )
     );
 
     public static final Block CHISELED_COPPER_WALL = register("chiseled_copper_wall",
-            new OxidizableWallBlock(WeatheringCopper.WeatherState.UNAFFECTED, COPPER_BLOCK.properties()
+            new OxidizableWallBlock(WeatheringCopper.WeatherState.UNAFFECTED, COPPER_BLOCK.weathering().unaffected().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "chiseled_copper_wall")))
             )
     );
 
     public static final Block WAXED_CHISELED_COPPER_WALL = register("waxed_chiseled_copper_wall",
-            new WallBlock(COPPER_BLOCK.properties()
+            new WallBlock(COPPER_BLOCK.waxed().unaffected().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_chiseled_copper_wall")))
             )
     );
 
     public static final Block EXPOSED_CHISELED_COPPER_WALL = register("exposed_chiseled_copper_wall",
-            new OxidizableWallBlock(WeatheringCopper.WeatherState.EXPOSED, EXPOSED_COPPER.properties()
+            new OxidizableWallBlock(WeatheringCopper.WeatherState.EXPOSED, COPPER_BLOCK.weathering().exposed().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "exposed_chiseled_copper_wall")))
             )
     );
 
     public static final Block WAXED_EXPOSED_CHISELED_COPPER_WALL = register("waxed_exposed_chiseled_copper_wall",
-            new WallBlock(EXPOSED_COPPER.properties()
+            new WallBlock(COPPER_BLOCK.waxed().exposed().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_exposed_chiseled_copper_wall")))
             )
     );
 
     public static final Block WEATHERED_CHISELED_COPPER_WALL = register("weathered_chiseled_copper_wall",
-            new OxidizableWallBlock(WeatheringCopper.WeatherState.WEATHERED, WEATHERED_COPPER.properties()
+            new OxidizableWallBlock(WeatheringCopper.WeatherState.WEATHERED, COPPER_BLOCK.weathering().weathered().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "weathered_chiseled_copper_wall")))
             )
     );
 
     public static final Block WAXED_WEATHERED_CHISELED_COPPER_WALL = register("waxed_weathered_chiseled_copper_wall",
-            new WallBlock(WEATHERED_COPPER.properties()
+            new WallBlock(COPPER_BLOCK.waxed().weathered().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_weathered_chiseled_copper_wall")))
             )
     );
 
     public static final Block OXIDIZED_CHISELED_COPPER_WALL = register("oxidized_chiseled_copper_wall",
-            new OxidizableWallBlock(WeatheringCopper.WeatherState.OXIDIZED, OXIDIZED_COPPER.properties()
+            new OxidizableWallBlock(WeatheringCopper.WeatherState.OXIDIZED, COPPER_BLOCK.weathering().oxidized().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "oxidized_chiseled_copper_wall")))
             )
     );
 
     public static final Block WAXED_OXIDIZED_CHISELED_COPPER_WALL = register("waxed_oxidized_chiseled_copper_wall",
-            new WallBlock(OXIDIZED_COPPER.properties()
+            new WallBlock(COPPER_BLOCK.waxed().oxidized().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_oxidized_chiseled_copper_wall")))
             )
     );
@@ -2147,97 +2147,97 @@ public class ModBlocks {
     // region Concrete
 
     public static final Block BLACK_CONCRETE_WALL = register("black_concrete_wall",
-            new WallBlock(BLACK_CONCRETE.properties()
+            new WallBlock(CONCRETE.black().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "black_concrete_wall")))
             )
     );
 
     public static final Block BLUE_CONCRETE_WALL = register("blue_concrete_wall",
-            new WallBlock(BLUE_CONCRETE.properties()
+            new WallBlock(CONCRETE.blue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "blue_concrete_wall")))
             )
     );
 
     public static final Block BROWN_CONCRETE_WALL = register("brown_concrete_wall",
-            new WallBlock(BROWN_CONCRETE.properties()
+            new WallBlock(CONCRETE.brown().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "brown_concrete_wall")))
             )
     );
 
     public static final Block CYAN_CONCRETE_WALL = register("cyan_concrete_wall",
-            new WallBlock(CYAN_CONCRETE.properties()
+            new WallBlock(CONCRETE.cyan().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cyan_concrete_wall")))
             )
     );
 
     public static final Block GRAY_CONCRETE_WALL = register("gray_concrete_wall",
-            new WallBlock(GRAY_CONCRETE.properties()
+            new WallBlock(CONCRETE.gray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "gray_concrete_wall")))
             )
     );
 
     public static final Block GREEN_CONCRETE_WALL = register("green_concrete_wall",
-            new WallBlock(GREEN_CONCRETE.properties()
+            new WallBlock(CONCRETE.green().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "green_concrete_wall")))
             )
     );
 
     public static final Block LIGHT_BLUE_CONCRETE_WALL = register("light_blue_concrete_wall",
-            new WallBlock(LIGHT_BLUE_CONCRETE.properties()
+            new WallBlock(CONCRETE.lightBlue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_blue_concrete_wall")))
             )
     );
 
     public static final Block LIGHT_GRAY_CONCRETE_WALL = register("light_gray_concrete_wall",
-            new WallBlock(LIGHT_GRAY_CONCRETE.properties()
+            new WallBlock(CONCRETE.lightGray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_gray_concrete_wall")))
             )
     );
 
     public static final Block LIME_CONCRETE_WALL = register("lime_concrete_wall",
-            new WallBlock(LIME_CONCRETE.properties()
+            new WallBlock(CONCRETE.lime().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "lime_concrete_wall")))
             )
     );
 
     public static final Block MAGENTA_CONCRETE_WALL = register("magenta_concrete_wall",
-            new WallBlock(MAGENTA_CONCRETE.properties()
+            new WallBlock(CONCRETE.magenta().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "magenta_concrete_wall")))
             )
     );
 
     public static final Block ORANGE_CONCRETE_WALL = register("orange_concrete_wall",
-            new WallBlock(ORANGE_CONCRETE.properties()
+            new WallBlock(CONCRETE.orange().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "orange_concrete_wall")))
             )
     );
 
     public static final Block PINK_CONCRETE_WALL = register("pink_concrete_wall",
-            new WallBlock(PINK_CONCRETE.properties()
+            new WallBlock(CONCRETE.pink().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pink_concrete_wall")))
             )
     );
 
     public static final Block PURPLE_CONCRETE_WALL = register("purple_concrete_wall",
-            new WallBlock(PURPLE_CONCRETE.properties()
+            new WallBlock(CONCRETE.purple().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "purple_concrete_wall")))
             )
     );
 
     public static final Block RED_CONCRETE_WALL = register("red_concrete_wall",
-            new WallBlock(RED_CONCRETE.properties()
+            new WallBlock(CONCRETE.red().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "red_concrete_wall")))
             )
     );
 
     public static final Block WHITE_CONCRETE_WALL = register("white_concrete_wall",
-            new WallBlock(WHITE_CONCRETE.properties()
+            new WallBlock(CONCRETE.white().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "white_concrete_wall")))
             )
     );
 
     public static final Block YELLOW_CONCRETE_WALL = register("yellow_concrete_wall",
-            new WallBlock(YELLOW_CONCRETE.properties()
+            new WallBlock(CONCRETE.yellow().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "yellow_concrete_wall")))
             )
     );
@@ -2253,193 +2253,193 @@ public class ModBlocks {
     );
 
     public static final Block BLACK_TERRACOTTA_WALL = register("black_terracotta_wall",
-            new WallBlock(BLACK_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.black().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "black_terracotta_wall")))
             )
     );
 
     public static final Block BLACK_GLAZED_TERRACOTTA_WALL = register("black_glazed_terracotta_wall",
-            new WallBlock(BLACK_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.black().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "black_glazed_terracotta_wall")))
             )
     );
 
     public static final Block BLUE_TERRACOTTA_WALL = register("blue_terracotta_wall",
-            new WallBlock(BLUE_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.blue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "blue_terracotta_wall")))
             )
     );
 
     public static final Block BLUE_GLAZED_TERRACOTTA_WALL = register("blue_glazed_terracotta_wall",
-            new WallBlock(BLUE_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.blue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "blue_glazed_terracotta_wall")))
             )
     );
 
     public static final Block BROWN_TERRACOTTA_WALL = register("brown_terracotta_wall",
-            new WallBlock(BROWN_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.brown().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "brown_terracotta_wall")))
             )
     );
 
     public static final Block BROWN_GLAZED_TERRACOTTA_WALL = register("brown_glazed_terracotta_wall",
-            new WallBlock(BROWN_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.brown().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "brown_glazed_terracotta_wall")))
             )
     );
 
     public static final Block CYAN_TERRACOTTA_WALL = register("cyan_terracotta_wall",
-            new WallBlock(CYAN_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.cyan().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cyan_terracotta_wall")))
             )
     );
 
     public static final Block CYAN_GLAZED_TERRACOTTA_WALL = register("cyan_glazed_terracotta_wall",
-            new WallBlock(CYAN_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.cyan().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cyan_glazed_terracotta_wall")))
             )
     );
 
     public static final Block GRAY_TERRACOTTA_WALL = register("gray_terracotta_wall",
-            new WallBlock(GRAY_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.gray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "gray_terracotta_wall")))
             )
     );
 
     public static final Block GRAY_GLAZED_TERRACOTTA_WALL = register("gray_glazed_terracotta_wall",
-            new WallBlock(GRAY_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.gray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "gray_glazed_terracotta_wall")))
             )
     );
 
     public static final Block GREEN_TERRACOTTA_WALL = register("green_terracotta_wall",
-            new WallBlock(GREEN_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.green().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "green_terracotta_wall")))
             )
     );
 
     public static final Block GREEN_GLAZED_TERRACOTTA_WALL = register("green_glazed_terracotta_wall",
-            new WallBlock(GREEN_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.green().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "green_glazed_terracotta_wall")))
             )
     );
 
     public static final Block LIGHT_BLUE_TERRACOTTA_WALL = register("light_blue_terracotta_wall",
-            new WallBlock(LIGHT_BLUE_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.lightBlue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_blue_terracotta_wall")))
             )
     );
 
     public static final Block LIGHT_BLUE_GLAZED_TERRACOTTA_WALL = register("light_blue_glazed_terracotta_wall",
-            new WallBlock(LIGHT_BLUE_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.lightBlue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_blue_glazed_terracotta_wall")))
             )
     );
 
     public static final Block LIGHT_GRAY_TERRACOTTA_WALL = register("light_gray_terracotta_wall",
-            new WallBlock(LIGHT_GRAY_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.lightGray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_gray_terracotta_wall")))
             )
     );
 
     public static final Block LIGHT_GRAY_GLAZED_TERRACOTTA_WALL = register("light_gray_glazed_terracotta_wall",
-            new WallBlock(LIGHT_GRAY_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.lightGray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_gray_glazed_terracotta_wall")))
             )
     );
 
     public static final Block LIME_TERRACOTTA_WALL = register("lime_terracotta_wall",
-            new WallBlock(LIME_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.lime().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "lime_terracotta_wall")))
             )
     );
 
     public static final Block LIME_GLAZED_TERRACOTTA_WALL = register("lime_glazed_terracotta_wall",
-            new WallBlock(LIME_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.lime().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "lime_glazed_terracotta_wall")))
             )
     );
 
     public static final Block MAGENTA_TERRACOTTA_WALL = register("magenta_terracotta_wall",
-            new WallBlock(MAGENTA_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.magenta().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "magenta_terracotta_wall")))
             )
     );
 
     public static final Block MAGENTA_GLAZED_TERRACOTTA_WALL = register("magenta_glazed_terracotta_wall",
-            new WallBlock(MAGENTA_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.magenta().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "magenta_glazed_terracotta_wall")))
             )
     );
 
     public static final Block ORANGE_TERRACOTTA_WALL = register("orange_terracotta_wall",
-            new WallBlock(ORANGE_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.orange().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "orange_terracotta_wall")))
             )
     );
 
     public static final Block ORANGE_GLAZED_TERRACOTTA_WALL = register("orange_glazed_terracotta_wall",
-            new WallBlock(ORANGE_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.orange().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "orange_glazed_terracotta_wall")))
             )
     );
 
     public static final Block PINK_TERRACOTTA_WALL = register("pink_terracotta_wall",
-            new WallBlock(PINK_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.pink().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pink_terracotta_wall")))
             )
     );
 
     public static final Block PINK_GLAZED_TERRACOTTA_WALL = register("pink_glazed_terracotta_wall",
-            new WallBlock(PINK_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.pink().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pink_glazed_terracotta_wall")))
             )
     );
 
     public static final Block PURPLE_TERRACOTTA_WALL = register("purple_terracotta_wall",
-            new WallBlock(PURPLE_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.purple().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "purple_terracotta_wall")))
             )
     );
 
     public static final Block PURPLE_GLAZED_TERRACOTTA_WALL = register("purple_glazed_terracotta_wall",
-            new WallBlock(PURPLE_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.purple().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "purple_glazed_terracotta_wall")))
             )
     );
 
     public static final Block RED_TERRACOTTA_WALL = register("red_terracotta_wall",
-            new WallBlock(RED_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.red().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "red_terracotta_wall")))
             )
     );
 
     public static final Block RED_GLAZED_TERRACOTTA_WALL = register("red_glazed_terracotta_wall",
-            new WallBlock(RED_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.red().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "red_glazed_terracotta_wall")))
             )
     );
 
     public static final Block WHITE_TERRACOTTA_WALL = register("white_terracotta_wall",
-            new WallBlock(WHITE_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.white().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "white_terracotta_wall")))
             )
     );
 
     public static final Block WHITE_GLAZED_TERRACOTTA_WALL = register("white_glazed_terracotta_wall",
-            new WallBlock(WHITE_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.white().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "white_glazed_terracotta_wall")))
             )
     );
 
     public static final Block YELLOW_TERRACOTTA_WALL = register("yellow_terracotta_wall",
-            new WallBlock(YELLOW_TERRACOTTA.properties()
+            new WallBlock(DYED_TERRACOTTA.yellow().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "yellow_terracotta_wall")))
             )
     );
 
     public static final Block YELLOW_GLAZED_TERRACOTTA_WALL = register("yellow_glazed_terracotta_wall",
-            new WallBlock(YELLOW_GLAZED_TERRACOTTA.properties()
+            new WallBlock(GLAZED_TERRACOTTA.yellow().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "yellow_glazed_terracotta_wall")))
             )
     );
@@ -2453,97 +2453,97 @@ public class ModBlocks {
     // region Metal
 
     public static final Block COPPER_SLAB = register("copper_slab",
-            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.UNAFFECTED, COPPER_BLOCK.properties()
+            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.UNAFFECTED, COPPER_BLOCK.weathering().unaffected().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "copper_slab")))
             )
     );
 
     public static final Block WAXED_COPPER_SLAB = register("waxed_copper_slab",
-            new SlabBlock(COPPER_BLOCK.properties()
+            new SlabBlock(COPPER_BLOCK.waxed().unaffected().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_copper_slab")))
             )
     );
 
     public static final Block EXPOSED_COPPER_SLAB = register("exposed_copper_slab",
-            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.EXPOSED, EXPOSED_COPPER.properties()
+            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.EXPOSED, COPPER_BLOCK.weathering().exposed().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "exposed_copper_slab")))
             )
     );
 
     public static final Block WAXED_EXPOSED_COPPER_SLAB = register("waxed_exposed_copper_slab",
-            new SlabBlock(EXPOSED_COPPER.properties()
+            new SlabBlock(COPPER_BLOCK.waxed().exposed().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_exposed_copper_slab")))
             )
     );
 
     public static final Block WEATHERED_COPPER_SLAB = register("weathered_copper_slab",
-            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.WEATHERED, WEATHERED_COPPER.properties()
+            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.WEATHERED, COPPER_BLOCK.weathering().weathered().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "weathered_copper_slab")))
             )
     );
 
     public static final Block WAXED_WEATHERED_COPPER_SLAB = register("waxed_weathered_copper_slab",
-            new SlabBlock(WEATHERED_COPPER.properties()
+            new SlabBlock(COPPER_BLOCK.waxed().weathered().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_weathered_copper_slab")))
             )
     );
 
     public static final Block OXIDIZED_COPPER_SLAB = register("oxidized_copper_slab",
-            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.OXIDIZED, OXIDIZED_COPPER.properties()
+            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.OXIDIZED, COPPER_BLOCK.weathering().oxidized().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "oxidized_copper_slab")))
             )
     );
 
     public static final Block WAXED_OXIDIZED_COPPER_SLAB = register("waxed_oxidized_copper_slab",
-            new SlabBlock(OXIDIZED_COPPER.properties()
+            new SlabBlock(COPPER_BLOCK.waxed().oxidized().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_oxidized_copper_slab")))
             )
     );
 
     public static final Block CHISELED_COPPER_SLAB = register("chiseled_copper_slab",
-            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.UNAFFECTED, COPPER_BLOCK.properties()
+            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.UNAFFECTED, COPPER_BLOCK.weathering().unaffected().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "chiseled_copper_slab")))
             )
     );
 
     public static final Block WAXED_CHISELED_COPPER_SLAB = register("waxed_chiseled_copper_slab",
-            new SlabBlock(COPPER_BLOCK.properties()
+            new SlabBlock(COPPER_BLOCK.waxed().unaffected().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_chiseled_copper_slab")))
             )
     );
 
     public static final Block EXPOSED_CHISELED_COPPER_SLAB = register("exposed_chiseled_copper_slab",
-            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.EXPOSED, EXPOSED_COPPER.properties()
+            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.EXPOSED, COPPER_BLOCK.weathering().exposed().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "exposed_chiseled_copper_slab")))
             )
     );
 
     public static final Block WAXED_EXPOSED_CHISELED_COPPER_SLAB = register("waxed_exposed_chiseled_copper_slab",
-            new SlabBlock(EXPOSED_COPPER.properties()
+            new SlabBlock(COPPER_BLOCK.waxed().exposed().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_exposed_chiseled_copper_slab")))
             )
     );
 
     public static final Block WEATHERED_CHISELED_COPPER_SLAB = register("weathered_chiseled_copper_slab",
-            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.WEATHERED, WEATHERED_COPPER.properties()
+            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.WEATHERED, COPPER_BLOCK.weathering().weathered().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "weathered_chiseled_copper_slab")))
             )
     );
 
     public static final Block WAXED_WEATHERED_CHISELED_COPPER_SLAB = register("waxed_weathered_chiseled_copper_slab",
-            new SlabBlock(WEATHERED_COPPER.properties()
+            new SlabBlock(COPPER_BLOCK.waxed().weathered().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_weathered_chiseled_copper_slab")))
             )
     );
 
     public static final Block OXIDIZED_CHISELED_COPPER_SLAB = register("oxidized_chiseled_copper_slab",
-            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.OXIDIZED, OXIDIZED_COPPER.properties()
+            new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.OXIDIZED, COPPER_BLOCK.weathering().oxidized().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "oxidized_chiseled_copper_slab")))
             )
     );
 
     public static final Block WAXED_OXIDIZED_CHISELED_COPPER_SLAB = register("waxed_oxidized_chiseled_copper_slab",
-            new SlabBlock(OXIDIZED_COPPER.properties()
+            new SlabBlock(COPPER_BLOCK.waxed().oxidized().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_oxidized_chiseled_copper_slab")))
             )
     );
@@ -2961,97 +2961,97 @@ public class ModBlocks {
     // region Concrete
 
     public static final Block BLACK_CONCRETE_SLAB = register("black_concrete_slab",
-            new SlabBlock(BLACK_CONCRETE.properties()
+            new SlabBlock(CONCRETE.black().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "black_concrete_slab")))
             )
     );
 
     public static final Block BLUE_CONCRETE_SLAB = register("blue_concrete_slab",
-            new SlabBlock(BLUE_CONCRETE.properties()
+            new SlabBlock(CONCRETE.blue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "blue_concrete_slab")))
             )
     );
 
     public static final Block BROWN_CONCRETE_SLAB = register("brown_concrete_slab",
-            new SlabBlock(BROWN_CONCRETE.properties()
+            new SlabBlock(CONCRETE.brown().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "brown_concrete_slab")))
             )
     );
 
     public static final Block CYAN_CONCRETE_SLAB = register("cyan_concrete_slab",
-            new SlabBlock(CYAN_CONCRETE.properties()
+            new SlabBlock(CONCRETE.cyan().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cyan_concrete_slab")))
             )
     );
 
     public static final Block GRAY_CONCRETE_SLAB = register("gray_concrete_slab",
-            new SlabBlock(GRAY_CONCRETE.properties()
+            new SlabBlock(CONCRETE.gray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "gray_concrete_slab")))
             )
     );
 
     public static final Block GREEN_CONCRETE_SLAB = register("green_concrete_slab",
-            new SlabBlock(GREEN_CONCRETE.properties()
+            new SlabBlock(CONCRETE.green().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "green_concrete_slab")))
             )
     );
 
     public static final Block LIGHT_BLUE_CONCRETE_SLAB = register("light_blue_concrete_slab",
-            new SlabBlock(LIGHT_BLUE_CONCRETE.properties()
+            new SlabBlock(CONCRETE.lightBlue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_blue_concrete_slab")))
             )
     );
 
     public static final Block LIGHT_GRAY_CONCRETE_SLAB = register("light_gray_concrete_slab",
-            new SlabBlock(LIGHT_GRAY_CONCRETE.properties()
+            new SlabBlock(CONCRETE.lightGray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_gray_concrete_slab")))
             )
     );
 
     public static final Block LIME_CONCRETE_SLAB = register("lime_concrete_slab",
-            new SlabBlock(LIME_CONCRETE.properties()
+            new SlabBlock(CONCRETE.lime().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "lime_concrete_slab")))
             )
     );
 
     public static final Block MAGENTA_CONCRETE_SLAB = register("magenta_concrete_slab",
-            new SlabBlock(MAGENTA_CONCRETE.properties()
+            new SlabBlock(CONCRETE.magenta().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "magenta_concrete_slab")))
             )
     );
 
     public static final Block ORANGE_CONCRETE_SLAB = register("orange_concrete_slab",
-            new SlabBlock(ORANGE_CONCRETE.properties()
+            new SlabBlock(CONCRETE.orange().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "orange_concrete_slab")))
             )
     );
 
     public static final Block PINK_CONCRETE_SLAB = register("pink_concrete_slab",
-            new SlabBlock(PINK_CONCRETE.properties()
+            new SlabBlock(CONCRETE.pink().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pink_concrete_slab")))
             )
     );
 
     public static final Block PURPLE_CONCRETE_SLAB = register("purple_concrete_slab",
-            new SlabBlock(PURPLE_CONCRETE.properties()
+            new SlabBlock(CONCRETE.purple().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "purple_concrete_slab")))
             )
     );
 
     public static final Block RED_CONCRETE_SLAB = register("red_concrete_slab",
-            new SlabBlock(RED_CONCRETE.properties()
+            new SlabBlock(CONCRETE.red().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "red_concrete_slab")))
             )
     );
 
     public static final Block WHITE_CONCRETE_SLAB = register("white_concrete_slab",
-            new SlabBlock(WHITE_CONCRETE.properties()
+            new SlabBlock(CONCRETE.white().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "white_concrete_slab")))
             )
     );
 
     public static final Block YELLOW_CONCRETE_SLAB = register("yellow_concrete_slab",
-            new SlabBlock(YELLOW_CONCRETE.properties()
+            new SlabBlock(CONCRETE.yellow().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "yellow_concrete_slab")))
             )
     );
@@ -3067,193 +3067,193 @@ public class ModBlocks {
     );
 
     public static final Block BLACK_TERRACOTTA_SLAB = register("black_terracotta_slab",
-            new SlabBlock(BLACK_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.black().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "black_terracotta_slab")))
             )
     );
 
     public static final Block BLACK_GLAZED_TERRACOTTA_SLAB = register("black_glazed_terracotta_slab",
-            new SlabBlock(BLACK_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.black().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "black_glazed_terracotta_slab")))
             )
     );
 
     public static final Block BLUE_TERRACOTTA_SLAB = register("blue_terracotta_slab",
-            new SlabBlock(BLUE_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.blue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "blue_terracotta_slab")))
             )
     );
 
     public static final Block BLUE_GLAZED_TERRACOTTA_SLAB = register("blue_glazed_terracotta_slab",
-            new SlabBlock(BLUE_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.blue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "blue_glazed_terracotta_slab")))
             )
     );
 
     public static final Block BROWN_TERRACOTTA_SLAB = register("brown_terracotta_slab",
-            new SlabBlock(BROWN_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.brown().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "brown_terracotta_slab")))
             )
     );
 
     public static final Block BROWN_GLAZED_TERRACOTTA_SLAB = register("brown_glazed_terracotta_slab",
-            new SlabBlock(BROWN_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.brown().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "brown_glazed_terracotta_slab")))
             )
     );
 
     public static final Block CYAN_TERRACOTTA_SLAB = register("cyan_terracotta_slab",
-            new SlabBlock(CYAN_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.cyan().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cyan_terracotta_slab")))
             )
     );
 
     public static final Block CYAN_GLAZED_TERRACOTTA_SLAB = register("cyan_glazed_terracotta_slab",
-            new SlabBlock(CYAN_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.cyan().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cyan_glazed_terracotta_slab")))
             )
     );
 
     public static final Block GRAY_TERRACOTTA_SLAB = register("gray_terracotta_slab",
-            new SlabBlock(GRAY_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.gray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "gray_terracotta_slab")))
             )
     );
 
     public static final Block GRAY_GLAZED_TERRACOTTA_SLAB = register("gray_glazed_terracotta_slab",
-            new SlabBlock(GRAY_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.gray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "gray_glazed_terracotta_slab")))
             )
     );
 
     public static final Block GREEN_TERRACOTTA_SLAB = register("green_terracotta_slab",
-            new SlabBlock(GREEN_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.green().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "green_terracotta_slab")))
             )
     );
 
     public static final Block GREEN_GLAZED_TERRACOTTA_SLAB = register("green_glazed_terracotta_slab",
-            new SlabBlock(GREEN_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.green().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "green_glazed_terracotta_slab")))
             )
     );
 
     public static final Block LIGHT_BLUE_TERRACOTTA_SLAB = register("light_blue_terracotta_slab",
-            new SlabBlock(LIGHT_BLUE_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.lightBlue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_blue_terracotta_slab")))
             )
     );
 
     public static final Block LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB = register("light_blue_glazed_terracotta_slab",
-            new SlabBlock(LIGHT_BLUE_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.lightBlue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_blue_glazed_terracotta_slab")))
             )
     );
 
     public static final Block LIGHT_GRAY_TERRACOTTA_SLAB = register("light_gray_terracotta_slab",
-            new SlabBlock(LIGHT_GRAY_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.lightGray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_gray_terracotta_slab")))
             )
     );
 
     public static final Block LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB = register("light_gray_glazed_terracotta_slab",
-            new SlabBlock(LIGHT_GRAY_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.lightGray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_gray_glazed_terracotta_slab")))
             )
     );
 
     public static final Block LIME_TERRACOTTA_SLAB = register("lime_terracotta_slab",
-            new SlabBlock(LIME_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.lime().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "lime_terracotta_slab")))
             )
     );
 
     public static final Block LIME_GLAZED_TERRACOTTA_SLAB = register("lime_glazed_terracotta_slab",
-            new SlabBlock(LIME_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.lime().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "lime_glazed_terracotta_slab")))
             )
     );
 
     public static final Block MAGENTA_TERRACOTTA_SLAB = register("magenta_terracotta_slab",
-            new SlabBlock(MAGENTA_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.magenta().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "magenta_terracotta_slab")))
             )
     );
 
     public static final Block MAGENTA_GLAZED_TERRACOTTA_SLAB = register("magenta_glazed_terracotta_slab",
-            new SlabBlock(MAGENTA_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.magenta().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "magenta_glazed_terracotta_slab")))
             )
     );
 
     public static final Block ORANGE_TERRACOTTA_SLAB = register("orange_terracotta_slab",
-            new SlabBlock(ORANGE_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.orange().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "orange_terracotta_slab")))
             )
     );
 
     public static final Block ORANGE_GLAZED_TERRACOTTA_SLAB = register("orange_glazed_terracotta_slab",
-            new SlabBlock(ORANGE_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.orange().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "orange_glazed_terracotta_slab")))
             )
     );
 
     public static final Block PINK_TERRACOTTA_SLAB = register("pink_terracotta_slab",
-            new SlabBlock(PINK_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.pink().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pink_terracotta_slab")))
             )
     );
 
     public static final Block PINK_GLAZED_TERRACOTTA_SLAB = register("pink_glazed_terracotta_slab",
-            new SlabBlock(PINK_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.pink().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pink_glazed_terracotta_slab")))
             )
     );
 
     public static final Block PURPLE_TERRACOTTA_SLAB = register("purple_terracotta_slab",
-            new SlabBlock(PURPLE_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.purple().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "purple_terracotta_slab")))
             )
     );
 
     public static final Block PURPLE_GLAZED_TERRACOTTA_SLAB = register("purple_glazed_terracotta_slab",
-            new SlabBlock(PURPLE_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.purple().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "purple_glazed_terracotta_slab")))
             )
     );
 
     public static final Block RED_TERRACOTTA_SLAB = register("red_terracotta_slab",
-            new SlabBlock(RED_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.red().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "red_terracotta_slab")))
             )
     );
 
     public static final Block RED_GLAZED_TERRACOTTA_SLAB = register("red_glazed_terracotta_slab",
-            new SlabBlock(RED_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.red().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "red_glazed_terracotta_slab")))
             )
     );
 
     public static final Block WHITE_TERRACOTTA_SLAB = register("white_terracotta_slab",
-            new SlabBlock(WHITE_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.white().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "white_terracotta_slab")))
             )
     );
 
     public static final Block WHITE_GLAZED_TERRACOTTA_SLAB = register("white_glazed_terracotta_slab",
-            new SlabBlock(WHITE_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.white().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "white_glazed_terracotta_slab")))
             )
     );
 
     public static final Block YELLOW_TERRACOTTA_SLAB = register("yellow_terracotta_slab",
-            new SlabBlock(YELLOW_TERRACOTTA.properties()
+            new SlabBlock(DYED_TERRACOTTA.yellow().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "yellow_terracotta_slab")))
             )
     );
 
     public static final Block YELLOW_GLAZED_TERRACOTTA_SLAB = register("yellow_glazed_terracotta_slab",
-            new SlabBlock(YELLOW_GLAZED_TERRACOTTA.properties()
+            new SlabBlock(GLAZED_TERRACOTTA.yellow().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "yellow_glazed_terracotta_slab")))
             )
     );
@@ -3267,97 +3267,97 @@ public class ModBlocks {
     // region Metal
 
     public static final Block COPPER_STAIRS = register("copper_stairs",
-            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.UNAFFECTED, COPPER_BLOCK.defaultBlockState(), COPPER_BLOCK.properties()
+            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.UNAFFECTED, COPPER_BLOCK.weathering().unaffected().defaultBlockState(), COPPER_BLOCK.weathering().unaffected().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "copper_stairs")))
             )
     );
 
     public static final Block WAXED_COPPER_STAIRS = register("waxed_copper_stairs",
-            new StairBlock(COPPER_BLOCK.defaultBlockState(), COPPER_BLOCK.properties()
+            new StairBlock(COPPER_BLOCK.waxed().unaffected().defaultBlockState(), COPPER_BLOCK.waxed().unaffected().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_copper_stairs")))
             )
     );
 
     public static final Block EXPOSED_COPPER_STAIRS = register("exposed_copper_stairs",
-            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.EXPOSED, EXPOSED_COPPER.defaultBlockState(), EXPOSED_COPPER.properties()
+            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.EXPOSED, COPPER_BLOCK.weathering().exposed().defaultBlockState(), COPPER_BLOCK.weathering().exposed().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "exposed_copper_stairs")))
             )
     );
 
     public static final Block WAXED_EXPOSED_COPPER_STAIRS = register("waxed_exposed_copper_stairs",
-            new StairBlock(EXPOSED_COPPER.defaultBlockState(), EXPOSED_COPPER.properties()
+            new StairBlock(COPPER_BLOCK.waxed().exposed().defaultBlockState(), COPPER_BLOCK.waxed().exposed().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_exposed_copper_stairs")))
             )
     );
 
     public static final Block WEATHERED_COPPER_STAIRS = register("weathered_copper_stairs",
-            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.WEATHERED, WEATHERED_COPPER.defaultBlockState(), WEATHERED_COPPER.properties()
+            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.WEATHERED, COPPER_BLOCK.weathering().weathered().defaultBlockState(), COPPER_BLOCK.weathering().weathered().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "weathered_copper_stairs")))
             )
     );
 
     public static final Block WAXED_WEATHERED_COPPER_STAIRS = register("waxed_weathered_copper_stairs",
-            new StairBlock(WEATHERED_COPPER.defaultBlockState(), WEATHERED_COPPER.properties()
+            new StairBlock(COPPER_BLOCK.waxed().weathered().defaultBlockState(), COPPER_BLOCK.waxed().weathered().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_weathered_copper_stairs")))
             )
     );
 
     public static final Block OXIDIZED_COPPER_STAIRS = register("oxidized_copper_stairs",
-            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.OXIDIZED, OXIDIZED_COPPER.defaultBlockState(), OXIDIZED_COPPER.properties()
+            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.OXIDIZED, COPPER_BLOCK.weathering().oxidized().defaultBlockState(), COPPER_BLOCK.weathering().oxidized().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "oxidized_copper_stairs")))
             )
     );
 
     public static final Block WAXED_OXIDIZED_COPPER_STAIRS = register("waxed_oxidized_copper_stairs",
-            new StairBlock(OXIDIZED_COPPER.defaultBlockState(), OXIDIZED_COPPER.properties()
+            new StairBlock(COPPER_BLOCK.waxed().oxidized().defaultBlockState(), COPPER_BLOCK.waxed().oxidized().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_oxidized_copper_stairs")))
             )
     );
 
     public static final Block CHISELED_COPPER_STAIRS = register("chiseled_copper_stairs",
-            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.UNAFFECTED, COPPER_BLOCK.defaultBlockState(), COPPER_BLOCK.properties()
+            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.UNAFFECTED, COPPER_BLOCK.weathering().unaffected().defaultBlockState(), COPPER_BLOCK.weathering().unaffected().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "chiseled_copper_stairs")))
             )
     );
 
     public static final Block WAXED_CHISELED_COPPER_STAIRS = register("waxed_chiseled_copper_stairs",
-            new StairBlock(COPPER_BLOCK.defaultBlockState(), COPPER_BLOCK.properties()
+            new StairBlock(COPPER_BLOCK.waxed().unaffected().defaultBlockState(), COPPER_BLOCK.waxed().unaffected().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_chiseled_copper_stairs")))
             )
     );
 
     public static final Block EXPOSED_CHISELED_COPPER_STAIRS = register("exposed_chiseled_copper_stairs",
-            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.EXPOSED, EXPOSED_COPPER.defaultBlockState(), EXPOSED_COPPER.properties()
+            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.EXPOSED, COPPER_BLOCK.weathering().exposed().defaultBlockState(), COPPER_BLOCK.weathering().exposed().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "exposed_chiseled_copper_stairs")))
             )
     );
 
     public static final Block WAXED_EXPOSED_CHISELED_COPPER_STAIRS = register("waxed_exposed_chiseled_copper_stairs",
-            new StairBlock(EXPOSED_COPPER.defaultBlockState(), EXPOSED_COPPER.properties()
+            new StairBlock(COPPER_BLOCK.waxed().exposed().defaultBlockState(), COPPER_BLOCK.waxed().exposed().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_exposed_chiseled_copper_stairs")))
             )
     );
 
     public static final Block WEATHERED_CHISELED_COPPER_STAIRS = register("weathered_chiseled_copper_stairs",
-            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.WEATHERED, WEATHERED_COPPER.defaultBlockState(), WEATHERED_COPPER.properties()
+            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.WEATHERED, COPPER_BLOCK.weathering().weathered().defaultBlockState(), COPPER_BLOCK.weathering().weathered().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "weathered_chiseled_copper_stairs")))
             )
     );
 
     public static final Block WAXED_WEATHERED_CHISELED_COPPER_STAIRS = register("waxed_weathered_chiseled_copper_stairs",
-            new StairBlock(WEATHERED_COPPER.defaultBlockState(), WEATHERED_COPPER.properties()
+            new StairBlock(COPPER_BLOCK.waxed().weathered().defaultBlockState(), COPPER_BLOCK.waxed().weathered().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_weathered_chiseled_copper_stairs")))
             )
     );
 
     public static final Block OXIDIZED_CHISELED_COPPER_STAIRS = register("oxidized_chiseled_copper_stairs",
-            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.OXIDIZED, OXIDIZED_COPPER.defaultBlockState(), OXIDIZED_COPPER.properties()
+            new WeatheringCopperStairBlock(WeatheringCopper.WeatherState.OXIDIZED, COPPER_BLOCK.weathering().oxidized().defaultBlockState(), COPPER_BLOCK.weathering().oxidized().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "oxidized_chiseled_copper_stairs")))
             )
     );
 
     public static final Block WAXED_OXIDIZED_CHISELED_COPPER_STAIRS = register("waxed_oxidized_chiseled_copper_stairs",
-            new StairBlock(OXIDIZED_COPPER.defaultBlockState(), OXIDIZED_COPPER.properties()
+            new StairBlock(COPPER_BLOCK.waxed().oxidized().defaultBlockState(), COPPER_BLOCK.waxed().oxidized().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "waxed_oxidized_chiseled_copper_stairs")))
             )
     );
@@ -3793,97 +3793,97 @@ public class ModBlocks {
     // region Concrete
 
     public static final Block BLACK_CONCRETE_STAIRS = register("black_concrete_stairs",
-            new StairBlock(BLACK_CONCRETE.defaultBlockState(), BLACK_CONCRETE.properties()
+            new StairBlock(CONCRETE.black().defaultBlockState(), CONCRETE.black().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "black_concrete_stairs")))
             )
     );
 
     public static final Block BLUE_CONCRETE_STAIRS = register("blue_concrete_stairs",
-            new StairBlock(BLUE_CONCRETE.defaultBlockState(), BLUE_CONCRETE.properties()
+            new StairBlock(CONCRETE.blue().defaultBlockState(), CONCRETE.blue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "blue_concrete_stairs")))
             )
     );
 
     public static final Block BROWN_CONCRETE_STAIRS = register("brown_concrete_stairs",
-            new StairBlock(BROWN_CONCRETE.defaultBlockState(), BROWN_CONCRETE.properties()
+            new StairBlock(CONCRETE.brown().defaultBlockState(), CONCRETE.brown().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "brown_concrete_stairs")))
             )
     );
 
     public static final Block CYAN_CONCRETE_STAIRS = register("cyan_concrete_stairs",
-            new StairBlock(CYAN_CONCRETE.defaultBlockState(), CYAN_CONCRETE.properties()
+            new StairBlock(CONCRETE.cyan().defaultBlockState(), CONCRETE.cyan().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cyan_concrete_stairs")))
             )
     );
 
     public static final Block GRAY_CONCRETE_STAIRS = register("gray_concrete_stairs",
-            new StairBlock(GRAY_CONCRETE.defaultBlockState(), GRAY_CONCRETE.properties()
+            new StairBlock(CONCRETE.gray().defaultBlockState(), CONCRETE.gray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "gray_concrete_stairs")))
             )
     );
 
     public static final Block GREEN_CONCRETE_STAIRS = register("green_concrete_stairs",
-            new StairBlock(GREEN_CONCRETE.defaultBlockState(), GREEN_CONCRETE.properties()
+            new StairBlock(CONCRETE.green().defaultBlockState(), CONCRETE.green().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "green_concrete_stairs")))
             )
     );
 
     public static final Block LIGHT_BLUE_CONCRETE_STAIRS = register("light_blue_concrete_stairs",
-            new StairBlock(LIGHT_BLUE_CONCRETE.defaultBlockState(), LIGHT_BLUE_CONCRETE.properties()
+            new StairBlock(CONCRETE.lightBlue().defaultBlockState(), CONCRETE.lightBlue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_blue_concrete_stairs")))
             )
     );
 
     public static final Block LIGHT_GRAY_CONCRETE_STAIRS = register("light_gray_concrete_stairs",
-            new StairBlock(LIGHT_GRAY_CONCRETE.defaultBlockState(), LIGHT_GRAY_CONCRETE.properties()
+            new StairBlock(CONCRETE.lightGray().defaultBlockState(), CONCRETE.lightGray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_gray_concrete_stairs")))
             )
     );
 
     public static final Block LIME_CONCRETE_STAIRS = register("lime_concrete_stairs",
-            new StairBlock(LIME_CONCRETE.defaultBlockState(), LIME_CONCRETE.properties()
+            new StairBlock(CONCRETE.lime().defaultBlockState(), CONCRETE.lime().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "lime_concrete_stairs")))
             )
     );
 
     public static final Block MAGENTA_CONCRETE_STAIRS = register("magenta_concrete_stairs",
-            new StairBlock(MAGENTA_CONCRETE.defaultBlockState(), MAGENTA_CONCRETE.properties()
+            new StairBlock(CONCRETE.magenta().defaultBlockState(), CONCRETE.magenta().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "magenta_concrete_stairs")))
             )
     );
 
     public static final Block ORANGE_CONCRETE_STAIRS = register("orange_concrete_stairs",
-            new StairBlock(ORANGE_CONCRETE.defaultBlockState(), ORANGE_CONCRETE.properties()
+            new StairBlock(CONCRETE.orange().defaultBlockState(), CONCRETE.orange().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "orange_concrete_stairs")))
             )
     );
 
     public static final Block PINK_CONCRETE_STAIRS = register("pink_concrete_stairs",
-            new StairBlock(PINK_CONCRETE.defaultBlockState(), PINK_CONCRETE.properties()
+            new StairBlock(CONCRETE.pink().defaultBlockState(), CONCRETE.pink().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pink_concrete_stairs")))
             )
     );
 
     public static final Block PURPLE_CONCRETE_STAIRS = register("purple_concrete_stairs",
-            new StairBlock(PURPLE_CONCRETE.defaultBlockState(), PURPLE_CONCRETE.properties()
+            new StairBlock(CONCRETE.purple().defaultBlockState(), CONCRETE.purple().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "purple_concrete_stairs")))
             )
     );
 
     public static final Block RED_CONCRETE_STAIRS = register("red_concrete_stairs",
-            new StairBlock(RED_CONCRETE.defaultBlockState(), RED_CONCRETE.properties()
+            new StairBlock(CONCRETE.red().defaultBlockState(), CONCRETE.red().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "red_concrete_stairs")))
             )
     );
 
     public static final Block WHITE_CONCRETE_STAIRS = register("white_concrete_stairs",
-            new StairBlock(WHITE_CONCRETE.defaultBlockState(), WHITE_CONCRETE.properties()
+            new StairBlock(CONCRETE.white().defaultBlockState(), CONCRETE.white().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "white_concrete_stairs")))
             )
     );
 
     public static final Block YELLOW_CONCRETE_STAIRS = register("yellow_concrete_stairs",
-            new StairBlock(YELLOW_CONCRETE.defaultBlockState(), YELLOW_CONCRETE.properties()
+            new StairBlock(CONCRETE.yellow().defaultBlockState(), CONCRETE.yellow().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "yellow_concrete_stairs")))
             )
     );
@@ -3899,193 +3899,193 @@ public class ModBlocks {
     );
 
     public static final Block BLACK_TERRACOTTA_STAIRS = register("black_terracotta_stairs",
-            new StairBlock(BLACK_TERRACOTTA.defaultBlockState(), BLACK_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.black().defaultBlockState(), DYED_TERRACOTTA.black().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "black_terracotta_stairs")))
             )
     );
 
     public static final Block BLACK_GLAZED_TERRACOTTA_STAIRS = register("black_glazed_terracotta_stairs",
-            new StairBlock(BLACK_GLAZED_TERRACOTTA.defaultBlockState(), BLACK_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.black().defaultBlockState(), GLAZED_TERRACOTTA.black().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "black_glazed_terracotta_stairs")))
             )
     );
 
     public static final Block BLUE_TERRACOTTA_STAIRS = register("blue_terracotta_stairs",
-            new StairBlock(BLUE_TERRACOTTA.defaultBlockState(), BLUE_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.blue().defaultBlockState(), DYED_TERRACOTTA.blue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "blue_terracotta_stairs")))
             )
     );
 
     public static final Block BLUE_GLAZED_TERRACOTTA_STAIRS = register("blue_glazed_terracotta_stairs",
-            new StairBlock(BLUE_GLAZED_TERRACOTTA.defaultBlockState(), BLUE_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.blue().defaultBlockState(), GLAZED_TERRACOTTA.blue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "blue_glazed_terracotta_stairs")))
             )
     );
 
     public static final Block BROWN_TERRACOTTA_STAIRS = register("brown_terracotta_stairs",
-            new StairBlock(BROWN_TERRACOTTA.defaultBlockState(), BROWN_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.brown().defaultBlockState(), DYED_TERRACOTTA.brown().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "brown_terracotta_stairs")))
             )
     );
 
     public static final Block BROWN_GLAZED_TERRACOTTA_STAIRS = register("brown_glazed_terracotta_stairs",
-            new StairBlock(BROWN_GLAZED_TERRACOTTA.defaultBlockState(), BROWN_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.brown().defaultBlockState(), GLAZED_TERRACOTTA.brown().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "brown_glazed_terracotta_stairs")))
             )
     );
 
     public static final Block CYAN_TERRACOTTA_STAIRS = register("cyan_terracotta_stairs",
-            new StairBlock(CYAN_TERRACOTTA.defaultBlockState(), CYAN_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.cyan().defaultBlockState(), DYED_TERRACOTTA.cyan().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cyan_terracotta_stairs")))
             )
     );
 
     public static final Block CYAN_GLAZED_TERRACOTTA_STAIRS = register("cyan_glazed_terracotta_stairs",
-            new StairBlock(CYAN_GLAZED_TERRACOTTA.defaultBlockState(), CYAN_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.cyan().defaultBlockState(), GLAZED_TERRACOTTA.cyan().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cyan_glazed_terracotta_stairs")))
             )
     );
 
     public static final Block GRAY_TERRACOTTA_STAIRS = register("gray_terracotta_stairs",
-            new StairBlock(GRAY_TERRACOTTA.defaultBlockState(), GRAY_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.gray().defaultBlockState(), DYED_TERRACOTTA.gray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "gray_terracotta_stairs")))
             )
     );
 
     public static final Block GRAY_GLAZED_TERRACOTTA_STAIRS = register("gray_glazed_terracotta_stairs",
-            new StairBlock(GRAY_GLAZED_TERRACOTTA.defaultBlockState(), GRAY_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.gray().defaultBlockState(), GLAZED_TERRACOTTA.gray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "gray_glazed_terracotta_stairs")))
             )
     );
 
     public static final Block GREEN_TERRACOTTA_STAIRS = register("green_terracotta_stairs",
-            new StairBlock(GREEN_TERRACOTTA.defaultBlockState(), GREEN_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.green().defaultBlockState(), DYED_TERRACOTTA.green().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "green_terracotta_stairs")))
             )
     );
 
     public static final Block GREEN_GLAZED_TERRACOTTA_STAIRS = register("green_glazed_terracotta_stairs",
-            new StairBlock(GREEN_GLAZED_TERRACOTTA.defaultBlockState(), GREEN_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.green().defaultBlockState(), GLAZED_TERRACOTTA.green().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "green_glazed_terracotta_stairs")))
             )
     );
 
     public static final Block LIGHT_BLUE_TERRACOTTA_STAIRS = register("light_blue_terracotta_stairs",
-            new StairBlock(LIGHT_BLUE_TERRACOTTA.defaultBlockState(), LIGHT_BLUE_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.lightBlue().defaultBlockState(), DYED_TERRACOTTA.lightBlue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_blue_terracotta_stairs")))
             )
     );
 
     public static final Block LIGHT_BLUE_GLAZED_TERRACOTTA_STAIRS = register("light_blue_glazed_terracotta_stairs",
-            new StairBlock(LIGHT_BLUE_GLAZED_TERRACOTTA.defaultBlockState(), LIGHT_BLUE_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.lightBlue().defaultBlockState(), GLAZED_TERRACOTTA.lightBlue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_blue_glazed_terracotta_stairs")))
             )
     );
 
     public static final Block LIGHT_GRAY_TERRACOTTA_STAIRS = register("light_gray_terracotta_stairs",
-            new StairBlock(LIGHT_GRAY_TERRACOTTA.defaultBlockState(), LIGHT_GRAY_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.lightGray().defaultBlockState(), DYED_TERRACOTTA.lightGray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_gray_terracotta_stairs")))
             )
     );
 
     public static final Block LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS = register("light_gray_glazed_terracotta_stairs",
-            new StairBlock(LIGHT_GRAY_GLAZED_TERRACOTTA.defaultBlockState(), LIGHT_GRAY_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.lightGray().defaultBlockState(), GLAZED_TERRACOTTA.lightGray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_gray_glazed_terracotta_stairs")))
             )
     );
 
     public static final Block LIME_TERRACOTTA_STAIRS = register("lime_terracotta_stairs",
-            new StairBlock(LIME_TERRACOTTA.defaultBlockState(), LIME_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.lime().defaultBlockState(), DYED_TERRACOTTA.lime().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "lime_terracotta_stairs")))
             )
     );
 
     public static final Block LIME_GLAZED_TERRACOTTA_STAIRS = register("lime_glazed_terracotta_stairs",
-            new StairBlock(LIME_GLAZED_TERRACOTTA.defaultBlockState(), LIME_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.lime().defaultBlockState(), GLAZED_TERRACOTTA.lime().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "lime_glazed_terracotta_stairs")))
             )
     );
 
     public static final Block MAGENTA_TERRACOTTA_STAIRS = register("magenta_terracotta_stairs",
-            new StairBlock(MAGENTA_TERRACOTTA.defaultBlockState(), MAGENTA_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.magenta().defaultBlockState(), DYED_TERRACOTTA.magenta().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "magenta_terracotta_stairs")))
             )
     );
 
     public static final Block MAGENTA_GLAZED_TERRACOTTA_STAIRS = register("magenta_glazed_terracotta_stairs",
-            new StairBlock(MAGENTA_GLAZED_TERRACOTTA.defaultBlockState(), MAGENTA_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.magenta().defaultBlockState(), GLAZED_TERRACOTTA.magenta().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "magenta_glazed_terracotta_stairs")))
             )
     );
 
     public static final Block ORANGE_TERRACOTTA_STAIRS = register("orange_terracotta_stairs",
-            new StairBlock(ORANGE_TERRACOTTA.defaultBlockState(), ORANGE_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.orange().defaultBlockState(), DYED_TERRACOTTA.orange().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "orange_terracotta_stairs")))
             )
     );
 
     public static final Block ORANGE_GLAZED_TERRACOTTA_STAIRS = register("orange_glazed_terracotta_stairs",
-            new StairBlock(ORANGE_GLAZED_TERRACOTTA.defaultBlockState(), ORANGE_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.orange().defaultBlockState(), GLAZED_TERRACOTTA.orange().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "orange_glazed_terracotta_stairs")))
             )
     );
 
     public static final Block PINK_TERRACOTTA_STAIRS = register("pink_terracotta_stairs",
-            new StairBlock(PINK_TERRACOTTA.defaultBlockState(), PINK_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.pink().defaultBlockState(), DYED_TERRACOTTA.pink().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pink_terracotta_stairs")))
             )
     );
 
     public static final Block PINK_GLAZED_TERRACOTTA_STAIRS = register("pink_glazed_terracotta_stairs",
-            new StairBlock(PINK_GLAZED_TERRACOTTA.defaultBlockState(), PINK_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.pink().defaultBlockState(), GLAZED_TERRACOTTA.pink().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pink_glazed_terracotta_stairs")))
             )
     );
 
     public static final Block PURPLE_TERRACOTTA_STAIRS = register("purple_terracotta_stairs",
-            new StairBlock(PURPLE_TERRACOTTA.defaultBlockState(), PURPLE_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.purple().defaultBlockState(), DYED_TERRACOTTA.purple().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "purple_terracotta_stairs")))
             )
     );
 
     public static final Block PURPLE_GLAZED_TERRACOTTA_STAIRS = register("purple_glazed_terracotta_stairs",
-            new StairBlock(PURPLE_GLAZED_TERRACOTTA.defaultBlockState(), PURPLE_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.purple().defaultBlockState(), GLAZED_TERRACOTTA.purple().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "purple_glazed_terracotta_stairs")))
             )
     );
 
     public static final Block RED_TERRACOTTA_STAIRS = register("red_terracotta_stairs",
-            new StairBlock(RED_TERRACOTTA.defaultBlockState(), RED_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.red().defaultBlockState(), DYED_TERRACOTTA.red().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "red_terracotta_stairs")))
             )
     );
 
     public static final Block RED_GLAZED_TERRACOTTA_STAIRS = register("red_glazed_terracotta_stairs",
-            new StairBlock(RED_GLAZED_TERRACOTTA.defaultBlockState(), RED_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.red().defaultBlockState(), GLAZED_TERRACOTTA.red().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "red_glazed_terracotta_stairs")))
             )
     );
 
     public static final Block WHITE_TERRACOTTA_STAIRS = register("white_terracotta_stairs",
-            new StairBlock(WHITE_TERRACOTTA.defaultBlockState(), WHITE_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.white().defaultBlockState(), DYED_TERRACOTTA.white().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "white_terracotta_stairs")))
             )
     );
 
     public static final Block WHITE_GLAZED_TERRACOTTA_STAIRS = register("white_glazed_terracotta_stairs",
-            new StairBlock(WHITE_GLAZED_TERRACOTTA.defaultBlockState(), WHITE_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.white().defaultBlockState(), GLAZED_TERRACOTTA.white().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "white_glazed_terracotta_stairs")))
             )
     );
 
     public static final Block YELLOW_TERRACOTTA_STAIRS = register("yellow_terracotta_stairs",
-            new StairBlock(YELLOW_TERRACOTTA.defaultBlockState(), YELLOW_TERRACOTTA.properties()
+            new StairBlock(DYED_TERRACOTTA.yellow().defaultBlockState(), DYED_TERRACOTTA.yellow().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "yellow_terracotta_stairs")))
             )
     );
 
     public static final Block YELLOW_GLAZED_TERRACOTTA_STAIRS = register("yellow_glazed_terracotta_stairs",
-            new StairBlock(YELLOW_GLAZED_TERRACOTTA.defaultBlockState(), YELLOW_GLAZED_TERRACOTTA.properties()
+            new StairBlock(GLAZED_TERRACOTTA.yellow().defaultBlockState(), GLAZED_TERRACOTTA.yellow().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "yellow_glazed_terracotta_stairs")))
             )
     );
