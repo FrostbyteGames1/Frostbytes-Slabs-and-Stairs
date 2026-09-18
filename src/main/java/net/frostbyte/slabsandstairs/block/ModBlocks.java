@@ -97,6 +97,24 @@ public class ModBlocks {
             )
     );
 
+    public static final Block RED_POPLAR_LEAF_LAYER = register("red_poplar_leaf_layer",
+            new LeafLayerBlock(0.01F, RED_POPLAR_LEAVES, RED_POPLAR_LEAVES.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "red_poplar_leaf_layer")))
+            )
+    );
+
+    public static final Block ORANGE_POPLAR_LEAF_LAYER = register("orange_poplar_leaf_layer",
+            new LeafLayerBlock(0.01F, ORANGE_POPLAR_LEAVES, ORANGE_POPLAR_LEAVES.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "orange_poplar_leaf_layer")))
+            )
+    );
+
+    public static final Block YELLOW_POPLAR_LEAF_LAYER = register("yellow_poplar_leaf_layer",
+            new LeafLayerBlock(0.01F, YELLOW_POPLAR_LEAVES, YELLOW_POPLAR_LEAVES.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "yellow_poplar_leaf_layer")))
+            )
+    );
+
     // endregion
 
     // region Concrete
@@ -395,7 +413,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.OAK, 15, OAK_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "oak_wood_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -404,7 +421,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.SPRUCE, 15, SPRUCE_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "spruce_wood_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -413,7 +429,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.BIRCH, 15, BIRCH_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "birch_wood_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -422,7 +437,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.JUNGLE, 15, JUNGLE_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "jungle_wood_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -431,7 +445,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.ACACIA, 15, ACACIA_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "acacia_wood_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -440,7 +453,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.DARK_OAK, 15, DARK_OAK_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "dark_oak_wood_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -449,7 +461,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.MANGROVE, 15, MANGROVE_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "mangrove_wood_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -458,7 +469,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.CHERRY, 15, CHERRY_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cherry_wood_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -467,7 +477,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.BAMBOO, 15, BAMBOO_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "bamboo_block_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -476,7 +485,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.WARPED, 15, WARPED_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "warped_hyphae_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -485,7 +493,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.CRIMSON, 15, CRIMSON_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "crimson_hyphae_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -494,7 +501,14 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.PALE_OAK, 15, PALE_OAK_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pale_oak_wood_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
+                    .noCollision()
+            )
+    );
+
+    public static final Block POPLAR_WOOD_BUTTON = register("poplar_wood_button",
+            new ButtonBlock(BlockSetType.POPLAR, 15, POPLAR_BUTTON.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "poplar_wood_button")))
+                    .strength(0.5f)
                     .noCollision()
             )
     );
@@ -503,7 +517,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.OAK, 15, OAK_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_oak_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -512,7 +525,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.SPRUCE, 15, SPRUCE_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_spruce_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -521,7 +533,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.BIRCH, 15, BIRCH_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_birch_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -530,7 +541,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.JUNGLE, 15, JUNGLE_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_jungle_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -539,7 +549,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.ACACIA, 15, ACACIA_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_acacia_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -548,7 +557,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.DARK_OAK, 15, DARK_OAK_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_dark_oak_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -557,7 +565,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.MANGROVE, 15, MANGROVE_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_mangrove_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -566,7 +573,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.CHERRY, 15, CHERRY_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_cherry_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -575,7 +581,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.WARPED, 15, WARPED_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_warped_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -584,7 +589,6 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.CRIMSON, 15, CRIMSON_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_crimson_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -593,7 +597,14 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.PALE_OAK, 15, PALE_OAK_BUTTON.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_pale_oak_button")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
+                    .noCollision()
+            )
+    );
+
+    public static final Block STRIPPED_POPLAR_BUTTON = register("stripped_poplar_button",
+            new ButtonBlock(BlockSetType.POPLAR, 15, POPLAR_BUTTON.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_poplar_button")))
+                    .strength(0.5f)
                     .noCollision()
             )
     );
@@ -771,7 +782,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.OAK, OAK_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "oak_wood_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -780,7 +790,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.SPRUCE, SPRUCE_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "spruce_wood_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -789,7 +798,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.BIRCH, BIRCH_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "birch_wood_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -798,7 +806,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.JUNGLE, JUNGLE_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "jungle_wood_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -807,7 +814,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.ACACIA, ACACIA_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "acacia_wood_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -816,7 +822,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.DARK_OAK, DARK_OAK_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "dark_oak_wood_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -825,7 +830,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.MANGROVE, MANGROVE_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "mangrove_wood_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -834,7 +838,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.CHERRY, CHERRY_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cherry_wood_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -843,7 +846,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.BAMBOO, BAMBOO_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "bamboo_block_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -852,7 +854,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.WARPED, WARPED_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "warped_hyphae_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -861,7 +862,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.CRIMSON, CRIMSON_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "crimson_hyphae_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -870,7 +870,14 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.PALE_OAK, PALE_OAK_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pale_oak_wood_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
+                    .noCollision()
+            )
+    );
+
+    public static final Block POPLAR_WOOD_PRESSURE_PLATE = register("poplar_wood_pressure_plate",
+            new PressurePlateBlock(BlockSetType.POPLAR, POPLAR_PRESSURE_PLATE.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "poplar_wood_pressure_plate")))
+                    .strength(0.5f)
                     .noCollision()
             )
     );
@@ -879,7 +886,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.OAK, OAK_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_oak_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -888,7 +894,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.SPRUCE, SPRUCE_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_spruce_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -897,7 +902,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.BIRCH, BIRCH_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_birch_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -906,7 +910,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.JUNGLE, JUNGLE_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_jungle_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -915,7 +918,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.ACACIA, ACACIA_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_acacia_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -924,7 +926,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.DARK_OAK, DARK_OAK_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_dark_oak_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -933,7 +934,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.MANGROVE, MANGROVE_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_mangrove_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -942,7 +942,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.CHERRY, CHERRY_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_cherry_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -951,7 +950,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.WARPED, WARPED_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_warped_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -960,7 +958,6 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.CRIMSON, CRIMSON_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_crimson_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
                     .noCollision()
             )
     );
@@ -969,7 +966,14 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.PALE_OAK, PALE_OAK_PRESSURE_PLATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_pale_oak_pressure_plate")))
                     .strength(0.5f)
-                    .requiresCorrectToolForDrops()
+                    .noCollision()
+            )
+    );
+
+    public static final Block STRIPPED_POPLAR_PRESSURE_PLATE = register("stripped_poplar_pressure_plate",
+            new PressurePlateBlock(BlockSetType.POPLAR, POPLAR_PRESSURE_PLATE.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_poplar_pressure_plate")))
+                    .strength(0.5f)
                     .noCollision()
             )
     );
@@ -1089,7 +1093,6 @@ public class ModBlocks {
             new FenceBlock(OAK_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "oak_wood_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1097,7 +1100,6 @@ public class ModBlocks {
             new FenceBlock(SPRUCE_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "spruce_wood_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1105,7 +1107,6 @@ public class ModBlocks {
             new FenceBlock(BIRCH_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "birch_wood_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1113,7 +1114,6 @@ public class ModBlocks {
             new FenceBlock(JUNGLE_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "jungle_wood_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1121,7 +1121,6 @@ public class ModBlocks {
             new FenceBlock(ACACIA_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "acacia_wood_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1129,7 +1128,6 @@ public class ModBlocks {
             new FenceBlock(DARK_OAK_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "dark_oak_wood_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1137,7 +1135,6 @@ public class ModBlocks {
             new FenceBlock(MANGROVE_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "mangrove_wood_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1145,7 +1142,6 @@ public class ModBlocks {
             new FenceBlock(CHERRY_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cherry_wood_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1153,7 +1149,6 @@ public class ModBlocks {
             new FenceBlock(BAMBOO_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "bamboo_block_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1161,7 +1156,6 @@ public class ModBlocks {
             new FenceBlock(WARPED_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "warped_hyphae_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1169,7 +1163,6 @@ public class ModBlocks {
             new FenceBlock(CRIMSON_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "crimson_hyphae_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1177,7 +1170,13 @@ public class ModBlocks {
             new FenceBlock(PALE_OAK_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pale_oak_wood_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
+            )
+    );
+
+    public static final Block POPLAR_WOOD_FENCE = register("poplar_wood_fence",
+            new FenceBlock(POPLAR_FENCE.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "poplar_wood_fence")))
+                    .strength(2.0f)
             )
     );
 
@@ -1185,7 +1184,6 @@ public class ModBlocks {
             new FenceBlock(OAK_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_oak_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1193,7 +1191,6 @@ public class ModBlocks {
             new FenceBlock(SPRUCE_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_spruce_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1201,7 +1198,6 @@ public class ModBlocks {
             new FenceBlock(BIRCH_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_birch_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1209,7 +1205,6 @@ public class ModBlocks {
             new FenceBlock(JUNGLE_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_jungle_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1217,7 +1212,6 @@ public class ModBlocks {
             new FenceBlock(ACACIA_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_acacia_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1225,7 +1219,6 @@ public class ModBlocks {
             new FenceBlock(DARK_OAK_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_dark_oak_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1233,7 +1226,6 @@ public class ModBlocks {
             new FenceBlock(MANGROVE_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_mangrove_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1241,7 +1233,6 @@ public class ModBlocks {
             new FenceBlock(CHERRY_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_cherry_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1249,7 +1240,6 @@ public class ModBlocks {
             new FenceBlock(WARPED_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_warped_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1257,7 +1247,6 @@ public class ModBlocks {
             new FenceBlock(CRIMSON_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_crimson_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1265,7 +1254,13 @@ public class ModBlocks {
             new FenceBlock(PALE_OAK_FENCE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_pale_oak_fence")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
+            )
+    );
+
+    public static final Block STRIPPED_POPLAR_FENCE = register("stripped_poplar_fence",
+            new FenceBlock(POPLAR_FENCE.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_poplar_fence")))
+                    .strength(2.0f)
             )
     );
 
@@ -1286,7 +1281,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.OAK, OAK_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "oak_wood_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1294,7 +1288,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.SPRUCE, SPRUCE_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "spruce_wood_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1302,7 +1295,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.BIRCH, BIRCH_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "birch_wood_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1310,7 +1302,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.JUNGLE, JUNGLE_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "jungle_wood_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1318,7 +1309,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.ACACIA, ACACIA_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "acacia_wood_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1326,7 +1316,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.DARK_OAK, DARK_OAK_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "dark_oak_wood_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1334,7 +1323,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.MANGROVE, MANGROVE_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "mangrove_wood_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1342,7 +1330,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.CHERRY, CHERRY_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cherry_wood_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1350,7 +1337,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.BAMBOO, BAMBOO_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "bamboo_block_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1358,7 +1344,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.WARPED, WARPED_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "warped_hyphae_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1366,7 +1351,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.CRIMSON, CRIMSON_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "crimson_hyphae_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1374,7 +1358,13 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.PALE_OAK, PALE_OAK_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pale_oak_wood_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
+            )
+    );
+
+    public static final Block POPLAR_WOOD_FENCE_GATE = register("poplar_wood_fence_gate",
+            new FenceGateBlock(WoodType.POPLAR, POPLAR_FENCE_GATE.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "poplar_wood_fence_gate")))
+                    .strength(2.0f)
             )
     );
 
@@ -1382,7 +1372,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.OAK, OAK_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_oak_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1390,7 +1379,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.SPRUCE, SPRUCE_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_spruce_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1398,7 +1386,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.BIRCH, BIRCH_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_birch_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1406,7 +1393,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.JUNGLE, JUNGLE_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_jungle_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1414,7 +1400,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.ACACIA, ACACIA_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_acacia_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1422,7 +1407,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.DARK_OAK, DARK_OAK_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_dark_oak_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1430,7 +1414,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.MANGROVE, MANGROVE_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_mangrove_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1438,7 +1421,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.CHERRY, CHERRY_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_cherry_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1446,7 +1428,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.WARPED, WARPED_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_warped_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1454,7 +1435,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.CRIMSON, CRIMSON_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_crimson_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
             )
     );
 
@@ -1462,7 +1442,13 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.PALE_OAK, PALE_OAK_FENCE_GATE.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_pale_oak_fence_gate")))
                     .strength(2.0f)
-                    .requiresCorrectToolForDrops()
+            )
+    );
+
+    public static final Block STRIPPED_POPLAR_FENCE_GATE = register("stripped_poplar_fence_gate",
+            new FenceGateBlock(WoodType.POPLAR, POPLAR_FENCE_GATE.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_poplar_fence_gate")))
+                    .strength(2.0f)
             )
     );
 
@@ -1566,6 +1552,12 @@ public class ModBlocks {
             )
     );
 
+    public static final Block POPLAR_WALL = register("poplar_wall",
+            new WallBlock(POPLAR_PLANKS.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "poplar_wall")))
+            )
+    );
+
     public static final Block OAK_WOOD_WALL = register("oak_wood_wall",
             new WallBlock(OAK_WOOD.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "oak_wood_wall")))
@@ -1638,6 +1630,12 @@ public class ModBlocks {
             )
     );
 
+    public static final Block POPLAR_WOOD_WALL = register("poplar_wood_wall",
+            new WallBlock(POPLAR_WOOD.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "poplar_wood_wall")))
+            )
+    );
+
     public static final Block STRIPPED_OAK_WALL = register("stripped_oak_wall",
             new WallBlock(STRIPPED_OAK_WOOD.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_oak_wall")))
@@ -1707,6 +1705,12 @@ public class ModBlocks {
     public static final Block STRIPPED_PALE_OAK_WALL = register("stripped_pale_oak_wall",
             new WallBlock(STRIPPED_PALE_OAK_WOOD.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_pale_oak_wall")))
+            )
+    );
+
+    public static final Block STRIPPED_POPLAR_WALL = register("stripped_poplar_wall",
+            new WallBlock(STRIPPED_POPLAR_WOOD.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_poplar_wall")))
             )
     );
 
@@ -2636,6 +2640,12 @@ public class ModBlocks {
             )
     );
 
+    public static final Block POPLAR_LOG_SLAB = register("poplar_log_slab",
+            new SlabBlock(POPLAR_PLANKS.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "poplar_log")))
+            )
+    );
+
     public static final Block OAK_WOOD_SLAB = register("oak_wood_slab",
             new SlabBlock(OAK_WOOD.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "oak_wood")))
@@ -2708,6 +2718,12 @@ public class ModBlocks {
             )
     );
 
+    public static final Block POPLAR_WOOD_SLAB = register("poplar_wood_slab",
+            new SlabBlock(POPLAR_WOOD.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "poplar_wood")))
+            )
+    );
+
     public static final Block STRIPPED_OAK_SLAB = register("stripped_oak_slab",
             new SlabBlock(STRIPPED_OAK_WOOD.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_oak")))
@@ -2771,6 +2787,12 @@ public class ModBlocks {
     public static final Block STRIPPED_PALE_OAK_SLAB = register("stripped_pale_oak_slab",
             new SlabBlock(STRIPPED_PALE_OAK_WOOD.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_pale_oak")))
+            )
+    );
+
+    public static final Block STRIPPED_POPLAR_SLAB = register("stripped_poplar_slab",
+            new SlabBlock(STRIPPED_POPLAR_WOOD.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_poplar")))
             )
     );
 
@@ -2960,97 +2982,97 @@ public class ModBlocks {
 
     // region Concrete
 
-    public static final Block BLACK_CONCRETE_SLAB = register("black_concrete_slab",
+    static final Block BLACK_CONCRETE_SLAB = register("black_concrete_slab",
             new SlabBlock(CONCRETE.black().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "black_concrete_slab")))
             )
     );
 
-    public static final Block BLUE_CONCRETE_SLAB = register("blue_concrete_slab",
+    static final Block BLUE_CONCRETE_SLAB = register("blue_concrete_slab",
             new SlabBlock(CONCRETE.blue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "blue_concrete_slab")))
             )
     );
 
-    public static final Block BROWN_CONCRETE_SLAB = register("brown_concrete_slab",
+    static final Block BROWN_CONCRETE_SLAB = register("brown_concrete_slab",
             new SlabBlock(CONCRETE.brown().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "brown_concrete_slab")))
             )
     );
 
-    public static final Block CYAN_CONCRETE_SLAB = register("cyan_concrete_slab",
+    static final Block CYAN_CONCRETE_SLAB = register("cyan_concrete_slab",
             new SlabBlock(CONCRETE.cyan().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cyan_concrete_slab")))
             )
     );
 
-    public static final Block GRAY_CONCRETE_SLAB = register("gray_concrete_slab",
+    static final Block GRAY_CONCRETE_SLAB = register("gray_concrete_slab",
             new SlabBlock(CONCRETE.gray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "gray_concrete_slab")))
             )
     );
 
-    public static final Block GREEN_CONCRETE_SLAB = register("green_concrete_slab",
+    static final Block GREEN_CONCRETE_SLAB = register("green_concrete_slab",
             new SlabBlock(CONCRETE.green().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "green_concrete_slab")))
             )
     );
 
-    public static final Block LIGHT_BLUE_CONCRETE_SLAB = register("light_blue_concrete_slab",
+    static final Block LIGHT_BLUE_CONCRETE_SLAB = register("light_blue_concrete_slab",
             new SlabBlock(CONCRETE.lightBlue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_blue_concrete_slab")))
             )
     );
 
-    public static final Block LIGHT_GRAY_CONCRETE_SLAB = register("light_gray_concrete_slab",
+    static final Block LIGHT_GRAY_CONCRETE_SLAB = register("light_gray_concrete_slab",
             new SlabBlock(CONCRETE.lightGray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_gray_concrete_slab")))
             )
     );
 
-    public static final Block LIME_CONCRETE_SLAB = register("lime_concrete_slab",
+    static final Block LIME_CONCRETE_SLAB = register("lime_concrete_slab",
             new SlabBlock(CONCRETE.lime().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "lime_concrete_slab")))
             )
     );
 
-    public static final Block MAGENTA_CONCRETE_SLAB = register("magenta_concrete_slab",
+    static final Block MAGENTA_CONCRETE_SLAB = register("magenta_concrete_slab",
             new SlabBlock(CONCRETE.magenta().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "magenta_concrete_slab")))
             )
     );
 
-    public static final Block ORANGE_CONCRETE_SLAB = register("orange_concrete_slab",
+    static final Block ORANGE_CONCRETE_SLAB = register("orange_concrete_slab",
             new SlabBlock(CONCRETE.orange().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "orange_concrete_slab")))
             )
     );
 
-    public static final Block PINK_CONCRETE_SLAB = register("pink_concrete_slab",
+    static final Block PINK_CONCRETE_SLAB = register("pink_concrete_slab",
             new SlabBlock(CONCRETE.pink().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pink_concrete_slab")))
             )
     );
 
-    public static final Block PURPLE_CONCRETE_SLAB = register("purple_concrete_slab",
+    static final Block PURPLE_CONCRETE_SLAB = register("purple_concrete_slab",
             new SlabBlock(CONCRETE.purple().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "purple_concrete_slab")))
             )
     );
 
-    public static final Block RED_CONCRETE_SLAB = register("red_concrete_slab",
+    static final Block RED_CONCRETE_SLAB = register("red_concrete_slab",
             new SlabBlock(CONCRETE.red().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "red_concrete_slab")))
             )
     );
 
-    public static final Block WHITE_CONCRETE_SLAB = register("white_concrete_slab",
+    static final Block WHITE_CONCRETE_SLAB = register("white_concrete_slab",
             new SlabBlock(CONCRETE.white().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "white_concrete_slab")))
             )
     );
 
-    public static final Block YELLOW_CONCRETE_SLAB = register("yellow_concrete_slab",
+    static final Block YELLOW_CONCRETE_SLAB = register("yellow_concrete_slab",
             new SlabBlock(CONCRETE.yellow().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "yellow_concrete_slab")))
             )
@@ -3450,6 +3472,12 @@ public class ModBlocks {
             )
     );
 
+    public static final Block POPLAR_LOG_STAIRS = register("poplar_log_stairs",
+            new StairBlock(POPLAR_PLANKS.defaultBlockState(), POPLAR_PLANKS.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "poplar_log_stairs")))
+            )
+    );
+
     public static final Block OAK_WOOD_STAIRS = register("oak_wood_stairs",
             new StairBlock(OAK_WOOD.defaultBlockState(), OAK_WOOD.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "oak_wood_stairs")))
@@ -3522,6 +3550,12 @@ public class ModBlocks {
             )
     );
 
+    public static final Block POPLAR_WOOD_STAIRS = register("poplar_wood_stairs",
+            new StairBlock(POPLAR_WOOD.defaultBlockState(), POPLAR_WOOD.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "poplar_wood_stairs")))
+            )
+    );
+
     public static final Block STRIPPED_OAK_STAIRS = register("stripped_oak_stairs",
             new StairBlock(STRIPPED_OAK_WOOD.defaultBlockState(), STRIPPED_OAK_WOOD.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_oak_stairs")))
@@ -3585,6 +3619,12 @@ public class ModBlocks {
     public static final Block STRIPPED_PALE_OAK_STAIRS = register("stripped_pale_oak_stairs",
             new StairBlock(STRIPPED_PALE_OAK_WOOD.defaultBlockState(), STRIPPED_PALE_OAK_WOOD.properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_pale_oak_stairs")))
+            )
+    );
+
+    public static final Block STRIPPED_POPLAR_STAIRS = register("stripped_poplar_stairs",
+            new StairBlock(STRIPPED_POPLAR_WOOD.defaultBlockState(), STRIPPED_POPLAR_WOOD.properties()
+                    .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "stripped_poplar_stairs")))
             )
     );
 
@@ -3792,97 +3832,97 @@ public class ModBlocks {
 
     // region Concrete
 
-    public static final Block BLACK_CONCRETE_STAIRS = register("black_concrete_stairs",
+    static final Block BLACK_CONCRETE_STAIRS = register("black_concrete_stairs",
             new StairBlock(CONCRETE.black().defaultBlockState(), CONCRETE.black().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "black_concrete_stairs")))
             )
     );
 
-    public static final Block BLUE_CONCRETE_STAIRS = register("blue_concrete_stairs",
+    static final Block BLUE_CONCRETE_STAIRS = register("blue_concrete_stairs",
             new StairBlock(CONCRETE.blue().defaultBlockState(), CONCRETE.blue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "blue_concrete_stairs")))
             )
     );
 
-    public static final Block BROWN_CONCRETE_STAIRS = register("brown_concrete_stairs",
+    static final Block BROWN_CONCRETE_STAIRS = register("brown_concrete_stairs",
             new StairBlock(CONCRETE.brown().defaultBlockState(), CONCRETE.brown().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "brown_concrete_stairs")))
             )
     );
 
-    public static final Block CYAN_CONCRETE_STAIRS = register("cyan_concrete_stairs",
+    static final Block CYAN_CONCRETE_STAIRS = register("cyan_concrete_stairs",
             new StairBlock(CONCRETE.cyan().defaultBlockState(), CONCRETE.cyan().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "cyan_concrete_stairs")))
             )
     );
 
-    public static final Block GRAY_CONCRETE_STAIRS = register("gray_concrete_stairs",
+    static final Block GRAY_CONCRETE_STAIRS = register("gray_concrete_stairs",
             new StairBlock(CONCRETE.gray().defaultBlockState(), CONCRETE.gray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "gray_concrete_stairs")))
             )
     );
 
-    public static final Block GREEN_CONCRETE_STAIRS = register("green_concrete_stairs",
+    static final Block GREEN_CONCRETE_STAIRS = register("green_concrete_stairs",
             new StairBlock(CONCRETE.green().defaultBlockState(), CONCRETE.green().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "green_concrete_stairs")))
             )
     );
 
-    public static final Block LIGHT_BLUE_CONCRETE_STAIRS = register("light_blue_concrete_stairs",
+    static final Block LIGHT_BLUE_CONCRETE_STAIRS = register("light_blue_concrete_stairs",
             new StairBlock(CONCRETE.lightBlue().defaultBlockState(), CONCRETE.lightBlue().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_blue_concrete_stairs")))
             )
     );
 
-    public static final Block LIGHT_GRAY_CONCRETE_STAIRS = register("light_gray_concrete_stairs",
+    static final Block LIGHT_GRAY_CONCRETE_STAIRS = register("light_gray_concrete_stairs",
             new StairBlock(CONCRETE.lightGray().defaultBlockState(), CONCRETE.lightGray().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "light_gray_concrete_stairs")))
             )
     );
 
-    public static final Block LIME_CONCRETE_STAIRS = register("lime_concrete_stairs",
+    static final Block LIME_CONCRETE_STAIRS = register("lime_concrete_stairs",
             new StairBlock(CONCRETE.lime().defaultBlockState(), CONCRETE.lime().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "lime_concrete_stairs")))
             )
     );
 
-    public static final Block MAGENTA_CONCRETE_STAIRS = register("magenta_concrete_stairs",
+    static final Block MAGENTA_CONCRETE_STAIRS = register("magenta_concrete_stairs",
             new StairBlock(CONCRETE.magenta().defaultBlockState(), CONCRETE.magenta().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "magenta_concrete_stairs")))
             )
     );
 
-    public static final Block ORANGE_CONCRETE_STAIRS = register("orange_concrete_stairs",
+    static final Block ORANGE_CONCRETE_STAIRS = register("orange_concrete_stairs",
             new StairBlock(CONCRETE.orange().defaultBlockState(), CONCRETE.orange().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "orange_concrete_stairs")))
             )
     );
 
-    public static final Block PINK_CONCRETE_STAIRS = register("pink_concrete_stairs",
+    static final Block PINK_CONCRETE_STAIRS = register("pink_concrete_stairs",
             new StairBlock(CONCRETE.pink().defaultBlockState(), CONCRETE.pink().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "pink_concrete_stairs")))
             )
     );
 
-    public static final Block PURPLE_CONCRETE_STAIRS = register("purple_concrete_stairs",
+    static final Block PURPLE_CONCRETE_STAIRS = register("purple_concrete_stairs",
             new StairBlock(CONCRETE.purple().defaultBlockState(), CONCRETE.purple().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "purple_concrete_stairs")))
             )
     );
 
-    public static final Block RED_CONCRETE_STAIRS = register("red_concrete_stairs",
+    static final Block RED_CONCRETE_STAIRS = register("red_concrete_stairs",
             new StairBlock(CONCRETE.red().defaultBlockState(), CONCRETE.red().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "red_concrete_stairs")))
             )
     );
 
-    public static final Block WHITE_CONCRETE_STAIRS = register("white_concrete_stairs",
+    static final Block WHITE_CONCRETE_STAIRS = register("white_concrete_stairs",
             new StairBlock(CONCRETE.white().defaultBlockState(), CONCRETE.white().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "white_concrete_stairs")))
             )
     );
 
-    public static final Block YELLOW_CONCRETE_STAIRS = register("yellow_concrete_stairs",
+    static final Block YELLOW_CONCRETE_STAIRS = register("yellow_concrete_stairs",
             new StairBlock(CONCRETE.yellow().defaultBlockState(), CONCRETE.yellow().properties()
                     .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "yellow_concrete_stairs")))
             )

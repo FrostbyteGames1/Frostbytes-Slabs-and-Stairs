@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": "minecraft:poplar_wood",
+    "result": {
+        "count": 1,
+        "id": "slabsandstairs:poplar_wood_pressure_plate"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_fence_gate",
+    "key": {
+        "#": "minecraft:stick",
+        "W": "minecraft:poplar_wood"
+    },
+    "pattern": [
+        "#W#",
+        "#W#"
+    ],
+    "result": {
+        "id": "slabsandstairs:poplar_wood_fence_gate"
+    }
+}

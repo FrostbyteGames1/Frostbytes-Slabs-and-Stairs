@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:yellow_poplar_leaf_layer",
+        "slabsandstairs:yellow_poplar_leaf_layer",
+        "slabsandstairs:yellow_poplar_leaf_layer",
+        "slabsandstairs:yellow_poplar_leaf_layer",
+        "slabsandstairs:yellow_poplar_leaf_layer",
+        "slabsandstairs:yellow_poplar_leaf_layer",
+        "slabsandstairs:yellow_poplar_leaf_layer",
+        "slabsandstairs:yellow_poplar_leaf_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:yellow_poplar_leaves"
+    }
+}

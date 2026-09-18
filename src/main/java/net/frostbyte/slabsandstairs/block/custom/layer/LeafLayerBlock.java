@@ -10,7 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.ScheduledTickAccess;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.block.FallingParticlesLeavesBlock;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -19,6 +19,7 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import org.jspecify.annotations.NonNull;
 
 public class LeafLayerBlock extends ModLayerBlock implements SimpleWaterloggedBlock {
 
@@ -32,27 +33,27 @@ public class LeafLayerBlock extends ModLayerBlock implements SimpleWaterloggedBl
     }
 
     protected void spawnLeafParticle(Level world, BlockPos pos, RandomSource random) {
-        if (baseBlock instanceof LeavesBlock leavesBlock) {
-            leavesBlock.spawnFallingLeavesParticle(world, pos, random);
+        if (baseBlock instanceof FallingParticlesLeavesBlock fallingParticlesLeavesBlock) {
+            fallingParticlesLeavesBlock.spawnFallingLeavesParticle(world, pos, random);
         }
     }
 
-    protected int getLightBlock(BlockState state) {
+    protected int getLightDampening(@NonNull BlockState state) {
         return 1;
     }
 
-    protected BlockState updateShape(BlockState state, LevelReader world, ScheduledTickAccess tickView, BlockPos pos, Direction direction, BlockPos neighborPos, BlockState neighborState, RandomSource random) {
+    protected @NonNull BlockState updateShape(BlockState state, LevelReader world, ScheduledTickAccess tickView, BlockPos pos, Direction direction, BlockPos neighborPos, BlockState neighborState, RandomSource random) {
         if (state.getValue(WATERLOGGED)) {
             tickView.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
         }
         return state;
     }
 
-    protected FluidState getFluidState(BlockState state) {
+    protected @NonNull FluidState getFluidState(BlockState state) {
         return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
     }
 
-    public void animateTick(BlockState state, Level world, BlockPos pos, RandomSource random) {
+    public void animateTick(@NonNull BlockState state, @NonNull Level world, @NonNull BlockPos pos, @NonNull RandomSource random) {
         super.animateTick(state, world, pos, random);
         BlockPos blockPos = pos.below();
         BlockState blockState = world.getBlockState(blockPos);

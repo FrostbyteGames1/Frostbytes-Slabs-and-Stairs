@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "slabsandstairs:white_concrete_stairs"
+          "name": "minecraft:white_concrete_stairs"
         }
       ],
       "rolls": 1.0

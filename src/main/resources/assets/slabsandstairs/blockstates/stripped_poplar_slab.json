@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "slabsandstairs:block/stripped_poplar_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/stripped_poplar_log"
+    },
+    "type=top": {
+      "model": "slabsandstairs:block/stripped_poplar_slab_top"
+    }
+  }
+}

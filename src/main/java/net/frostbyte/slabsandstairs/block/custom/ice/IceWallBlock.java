@@ -3,10 +3,11 @@ package net.frostbyte.slabsandstairs.block.custom.ice;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.EnchantmentTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.attribute.EnvironmentAttributes;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
@@ -16,6 +17,7 @@ import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.gameevent.GameEvent;
 import org.jspecify.annotations.Nullable;
 
 public class IceWallBlock extends WallBlock {
@@ -28,8 +30,8 @@ public class IceWallBlock extends WallBlock {
         return Blocks.WATER.defaultBlockState();
     }
 
-    @SuppressWarnings({"NullableProblems", "deprecation"})
-    public void playerDestroy(final Level level, final Player player, final BlockPos pos, final BlockState state, final @Nullable BlockEntity blockEntity, final ItemStack destroyedWith) {
+    @SuppressWarnings({"NullableProblems", "deprecation", "DuplicatedCode"})
+    public void playerDestroy(final ServerLevel level, final ServerPlayer player, final BlockPos pos, final BlockState state, final @Nullable BlockEntity blockEntity, final ItemStack destroyedWith) {
         super.playerDestroy(level, player, pos, state, blockEntity, destroyedWith);
         if (!EnchantmentHelper.hasTag(destroyedWith, EnchantmentTags.PREVENTS_ICE_MELTING)) {
             if (level.environmentAttributes().getValue(EnvironmentAttributes.WATER_EVAPORATES, pos)) {
@@ -38,7 +40,7 @@ public class IceWallBlock extends WallBlock {
             }
 
             BlockState belowState = level.getBlockState(pos.below());
-            if (belowState.blocksMotion() || belowState.liquid()) {
+            if (belowState.is(BlockTags.ICE_MELTS_WHEN_DESTROYED_ABOVE) || belowState.liquid()) {
                 level.setBlockAndUpdate(pos, meltsInto());
             }
         }
@@ -53,12 +55,14 @@ public class IceWallBlock extends WallBlock {
 
     }
 
+    @SuppressWarnings("DuplicatedCode")
     protected void melt(final BlockState state, final Level level, final BlockPos pos) {
         if (level.environmentAttributes().getValue(EnvironmentAttributes.WATER_EVAPORATES, pos)) {
             level.removeBlock(pos, false);
         } else {
             level.setBlockAndUpdate(pos, meltsInto());
             level.neighborChanged(pos, meltsInto().getBlock(), null);
+            level.gameEvent(GameEvent.BLOCK_DESTROY, pos, GameEvent.Context.of(state));
         }
     }
 

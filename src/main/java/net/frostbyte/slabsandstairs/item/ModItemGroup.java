@@ -10,6 +10,8 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
@@ -17,7 +19,7 @@ public class ModItemGroup {
 
     public static CreativeModeTab SLABSANDSTAIRS = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(SlabsAndStairs.MOD_ID, "slabsandstairs"),
             FabricCreativeModeTab.builder().title(Component.translatable("itemgroup.slabsandstairs"))
-                    .icon(() -> new ItemStack(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS)).displayItems((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(Blocks.CONCRETE_STAIRS.lightBlue())).displayItems((displayContext, entries) -> {
                         for (Field field : ModBlocks.class.getDeclaredFields()) {
                             if (Modifier.isPublic(field.getModifiers()) && Modifier.isStatic(field.getModifiers()) && Modifier.isFinal(field.getModifiers()) && field.getType() == Block.class && !field.getName().equalsIgnoreCase("MIXED_SLAB_BLOCK")) {
                                 try {

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "slabsandstairs:red_poplar_leaf_layer",
+        "slabsandstairs:red_poplar_leaf_layer",
+        "slabsandstairs:red_poplar_leaf_layer",
+        "slabsandstairs:red_poplar_leaf_layer",
+        "slabsandstairs:red_poplar_leaf_layer",
+        "slabsandstairs:red_poplar_leaf_layer",
+        "slabsandstairs:red_poplar_leaf_layer",
+        "slabsandstairs:red_poplar_leaf_layer"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:red_poplar_leaves"
+    }
+}

@@ -1,10 +1,7 @@
 package net.frostbyte.slabsandstairs.block.custom.layer;
 
-import com.mojang.serialization.MapCodec;
-import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -23,48 +20,40 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 public class ModLayerBlock extends Block {
-    public static final MapCodec<ModLayerBlock> CODEC = RecordCodecBuilder.mapCodec((instance) ->
-            instance.group(BuiltInRegistries.BLOCK.byNameCodec().fieldOf("turns_into").forGetter(ModLayerBlock::getBaseBlock), propertiesCodec())
-                    .apply(instance, ModLayerBlock::new)
-    );
     public static final int MAX_LAYERS = 8;
     public static final IntegerProperty LAYERS;
-    private static final VoxelShape[] SHAPES_BY_LAYERS;
-    public static final int field_31248 = 5;
+    private static final VoxelShape[] SHAPES;
+    public static final int HEIGHT_IMPASSABLE = 5;
     protected final Block baseBlock;
 
-    public MapCodec<ModLayerBlock> codec() {
-        return CODEC;
-    }
-
-    public ModLayerBlock(Block baseBlock, BlockBehaviour.Properties settings) {
-        super(settings);
+    public ModLayerBlock(Block baseBlock, BlockBehaviour.Properties properties) {
+        super(properties);
         this.baseBlock = baseBlock;
-        this.registerDefaultState(this.stateDefinition.any().setValue(LAYERS, 1));
+        this.registerDefaultState((BlockState)((BlockState)this.stateDefinition.any()).setValue(LAYERS, 1));
     }
 
     protected boolean isPathfindable(BlockState state, PathComputationType type) {
         if (type == PathComputationType.LAND) {
-            return state.getValue(LAYERS) < field_31248;
+            return state.getValue(LAYERS) < HEIGHT_IMPASSABLE;
         } else {
             return false;
         }
     }
 
     protected VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-        return SHAPES_BY_LAYERS[state.getValue(LAYERS)];
+        return SHAPES[state.getValue(LAYERS)];
     }
 
     protected VoxelShape getCollisionShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-        return SHAPES_BY_LAYERS[state.getValue(LAYERS) - 1];
+        return SHAPES[state.getValue(LAYERS) - 1];
     }
 
     protected VoxelShape getBlockSupportShape(BlockState state, BlockGetter world, BlockPos pos) {
-        return SHAPES_BY_LAYERS[state.getValue(LAYERS)];
+        return SHAPES[state.getValue(LAYERS)];
     }
 
     protected VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-        return SHAPES_BY_LAYERS[state.getValue(LAYERS)];
+        return SHAPES[state.getValue(LAYERS)];
     }
 
     protected boolean useShapeForLightOcclusion(BlockState state) {
@@ -119,6 +108,6 @@ public class ModLayerBlock extends Block {
 
     static {
         LAYERS = BlockStateProperties.LAYERS;
-        SHAPES_BY_LAYERS = Block.boxes(MAX_LAYERS, (layers) -> Block.column(16.0, 0.0, layers * 2));
+        SHAPES = Block.boxes(MAX_LAYERS, (layers) -> Block.column(16.0, 0.0, layers * 2));
     }
 }

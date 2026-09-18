@@ -3,4 +3,4 @@ accessWidener v2 official
 accessible method net/minecraft/world/level/block/ConcretePowderBlock shouldSolidify (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
 accessible method net/minecraft/world/level/block/ConcretePowderBlock touchesLiquid (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Z
 
-accessible method net/minecraft/world/level/block/LeavesBlock spawnFallingLeavesParticle (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)V
+accessible method net/minecraft/world/level/block/FallingParticlesLeavesBlock spawnFallingLeavesParticle (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)V
